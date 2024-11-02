@@ -1,0 +1,1966 @@
+/! VS Export Parsfile v3.1.0, 25 files.
+/! 2018-10-12T13:27:05
+/!
+/!
+/F Vehicles\Assembly\Vehicle_6bbbf875-adb8-49c3-a165-51f04c76574e.par`Vehicle: Assembly`OS_php`HMC_OS
+PARSFILE
+#FullDataName Vehicle: Assembly`OS_php`HMC_OS
+#VehCode Ind_Ind
+#CheckBox0 1    
+#CheckBox1 0    
+
+#RingCtrl0 0
+OPT_PT 0
+#RingCtrl1 1
+#RingCtrl2 1
+#RingCtrl3 0
+
+* Front components
+iaxle 1
+symbol_push  <<axle>> 1
+PARSFILE Suspensions\Kin_Indy\KinInd_c122bd5c-1f41-4dd3-9655-d741fd61a086.par
+#BlueLink19 Suspension: Independent System Kinematics`OS_frontKinematics_php` HMC_OS` , Kinematics`KinInd_c122bd5c-1f41-4dd3-9655-d741fd61a086
+
+PARSFILE Suspensions\Compliance\CmpInd_3ddc6a87-8bdb-4dfc-a300-82b0b0b27dec.par
+#BlueLink16 Suspension: Independent Compliance, Springs, and Dampers`OS_FrontCompliance_php` HMC_OS` , Compliance`CmpInd_3ddc6a87-8bdb-4dfc-a300-82b0b0b27dec
+
+
+OPT_ALL_FOUR_TIRES_ALIKE 1
+
+* LF tire
+iside 1
+WRITE_ADD_REFERENCE_FRAME_WHEEL
+symbol_push  <<tire>> L<<axle>>
+
+* RF tire
+iside 2
+WRITE_ADD_REFERENCE_FRAME_WHEEL
+symbol_push  <<tire>> R<<axle>>
+* Rear components
+iaxle 2
+symbol_add  <<axle>> 1
+PARSFILE Suspensions\Kin_Indy\KinInd_b43acbb3-7fc3-4037-ac39-8f09ad5c4a59.par
+#BlueLink20 Suspension: Independent System Kinematics`OS_RearKinematics_php` HMC_OS` , Kinematics`KinInd_b43acbb3-7fc3-4037-ac39-8f09ad5c4a59
+
+PARSFILE Suspensions\Compliance\CmpInd_24a2b771-54fe-443c-9f3a-bbb34177b9d4.par
+#BlueLink17 Suspension: Independent Compliance, Springs, and Dampers`OS_RearCompliance_php` HMC_OS` , Compliance`CmpInd_24a2b771-54fe-443c-9f3a-bbb34177b9d4
+
+
+* LR tire
+iside 1
+WRITE_ADD_REFERENCE_FRAME_WHEEL
+symbol_push  <<tire>> L<<axle>>
+
+* RR tire
+iside 2
+WRITE_ADD_REFERENCE_FRAME_WHEEL
+symbol_push  <<tire>> R<<axle>>
+symbol_set <<axle>> 1
+WRITE_ADD_REFERENCE_FRAME_BODY
+PARSFILE Vehicles\Sprung_Mass\SprMass_b73319b9-3964-43d0-a0ad-069b57d63ba0.par
+#BlueLink0 Vehicle: Sprung Mass`OS_sprungmass_php` HMC_OS` , Sprung Mass`SprMass_b73319b9-3964-43d0-a0ad-069b57d63ba0
+
+R_REAR_DRIVE_SC 0
+PMAX_SC 300
+PARSFILE Steering\System\StrSys_d16b99ff-d123-4243-95ac-1b1f2a195c1f.par
+#BlueLink7 Steering (Legacy)`OS_Steer_php` HMC_OS` , Steering System`StrSys_d16b99ff-d123-4243-95ac-1b1f2a195c1f
+
+*IMAGE_TYPE DEFAULT
+
+LOG_ENTRY Used Dataset: Vehicle: Assembly; { HMC_OS } OS_php
+#Library : Vehicle: Assembly
+#DataSet : OS_php
+#Category: HMC_OS
+#FileID  : Vehicle_6bbbf875-adb8-49c3-a165-51f04c76574e
+#Product : CarSim 2018.0
+#VehCode Ind_Ind
+
+END
+/F Suspensions\Kin_Indy\KinInd_c122bd5c-1f41-4dd3-9655-d741fd61a086.par`Suspension: Independent System Kinematics`OS_frontKinematics_php`HMC_OS
+PARSFILE
+#FullDataName Suspension: Independent System Kinematics`OS_frontKinematics_php`HMC_OS
+iside 1
+#RingCtrl0 0
+OPT_JNC_DESIGN 0
+#RingCtrl1 2
+#RingCtrl2 2
+#RingCtrl3 2
+#RingCtrl4 2
+#RingCtrl5 2
+#CheckBox0 0    
+#CheckBox1 0    
+#CheckBox2 0    
+
+R_US_STR 0.8
+L_TRACK 1552
+Y_CL_SUSP 0
+H_WC 0
+M_US 68
+*IW_L .6
+*IW_R .6
+*TOE_L -0.007
+*TOE_R -0.007
+*CAMBER_L -0.760
+*CAMBER_R -0.760
+
+PARSFILE Suspensions\Dive\Dive_2ba48fac-dd6b-41b5-b4f7-96ad5d9207bf.par
+#BlueLink0 Suspension: Dive Angle (Caster Change)`OS_frontDiveLeft_php` HMC_OS` , Left wheel dive (caster change)`Dive_2ba48fac-dd6b-41b5-b4f7-96ad5d9207bf
+
+PARSFILE Suspensions\Longitudinal\SusX_1f511fd4-7ba0-41c1-8a03-1462c0ca6929.par
+#BlueLink1 Suspension: Longitudinal Movement`OS_frontDxLeft_php` HMC_OS` , Left wheel X`SusX_1f511fd4-7ba0-41c1-8a03-1462c0ca6929
+
+PARSFILE Suspensions\Camber\Camber_3146d2e8-437c-4420-9601-c6f109622033.par
+#BlueLink2 Suspension: Camber Angle`OS_Front_CamberLeft_php` HMC_OS` , Left wheel camber`Camber_3146d2e8-437c-4420-9601-c6f109622033
+
+PARSFILE Suspensions\Lateral\LatJnc_dd4debe1-024a-4be5-8947-b2a88d7338d8.par
+#BlueLink3 Suspension: Lateral Movement Due to Jounce`OS_FrontDyLeft_php` HMC_OS` , Left wheel lateral (-Y)`LatJnc_dd4debe1-024a-4be5-8947-b2a88d7338d8
+
+PARSFILE Suspensions\Toe\Toe_47176cac-2340-4ce9-aa88-ba0add915023.par
+#BlueLink4 Suspension: Toe Angle`OS_FrontToeLeft_php` HMC_OS` , Left wheel toe`Toe_47176cac-2340-4ce9-aa88-ba0add915023
+
+IW .6
+A_TOE -0.007
+A_CAMBER -0.760
+
+iside 2
+PARSFILE Suspensions\Dive\Dive_2ba48fac-dd6b-41b5-b4f7-96ad5d9207bf.par
+#BlueLink0 Suspension: Dive Angle (Caster Change)`OS_frontDiveLeft_php` HMC_OS` , Left wheel dive (caster change)`Dive_2ba48fac-dd6b-41b5-b4f7-96ad5d9207bf
+
+PARSFILE Suspensions\Longitudinal\SusX_1f511fd4-7ba0-41c1-8a03-1462c0ca6929.par
+#BlueLink1 Suspension: Longitudinal Movement`OS_frontDxLeft_php` HMC_OS` , Left wheel X`SusX_1f511fd4-7ba0-41c1-8a03-1462c0ca6929
+
+PARSFILE Suspensions\Camber\Camber_3146d2e8-437c-4420-9601-c6f109622033.par
+#BlueLink2 Suspension: Camber Angle`OS_Front_CamberLeft_php` HMC_OS` , Left wheel camber`Camber_3146d2e8-437c-4420-9601-c6f109622033
+
+PARSFILE Suspensions\Lateral\LatJnc_dd4debe1-024a-4be5-8947-b2a88d7338d8.par
+#BlueLink3 Suspension: Lateral Movement Due to Jounce`OS_FrontDyLeft_php` HMC_OS` , Left wheel lateral (-Y)`LatJnc_dd4debe1-024a-4be5-8947-b2a88d7338d8
+
+PARSFILE Suspensions\Toe\Toe_47176cac-2340-4ce9-aa88-ba0add915023.par
+#BlueLink4 Suspension: Toe Angle`OS_FrontToeLeft_php` HMC_OS` , Left wheel toe`Toe_47176cac-2340-4ce9-aa88-ba0add915023
+
+IW .6
+A_TOE -0.007
+A_CAMBER -0.760
+H_WC 0
+
+LOG_ENTRY Used Dataset: Suspension: Independent System Kinematics; { HMC_OS } OS_frontKinematics_php
+#Library : Suspension: Independent System Kinematics
+#DataSet : OS_frontKinematics_php
+#Category: HMC_OS
+#FileID  : KinInd_c122bd5c-1f41-4dd3-9655-d741fd61a086
+#Product : CarSim 2018.0
+#VehCode Independent
+
+END
+/F Suspensions\Compliance\CmpInd_3ddc6a87-8bdb-4dfc-a300-82b0b0b27dec.par`Suspension: Independent Compliance, Springs, and Dampers`OS_FrontCompliance_php`HMC_OS
+PARSFILE
+#FullDataName Suspension: Independent Compliance, Springs, and Dampers`OS_FrontCompliance_php`HMC_OS
+#CheckBox0 0    
+#CheckBox1 0    
+
+#RingCtrl0 0
+*OPT_SPR 0
+#RingCtrl1 2
+#RingCtrl3 1
+#RingCtrl5 2
+#RingCtrl7 1
+#RingCtrl9 1
+#RingCtrl11 1
+#RingCtrl13 1
+*L_SPG_ADJ_L 0
+*L_SPG_ADJ_R 0
+*FS_OFFSET_L 0
+*FS_OFFSET_R 0
+*R_SPRING_L 1.0
+*R_SPRING_R 1.0
+*R_DAMPER_L 1.0
+*R_DAMPER_R 1.0
+*CT_FX_L -1.262e-4
+*CT_FX_R -1.402e-004
+*CS_FY_L 3.159e-7
+*CS_FY_R 1.143e-005
+*CS_MZ_L 9.815e-4
+*CS_MZ_R 1.042e-003
+*CC_FX_L 3.005e-5
+*CC_FX_R 4.103e-005
+*CI_FY_L 1.373e-4
+*CI_FY_R 1.258e-004
+*CI_MZ_L -2.111e-4
+*CI_MZ_R -1.425e-004
+*C_LONG_L 3.421e-3
+*C_LONG_R 4.231e-003
+*C_LAT_L -2.041e-5
+*C_LAT_R 2.681e-006
+
+iside 1
+OPT_EXT_SP 0
+PARSFILE Suspensions\Springs\Spring_52061214-96c3-4234-9e09-024c8d44ba86.par
+#BlueLink0 Suspension: Spring`OS_FrontWheelrateLeft_php` HMC_OS` , Spring force`Spring_52061214-96c3-4234-9e09-024c8d44ba86
+
+CMP_SPR_SEAT_COEFFICIENT 1.0
+L_SPG_ADJ 0
+FS_OFFSET 0
+CMP_OFFSET 0
+CMP_DAMP_COEFFICIENT 1.0
+CT_FX_COEFFICIENT -1.262e-4
+CS_FY_COEFFICIENT 3.159e-7
+CS_MZ_COEFFICIENT 9.815e-4
+CC_FX_COEFFICIENT 3.005e-5
+CI_FY_COEFFICIENT 1.373e-4
+CI_MZ_COEFFICIENT -2.111e-4
+C_LONG_COEFFICIENT 3.421e-3
+C_LAT_COEFFICIENT -2.041e-5
+
+iside 2
+OPT_EXT_SP 0
+PARSFILE Suspensions\Springs\Spring_52061214-96c3-4234-9e09-024c8d44ba86.par
+#BlueLink0 Suspension: Spring`OS_FrontWheelrateLeft_php` HMC_OS` , Spring force`Spring_52061214-96c3-4234-9e09-024c8d44ba86
+
+CMP_SPR_SEAT_COEFFICIENT 1.0
+L_SPG_ADJ 0
+FS_OFFSET 0
+CMP_OFFSET 0
+CMP_DAMP_COEFFICIENT 1.0
+CT_FX_COEFFICIENT -1.262e-4
+CS_FY_COEFFICIENT 3.159e-7
+CS_MZ_COEFFICIENT 9.815e-4
+CC_FX_COEFFICIENT 3.005e-5
+CI_FY_COEFFICIENT 1.373e-4
+CI_MZ_COEFFICIENT -2.111e-4
+C_LONG_COEFFICIENT 3.421e-3
+C_LAT_COEFFICIENT -2.041e-5
+PARSFILE Suspensions\Aux_Roll\AuxMx_4e647caf-d341-4c16-8367-5007e8297083.par
+#BlueLink2 Suspension: Auxiliary Roll Moment`OS_AuxiliaryRoll_php` HMC_OS` , Roll Moment`AuxMx_4e647caf-d341-4c16-8367-5007e8297083
+
+
+LOG_ENTRY Used Dataset: Suspension: Independent Compliance, Springs, and Dampers; { HMC_OS } OS_FrontCompliance_php
+#Library : Suspension: Independent Compliance, Springs, and Dampers
+#DataSet : OS_FrontCompliance_php
+#Category: HMC_OS
+#FileID  : CmpInd_3ddc6a87-8bdb-4dfc-a300-82b0b0b27dec
+#Product : CarSim 2018.0
+#VehCode Springs and Dampers
+
+END
+/F Suspensions\Kin_Indy\KinInd_b43acbb3-7fc3-4037-ac39-8f09ad5c4a59.par`Suspension: Independent System Kinematics`OS_RearKinematics_php`HMC_OS
+PARSFILE
+#FullDataName Suspension: Independent System Kinematics`OS_RearKinematics_php`HMC_OS
+iside 1
+#RingCtrl0 0
+OPT_JNC_DESIGN 0
+#RingCtrl1 2
+#RingCtrl2 2
+#RingCtrl3 2
+#RingCtrl4 2
+#RingCtrl5 2
+#CheckBox0 0    
+#CheckBox1 0    
+#CheckBox2 0    
+
+R_US_STR 0.8
+L_TRACK 1551
+Y_CL_SUSP 0
+H_WC 0
+M_US 68
+*IW_L .6
+*IW_R .6
+*TOE_L 0.024
+*TOE_R 0.024
+*CAMBER_L -1.060
+*CAMBER_R -1.060
+
+PARSFILE Suspensions\Dive\Dive_7ed36fec-c8c0-4b5b-9393-bd4b51e7a385.par
+#BlueLink0 Suspension: Dive Angle (Caster Change)`OS_RearDiveLeft_php` HMC_OS` , Left wheel dive (caster change)`Dive_7ed36fec-c8c0-4b5b-9393-bd4b51e7a385
+
+PARSFILE Suspensions\Longitudinal\SusX_b1760321-081b-4d86-9da7-5fd6408dab54.par
+#BlueLink1 Suspension: Longitudinal Movement`OS_RearDxLeft_php` HMC_OS` , Left wheel X`SusX_b1760321-081b-4d86-9da7-5fd6408dab54
+
+PARSFILE Suspensions\Camber\Camber_ad57209f-175d-4456-975a-94906018a80a.par
+#BlueLink2 Suspension: Camber Angle`OS_RearCamberLeft_php` HMC_OS` , Left wheel camber`Camber_ad57209f-175d-4456-975a-94906018a80a
+
+PARSFILE Suspensions\Lateral\LatJnc_cfdcdd58-3dab-4998-b0f3-fe3af867394f.par
+#BlueLink3 Suspension: Lateral Movement Due to Jounce`OS_RearDyLeft_php` HMC_OS` , Left wheel lateral (-Y)`LatJnc_cfdcdd58-3dab-4998-b0f3-fe3af867394f
+
+PARSFILE Suspensions\Toe\Toe_2c49cc65-2516-4bb6-9096-13ccc7965f12.par
+#BlueLink4 Suspension: Toe Angle`OS_RearToeLeft_php` HMC_OS` , Left wheel toe`Toe_2c49cc65-2516-4bb6-9096-13ccc7965f12
+
+IW .6
+A_TOE 0.024
+A_CAMBER -1.060
+
+iside 2
+PARSFILE Suspensions\Dive\Dive_7ed36fec-c8c0-4b5b-9393-bd4b51e7a385.par
+#BlueLink0 Suspension: Dive Angle (Caster Change)`OS_RearDiveLeft_php` HMC_OS` , Left wheel dive (caster change)`Dive_7ed36fec-c8c0-4b5b-9393-bd4b51e7a385
+
+PARSFILE Suspensions\Longitudinal\SusX_b1760321-081b-4d86-9da7-5fd6408dab54.par
+#BlueLink1 Suspension: Longitudinal Movement`OS_RearDxLeft_php` HMC_OS` , Left wheel X`SusX_b1760321-081b-4d86-9da7-5fd6408dab54
+
+PARSFILE Suspensions\Camber\Camber_ad57209f-175d-4456-975a-94906018a80a.par
+#BlueLink2 Suspension: Camber Angle`OS_RearCamberLeft_php` HMC_OS` , Left wheel camber`Camber_ad57209f-175d-4456-975a-94906018a80a
+
+PARSFILE Suspensions\Lateral\LatJnc_cfdcdd58-3dab-4998-b0f3-fe3af867394f.par
+#BlueLink3 Suspension: Lateral Movement Due to Jounce`OS_RearDyLeft_php` HMC_OS` , Left wheel lateral (-Y)`LatJnc_cfdcdd58-3dab-4998-b0f3-fe3af867394f
+
+PARSFILE Suspensions\Toe\Toe_2c49cc65-2516-4bb6-9096-13ccc7965f12.par
+#BlueLink4 Suspension: Toe Angle`OS_RearToeLeft_php` HMC_OS` , Left wheel toe`Toe_2c49cc65-2516-4bb6-9096-13ccc7965f12
+
+IW .6
+A_TOE 0.024
+A_CAMBER -1.060
+H_WC 0
+
+LOG_ENTRY Used Dataset: Suspension: Independent System Kinematics; { HMC_OS } OS_RearKinematics_php
+#Library : Suspension: Independent System Kinematics
+#DataSet : OS_RearKinematics_php
+#Category: HMC_OS
+#FileID  : KinInd_b43acbb3-7fc3-4037-ac39-8f09ad5c4a59
+#Product : CarSim 2018.0
+#VehCode Independent
+
+END
+/F Suspensions\Compliance\CmpInd_24a2b771-54fe-443c-9f3a-bbb34177b9d4.par`Suspension: Independent Compliance, Springs, and Dampers`OS_RearCompliance_php`HMC_OS
+PARSFILE
+#FullDataName Suspension: Independent Compliance, Springs, and Dampers`OS_RearCompliance_php`HMC_OS
+#CheckBox0 0    
+#CheckBox1 0    
+
+#RingCtrl0 0
+*OPT_SPR 0
+#RingCtrl1 2
+#RingCtrl3 1
+#RingCtrl5 2
+#RingCtrl7 1
+#RingCtrl9 1
+#RingCtrl11 1
+#RingCtrl13 1
+*L_SPG_ADJ_L 0
+*L_SPG_ADJ_R 0
+*FS_OFFSET_L 0
+*FS_OFFSET_R 0
+*R_SPRING_L 1.0
+*R_SPRING_R 1.0
+*R_DAMPER_L 1.0
+*R_DAMPER_R 1.0
+*CT_FX_L 2.801e-5
+*CT_FX_R 4.419e-005
+*CS_FY_L -3.224e-5
+*CS_FY_R -5.443e-005
+*CS_MZ_L 3.909e-4
+*CS_MZ_R 6.495e-004
+*CC_FX_L -3.178e-5
+*CC_FX_R -4.866e-005
+*CI_FY_L 4.499e-4
+*CI_FY_R 2.871e-004
+*CI_MZ_L -3.409e-5
+*CI_MZ_R -6.786e-005
+*C_LONG_L 7.060e-4
+*C_LONG_R 2.553e-004
+*C_LAT_L 8.065e-5
+*C_LAT_R 1.375e-004
+
+iside 1
+OPT_EXT_SP 0
+PARSFILE Suspensions\Springs\Spring_83af9139-a646-4e07-8c2f-442e15cb06ba.par
+#BlueLink0 Suspension: Spring`OS_Rearwheelrate_Left_php` HMC_OS` , Spring force`Spring_83af9139-a646-4e07-8c2f-442e15cb06ba
+
+CMP_SPR_SEAT_COEFFICIENT 1.0
+L_SPG_ADJ 0
+FS_OFFSET 0
+CMP_OFFSET 0
+CMP_DAMP_COEFFICIENT 1.0
+CT_FX_COEFFICIENT 2.801e-5
+CS_FY_COEFFICIENT -3.224e-5
+CS_MZ_COEFFICIENT 3.909e-4
+CC_FX_COEFFICIENT -3.178e-5
+CI_FY_COEFFICIENT 4.499e-4
+CI_MZ_COEFFICIENT -3.409e-5
+C_LONG_COEFFICIENT 7.060e-4
+C_LAT_COEFFICIENT 8.065e-5
+
+iside 2
+OPT_EXT_SP 0
+PARSFILE Suspensions\Springs\Spring_83af9139-a646-4e07-8c2f-442e15cb06ba.par
+#BlueLink0 Suspension: Spring`OS_Rearwheelrate_Left_php` HMC_OS` , Spring force`Spring_83af9139-a646-4e07-8c2f-442e15cb06ba
+
+CMP_SPR_SEAT_COEFFICIENT 1.0
+L_SPG_ADJ 0
+FS_OFFSET 0
+CMP_OFFSET 0
+CMP_DAMP_COEFFICIENT 1.0
+CT_FX_COEFFICIENT 2.801e-5
+CS_FY_COEFFICIENT -3.224e-5
+CS_MZ_COEFFICIENT 3.909e-4
+CC_FX_COEFFICIENT -3.178e-5
+CI_FY_COEFFICIENT 4.499e-4
+CI_MZ_COEFFICIENT -3.409e-5
+C_LONG_COEFFICIENT 7.060e-4
+C_LAT_COEFFICIENT 8.065e-5
+PARSFILE Suspensions\Aux_Roll\AuxMx_54f7ff04-49c6-4009-b37f-076592fe9bb4.par
+#BlueLink2 Suspension: Auxiliary Roll Moment`OS_RearAuxiliaryRollMoment_php` HMC_OS` , Roll Moment`AuxMx_54f7ff04-49c6-4009-b37f-076592fe9bb4
+
+
+LOG_ENTRY Used Dataset: Suspension: Independent Compliance, Springs, and Dampers; { HMC_OS } OS_RearCompliance_php
+#Library : Suspension: Independent Compliance, Springs, and Dampers
+#DataSet : OS_RearCompliance_php
+#Category: HMC_OS
+#FileID  : CmpInd_24a2b771-54fe-443c-9f3a-bbb34177b9d4
+#Product : CarSim 2018.0
+#VehCode Springs and Dampers
+
+END
+/F Vehicles\Sprung_Mass\SprMass_b73319b9-3964-43d0-a0ad-069b57d63ba0.par`Vehicle: Sprung Mass`OS_sprungmass_php`HMC_OS
+PARSFILE
+#FullDataName Vehicle: Sprung Mass`OS_sprungmass_php`HMC_OS
+#VehCode Rigid sprung mass
+#RingCtrl0 0
+X_LENGTH 2600
+Y_LENGTH 1500
+iaxle 2
+iside 1
+LX_H 3600
+H_H 484
+H_CG_SU 587
+LX_AXLE 2600
+LX_CG_SU 969
+M_SU 1288
+IXX_SU 526
+IYY_SU 1955
+IZZ_SU 2175
+IXZ_SU 0
+*RX 0.639
+*RY 1.232
+*RZ 1.299
+Y_CG_SU 0
+Y_H 0
+IXY_SU 0
+IYZ_SU 0
+Z_LENGTH 1587
+Y_LENGTH 1952
+*HWC_LF 334.35
+*HWC_RF 334.35
+*HWC_LR 334.35
+*HWC_RR 334.35
+
+symbol_set <<hitch_x>> -3.6
+symbol_set <<hitch_y>> 0
+symbol_set <<hitch_z>> 0.484
+H_WC 334.35
+iside 2
+H_WC 334.35
+iaxle 1
+iside 1
+H_WC 334.35
+iside 2
+H_WC 334.35
+iaxle 2
+iside 1
+
+LOG_ENTRY Used Dataset: Vehicle: Sprung Mass; { HMC_OS } OS_sprungmass_php
+#Library : Vehicle: Sprung Mass
+#DataSet : OS_sprungmass_php
+#Category: HMC_OS
+#FileID  : SprMass_b73319b9-3964-43d0-a0ad-069b57d63ba0
+#Product : CarSim 2018.0
+#VehCode Rigid sprung mass
+
+END
+/F Steering\System\StrSys_d16b99ff-d123-4243-95ac-1b1f2a195c1f.par`Steering (Legacy)`OS_Steer_php`HMC_OS
+PARSFILE
+#FullDataName Steering (Legacy)`OS_Steer_php`HMC_OS
+OPT_STEER 0
+OPT_POWER 0
+OPT_M_SW_CALC 0
+
+OPT_STEER_DEF 1
+*RSW_F 13.78
+*RSW_R 1.0
+*L1_LKPO 7.5
+*L2_LKPO 0
+*R1_LKPO 7.5
+*R2_LKPO 0
+*L1_AKPI 13.8
+*L2_AKPI 0
+*R1_AKPI 13.8
+*R2_AKPI 0
+*L1_ACAST 4.4
+*L2_ACAST 0
+*R1_ACAST 4.4
+*R2_ACASTI 0
+*L1_XKPO 1
+*L2_XKPO 0
+*R1_XKPO 1
+*R2_XKPO 0
+
+PARSFILE Steering\Str_Wheel_Tq\TqSW_bad7d9a0-96d1-4ca5-ae5f-13dbfcf03227.par
+#BlueLink7 Steering Wheel Torque`OS_SWT_php` HMC_OS` , Steering wheel torque`TqSW_bad7d9a0-96d1-4ca5-ae5f-13dbfcf03227
+
+
+iside 1
+iaxle 2
+R_GEAR_STR 1.0
+OPT_RACK 0
+GEAR_ROT_COEFFICIENT 1//1.0
+
+L_KPO 0
+A_KPI 0
+A_CASTER 0
+X_KPO 0
+
+iaxle 1
+R_GEAR_STR 13.78
+OPT_RACK 0
+GEAR_ROT_COEFFICIENT 1//13.78
+
+PARSFILE Steering\Compliance\StrCmp_74d91c74-87d1-468e-b160-108a0ce43935.par
+#BlueLink4 Steering System: Compliance`OS_No Steer Compliance_php` HMC_OS` , Front Compliance`StrCmp_74d91c74-87d1-468e-b160-108a0ce43935
+
+PARSFILE Steering\Kinematics\StrKin_1f4653f9-2a9d-4aa4-b698-12b32a22ead6.par
+#BlueLink0 Steering System: Kinematics for One Wheel`OS_SteeringLeft_php` HMC_OS` , Left Front Wheel`StrKin_1f4653f9-2a9d-4aa4-b698-12b32a22ead6
+
+L_KPO 7.5
+A_KPI 13.8
+A_CASTER 4.4
+X_KPO 1
+
+iside 2
+PARSFILE Steering\Kinematics\StrKin_45a2e2f7-7883-4ed2-bc01-1b689173c2d0.par
+#BlueLink2 Steering System: Kinematics for One Wheel`OS_SteeringRight_php` HMC_OS` , Right Front Wheel`StrKin_45a2e2f7-7883-4ed2-bc01-1b689173c2d0
+
+L_KPO 7.5
+A_KPI 13.8
+A_CASTER 4.4
+X_KPO 1
+
+iaxle 2
+L_KPO 0
+A_KPI 0
+A_CASTER 0
+X_KPO 0
+
+LOG_ENTRY Used Dataset: Steering (Legacy); { HMC_OS } OS_Steer_php
+#Library : Steering (Legacy)
+#DataSet : OS_Steer_php
+#Category: HMC_OS
+#FileID  : StrSys_d16b99ff-d123-4243-95ac-1b1f2a195c1f
+#Product : CarSim 2018.0
+#VehCode 4-Wheel Steer (Legacy)
+
+END
+/F Suspensions\Dive\Dive_2ba48fac-dd6b-41b5-b4f7-96ad5d9207bf.par`Suspension: Dive Angle (Caster Change)`OS_frontDiveLeft_php`HMC_OS
+PARSFILE
+#FullDataName Suspension: Dive Angle (Caster Change)`OS_frontDiveLeft_php`HMC_OS
+#CheckBox0 0    
+
+#RingCtrl0 SPLINE
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+SUSP_DIVE_COMBINE ADD
+
+#DiagramOne0
+SUSP_DIVE_TABLE SPLINE
+-60, 0.7049
+-55, 0.6507
+-50, 0.59583
+-45, 0.54032
+-40, 0.48419
+-35, 0.42747
+-30, 0.37014
+-25, 0.31218
+-20, 0.25354
+-15, 0.19419
+-10, 0.13403
+-5, 0.072978
+0, 0.010935
+5, -0.052225
+10, -0.11664
+15, -0.18247
+20, -0.24988
+25, -0.31907
+30, -0.39023
+35, -0.46359
+40, -0.53939
+45, -0.61787
+50, -0.69932
+55, -0.78402
+60, -0.87228
+65, -0.96441
+70, -1.0607
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+#DiagramOne0
+SUSP_DIVE_AXLE_TABLE SPLINE
+-60, 0.7049
+-55, 0.6507
+-50, 0.59583
+-45, 0.54032
+-40, 0.48419
+-35, 0.42747
+-30, 0.37014
+-25, 0.31218
+-20, 0.25354
+-15, 0.19419
+-10, 0.13403
+-5, 0.072978
+0, 0.010935
+5, -0.052225
+10, -0.11664
+15, -0.18247
+20, -0.24988
+25, -0.31907
+30, -0.39023
+35, -0.46359
+40, -0.53939
+45, -0.61787
+50, -0.69932
+55, -0.78402
+60, -0.87228
+65, -0.96441
+70, -1.0607
+ENDTABLE
+
+LOG_ENTRY Used Dataset: Suspension: Dive Angle (Caster Change); { HMC_OS } OS_frontDiveLeft_php
+#Library : Suspension: Dive Angle (Caster Change)
+#DataSet : OS_frontDiveLeft_php
+#Category: HMC_OS
+#FileID  : Dive_2ba48fac-dd6b-41b5-b4f7-96ad5d9207bf
+#Product : CarSim 2018.0
+#VehCode Dive
+
+END
+/F Suspensions\Longitudinal\SusX_1f511fd4-7ba0-41c1-8a03-1462c0ca6929.par`Suspension: Longitudinal Movement`OS_frontDxLeft_php`HMC_OS
+PARSFILE
+#FullDataName Suspension: Longitudinal Movement`OS_frontDxLeft_php`HMC_OS
+#CheckBox0 0    
+
+#RingCtrl0 SPLINE
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+SUSP_X_COMBINE ADD
+
+#DiagramOne0
+SUSP_X_TABLE SPLINE
+-60, -2.2717
+-59, -2.2312
+-58, -2.1908
+-57, -2.1504
+-56, -2.1101
+-55, -2.0699
+-54, -2.0297
+-53, -1.9896
+-52, -1.9495
+-51, -1.9095
+-50, -1.8696
+-49, -1.8298
+-48, -1.7901
+-47, -1.7504
+-46, -1.7109
+-45, -1.6714
+-44, -1.6321
+-43, -1.5928
+-42, -1.5536
+-41, -1.5145
+-40, -1.4756
+-39, -1.4367
+-38, -1.398
+-37, -1.3594
+-36, -1.3208
+-35, -1.2824
+-34, -1.2442
+-33, -1.206
+-32, -1.168
+-31, -1.1301
+-30, -1.0923
+-29, -1.0546
+-28, -1.0171
+-27, -0.97973
+-26, -0.94248
+-25, -0.90535
+-24, -0.86837
+-23, -0.83152
+-22, -0.79481
+-21, -0.75823
+-20, -0.7218
+-19, -0.68551
+-18, -0.64936
+-17, -0.61335
+-16, -0.57749
+-15, -0.54177
+-14, -0.50619
+-13, -0.47075
+-12, -0.43547
+-11, -0.40032
+-10, -0.36532
+-9, -0.33047
+-8, -0.29576
+-7, -0.26119
+-6, -0.22677
+-5, -0.19249
+-4, -0.15836
+-3, -0.12437
+-2, -0.090521
+-1, -0.056816
+0, -0.023252
+1, 0.010171
+2, 0.043454
+3, 0.076598
+4, 0.1096
+5, 0.14247
+6, 0.17521
+7, 0.2078
+8, 0.24027
+9, 0.2726
+10, 0.30481
+11, 0.33688
+12, 0.36883
+13, 0.40066
+14, 0.43236
+15, 0.46393
+16, 0.49539
+17, 0.52673
+18, 0.55796
+19, 0.58907
+20, 0.62008
+21, 0.65097
+22, 0.68176
+23, 0.71244
+24, 0.74303
+25, 0.77351
+26, 0.8039
+27, 0.8342
+28, 0.86441
+29, 0.89453
+30, 0.92457
+31, 0.95453
+32, 0.98441
+33, 1.0142
+34, 1.044
+35, 1.0736
+36, 1.1032
+37, 1.1328
+38, 1.1623
+39, 1.1917
+40, 1.2211
+41, 1.2505
+42, 1.2798
+43, 1.3091
+44, 1.3383
+45, 1.3675
+46, 1.3967
+47, 1.4259
+48, 1.4551
+49, 1.4842
+50, 1.5134
+51, 1.5425
+52, 1.5717
+53, 1.6009
+54, 1.63
+55, 1.6593
+56, 1.6885
+57, 1.7178
+58, 1.7471
+59, 1.7764
+60, 1.8058
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+#DiagramOne0
+SUSP_X_AXLE_TABLE SPLINE
+-60, -2.2717
+-59, -2.2312
+-58, -2.1908
+-57, -2.1504
+-56, -2.1101
+-55, -2.0699
+-54, -2.0297
+-53, -1.9896
+-52, -1.9495
+-51, -1.9095
+-50, -1.8696
+-49, -1.8298
+-48, -1.7901
+-47, -1.7504
+-46, -1.7109
+-45, -1.6714
+-44, -1.6321
+-43, -1.5928
+-42, -1.5536
+-41, -1.5145
+-40, -1.4756
+-39, -1.4367
+-38, -1.398
+-37, -1.3594
+-36, -1.3208
+-35, -1.2824
+-34, -1.2442
+-33, -1.206
+-32, -1.168
+-31, -1.1301
+-30, -1.0923
+-29, -1.0546
+-28, -1.0171
+-27, -0.97973
+-26, -0.94248
+-25, -0.90535
+-24, -0.86837
+-23, -0.83152
+-22, -0.79481
+-21, -0.75823
+-20, -0.7218
+-19, -0.68551
+-18, -0.64936
+-17, -0.61335
+-16, -0.57749
+-15, -0.54177
+-14, -0.50619
+-13, -0.47075
+-12, -0.43547
+-11, -0.40032
+-10, -0.36532
+-9, -0.33047
+-8, -0.29576
+-7, -0.26119
+-6, -0.22677
+-5, -0.19249
+-4, -0.15836
+-3, -0.12437
+-2, -0.090521
+-1, -0.056816
+0, -0.023252
+1, 0.010171
+2, 0.043454
+3, 0.076598
+4, 0.1096
+5, 0.14247
+6, 0.17521
+7, 0.2078
+8, 0.24027
+9, 0.2726
+10, 0.30481
+11, 0.33688
+12, 0.36883
+13, 0.40066
+14, 0.43236
+15, 0.46393
+16, 0.49539
+17, 0.52673
+18, 0.55796
+19, 0.58907
+20, 0.62008
+21, 0.65097
+22, 0.68176
+23, 0.71244
+24, 0.74303
+25, 0.77351
+26, 0.8039
+27, 0.8342
+28, 0.86441
+29, 0.89453
+30, 0.92457
+31, 0.95453
+32, 0.98441
+33, 1.0142
+34, 1.044
+35, 1.0736
+36, 1.1032
+37, 1.1328
+38, 1.1623
+39, 1.1917
+40, 1.2211
+41, 1.2505
+42, 1.2798
+43, 1.3091
+44, 1.3383
+45, 1.3675
+46, 1.3967
+47, 1.4259
+48, 1.4551
+49, 1.4842
+50, 1.5134
+51, 1.5425
+52, 1.5717
+53, 1.6009
+54, 1.63
+55, 1.6593
+56, 1.6885
+57, 1.7178
+58, 1.7471
+59, 1.7764
+60, 1.8058
+ENDTABLE
+
+LOG_ENTRY Used Dataset: Suspension: Longitudinal Movement; { HMC_OS } OS_frontDxLeft_php
+#Library : Suspension: Longitudinal Movement
+#DataSet : OS_frontDxLeft_php
+#Category: HMC_OS
+#FileID  : SusX_1f511fd4-7ba0-41c1-8a03-1462c0ca6929
+#Product : CarSim 2018.0
+#VehCode Longitudinal Movement
+
+END
+/F Suspensions\Camber\Camber_3146d2e8-437c-4420-9601-c6f109622033.par`Suspension: Camber Angle`OS_Front_CamberLeft_php`HMC_OS
+PARSFILE
+#FullDataName Suspension: Camber Angle`OS_Front_CamberLeft_php`HMC_OS
+#CheckBox0 0    
+
+#RingCtrl0 SPLINE
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+CAMBER_COMBINE ADD
+#DiagramOne0
+CAMBER_TABLE SPLINE
+-60, 1.1386
+-55, 1.0156
+-50, 0.89806
+-45, 0.78577
+-40, 0.67861
+-35, 0.5765
+-30, 0.47933
+-25, 0.38702
+-20, 0.29951
+-15, 0.21675
+-10, 0.13869
+-5, 0.065312
+0, -0.0033972
+5, -0.067435
+10, -0.12679
+15, -0.18142
+20, -0.2313
+25, -0.27636
+30, -0.31653
+35, -0.35173
+40, -0.38187
+45, -0.40682
+50, -0.42647
+55, -0.44067
+60, -0.44927
+65, -0.45211
+70, -0.44901
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+
+
+LOG_ENTRY Used Dataset: Suspension: Camber Angle; { HMC_OS } OS_Front_CamberLeft_php
+#Library : Suspension: Camber Angle
+#DataSet : OS_Front_CamberLeft_php
+#Category: HMC_OS
+#FileID  : Camber_3146d2e8-437c-4420-9601-c6f109622033
+#Product : CarSim 2018.0
+#VehCode Camber
+
+END
+/F Suspensions\Lateral\LatJnc_dd4debe1-024a-4be5-8947-b2a88d7338d8.par`Suspension: Lateral Movement Due to Jounce`OS_FrontDyLeft_php`HMC_OS
+PARSFILE
+#FullDataName Suspension: Lateral Movement Due to Jounce`OS_FrontDyLeft_php`HMC_OS
+#CheckBox0 0    
+
+#RingCtrl0 SPLINE
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+SUSP_LAT_COMBINE ADD
+#DiagramOne0
+SUSP_LAT_TABLE SPLINE
+-60, 5.9211
+-55, 5.1111
+-50, 4.3581
+-45, 3.6626
+-40, 3.0247
+-35, 2.4447
+-30, 1.9227
+-25, 1.4588
+-20, 1.053
+-15, 0.70513
+-10, 0.41513
+-5, 0.18277
+0, 0.00778
+5, -0.11019
+10, -0.17156
+15, -0.17681
+20, -0.12648
+25, -0.021194
+30, 0.13836
+35, 0.35143
+40, 0.61719
+45, 0.93475
+50, 1.3031
+55, 1.7214
+60, 2.1883
+65, 2.7028
+70, 3.2636
+ENDTABLE
+SUSP_Y_AXLE_ROLL_COMBINE ADD ! in case this is for a solid axle
+#DiagramOne0
+SUSP_LAT_AXLE_JOUNCE_TABLE SPLINE
+-60, 5.9211
+-55, 5.1111
+-50, 4.3581
+-45, 3.6626
+-40, 3.0247
+-35, 2.4447
+-30, 1.9227
+-25, 1.4588
+-20, 1.053
+-15, 0.70513
+-10, 0.41513
+-5, 0.18277
+0, 0.00778
+5, -0.11019
+10, -0.17156
+15, -0.17681
+20, -0.12648
+25, -0.021194
+30, 0.13836
+35, 0.35143
+40, 0.61719
+45, 0.93475
+50, 1.3031
+55, 1.7214
+60, 2.1883
+65, 2.7028
+70, 3.2636
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+
+
+LOG_ENTRY Used Dataset: Suspension: Lateral Movement Due to Jounce; { HMC_OS } OS_FrontDyLeft_php
+#Library : Suspension: Lateral Movement Due to Jounce
+#DataSet : OS_FrontDyLeft_php
+#Category: HMC_OS
+#FileID  : LatJnc_dd4debe1-024a-4be5-8947-b2a88d7338d8
+#Product : CarSim 2018.0
+#VehCode Lateral Movement
+
+END
+/F Suspensions\Toe\Toe_47176cac-2340-4ce9-aa88-ba0add915023.par`Suspension: Toe Angle`OS_FrontToeLeft_php`HMC_OS
+PARSFILE
+#FullDataName Suspension: Toe Angle`OS_FrontToeLeft_php`HMC_OS
+#CheckBox0 0    
+
+#RingCtrl0 SPLINE
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+TOE_COMBINE ADD
+#DiagramOne0
+TOE_TABLE SPLINE
+-60, 0.10666
+-55, 0.10439
+-50, 0.10086
+-45, 0.096107
+-40, 0.09016
+-35, 0.083046
+-30, 0.074783
+-25, 0.06538
+-20, 0.054841
+-15, 0.043158
+-10, 0.03032
+-5, 0.016306
+0, 0.0010862
+5, -0.015374
+10, -0.033118
+15, -0.052197
+20, -0.07267
+25, -0.094603
+30, -0.11807
+35, -0.14315
+40, -0.16994
+45, -0.19853
+50, -0.22903
+55, -0.26154
+60, -0.29619
+65, -0.33311
+70, -0.37242
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+
+
+LOG_ENTRY Used Dataset: Suspension: Toe Angle; { HMC_OS } OS_FrontToeLeft_php
+#Library : Suspension: Toe Angle
+#DataSet : OS_FrontToeLeft_php
+#Category: HMC_OS
+#FileID  : Toe_47176cac-2340-4ce9-aa88-ba0add915023
+#Product : CarSim 2018.0
+#VehCode Toe
+
+END
+/F Suspensions\Springs\Spring_52061214-96c3-4234-9e09-024c8d44ba86.par`Suspension: Spring`OS_FrontWheelrateLeft_php`HMC_OS
+PARSFILE
+#FullDataName Suspension: Spring`OS_FrontWheelrateLeft_php`HMC_OS
+#RingCtrl0 SPLINE
+#DiagramOne0
+FS_COMP_TABLE SPLINE
+-60, 2696.2
+-55, 2895.3
+-50, 3074.9
+-45, 3237.1
+-40, 3384
+-35, 3517.8
+-30, 3641
+-25, 3756
+-20, 3865.5
+-15, 3972.2
+-10, 4079.2
+-5, 4189.3
+0, 4305.9
+5, 4432.1
+10, 4571.5
+15, 4727.5
+20, 4903.9
+25, 5104.5
+30, 5333.1
+35, 5594
+40, 5891.2
+45, 6229.2
+50, 6612.4
+55, 7045.4
+60, 7532.9
+65, 8079.8
+70, 8691
+ENDTABLE
+#DiagramOne1
+FS_EXT_TABLE SPLINE
+-60, 2696.2
+-55, 2895.3
+-50, 3074.9
+-45, 3237.1
+-40, 3384
+-35, 3517.8
+-30, 3641
+-25, 3756
+-20, 3865.5
+-15, 3972.2
+-10, 4079.2
+-5, 4189.3
+0, 4305.9
+5, 4432.1
+10, 4571.5
+15, 4727.5
+20, 4903.9
+25, 5104.5
+30, 5333.1
+35, 5594
+40, 5891.2
+45, 6229.2
+50, 6612.4
+55, 7045.4
+60, 7532.9
+65, 8079.8
+70, 8691
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+SPRING_COMP_BETA 2
+SPRING_EXT_BETA 2
+
+
+LOG_ENTRY Used Dataset: Suspension: Spring; { HMC_OS } OS_FrontWheelrateLeft_php
+#Library : Suspension: Spring
+#DataSet : OS_FrontWheelrateLeft_php
+#Category: HMC_OS
+#FileID  : Spring_52061214-96c3-4234-9e09-024c8d44ba86
+#Product : CarSim 2018.0
+#VehCode Spring Alone
+
+END
+/F Suspensions\Aux_Roll\AuxMx_4e647caf-d341-4c16-8367-5007e8297083.par`Suspension: Auxiliary Roll Moment`OS_AuxiliaryRoll_php`HMC_OS
+PARSFILE
+#FullDataName Suspension: Auxiliary Roll Moment`OS_AuxiliaryRoll_php`HMC_OS
+#CheckBox0 0    
+
+#RingCtrl0 COEFFICIENT
+#RingCtrl1 CONSTANT
+#RingCtrl2 MULTIPLY
+MX_AUX_COMBINE MULTIPLY
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+MX_AUX_COEFFICIENT 1016.47
+*SCALAR 1016.47
+
+
+LOG_ENTRY Used Dataset: Suspension: Auxiliary Roll Moment; { HMC_OS } OS_AuxiliaryRoll_php
+#Library : Suspension: Auxiliary Roll Moment
+#DataSet : OS_AuxiliaryRoll_php
+#Category: HMC_OS
+#FileID  : AuxMx_4e647caf-d341-4c16-8367-5007e8297083
+#Product : CarSim 2018.0
+#VehCode Aux. Roll Moment
+
+END
+/F Suspensions\Dive\Dive_7ed36fec-c8c0-4b5b-9393-bd4b51e7a385.par`Suspension: Dive Angle (Caster Change)`OS_RearDiveLeft_php`HMC_OS
+PARSFILE
+#FullDataName Suspension: Dive Angle (Caster Change)`OS_RearDiveLeft_php`HMC_OS
+#CheckBox0 0    
+
+#RingCtrl0 SPLINE
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+SUSP_DIVE_COMBINE ADD
+
+#DiagramOne0
+SUSP_DIVE_TABLE SPLINE
+-60, -8.502
+-55, -7.7851
+-50, -7.0717
+-45, -6.3612
+-40, -5.6528
+-35, -4.9462
+-30, -4.2408
+-25, -3.5363
+-20, -2.8323
+-15, -2.1284
+-10, -1.4245
+-5, -0.7204
+0, -0.015946
+5, 0.68891
+10, 1.3942
+15, 2.0998
+20, 2.8057
+25, 3.5117
+30, 4.2175
+35, 4.9229
+40, 5.6276
+45, 6.3311
+50, 7.033
+55, 7.7328
+60, 8.4299
+65, 9.1237
+70, 9.8135
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+#DiagramOne0
+SUSP_DIVE_AXLE_TABLE SPLINE
+-60, -8.502
+-55, -7.7851
+-50, -7.0717
+-45, -6.3612
+-40, -5.6528
+-35, -4.9462
+-30, -4.2408
+-25, -3.5363
+-20, -2.8323
+-15, -2.1284
+-10, -1.4245
+-5, -0.7204
+0, -0.015946
+5, 0.68891
+10, 1.3942
+15, 2.0998
+20, 2.8057
+25, 3.5117
+30, 4.2175
+35, 4.9229
+40, 5.6276
+45, 6.3311
+50, 7.033
+55, 7.7328
+60, 8.4299
+65, 9.1237
+70, 9.8135
+ENDTABLE
+
+LOG_ENTRY Used Dataset: Suspension: Dive Angle (Caster Change); { HMC_OS } OS_RearDiveLeft_php
+#Library : Suspension: Dive Angle (Caster Change)
+#DataSet : OS_RearDiveLeft_php
+#Category: HMC_OS
+#FileID  : Dive_7ed36fec-c8c0-4b5b-9393-bd4b51e7a385
+#Product : CarSim 2018.0
+#VehCode Dive
+
+END
+/F Suspensions\Longitudinal\SusX_b1760321-081b-4d86-9da7-5fd6408dab54.par`Suspension: Longitudinal Movement`OS_RearDxLeft_php`HMC_OS
+PARSFILE
+#FullDataName Suspension: Longitudinal Movement`OS_RearDxLeft_php`HMC_OS
+#CheckBox0 0    
+
+#RingCtrl0 SPLINE
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+SUSP_X_COMBINE ADD
+
+#DiagramOne0
+SUSP_X_TABLE SPLINE
+-60, 3.189
+-55, 2.5877
+-50, 2.0492
+-45, 1.573
+-40, 1.1585
+-35, 0.80529
+-30, 0.51305
+-25, 0.28143
+-20, 0.11018
+-15, -0.00091567
+-10, -0.052019
+-5, -0.043227
+0, 0.025411
+5, 0.1539
+10, 0.34231
+15, 0.59076
+20, 0.8994
+25, 1.2685
+30, 1.6983
+35, 2.1891
+40, 2.7413
+45, 3.3555
+50, 4.0319
+55, 4.7714
+60, 5.5743
+65, 6.4414
+70, 7.3735
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+#DiagramOne0
+SUSP_X_AXLE_TABLE SPLINE
+-60, 3.189
+-55, 2.5877
+-50, 2.0492
+-45, 1.573
+-40, 1.1585
+-35, 0.80529
+-30, 0.51305
+-25, 0.28143
+-20, 0.11018
+-15, -0.00091567
+-10, -0.052019
+-5, -0.043227
+0, 0.025411
+5, 0.1539
+10, 0.34231
+15, 0.59076
+20, 0.8994
+25, 1.2685
+30, 1.6983
+35, 2.1891
+40, 2.7413
+45, 3.3555
+50, 4.0319
+55, 4.7714
+60, 5.5743
+65, 6.4414
+70, 7.3735
+ENDTABLE
+
+LOG_ENTRY Used Dataset: Suspension: Longitudinal Movement; { HMC_OS } OS_RearDxLeft_php
+#Library : Suspension: Longitudinal Movement
+#DataSet : OS_RearDxLeft_php
+#Category: HMC_OS
+#FileID  : SusX_b1760321-081b-4d86-9da7-5fd6408dab54
+#Product : CarSim 2018.0
+#VehCode Longitudinal Movement
+
+END
+/F Suspensions\Camber\Camber_ad57209f-175d-4456-975a-94906018a80a.par`Suspension: Camber Angle`OS_RearCamberLeft_php`HMC_OS
+PARSFILE
+#FullDataName Suspension: Camber Angle`OS_RearCamberLeft_php`HMC_OS
+#CheckBox0 0    
+
+#RingCtrl0 SPLINE
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+CAMBER_COMBINE ADD
+#DiagramOne0
+CAMBER_TABLE SPLINE
+-60, 0.012328
+-55, 0.010894
+-50, 0.0092051
+-45, 0.0074008
+-40, 0.0055986
+-35, 0.0038939
+-30, 0.0023611
+-25, 0.0010526
+-20, -7.8e-07
+-15, -0.00078978
+-10, -0.0013268
+-5, -0.0016458
+0, -0.0018026
+5, -0.0018743
+10, -0.00196
+15, -0.0021801
+20, -0.0026768
+25, -0.003614
+30, -0.005177
+35, -0.007573
+40, -0.011031
+45, -0.0158
+50, -0.022154
+55, -0.030385
+60, -0.040809
+65, -0.053762
+70, -0.069603
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+
+
+LOG_ENTRY Used Dataset: Suspension: Camber Angle; { HMC_OS } OS_RearCamberLeft_php
+#Library : Suspension: Camber Angle
+#DataSet : OS_RearCamberLeft_php
+#Category: HMC_OS
+#FileID  : Camber_ad57209f-175d-4456-975a-94906018a80a
+#Product : CarSim 2018.0
+#VehCode Camber
+
+END
+/F Suspensions\Lateral\LatJnc_cfdcdd58-3dab-4998-b0f3-fe3af867394f.par`Suspension: Lateral Movement Due to Jounce`OS_RearDyLeft_php`HMC_OS
+PARSFILE
+#FullDataName Suspension: Lateral Movement Due to Jounce`OS_RearDyLeft_php`HMC_OS
+#CheckBox0 0    
+
+#RingCtrl0 SPLINE
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+SUSP_LAT_COMBINE ADD
+#DiagramOne0
+SUSP_LAT_TABLE SPLINE
+-60, 0.13847
+-55, 0.12299
+-50, 0.10914
+-45, 0.096565
+-40, 0.084957
+-35, 0.074058
+-30, 0.063652
+-25, 0.053572
+-20, 0.043695
+-15, 0.033945
+-10, 0.02429
+-5, 0.014746
+0, 0.005375
+5, -0.0037172
+10, -0.012377
+15, -0.020406
+20, -0.027559
+25, -0.033546
+30, -0.03803
+35, -0.040628
+40, -0.040911
+45, -0.038407
+50, -0.032594
+55, -0.022906
+60, -0.0087308
+65, 0.010589
+70, 0.035757
+ENDTABLE
+SUSP_Y_AXLE_ROLL_COMBINE ADD ! in case this is for a solid axle
+#DiagramOne0
+SUSP_LAT_AXLE_JOUNCE_TABLE SPLINE
+-60, 0.13847
+-55, 0.12299
+-50, 0.10914
+-45, 0.096565
+-40, 0.084957
+-35, 0.074058
+-30, 0.063652
+-25, 0.053572
+-20, 0.043695
+-15, 0.033945
+-10, 0.02429
+-5, 0.014746
+0, 0.005375
+5, -0.0037172
+10, -0.012377
+15, -0.020406
+20, -0.027559
+25, -0.033546
+30, -0.03803
+35, -0.040628
+40, -0.040911
+45, -0.038407
+50, -0.032594
+55, -0.022906
+60, -0.0087308
+65, 0.010589
+70, 0.035757
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+
+
+LOG_ENTRY Used Dataset: Suspension: Lateral Movement Due to Jounce; { HMC_OS } OS_RearDyLeft_php
+#Library : Suspension: Lateral Movement Due to Jounce
+#DataSet : OS_RearDyLeft_php
+#Category: HMC_OS
+#FileID  : LatJnc_cfdcdd58-3dab-4998-b0f3-fe3af867394f
+#Product : CarSim 2018.0
+#VehCode Lateral Movement
+
+END
+/F Suspensions\Toe\Toe_2c49cc65-2516-4bb6-9096-13ccc7965f12.par`Suspension: Toe Angle`OS_RearToeLeft_php`HMC_OS
+PARSFILE
+#FullDataName Suspension: Toe Angle`OS_RearToeLeft_php`HMC_OS
+#CheckBox0 0    
+
+#RingCtrl0 SPLINE
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+TOE_COMBINE ADD
+#DiagramOne0
+TOE_TABLE SPLINE
+-60, -0.12394
+-55, -0.11451
+-50, -0.10492
+-45, -0.095189
+-40, -0.085324
+-35, -0.075337
+-30, -0.065238
+-25, -0.055036
+-20, -0.044742
+-15, -0.034365
+-10, -0.023912
+-5, -0.013392
+0, -0.0028135
+5, 0.0078173
+10, 0.018493
+15, 0.029208
+20, 0.039956
+25, 0.050731
+30, 0.061529
+35, 0.072344
+40, 0.083173
+45, 0.094012
+50, 0.10486
+55, 0.11571
+60, 0.12656
+65, 0.13741
+70, 0.14825
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+
+
+LOG_ENTRY Used Dataset: Suspension: Toe Angle; { HMC_OS } OS_RearToeLeft_php
+#Library : Suspension: Toe Angle
+#DataSet : OS_RearToeLeft_php
+#Category: HMC_OS
+#FileID  : Toe_2c49cc65-2516-4bb6-9096-13ccc7965f12
+#Product : CarSim 2018.0
+#VehCode Toe
+
+END
+/F Suspensions\Springs\Spring_83af9139-a646-4e07-8c2f-442e15cb06ba.par`Suspension: Spring`OS_Rearwheelrate_Left_php`HMC_OS
+PARSFILE
+#FullDataName Suspension: Spring`OS_Rearwheelrate_Left_php`HMC_OS
+#RingCtrl0 SPLINE
+#DiagramOne0
+FS_COMP_TABLE SPLINE
+-60, 1297.7
+-55, 1390
+-50, 1493
+-45, 1603.2
+-40, 1717.7
+-35, 1833.9
+-30, 1949.9
+-25, 2064.3
+-20, 2176.1
+-15, 2284.9
+-10, 2390.6
+-5, 2493.8
+0, 2595.7
+5, 2697.7
+10, 2802
+15, 2911
+20, 3028
+25, 3156.4
+30, 3300.4
+35, 3464.4
+40, 3653.8
+45, 3873.9
+50, 4131
+55, 4431.6
+60, 4782.8
+65, 5192.4
+70, 5668.3
+ENDTABLE
+#DiagramOne1
+FS_EXT_TABLE SPLINE
+-60, 1297.7
+-55, 1390
+-50, 1493
+-45, 1603.2
+-40, 1717.7
+-35, 1833.9
+-30, 1949.9
+-25, 2064.3
+-20, 2176.1
+-15, 2284.9
+-10, 2390.6
+-5, 2493.8
+0, 2595.7
+5, 2697.7
+10, 2802
+15, 2911
+20, 3028
+25, 3156.4
+30, 3300.4
+35, 3464.4
+40, 3653.8
+45, 3873.9
+50, 4131
+55, 4431.6
+60, 4782.8
+65, 5192.4
+70, 5668.3
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+SPRING_COMP_BETA 2
+SPRING_EXT_BETA 2
+
+
+LOG_ENTRY Used Dataset: Suspension: Spring; { HMC_OS } OS_Rearwheelrate_Left_php
+#Library : Suspension: Spring
+#DataSet : OS_Rearwheelrate_Left_php
+#Category: HMC_OS
+#FileID  : Spring_83af9139-a646-4e07-8c2f-442e15cb06ba
+#Product : CarSim 2018.0
+#VehCode Spring Alone
+
+END
+/F Suspensions\Aux_Roll\AuxMx_54f7ff04-49c6-4009-b37f-076592fe9bb4.par`Suspension: Auxiliary Roll Moment`OS_RearAuxiliaryRollMoment_php`HMC_OS
+PARSFILE
+#FullDataName Suspension: Auxiliary Roll Moment`OS_RearAuxiliaryRollMoment_php`HMC_OS
+#CheckBox0 0    
+
+#RingCtrl0 COEFFICIENT
+#RingCtrl1 CONSTANT
+#RingCtrl2 MULTIPLY
+MX_AUX_COMBINE MULTIPLY
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+MX_AUX_COEFFICIENT 321
+*SCALAR 321
+
+
+LOG_ENTRY Used Dataset: Suspension: Auxiliary Roll Moment; { HMC_OS } OS_RearAuxiliaryRollMoment_php
+#Library : Suspension: Auxiliary Roll Moment
+#DataSet : OS_RearAuxiliaryRollMoment_php
+#Category: HMC_OS
+#FileID  : AuxMx_54f7ff04-49c6-4009-b37f-076592fe9bb4
+#Product : CarSim 2018.0
+#VehCode Aux. Roll Moment
+
+END
+/F Steering\Str_Wheel_Tq\TqSW_bad7d9a0-96d1-4ca5-ae5f-13dbfcf03227.par`Steering Wheel Torque`OS_SWT_php`HMC_OS
+PARSFILE
+#FullDataName Steering Wheel Torque`OS_SWT_php`HMC_OS
+#CheckBox0 0    
+
+#RingCtrl0 COEFFICIENT
+#RingCtrl1 CONSTANT
+#RingCtrl2 MULTIPLY
+M_SW_COMBINE MULTIPLY
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+M_SW_COEFFICIENT 1//18
+*SCALAR 1//18
+
+
+LOG_ENTRY Used Dataset: Steering Wheel Torque; { HMC_OS } OS_SWT_php
+#Library : Steering Wheel Torque
+#DataSet : OS_SWT_php
+#Category: HMC_OS
+#FileID  : TqSW_bad7d9a0-96d1-4ca5-ae5f-13dbfcf03227
+#Product : CarSim 2018.0
+#VehCode Steering Wheel Torque
+
+END
+/F Steering\Compliance\StrCmp_74d91c74-87d1-468e-b160-108a0ce43935.par`Steering System: Compliance`OS_No Steer Compliance_php`HMC_OS
+PARSFILE
+#FullDataName Steering System: Compliance`OS_No Steer Compliance_php`HMC_OS
+#CheckBox0 0    
+
+#RingCtrl0 CONSTANT
+#RadioCtrl0 0    
+
+STEER_COMP_CONSTANT 0
+*SCALAR 0
+
+
+LOG_ENTRY Used Dataset: Steering System: Compliance; { HMC_OS } OS_No Steer Compliance_php
+#Library : Steering System: Compliance
+#DataSet : OS_No Steer Compliance_php
+#Category: HMC_OS
+#FileID  : StrCmp_74d91c74-87d1-468e-b160-108a0ce43935
+#Product : CarSim 2018.0
+#VehCode Steering Compliance
+
+END
+/F Steering\Kinematics\StrKin_1f4653f9-2a9d-4aa4-b698-12b32a22ead6.par`Steering System: Kinematics for One Wheel`OS_SteeringLeft_php`HMC_OS
+PARSFILE
+#FullDataName Steering System: Kinematics for One Wheel`OS_SteeringLeft_php`HMC_OS
+#CheckBox0 0    
+
+#RingCtrl0 LINEAR_FLAT
+#RadioCtrl0 0    
+
+#DiagramOne0
+STEER_KIN_TABLE LINEAR_FLAT
+-36.76884, -34.193
+-36.0879355556, -33.514
+-35.4070311111, -32.84
+-34.7261266667, -32.168
+-34.0452222222, -31.501
+-33.3643177778, -30.837
+-32.6834133333, -30.176
+-32.0025088889, -29.518
+-31.3216044444, -28.864
+-30.6407, -28.212
+-29.9597955556, -27.564
+-29.2788911111, -26.918
+-28.5979866667, -26.274
+-27.9170822222, -25.634
+-27.2361777778, -24.995
+-26.5552733333, -24.359
+-25.8743688889, -23.725
+-25.1934644445, -23.092
+-24.51256, -22.462
+-23.8316555556, -21.834
+-23.1507511111, -21.207
+-22.4698466667, -20.581
+-21.7889422222, -19.957
+-21.1080377778, -19.335
+-20.4271333333, -18.713
+-19.7462288889, -18.093
+-19.0653244445, -17.473
+-18.38442, -16.854
+-17.7035155556, -16.236
+-17.0226111111, -15.618
+-16.3417066667, -15.001
+-15.6608022222, -14.384
+-14.9798977778, -13.768
+-14.2989933333, -13.151
+-13.6180888889, -12.534
+-12.9371844445, -11.917
+-12.25628, -11.3
+-11.5753755556, -10.682
+-10.8944711111, -10.064
+-10.2135666667, -9.4453
+-9.53266222224, -8.8256
+-8.8517577778, -8.2051
+-8.17085333335, -7.5835
+-7.48994888891, -6.9608
+-6.80904444446, -6.3367
+-6.12814000002, -5.7113
+-5.44723555558, -5.0844
+-4.76633111113, -4.4559
+-4.08542666669, -3.8256
+-3.40452222224, -3.1934
+-2.7236177778, -2.5592
+-2.04271333336, -1.9229
+-1.36180888891, -1.2843
+-0.680904444468, -0.6434
+-2.39837039118e-11, -2.2704e-11
+0.68090444442, 0.646
+1.36180888886, 1.2947
+2.04271333331, 1.9463
+2.72361777775, 2.6009
+3.4045222222, 3.2585
+4.08542666664, 3.9193
+4.76633111108, 4.5835
+5.44723555553, 5.2511
+6.12813999997, 5.9223
+6.80904444442, 6.5972
+7.48994888886, 7.2759
+8.1708533333, 7.9586
+8.85175777775, 8.6453
+9.53266222219, 9.3362
+10.2135666666, 10.031
+10.8944711111, 10.731
+11.5753755555, 11.435
+12.25628, 12.144
+12.9371844444, 12.858
+13.6180888889, 13.576
+14.2989933333, 14.3
+14.9798977777, 15.028
+15.6608022222, 15.762
+16.3417066666, 16.502
+17.0226111111, 17.246
+17.7035155555, 17.997
+18.38442, 18.753
+19.0653244444, 19.515
+19.7462288889, 20.283
+20.4271333333, 21.057
+21.1080377777, 21.838
+21.7889422222, 22.625
+22.4698466666, 23.418
+23.1507511111, 24.218
+23.8316555555, 25.025
+24.51256, 25.838
+25.1934644444, 26.658
+25.8743688888, 27.486
+26.5552733333, 28.321
+27.2361777777, 29.163
+27.9170822222, 30.012
+28.5979866666, 30.869
+29.2788911111, 31.734
+29.9597955555, 32.607
+30.6407, 33.487
+31.3216044444, 34.376
+32.0025088888, 35.272
+32.6834133333, 36.177
+33.3643177777, 37.091
+34.0452222222, 38.013
+34.7261266666, 38.943
+35.4070311111, 39.883
+36.0879355555, 40.831
+36.76884, 41.788
+ENDTABLE
+
+
+LOG_ENTRY Used Dataset: Steering System: Kinematics for One Wheel; { HMC_OS } OS_SteeringLeft_php
+#Library : Steering System: Kinematics for One Wheel
+#DataSet : OS_SteeringLeft_php
+#Category: HMC_OS
+#FileID  : StrKin_1f4653f9-2a9d-4aa4-b698-12b32a22ead6
+#Product : CarSim 2018.0
+#VehCode Steering Kinematics
+
+END
+/F Steering\Kinematics\StrKin_45a2e2f7-7883-4ed2-bc01-1b689173c2d0.par`Steering System: Kinematics for One Wheel`OS_SteeringRight_php`HMC_OS
+PARSFILE
+#FullDataName Steering System: Kinematics for One Wheel`OS_SteeringRight_php`HMC_OS
+#CheckBox0 0    
+
+#RingCtrl0 LINEAR_FLAT
+#RadioCtrl0 0    
+
+#DiagramOne0
+STEER_KIN_TABLE LINEAR_FLAT
+-36.76884, -41.468
+-36.0879355556, -40.52
+-35.4070311111, -39.58
+-34.7261266667, -38.649
+-34.0452222222, -37.727
+-33.3643177778, -36.813
+-32.6834133333, -35.908
+-32.0025088889, -35.011
+-31.3216044444, -34.122
+-30.6407, -33.242
+-29.9597955556, -32.369
+-29.2788911111, -31.504
+-28.5979866667, -30.647
+-27.9170822222, -29.797
+-27.2361777778, -28.955
+-26.5552733333, -28.12
+-25.8743688889, -27.293
+-25.1934644445, -26.472
+-24.51256, -25.659
+-23.8316555556, -24.852
+-23.1507511111, -24.052
+-22.4698466667, -23.259
+-21.7889422222, -22.472
+-21.1080377778, -21.692
+-20.4271333333, -20.918
+-19.7462288889, -20.15
+-19.0653244445, -19.388
+-18.38442, -18.631
+-17.7035155556, -17.881
+-17.0226111111, -17.136
+-16.3417066667, -16.397
+-15.6608022222, -15.663
+-14.9798977778, -14.935
+-14.2989933333, -14.211
+-13.6180888889, -13.493
+-12.9371844445, -12.78
+-12.25628, -12.071
+-11.5753755556, -11.367
+-10.8944711111, -10.668
+-10.2135666667, -9.9731
+-9.53266222224, -9.2825
+-8.8517577778, -8.5961
+-8.17085333335, -7.9138
+-7.48994888891, -7.2355
+-6.80904444446, -6.5609
+-6.12814000002, -5.8901
+-5.44723555558, -5.2229
+-4.76633111113, -4.5592
+-4.08542666669, -3.8988
+-3.40452222224, -3.2416
+-2.7236177778, -2.5876
+-2.04271333336, -1.9365
+-1.36180888891, -1.2883
+-0.680904444468, -0.64283
+-2.39837039118e-11, -2.2597e-11
+0.68090444442, 0.64033
+1.36180888886, 1.2783
+2.04271333331, 1.914
+2.72361777775, 2.5475
+3.4045222222, 3.179
+4.08542666664, 3.8087
+4.76633111108, 4.4365
+5.44723555553, 5.0627
+6.12813999997, 5.6874
+6.80904444442, 6.3106
+7.48994888886, 6.9325
+8.1708533333, 7.5533
+8.85175777775, 8.173
+9.53266222219, 8.7918
+10.2135666666, 9.4098
+10.8944711111, 10.027
+11.5753755555, 10.644
+12.25628, 11.26
+12.9371844444, 11.876
+13.6180888889, 12.492
+14.2989933333, 13.107
+14.9798977777, 13.723
+15.6608022222, 14.339
+16.3417066666, 14.955
+17.0226111111, 15.572
+17.7035155555, 16.189
+18.38442, 16.806
+19.0653244444, 17.425
+19.7462288889, 18.044
+20.4271333333, 18.664
+21.1080377777, 19.286
+21.7889422222, 19.909
+22.4698466666, 20.533
+23.1507511111, 21.158
+23.8316555555, 21.785
+24.51256, 22.414
+25.1934644444, 23.045
+25.8743688888, 23.678
+26.5552733333, 24.313
+27.2361777777, 24.95
+27.9170822222, 25.589
+28.5979866666, 26.231
+29.2788911111, 26.875
+29.9597955555, 27.522
+30.6407, 28.172
+31.3216044444, 28.825
+32.0025088888, 29.481
+32.6834133333, 30.14
+33.3643177777, 30.802
+34.0452222222, 31.468
+34.7261266666, 32.137
+35.4070311111, 32.81
+36.0879355555, 33.487
+36.76884, 34.168
+ENDTABLE
+
+
+LOG_ENTRY Used Dataset: Steering System: Kinematics for One Wheel; { HMC_OS } OS_SteeringRight_php
+#Library : Steering System: Kinematics for One Wheel
+#DataSet : OS_SteeringRight_php
+#Category: HMC_OS
+#FileID  : StrKin_45a2e2f7-7883-4ed2-bc01-1b689173c2d0
+#Product : CarSim 2018.0
+#VehCode Steering Kinematics
+
+END

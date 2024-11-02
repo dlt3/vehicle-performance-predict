@@ -1,0 +1,6865 @@
+/! VS Export Parsfile v3.1.0, 70 files.
+/! 2019-07-05T11:54:28
+/!
+/!
+/F Vehicles\Assembly\Vehicle_4c6cdd60-8657-47bb-b262-19fadc6953f2.par`Vehicle: Assembly`PASSAT_NA_php`VW_PASSAT
+PARSFILE
+#FullDataName Vehicle: Assembly`PASSAT_NA_php`VW_PASSAT
+#VehCode Ind_Ind
+#CheckBox0 0    
+#CheckBox1 0    
+
+#RingCtrl0 1
+OPT_PT 1
+#RingCtrl1 1
+#RingCtrl2 1
+#RingCtrl3 0
+
+* Front components
+iaxle 1
+symbol_push  <<axle>> 1
+PARSFILE Suspensions\Kin_Indy\KinInd_98e1dfaa-d604-49d0-97d9-d639ece189b4.par
+#BlueLink19 Suspension: Independent System Kinematics`PASSAT_NA_Frt.SUS_php` VW_PASSAT` , Kinematics`KinInd_98e1dfaa-d604-49d0-97d9-d639ece189b4
+
+PARSFILE Suspensions\Compliance\CmpInd_9c454ed1-1aab-4a1d-ad72-d1b421415df4.par
+#BlueLink16 Suspension: Independent Compliance, Springs, and Dampers`PASSAT_NA_Frt.SDC_php` VW_PASSAT` , Compliance`CmpInd_9c454ed1-1aab-4a1d-ad72-d1b421415df4
+
+
+OPT_ALL_FOUR_TIRES_ALIKE 1
+
+* LF tire
+iside 1
+WRITE_ADD_REFERENCE_FRAME_WHEEL
+symbol_push  <<tire>> L<<axle>>
+PARSFILE Tires\Tire\Tire_226ce359-1dc5-472f-9e34-ec3debbea095.par
+#BlueLink999 Tire`215//55 R17` Touring Tires` , Tire`Tire_226ce359-1dc5-472f-9e34-ec3debbea095
+
+
+* RF tire
+iside 2
+WRITE_ADD_REFERENCE_FRAME_WHEEL
+symbol_push  <<tire>> R<<axle>>
+PARSFILE Tires\Tire\Tire_226ce359-1dc5-472f-9e34-ec3debbea095.par
+#BlueLink10 Tire`215//55 R17` Touring Tires` , Tire`Tire_226ce359-1dc5-472f-9e34-ec3debbea095
+
+* Rear components
+iaxle 2
+symbol_add  <<axle>> 1
+PARSFILE Suspensions\Kin_Indy\KinInd_7349bfb2-a1cb-4f07-ad8b-aa2d315a4a3c.par
+#BlueLink20 Suspension: Independent System Kinematics`PASSAT_NA_RearSUS_php` VW_PASSAT` , Kinematics`KinInd_7349bfb2-a1cb-4f07-ad8b-aa2d315a4a3c
+
+PARSFILE Suspensions\Compliance\CmpInd_a911e3c4-ab26-4fbe-904b-135e01fc6b6f.par
+#BlueLink17 Suspension: Independent Compliance, Springs, and Dampers`PASSAT_NA_RearSDC_php` VW_PASSAT` , Compliance`CmpInd_a911e3c4-ab26-4fbe-904b-135e01fc6b6f
+
+
+* LR tire
+iside 1
+WRITE_ADD_REFERENCE_FRAME_WHEEL
+symbol_push  <<tire>> L<<axle>>
+PARSFILE Tires\Tire\Tire_226ce359-1dc5-472f-9e34-ec3debbea095.par
+#BlueLink999 Tire`215//55 R17` Touring Tires` , Tire`Tire_226ce359-1dc5-472f-9e34-ec3debbea095
+
+
+* RR tire
+iside 2
+WRITE_ADD_REFERENCE_FRAME_WHEEL
+symbol_push  <<tire>> R<<axle>>
+PARSFILE Tires\Tire\Tire_226ce359-1dc5-472f-9e34-ec3debbea095.par
+#BlueLink999 Tire`215//55 R17` Touring Tires` , Tire`Tire_226ce359-1dc5-472f-9e34-ec3debbea095
+
+symbol_set <<axle>> 1
+WRITE_ADD_REFERENCE_FRAME_BODY
+PARSFILE Vehicles\Sprung_Mass\SprMass_8c24257b-bd8f-48b5-ad63-005637f72686.par
+#BlueLink0 Vehicle: Sprung Mass`PASSAT_NA_php` VW_PASSAT` , Sprung Mass`SprMass_8c24257b-bd8f-48b5-ad63-005637f72686
+
+PARSFILE Aerodynamics\Aero_Main\Aero_1b7f6d4c-583b-4e58-92eb-d901cf033eb9.par
+#BlueLink1 Aerodynamics: Basic`PASSAT_NA_Areo_php` VW_PASSAT` , Aerodynamics`Aero_1b7f6d4c-583b-4e58-92eb-d901cf033eb9
+
+PARSFILE Animator\Vehicles\AniVeh_fa677a6a-8695-4728-8ba3-19e357aeccd9.par
+#BlueLink2 Animator: Vehicles and Sensor Targets`PASSAT_NA_Shell_php` VW_PASSAT` , Vehicle 3D Shape`AniVeh_fa677a6a-8695-4728-8ba3-19e357aeccd9
+
+R_REAR_DRIVE_SC 0
+PMAX_SC 201
+PARSFILE Powertrain\Fwd\FWD_61df8623-c886-40ea-a1b1-3e893b1db9c3.par
+#BlueLink3 Powertrain: Front-Wheel Drive`PASSAT_NA_Power_php` VW_PASSAT` , Powertrain`FWD_61df8623-c886-40ea-a1b1-3e893b1db9c3
+
+PARSFILE Brakes\4W_System\Brk4W_8e00289c-a003-478b-a090-75f78470f71f.par
+#BlueLink6 Brakes: Four-Wheel System`PASSAT_Brk_php` VW_PASSAT` , Brake System`Brk4W_8e00289c-a003-478b-a090-75f78470f71f
+
+PARSFILE Steering\System\StrSys_46304bef-4350-432a-8fe2-f9afcd549d94.par
+#BlueLink7 Steering (Legacy)`PASSAT_NA_php` VW_PASSAT` , Steering System`StrSys_46304bef-4350-432a-8fe2-f9afcd549d94
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Animator\Vehicles\AniVeh_fa677a6a-8695-4728-8ba3-19e357aeccd9.png
+
+#EMBEDDED_NOTES
+#Generic D-Class Sedan (Mid-Size) with Strut front and Tri-Link Strut rear suspension.
+#
+#D-Class vehicles include the Alfa Romeo 159, Audi A4, BMW 3 Series, Cadillac CTS, Lexus IS, and Mercedes-Benz C-Class.
+#
+#Updated for CarSim 2017:  Revised the steering system parameters.  Tested for: On-Center, Static Steer, and Free Response Stability.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Vehicle: Assembly; { VW_PASSAT } PASSAT_NA_php
+#Library : Vehicle: Assembly
+#DataSet : PASSAT_NA_php
+#Category: VW_PASSAT
+#FileID  : Vehicle_4c6cdd60-8657-47bb-b262-19fadc6953f2
+#Product : CarSim 2018.0
+#VehCode Ind_Ind
+
+END
+/F Suspensions\Kin_Indy\KinInd_98e1dfaa-d604-49d0-97d9-d639ece189b4.par`Suspension: Independent System Kinematics`PASSAT_NA_Frt.SUS_php`VW_PASSAT
+PARSFILE
+#FullDataName Suspension: Independent System Kinematics`PASSAT_NA_Frt.SUS_php`VW_PASSAT
+iside 1
+#RingCtrl0 1
+OPT_JNC_DESIGN 1
+#RingCtrl1 2
+#RingCtrl2 2
+#RingCtrl3 2
+#RingCtrl4 2
+#RingCtrl5 2
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 0    
+
+R_US_STR 0.8
+L_TRACK 1567
+Y_CL_SUSP 0
+H_WC 0
+M_US 68
+*IW_L 0.6
+*JNC_DESIGN_L 0
+*IW_R 0.6
+*TOE_L 0
+*CAMBER_L -0.5
+
+PARSFILE Suspensions\Dive\Dive_f6691037-fd55-44ac-9b3f-5a342605b5d2.par
+#BlueLink0 Suspension: Dive Angle (Caster Change)`PASSAT_NA_Frt.Dive_php` VW_PASSAT` , Left wheel dive (caster change)`Dive_f6691037-fd55-44ac-9b3f-5a342605b5d2
+
+PARSFILE Suspensions\Longitudinal\SusX_0042dad2-7ce2-43be-9803-4f8b85b15e9c.par
+#BlueLink1 Suspension: Longitudinal Movement`PASSAT_NA_Frt.X_php` VW_PASSAT` , Left wheel X`SusX_0042dad2-7ce2-43be-9803-4f8b85b15e9c
+
+PARSFILE Suspensions\Camber\Camber_da67f163-a426-4c77-9929-82db3ecdda65.par
+#BlueLink2 Suspension: Camber Angle`PASSAT_NA_Frt.Camber_php` VW_PASSAT` , Left wheel camber`Camber_da67f163-a426-4c77-9929-82db3ecdda65
+
+PARSFILE Suspensions\Lateral\LatJnc_305b6bb4-1fd5-46ec-a3c5-726100349fd7.par
+#BlueLink3 Suspension: Lateral Movement Due to Jounce`PASSAT_NA_Frt.Y_php` VW_PASSAT` , Left wheel lateral (-Y)`LatJnc_305b6bb4-1fd5-46ec-a3c5-726100349fd7
+
+PARSFILE Suspensions\Toe\Toe_d8fd46e4-fb4e-4e59-8c7f-6d744c9bda57.par
+#BlueLink4 Suspension: Toe Angle`PASSAT_NA_Frt.Toe_php` VW_PASSAT` , Left wheel toe`Toe_d8fd46e4-fb4e-4e59-8c7f-6d744c9bda57
+
+IW 0.6
+JNC_DESIGN 0
+A_TOE 0
+A_CAMBER -0.5
+
+iside 2
+PARSFILE Suspensions\Dive\Dive_f6691037-fd55-44ac-9b3f-5a342605b5d2.par
+#BlueLink0 Suspension: Dive Angle (Caster Change)`PASSAT_NA_Frt.Dive_php` VW_PASSAT` , Left wheel dive (caster change)`Dive_f6691037-fd55-44ac-9b3f-5a342605b5d2
+
+PARSFILE Suspensions\Longitudinal\SusX_0042dad2-7ce2-43be-9803-4f8b85b15e9c.par
+#BlueLink1 Suspension: Longitudinal Movement`PASSAT_NA_Frt.X_php` VW_PASSAT` , Left wheel X`SusX_0042dad2-7ce2-43be-9803-4f8b85b15e9c
+
+PARSFILE Suspensions\Camber\Camber_da67f163-a426-4c77-9929-82db3ecdda65.par
+#BlueLink2 Suspension: Camber Angle`PASSAT_NA_Frt.Camber_php` VW_PASSAT` , Left wheel camber`Camber_da67f163-a426-4c77-9929-82db3ecdda65
+
+PARSFILE Suspensions\Lateral\LatJnc_305b6bb4-1fd5-46ec-a3c5-726100349fd7.par
+#BlueLink3 Suspension: Lateral Movement Due to Jounce`PASSAT_NA_Frt.Y_php` VW_PASSAT` , Left wheel lateral (-Y)`LatJnc_305b6bb4-1fd5-46ec-a3c5-726100349fd7
+
+PARSFILE Suspensions\Toe\Toe_d8fd46e4-fb4e-4e59-8c7f-6d744c9bda57.par
+#BlueLink4 Suspension: Toe Angle`PASSAT_NA_Frt.Toe_php` VW_PASSAT` , Left wheel toe`Toe_d8fd46e4-fb4e-4e59-8c7f-6d744c9bda57
+
+IW 0.6
+JNC_DESIGN 0
+A_TOE 0
+A_CAMBER -0.5
+H_WC 0
+
+#EMBEDDED_NOTES
+#Generic front strut-type suspension geometry
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Suspension: Independent System Kinematics; { VW_PASSAT } PASSAT_NA_Frt.SUS_php
+#Library : Suspension: Independent System Kinematics
+#DataSet : PASSAT_NA_Frt.SUS_php
+#Category: VW_PASSAT
+#FileID  : KinInd_98e1dfaa-d604-49d0-97d9-d639ece189b4
+#Product : CarSim 2018.0
+#VehCode Independent
+
+END
+/F Suspensions\Compliance\CmpInd_9c454ed1-1aab-4a1d-ad72-d1b421415df4.par`Suspension: Independent Compliance, Springs, and Dampers`PASSAT_NA_Frt.SDC_php`VW_PASSAT
+PARSFILE
+#FullDataName Suspension: Independent Compliance, Springs, and Dampers`PASSAT_NA_Frt.SDC_php`VW_PASSAT
+#CheckBox0 0    
+#CheckBox1 0    
+
+#RingCtrl0 0
+*OPT_SPR 0
+#RingCtrl1 2
+#RingCtrl3 1
+#RingCtrl5 2
+#RingCtrl7 1
+#RingCtrl9 1
+#RingCtrl11 1
+#RingCtrl13 1
+*KSPRING_L 27
+*FRICTION_L 20
+*BETA_C_L 2
+*BETA_E_L 2
+*L_SPG_ADJ_L 0
+*FS_OFFSET_L 0
+*FS_OFFSET_R 0
+*CMP_OFFSET_L 0
+*CMP_OFFSET_R 0
+*R_SPRING_L 1.0
+*R_DAMPER_L 1.0
+*CT_FX_L -9.971e-5
+*CS_FY_L -3.043e-5
+*CS_MZ_L 1.004e-3
+*CC_FX_L 2.910e-5
+*CI_FY_L 1.530e-4
+*CI_MZ_L -2.725e-4
+*C_LONG_L 3.290e-3
+*C_LAT_L -2.724e-5
+
+iside 1
+OPT_EXT_SP 0
+PARSFILE Suspensions\Springs\Spring_fd58c0a3-f6be-48cd-ae1e-f11893b05a09.par
+#BlueLink0 Suspension: Spring`PASSAT_NA_Frt.SPR_php` VW_PASSAT` , Spring force`Spring_fd58c0a3-f6be-48cd-ae1e-f11893b05a09
+
+CMP_SPR_SEAT_COEFFICIENT 1.0
+L_SPG_ADJ 0
+FS_OFFSET 0
+CMP_OFFSET 0
+PARSFILE Suspensions\Shocks\Shock_06339072-ca43-46c4-af82-ec3bf59d6ffc.par
+#BlueLink1 Suspension: Shock Absorber`Big Car` Passenger Car` , Left damper`Shock_06339072-ca43-46c4-af82-ec3bf59d6ffc
+
+CMP_DAMP_COEFFICIENT 1.0
+CT_FX_COEFFICIENT -9.971e-5
+CS_FY_COEFFICIENT -3.043e-5
+CS_MZ_COEFFICIENT 1.004e-3
+CC_FX_COEFFICIENT 2.910e-5
+CI_FY_COEFFICIENT 1.530e-4
+CI_MZ_COEFFICIENT -2.725e-4
+C_LONG_COEFFICIENT 3.290e-3
+C_LAT_COEFFICIENT -2.724e-5
+
+iside 2
+OPT_EXT_SP 0
+PARSFILE Suspensions\Springs\Spring_fd58c0a3-f6be-48cd-ae1e-f11893b05a09.par
+#BlueLink0 Suspension: Spring`PASSAT_NA_Frt.SPR_php` VW_PASSAT` , Spring force`Spring_fd58c0a3-f6be-48cd-ae1e-f11893b05a09
+
+CMP_SPR_SEAT_COEFFICIENT 1.0
+L_SPG_ADJ 0
+FS_OFFSET 0
+CMP_OFFSET 0
+PARSFILE Suspensions\Shocks\Shock_06339072-ca43-46c4-af82-ec3bf59d6ffc.par
+#BlueLink1 Suspension: Shock Absorber`Big Car` Passenger Car` , Left damper`Shock_06339072-ca43-46c4-af82-ec3bf59d6ffc
+
+CMP_DAMP_COEFFICIENT 1.0
+CT_FX_COEFFICIENT -9.971e-5
+CS_FY_COEFFICIENT -3.043e-5
+CS_MZ_COEFFICIENT 1.004e-3
+CC_FX_COEFFICIENT 2.910e-5
+CI_FY_COEFFICIENT 1.530e-4
+CI_MZ_COEFFICIENT -2.725e-4
+C_LONG_COEFFICIENT 3.290e-3
+C_LAT_COEFFICIENT -2.724e-5
+PARSFILE Suspensions\Aux_Roll\AuxMx_a8976181-b801-400d-bbf3-fefbd95da0e0.par
+#BlueLink2 Suspension: Auxiliary Roll Moment`PASSAT_NA_FrtRollbar_php` VW_PASSAT` , Roll Moment`AuxMx_a8976181-b801-400d-bbf3-fefbd95da0e0
+
+
+LOG_ENTRY Used Dataset: Suspension: Independent Compliance, Springs, and Dampers; { VW_PASSAT } PASSAT_NA_Frt.SDC_php
+#Library : Suspension: Independent Compliance, Springs, and Dampers
+#DataSet : PASSAT_NA_Frt.SDC_php
+#Category: VW_PASSAT
+#FileID  : CmpInd_9c454ed1-1aab-4a1d-ad72-d1b421415df4
+#Product : CarSim 2018.0
+#VehCode Springs and Dampers
+
+END
+/F Tires\Tire\Tire_226ce359-1dc5-472f-9e34-ec3debbea095.par`Tire`215/55 R17`Touring Tires
+PARSFILE
+#FullDataName Tire`215//55 R17`Touring Tires
+FZ_REF 6500
+X_LENGTH 334
+Z_LENGTH 334
+Y_LENGTH 215
+#CheckBox2 0    
+#CheckBox4 1    
+#CheckBox5 0    
+#CheckBox6 0    
+
+#RingCtrl0 1
+#RingCtrl5 2
+#RingCtrl6 2
+#RingCtrl7 1
+#RingCtrl8 1
+#RingCtrl9 2
+OPT_TIRE_LAG_KAPPA 2
+#RingCtrl10 1
+OPT_TIRE_LAG_ALPHA 1
+OPT_TIRE_MODEL 1
+
+PARSFILE Animator\STL_Groups\ShpGrp_b46bb8ca-2d76-4ce9-9459-7ed6afac0407.par
+#BlueLink4 Animator: Shape Assembly`Euro Sedan Tire` Tires` , Animator`ShpGrp_b46bb8ca-2d76-4ce9-9459-7ed6afac0407
+
+WRITE_WHEEL_OFFSET
+*SET_THICKNESS 215
+#BlueLink13 ` , Animator` , Animator` , Animator`
+
+RRE 325
+R0 334
+FZ_TIRE_COEFFICIENT 268
+FZ_MAX 100000
+IT 0
+PARSFILE Generic\tables\GenTab_6200ca2d-9af8-4768-9d04-87ea0bd47068.par
+#BlueLink14 Generic Table`Lx Variable, Scaled to Tire` Tire Relaxation Length` , Longitudinal relaxation length`GenTab_6200ca2d-9af8-4768-9d04-87ea0bd47068
+
+PARSFILE Generic\tables\GenTab_edb0dc74-f107-43df-b9cc-c9fa4d21267d.par
+#BlueLink15 Generic Table`Ly Variable, Scaled to Tire` Tire Relaxation Length` , Longitudinal relaxation length`GenTab_edb0dc74-f107-43df-b9cc-c9fa4d21267d
+
+VLOW_KAPPA 2
+VLOW_ALPHA 2
+RR_C 0.0038
+RR_V 0.000026
+L_CONTACT_X_CONSTANT 90
+L_CONTACT_Y_CONSTANT 215
+RR_FX 1
+OPT_TIRE_COMB 0
+PARSFILE Tires\Mz\TireMz_3a71ed18-e842-4d21-9297-9e431964ca79.par
+#BlueLink0 Tire: Aligning Moment`215//55 R17 (2016)` Touring Tires` , Aligning Moment`TireMz_3a71ed18-e842-4d21-9297-9e431964ca79
+
+PARSFILE Tires\Fy\TireFy_a3dbd701-dd04-4bbe-ae9d-4f8143ca326f.par
+#BlueLink1 Tire: Lateral Force`215//55 R17` Touring Tires` , Lateral Force`TireFy_a3dbd701-dd04-4bbe-ae9d-4f8143ca326f
+
+PARSFILE Tires\Fx\TireFx_912f5e84-bc6f-4cb3-a08e-430ac38b921c.par
+#BlueLink2 Tire: Longitudinal Force`215//55 R17` Touring Tires` , Longitudinal Force`TireFx_912f5e84-bc6f-4cb3-a08e-430ac38b921c
+
+PARSFILE Tires\Camber_Thrust\CamStiff_2a6821cf-8efc-4493-aa14-ff8fe1c2cd9a.par
+#BlueLink3 Tire: Camber Thrust Coefficient`215//55 R17` Touring Tires` , Camber Thrust`CamStiff_2a6821cf-8efc-4493-aa14-ff8fe1c2cd9a
+
+
+
+#EMBEDDED_NOTES
+#Tire & Rim Association Load Rating: 650 kg
+#
+#Note:
+#The Aligning Moment data linked here replaces the previously shipping Aligning Moment data.
+#
+#The Mz values correspond to a pneumatic trail (deg) obtained from the averaged results of SAE Tire Tests.
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Tire; { Touring Tires } 215//55 R17
+#Library : Tire
+#DataSet : 215//55 R17
+#Category: Touring Tires
+#FileID  : Tire_226ce359-1dc5-472f-9e34-ec3debbea095
+#Product : CarSim 2018.0
+#VehCode Tire
+
+END
+/F Suspensions\Kin_Indy\KinInd_7349bfb2-a1cb-4f07-ad8b-aa2d315a4a3c.par`Suspension: Independent System Kinematics`PASSAT_NA_RearSUS_php`VW_PASSAT
+PARSFILE
+#FullDataName Suspension: Independent System Kinematics`PASSAT_NA_RearSUS_php`VW_PASSAT
+iside 1
+#RingCtrl0 0
+OPT_JNC_DESIGN 0
+#RingCtrl1 2
+#RingCtrl2 2
+#RingCtrl3 2
+#RingCtrl4 2
+#RingCtrl5 2
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 0    
+
+R_US_STR 0.8
+*DIVE_L 0
+L_TRACK 1534
+Y_CL_SUSP 0
+H_WC 0
+M_US 68
+*IW_L 0.6
+*JNC_DESIGN_L 0
+*IW_R 0.6
+*TOE_L 0
+*CAMBER_L -1.06
+
+PARSFILE Suspensions\Dive\Dive_c0e4c952-912f-4f73-8677-fea5d228e3f8.par
+#BlueLink0 Suspension: Dive Angle (Caster Change)`PASSAT_NA_RearDive_php` VW_PASSAT` , Left wheel dive (caster change)`Dive_c0e4c952-912f-4f73-8677-fea5d228e3f8
+
+PARSFILE Suspensions\Longitudinal\SusX_cf81347f-fb9b-48a5-ac88-49a27a9d85c8.par
+#BlueLink1 Suspension: Longitudinal Movement`PASSAT_NA_RearX_php` VW_PASSAT` , Left wheel X`SusX_cf81347f-fb9b-48a5-ac88-49a27a9d85c8
+
+PARSFILE Suspensions\Camber\Camber_c7c2ec86-f4f9-4490-a0c1-8ca54c06cf21.par
+#BlueLink2 Suspension: Camber Angle`PASSAT_NA_RearCamber_php` VW_PASSAT` , Left wheel camber`Camber_c7c2ec86-f4f9-4490-a0c1-8ca54c06cf21
+
+PARSFILE Suspensions\Lateral\LatJnc_2713623a-258d-4c76-97a6-1cae48484bbf.par
+#BlueLink3 Suspension: Lateral Movement Due to Jounce`PASSAT_NA_RearY_php` VW_PASSAT` , Left wheel lateral (-Y)`LatJnc_2713623a-258d-4c76-97a6-1cae48484bbf
+
+PARSFILE Suspensions\Toe\Toe_736c560b-096d-4275-a507-83c2ee9ee5a8.par
+#BlueLink4 Suspension: Toe Angle`PASSAT_NA_RearToe_php` VW_PASSAT` , Left wheel toe`Toe_736c560b-096d-4275-a507-83c2ee9ee5a8
+
+IW 0.6
+JNC_DESIGN 0
+A_TOE 0
+A_CAMBER -1.06
+
+iside 2
+PARSFILE Suspensions\Dive\Dive_c0e4c952-912f-4f73-8677-fea5d228e3f8.par
+#BlueLink0 Suspension: Dive Angle (Caster Change)`PASSAT_NA_RearDive_php` VW_PASSAT` , Left wheel dive (caster change)`Dive_c0e4c952-912f-4f73-8677-fea5d228e3f8
+
+PARSFILE Suspensions\Longitudinal\SusX_cf81347f-fb9b-48a5-ac88-49a27a9d85c8.par
+#BlueLink1 Suspension: Longitudinal Movement`PASSAT_NA_RearX_php` VW_PASSAT` , Left wheel X`SusX_cf81347f-fb9b-48a5-ac88-49a27a9d85c8
+
+PARSFILE Suspensions\Camber\Camber_c7c2ec86-f4f9-4490-a0c1-8ca54c06cf21.par
+#BlueLink2 Suspension: Camber Angle`PASSAT_NA_RearCamber_php` VW_PASSAT` , Left wheel camber`Camber_c7c2ec86-f4f9-4490-a0c1-8ca54c06cf21
+
+PARSFILE Suspensions\Lateral\LatJnc_2713623a-258d-4c76-97a6-1cae48484bbf.par
+#BlueLink3 Suspension: Lateral Movement Due to Jounce`PASSAT_NA_RearY_php` VW_PASSAT` , Left wheel lateral (-Y)`LatJnc_2713623a-258d-4c76-97a6-1cae48484bbf
+
+PARSFILE Suspensions\Toe\Toe_736c560b-096d-4275-a507-83c2ee9ee5a8.par
+#BlueLink4 Suspension: Toe Angle`PASSAT_NA_RearToe_php` VW_PASSAT` , Left wheel toe`Toe_736c560b-096d-4275-a507-83c2ee9ee5a8
+
+IW 0.6
+JNC_DESIGN 0
+A_TOE 0
+A_CAMBER -1.06
+H_WC 0
+
+#EMBEDDED_NOTES
+#Generic Tri-Link Strut type suspension geometry
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Suspension: Independent System Kinematics; { VW_PASSAT } PASSAT_NA_RearSUS_php
+#Library : Suspension: Independent System Kinematics
+#DataSet : PASSAT_NA_RearSUS_php
+#Category: VW_PASSAT
+#FileID  : KinInd_7349bfb2-a1cb-4f07-ad8b-aa2d315a4a3c
+#Product : CarSim 2018.0
+#VehCode Independent
+
+END
+/F Suspensions\Compliance\CmpInd_a911e3c4-ab26-4fbe-904b-135e01fc6b6f.par`Suspension: Independent Compliance, Springs, and Dampers`PASSAT_NA_RearSDC_php`VW_PASSAT
+PARSFILE
+#FullDataName Suspension: Independent Compliance, Springs, and Dampers`PASSAT_NA_RearSDC_php`VW_PASSAT
+#CheckBox0 0    
+#CheckBox1 0    
+
+#RingCtrl0 0
+*OPT_SPR 0
+#RingCtrl1 2
+#RingCtrl3 1
+#RingCtrl5 2
+#RingCtrl7 1
+#RingCtrl9 1
+#RingCtrl11 1
+#RingCtrl13 1
+*L_SPG_ADJ_L 0
+*FS_OFFSET_L 0
+*FS_OFFSET_R 0
+*R_SPRING_L 1.0
+*R_DAMPER_L 1.0
+*CT_FX_L -8.300e-5
+*CS_FY_L 5.193e-5
+*CS_MZ_L 1.094e-3
+*CC_FX_L 1.204e-5
+*CI_FY_L 4.833e-4
+*CI_MZ_L 2.373e-4
+*C_LONG_L 2.238e-3
+*C_LAT_L 1.828e-5
+
+iside 1
+OPT_EXT_SP 0
+PARSFILE Suspensions\Springs\Spring_512be096-05c4-480a-8c75-7d7964f14fc6.par
+#BlueLink0 Suspension: Spring`PASSAT_NA_RearSPR_php` VW_PASSAT` , Spring force`Spring_512be096-05c4-480a-8c75-7d7964f14fc6
+
+CMP_SPR_SEAT_COEFFICIENT 1.0
+L_SPG_ADJ 0
+FS_OFFSET 0
+CMP_OFFSET 0
+PARSFILE Suspensions\Shocks\Shock_06339072-ca43-46c4-af82-ec3bf59d6ffc.par
+#BlueLink1 Suspension: Shock Absorber`Big Car` Passenger Car` , Left damper`Shock_06339072-ca43-46c4-af82-ec3bf59d6ffc
+
+CMP_DAMP_COEFFICIENT 1.0
+CT_FX_COEFFICIENT -8.300e-5
+CS_FY_COEFFICIENT 5.193e-5
+CS_MZ_COEFFICIENT 1.094e-3
+CC_FX_COEFFICIENT 1.204e-5
+CI_FY_COEFFICIENT 4.833e-4
+CI_MZ_COEFFICIENT 2.373e-4
+C_LONG_COEFFICIENT 2.238e-3
+C_LAT_COEFFICIENT 1.828e-5
+
+iside 2
+OPT_EXT_SP 0
+PARSFILE Suspensions\Springs\Spring_512be096-05c4-480a-8c75-7d7964f14fc6.par
+#BlueLink0 Suspension: Spring`PASSAT_NA_RearSPR_php` VW_PASSAT` , Spring force`Spring_512be096-05c4-480a-8c75-7d7964f14fc6
+
+CMP_SPR_SEAT_COEFFICIENT 1.0
+L_SPG_ADJ 0
+FS_OFFSET 0
+CMP_OFFSET 0
+PARSFILE Suspensions\Shocks\Shock_06339072-ca43-46c4-af82-ec3bf59d6ffc.par
+#BlueLink1 Suspension: Shock Absorber`Big Car` Passenger Car` , Left damper`Shock_06339072-ca43-46c4-af82-ec3bf59d6ffc
+
+CMP_DAMP_COEFFICIENT 1.0
+CT_FX_COEFFICIENT -8.300e-5
+CS_FY_COEFFICIENT 5.193e-5
+CS_MZ_COEFFICIENT 1.094e-3
+CC_FX_COEFFICIENT 1.204e-5
+CI_FY_COEFFICIENT 4.833e-4
+CI_MZ_COEFFICIENT 2.373e-4
+C_LONG_COEFFICIENT 2.238e-3
+C_LAT_COEFFICIENT 1.828e-5
+PARSFILE Suspensions\Aux_Roll\AuxMx_f56e6365-6f89-452a-a76e-ab5a85c2e1ea.par
+#BlueLink2 Suspension: Auxiliary Roll Moment`PASSAT_NA_RearRollbar_php` VW_PASSAT` , Roll Moment`AuxMx_f56e6365-6f89-452a-a76e-ab5a85c2e1ea
+
+
+LOG_ENTRY Used Dataset: Suspension: Independent Compliance, Springs, and Dampers; { VW_PASSAT } PASSAT_NA_RearSDC_php
+#Library : Suspension: Independent Compliance, Springs, and Dampers
+#DataSet : PASSAT_NA_RearSDC_php
+#Category: VW_PASSAT
+#FileID  : CmpInd_a911e3c4-ab26-4fbe-904b-135e01fc6b6f
+#Product : CarSim 2018.0
+#VehCode Springs and Dampers
+
+END
+/F Vehicles\Sprung_Mass\SprMass_8c24257b-bd8f-48b5-ad63-005637f72686.par`Vehicle: Sprung Mass`PASSAT_NA_php`VW_PASSAT
+PARSFILE
+#FullDataName Vehicle: Sprung Mass`PASSAT_NA_php`VW_PASSAT
+#VehCode Rigid sprung mass
+#RingCtrl0 0
+X_LENGTH 2802
+Y_LENGTH 1500
+iaxle 2
+iside 1
+LX_H 3802
+H_H 484
+H_CG_SU 573.9
+LX_AXLE 2802
+LX_CG_SU 1085
+M_SU 1535
+IXX_SU 473
+IYY_SU 2122
+IZZ_SU 2326
+IXZ_SU 0
+*RX 0.555
+*RY 1.176
+*RZ 1.231
+Y_CG_SU 0
+Y_H 0
+IXY_SU 0
+IYZ_SU 0
+Z_LENGTH 1574
+Y_LENGTH 1934
+*HWC_LF 334
+*HWC_RF 334
+*HWC_LR 334
+*HWC_RR 334
+
+symbol_set <<hitch_x>> -3.802
+symbol_set <<hitch_y>> 0
+symbol_set <<hitch_z>> 0.484
+H_WC 334
+iside 2
+H_WC 334
+iaxle 1
+iside 1
+H_WC 334
+iside 2
+H_WC 334
+iaxle 2
+iside 1
+
+LOG_ENTRY Used Dataset: Vehicle: Sprung Mass; { VW_PASSAT } PASSAT_NA_php
+#Library : Vehicle: Sprung Mass
+#DataSet : PASSAT_NA_php
+#Category: VW_PASSAT
+#FileID  : SprMass_8c24257b-bd8f-48b5-ad63-005637f72686
+#Product : CarSim 2018.0
+#VehCode Rigid sprung mass
+
+END
+/F Aerodynamics\Aero_Main\Aero_1b7f6d4c-583b-4e58-92eb-d901cf033eb9.par`Aerodynamics: Basic`PASSAT_NA_Areo_php`VW_PASSAT
+PARSFILE
+#FullDataName Aerodynamics: Basic`PASSAT_NA_Areo_php`VW_PASSAT
+#CheckBox0 0    
+
+#RingCtrl0 2
+#RingCtrl1 2
+#RingCtrl2 2
+#RingCtrl3 2
+#RingCtrl4 2
+#RingCtrl5 2
+PARSFILE Aerodynamics\Aero_Fx\AirCFx_1b10dee9-0a20-49ce-aeb4-a80287f5a08e.par
+#BlueLink0 Aerodynamics: Fx (Drag) Coef. vs. Aero Slip`0.30 at 0 Degrees` ` , CFx`AirCFx_1b10dee9-0a20-49ce-aeb4-a80287f5a08e
+
+PARSFILE Aerodynamics\Aero_Fy\AirCFy_edc41c2e-26ec-4dd4-8a26-78811435f233.par
+#BlueLink1 Aerodynamics: Fy (Side Force) Coef. vs. Aero Slip`0.5 at 90 deg` ` , CFy`AirCFy_edc41c2e-26ec-4dd4-8a26-78811435f233
+
+PARSFILE Aerodynamics\Aero_Fz\AirCFz_2bd7b5e8-8499-40e6-bccc-0c23b363d70a.par
+#BlueLink2 Aerodynamics: Fz (Lift) Coef. vs. Aero Slip`0.18 at 0 Degrees` ` , CFz`AirCFz_2bd7b5e8-8499-40e6-bccc-0c23b363d70a
+
+PARSFILE Aerodynamics\Aero_Mx\AirCMx_1b06e67c-1729-4e91-9ce9-aad23a79dac3.par
+#BlueLink3 Aerodynamics: Mx (Roll Moment) Coef. vs. Aero Slip`0.3 at 90 deg` ` , CMx`AirCMx_1b06e67c-1729-4e91-9ce9-aad23a79dac3
+
+PARSFILE Aerodynamics\Aero_My\AirCMy_95ace942-43cf-4051-b3f6-64da1a06e4e1.par
+#BlueLink4 Aerodynamics: My (Pitch Moment) Coef. vs. Aero Slip`-0.15 at 0 Degrees` ` , CMy`AirCMy_95ace942-43cf-4051-b3f6-64da1a06e4e1
+
+PARSFILE Aerodynamics\Aero_Mz\AirCMz_57ed564c-dd83-4157-a1e0-252d83f9f723.par
+#BlueLink5 Aerodynamics: Mz (Yaw Moment) Coef. vs. Aero Slip`0.05 at 90 deg` ` , CMz`AirCMz_57ed564c-dd83-4157-a1e0-252d83f9f723
+
+X_REF_AERO -1390
+Y_REF_AERO 0
+H_REF_AERO 0
+L_REF_AERO 2775
+AREA_AERO 2.4
+D_AIR 1.206
+
+#EMBEDDED_NOTES
+#According to SAE convention, the reference point is located at the midpoint of the wheelbase, the midpoint of the track, at ground level., and the reference length is equal to the wheelbase.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Aerodynamics: Basic; { VW_PASSAT } PASSAT_NA_Areo_php
+#Library : Aerodynamics: Basic
+#DataSet : PASSAT_NA_Areo_php
+#Category: VW_PASSAT
+#FileID  : Aero_1b7f6d4c-583b-4e58-92eb-d901cf033eb9
+#Product : CarSim 2018.0
+#VehCode Aerodynamics
+
+END
+/F Animator\Vehicles\AniVeh_fa677a6a-8695-4728-8ba3-19e357aeccd9.par`Animator: Vehicles and Sensor Targets`PASSAT_NA_Shell_php`VW_PASSAT
+PARSFILE
+#FullDataName Animator: Vehicles and Sensor Targets`PASSAT_NA_Shell_php`VW_PASSAT
+
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 1    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox6 0    
+#CheckBox7 0    
+
+OBJ_X_LENGTH 2711
+OBJ_Y_LENGTH 1753
+OBJ_Z_LENGTH 1433
+*DZ_V -25
+*LAT_WC 1500
+*LAT_WC_2 1500
+*HWC 325
+*WHEEL_RATIO 1.1
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\Vehicles\AniVeh_fa677a6a-8695-4728-8ba3-19e357aeccd9.png
+DZ_OBJECT 0
+WRITE_ADD_REFERENCE_FRAME_OBJECT
+TIRE_ANI_PARSFILE Animator\STL\Shape_a42c3474-8a83-4edf-b890-a781be4fbdd4.par
+SET_SCALE_X 1.1
+SET_SCALE_Y 1.1
+SET_SCALE_Z 1.1
+SET_OFFSET_X 0
+SET_OFFSET_Y 0.75
+SET_OFFSET_Z 0.30875
+TIRE_ANI_PARSFILE Animator\STL\Shape_a42c3474-8a83-4edf-b890-a781be4fbdd4.par
+SET_SCALE_X 1.1
+SET_SCALE_Y 1.1
+SET_SCALE_Z 1.1
+SET_ANGLE_X 180
+SET_OFFSET_X 0
+SET_OFFSET_Y -0.75
+SET_OFFSET_Z 0.30875
+TIRE_ANI_PARSFILE Animator\STL\Shape_a42c3474-8a83-4edf-b890-a781be4fbdd4.par
+SET_SCALE_X 1.1
+SET_SCALE_Y 1.1
+SET_SCALE_Z 1.1
+SET_OFFSET_X -2.711
+SET_OFFSET_Y 0.75
+SET_OFFSET_Z 0.30875
+TIRE_ANI_PARSFILE Animator\STL\Shape_a42c3474-8a83-4edf-b890-a781be4fbdd4.par
+SET_SCALE_X 1.1
+SET_SCALE_Y 1.1
+SET_SCALE_Z 1.1
+SET_ANGLE_X 180
+SET_OFFSET_X -2.711
+SET_OFFSET_Y -0.75
+SET_OFFSET_Z 0.30875
+DZ_OBJECT -0.025
+WRITE_ADD_REFERENCE_FRAME_OBJECT
+PARSFILE Animator\STL_Groups\ShpGrp_a17de929-746e-4f45-b555-ab0ae2864120.par
+#BlueLink1 Animator: Shape Assembly`PASSAT_NA_php` VW_PASSAT` , Vehicle Body`ShpGrp_a17de929-746e-4f45-b555-ab0ae2864120
+
+WRITE_REFERENCE_FRAME_SIZE
+WRITE_ADD_REFERENCE_FRAME_BRAKES
+PARSFILE Animator\STL\Shape_4250ebb0-9e56-4f9f-a058-c568dd085a60.par
+#BlueLink3 Animator: Shape File Link`European Sedan: Brake Lights (D-Class)` CS European Sedan` , Brake Lights`Shape_4250ebb0-9e56-4f9f-a058-c568dd085a60
+
+WRITE_REFERENCE_FRAME_SIZE
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_aad9f5dd-7a61-4319-88b3-b90a1214f577.par
+#BlueLink5 Animator: Camera Setup`Vehicle Pictures` Shape Preview` , Video Camera`Camera_aad9f5dd-7a61-4319-88b3-b90a1214f577
+
+EXPORT_PARSFILE Animator\STL\Shape_a42c3474-8a83-4edf-b890-a781be4fbdd4.par
+#BlueLink2 Animator: Shape File Link`Blurred Tire` Tires` , Tire for traffic vehicle`Shape_a42c3474-8a83-4edf-b890-a781be4fbdd4
+
+
+#EMBEDDED_NOTES
+#The Animator: Vehicles and Sensor Targets screen is used to define animation shapes to be used with the animator.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Animator: Vehicles and Sensor Targets; { VW_PASSAT } PASSAT_NA_Shell_php
+#Library : Animator: Vehicles and Sensor Targets
+#DataSet : PASSAT_NA_Shell_php
+#Category: VW_PASSAT
+#FileID  : AniVeh_fa677a6a-8695-4728-8ba3-19e357aeccd9
+#Product : CarSim 2018.0
+#VehCode Vehicle Shape
+
+END
+/F Powertrain\Fwd\FWD_61df8623-c886-40ea-a1b1-3e893b1db9c3.par`Powertrain: Front-Wheel Drive`PASSAT_NA_Power_php`VW_PASSAT
+PARSFILE
+#FullDataName Powertrain: Front-Wheel Drive`PASSAT_NA_Power_php`VW_PASSAT
+
+OPT_PT 1
+R_REAR_DRIVE_SC 0
+
+OPT_ENGINE_PITCH_REACTION(1) 0
+
+#RingCtrl0 1
+OPT_ENGINE_INTERNAL 1
+#RingCtrl1 1
+#RingCtrl2 2
+#RingCtrl3 1
+#RingCtrl4 1
+R_MDRIVE 1
+DRIVELINE_FREQ 9
+DRIVELINE_ZETA 0.9
+
+#CheckBox0 0    
+
+OPT_PWR_CPL_INTERNAL 1
+OPT_TRANS_INTERNAL 1
+OPT_DIFF_INTERNAL(1) 1
+
+PARSFILE Powertrain\Engine\Engine_5fd8cccf-3f87-4967-bf2c-05672393be86.par
+#BlueLink0 Powertrain: Engine`150 kW Engine` 150 kW Engines` , Engine`Engine_5fd8cccf-3f87-4967-bf2c-05672393be86
+
+PARSFILE Powertrain\TConv\TC_6167f7ca-1ba7-4746-98f1-f7e38f6f5f0a.par
+#BlueLink1 Powertrain: Torque Converter`Torque Converter for 150 kW Engine` ` , Torque Conv.`TC_6167f7ca-1ba7-4746-98f1-f7e38f6f5f0a
+
+PARSFILE Powertrain\TransExt\Trans18_55b3d8ee-e987-4803-8615-8a5b5c910733.par
+#BlueLink8 Powertrain: Transmission (18 Gears or CVT)`6-Speed` 6-Speed Transmissions` , Transmission (Extended)`Trans18_55b3d8ee-e987-4803-8615-8a5b5c910733
+
+
+IDIFF 1
+PARSFILE Powertrain\Frontdiff\DiffF_0e6d0a7d-5a3d-4cf9-b4d6-7adbda9605b1.par
+#BlueLink3 Powertrain: Front Differential`Open: Gear Ratio 4.1` ` , Differential`DiffF_0e6d0a7d-5a3d-4cf9-b4d6-7adbda9605b1
+
+
+IDIFF 1
+PARSFILE Powertrain\Frontdiff\DiffF_0e6d0a7d-5a3d-4cf9-b4d6-7adbda9605b1.par
+#BlueLink4 Powertrain: Front Differential`Open: Gear Ratio 4.1` ` , Differential`DiffF_0e6d0a7d-5a3d-4cf9-b4d6-7adbda9605b1
+
+
+#EMBEDDED_NOTES
+#Generic 150 kW powertrain with an automatic transmission. The torque converter data has been tuned to work with the 150 kW engine to give reasonable performance.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Powertrain: Front-Wheel Drive; { VW_PASSAT } PASSAT_NA_Power_php
+#Library : Powertrain: Front-Wheel Drive
+#DataSet : PASSAT_NA_Power_php
+#Category: VW_PASSAT
+#FileID  : FWD_61df8623-c886-40ea-a1b1-3e893b1db9c3
+#Product : CarSim 2018.0
+#VehCode FWD
+
+END
+/F Brakes\4W_System\Brk4W_8e00289c-a003-478b-a090-75f78470f71f.par`Brakes: Four-Wheel System`PASSAT_Brk_php`VW_PASSAT
+PARSFILE
+#FullDataName Brakes: Four-Wheel System`PASSAT_Brk_php`VW_PASSAT
+#CheckBox1 0    
+#RingCtrl0 2
+#RingCtrl1 2
+#RingCtrl2 1
+#RingCtrl4 1
+#RingCtrl6 1
+#RingCtrl8 1
+#RingCtrl10 1
+#RingCtrl12 1
+#RingCtrl14 0
+OPT_BK_PEDAL 0
+TL_L1 0
+TL_L2 0
+
+iaxle 1
+iside 1
+symbol_push <<ax_bk>> <<axle>>
+symbol_push <<side>> L
+TLAG_BK 0
+*P_L1 1
+PBK_DL_COEFFICIENT 1
+PBK_DL_COMBINE MULTIPLY
+PBK_DL_FZ_CONSTANT 1
+TC_L1 0.06
+TC_BK 0.06
+OPT_BK_DYN 1
+*TQ_L1 250
+MY_BRAKE_COEFFICIENT 250
+*MY_FRIC_L1 0.5
+MY_FRICTION 0.5
+
+INSTALL_ABS_CONTROLLER
+OPT_ABS_CTRL 2
+*OFF_F 0.15
+*ON_F 0.09
+*V_F 2
+ABS_SLIP_OFF 0.15
+ABS_SLIP_ON 0.09
+ABS_VMIN 2
+
+iside 2
+symbol_set <<side>> R
+TLAG_BK 0
+*P_L1 1
+PBK_DL_COEFFICIENT 1
+PBK_DL_COMBINE MULTIPLY
+PBK_DL_FZ_CONSTANT 1
+TC_L1 0.06
+TC_BK 0.06
+OPT_BK_DYN 1
+*TQ_L1 250
+MY_BRAKE_COEFFICIENT 250
+*MY_FRIC_L1 0.5
+MY_FRICTION 0.5
+
+iaxle 2
+iside 1
+symbol_add <<ax_bk>> 1
+symbol_set <<side>> L
+TLAG_BK 0
+*P_L2 1
+PBK_DL_COEFFICIENT 1
+PBK_DL_COMBINE MULTIPLY
+PBK_DL_FZ_CONSTANT 1
+TC_L2 0.06
+TC_BK 0.06
+OPT_BK_DYN 1
+*TQ_L2 100
+MY_BRAKE_COEFFICIENT 100
+*MY_FRIC_L2 0.5
+MY_FRICTION 0.5
+
+OPT_ABS_CTRL 2
+*OFF_R 0.12
+*ON_R 0.09
+*V_R 2
+ABS_SLIP_OFF 0.12
+ABS_SLIP_ON 0.09
+ABS_VMIN 2
+
+iside 2
+symbol_set <<side>> R
+TLAG_BK 0
+*P_L2 1
+PBK_DL_COEFFICIENT 1
+PBK_DL_COMBINE MULTIPLY
+PBK_DL_FZ_CONSTANT 1
+TC_L2 0.06
+TC_BK 0.06
+OPT_BK_DYN 1
+*TQ_L2 100
+MY_BRAKE_COEFFICIENT 100
+*MY_FRIC_L2 0.5
+MY_FRICTION 0.5
+
+LOG_ENTRY Used Dataset: Brakes: Four-Wheel System; { VW_PASSAT } PASSAT_Brk_php
+#Library : Brakes: Four-Wheel System
+#DataSet : PASSAT_Brk_php
+#Category: VW_PASSAT
+#FileID  : Brk4W_8e00289c-a003-478b-a090-75f78470f71f
+#Product : CarSim 2018.0
+#VehCode 4-Wheel System
+
+END
+/F Steering\System\StrSys_46304bef-4350-432a-8fe2-f9afcd549d94.par`Steering (Legacy)`PASSAT_NA_php`VW_PASSAT
+PARSFILE
+#FullDataName Steering (Legacy)`PASSAT_NA_php`VW_PASSAT
+OPT_STEER 0
+OPT_POWER 0
+OPT_M_SW_CALC 0
+
+OPT_STEER_DEF 1
+*RSW_F 15.44
+*RSW_R 1
+*L1_LKPO 60.1
+*R1_LKPO 60.1
+*L1_AKPI 14.7
+*R1_AKPI 14.7
+*L1_ACAST 7.3
+*R1_ACAST 7.3
+*L1_XKPO -2.4
+*R1_XKPO -2.4
+
+
+iside 1
+iaxle 2
+R_GEAR_STR 1
+OPT_RACK 0
+GEAR_ROT_COEFFICIENT 1//1
+
+
+iaxle 1
+R_GEAR_STR 15.44
+OPT_RACK 0
+GEAR_ROT_COEFFICIENT 1//15.44
+
+PARSFILE Steering\Kinematics\StrKin_d1844003-2d78-4964-996b-26ce6de5b7f4.par
+#BlueLink0 Steering System: Kinematics for One Wheel`PASSAT_NA_SteeringLeft_php` VW_PASSAT` , Left Front Wheel`StrKin_d1844003-2d78-4964-996b-26ce6de5b7f4
+
+L_KPO 60.1
+A_KPI 14.7
+A_CASTER 7.3
+X_KPO -2.4
+
+iside 2
+PARSFILE Steering\Kinematics\StrKin_915419ad-1669-4fa8-bc37-b487d20e6319.par
+#BlueLink2 Steering System: Kinematics for One Wheel`PASSAT_NA_SteeringRight_php` VW_PASSAT` , Right Front Wheel`StrKin_915419ad-1669-4fa8-bc37-b487d20e6319
+
+L_KPO 60.1
+A_KPI 14.7
+A_CASTER 7.3
+X_KPO -2.4
+
+iaxle 2
+
+LOG_ENTRY Used Dataset: Steering (Legacy); { VW_PASSAT } PASSAT_NA_php
+#Library : Steering (Legacy)
+#DataSet : PASSAT_NA_php
+#Category: VW_PASSAT
+#FileID  : StrSys_46304bef-4350-432a-8fe2-f9afcd549d94
+#Product : CarSim 2018.0
+#VehCode 4-Wheel Steer (Legacy)
+
+END
+/F Suspensions\Dive\Dive_f6691037-fd55-44ac-9b3f-5a342605b5d2.par`Suspension: Dive Angle (Caster Change)`PASSAT_NA_Frt.Dive_php`VW_PASSAT
+PARSFILE
+#FullDataName Suspension: Dive Angle (Caster Change)`PASSAT_NA_Frt.Dive_php`VW_PASSAT
+#CheckBox0 0    
+
+#RingCtrl0 LINEAR
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+SUSP_DIVE_COMBINE ADD
+
+#DiagramOne0
+SUSP_DIVE_TABLE LINEAR
+-75, 0.95841
+-74, 0.94736
+-73, 0.9363
+-72, 0.92522
+-71, 0.91411
+-70, 0.90298
+-69, 0.89183
+-68, 0.88065
+-67, 0.86943
+-66, 0.85819
+-65, 0.84692
+-64, 0.83561
+-63, 0.82427
+-62, 0.81289
+-61, 0.80147
+-60, 0.79001
+-59, 0.77852
+-58, 0.76698
+-57, 0.7554
+-56, 0.74377
+-55, 0.7321
+-54, 0.72038
+-53, 0.70861
+-52, 0.69679
+-51, 0.68491
+-50, 0.67299
+-49, 0.66101
+-48, 0.64897
+-47, 0.63688
+-46, 0.62473
+-45, 0.61252
+-44, 0.60025
+-43, 0.58792
+-42, 0.57552
+-41, 0.56306
+-40, 0.55053
+-39, 0.53794
+-38, 0.52528
+-37, 0.51255
+-36, 0.49975
+-35, 0.48687
+-34, 0.47393
+-33, 0.4609
+-32, 0.44781
+-31, 0.43464
+-30, 0.42139
+-29, 0.40806
+-28, 0.39465
+-27, 0.38116
+-26, 0.36759
+-25, 0.35394
+-24, 0.3402
+-23, 0.32637
+-22, 0.31246
+-21, 0.29847
+-20, 0.28438
+-19, 0.27021
+-18, 0.25594
+-17, 0.24159
+-16, 0.22714
+-15, 0.2126
+-14, 0.19797
+-13, 0.18324
+-12, 0.16841
+-11, 0.15349
+-10, 0.13847
+-9, 0.12335
+-8, 0.10813
+-7, 0.092808
+-6, 0.077387
+-5, 0.061863
+-4, 0.046237
+-3, 0.030506
+-2, 0.014671
+-1, -0.0012705
+0, -0.017318
+1, -0.033473
+2, -0.049736
+3, -0.066107
+4, -0.082588
+5, -0.09918
+6, -0.11588
+7, -0.1327
+8, -0.14962
+9, -0.16667
+10, -0.18382
+11, -0.20109
+12, -0.21847
+13, -0.23597
+14, -0.25359
+15, -0.27133
+16, -0.28918
+17, -0.30715
+18, -0.32524
+19, -0.34345
+20, -0.36178
+21, -0.38024
+22, -0.39881
+23, -0.41751
+24, -0.43633
+25, -0.45527
+26, -0.47434
+27, -0.49353
+28, -0.51284
+29, -0.53229
+30, -0.55185
+31, -0.57155
+32, -0.59137
+33, -0.61132
+34, -0.63139
+35, -0.6516
+36, -0.67193
+37, -0.6924
+38, -0.71299
+39, -0.73371
+40, -0.75457
+41, -0.77555
+42, -0.79666
+43, -0.81791
+44, -0.83929
+45, -0.8608
+46, -0.88244
+47, -0.90422
+48, -0.92613
+49, -0.94817
+50, -0.97035
+51, -0.99266
+52, -1.0151
+53, -1.0377
+54, -1.0604
+55, -1.0833
+56, -1.1062
+57, -1.1294
+58, -1.1526
+59, -1.176
+60, -1.1995
+61, -1.2232
+62, -1.247
+63, -1.271
+64, -1.295
+65, -1.3192
+66, -1.3436
+67, -1.3681
+68, -1.3927
+69, -1.4175
+70, -1.4424
+71, -1.4674
+72, -1.4926
+73, -1.5179
+74, -1.5433
+75, -1.5689
+76, -1.5947
+77, -1.6205
+78, -1.6465
+79, -1.6727
+80, -1.6989
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+#DiagramOne0
+SUSP_DIVE_AXLE_TABLE LINEAR
+-75, 0.95841
+-74, 0.94736
+-73, 0.9363
+-72, 0.92522
+-71, 0.91411
+-70, 0.90298
+-69, 0.89183
+-68, 0.88065
+-67, 0.86943
+-66, 0.85819
+-65, 0.84692
+-64, 0.83561
+-63, 0.82427
+-62, 0.81289
+-61, 0.80147
+-60, 0.79001
+-59, 0.77852
+-58, 0.76698
+-57, 0.7554
+-56, 0.74377
+-55, 0.7321
+-54, 0.72038
+-53, 0.70861
+-52, 0.69679
+-51, 0.68491
+-50, 0.67299
+-49, 0.66101
+-48, 0.64897
+-47, 0.63688
+-46, 0.62473
+-45, 0.61252
+-44, 0.60025
+-43, 0.58792
+-42, 0.57552
+-41, 0.56306
+-40, 0.55053
+-39, 0.53794
+-38, 0.52528
+-37, 0.51255
+-36, 0.49975
+-35, 0.48687
+-34, 0.47393
+-33, 0.4609
+-32, 0.44781
+-31, 0.43464
+-30, 0.42139
+-29, 0.40806
+-28, 0.39465
+-27, 0.38116
+-26, 0.36759
+-25, 0.35394
+-24, 0.3402
+-23, 0.32637
+-22, 0.31246
+-21, 0.29847
+-20, 0.28438
+-19, 0.27021
+-18, 0.25594
+-17, 0.24159
+-16, 0.22714
+-15, 0.2126
+-14, 0.19797
+-13, 0.18324
+-12, 0.16841
+-11, 0.15349
+-10, 0.13847
+-9, 0.12335
+-8, 0.10813
+-7, 0.092808
+-6, 0.077387
+-5, 0.061863
+-4, 0.046237
+-3, 0.030506
+-2, 0.014671
+-1, -0.0012705
+0, -0.017318
+1, -0.033473
+2, -0.049736
+3, -0.066107
+4, -0.082588
+5, -0.09918
+6, -0.11588
+7, -0.1327
+8, -0.14962
+9, -0.16667
+10, -0.18382
+11, -0.20109
+12, -0.21847
+13, -0.23597
+14, -0.25359
+15, -0.27133
+16, -0.28918
+17, -0.30715
+18, -0.32524
+19, -0.34345
+20, -0.36178
+21, -0.38024
+22, -0.39881
+23, -0.41751
+24, -0.43633
+25, -0.45527
+26, -0.47434
+27, -0.49353
+28, -0.51284
+29, -0.53229
+30, -0.55185
+31, -0.57155
+32, -0.59137
+33, -0.61132
+34, -0.63139
+35, -0.6516
+36, -0.67193
+37, -0.6924
+38, -0.71299
+39, -0.73371
+40, -0.75457
+41, -0.77555
+42, -0.79666
+43, -0.81791
+44, -0.83929
+45, -0.8608
+46, -0.88244
+47, -0.90422
+48, -0.92613
+49, -0.94817
+50, -0.97035
+51, -0.99266
+52, -1.0151
+53, -1.0377
+54, -1.0604
+55, -1.0833
+56, -1.1062
+57, -1.1294
+58, -1.1526
+59, -1.176
+60, -1.1995
+61, -1.2232
+62, -1.247
+63, -1.271
+64, -1.295
+65, -1.3192
+66, -1.3436
+67, -1.3681
+68, -1.3927
+69, -1.4175
+70, -1.4424
+71, -1.4674
+72, -1.4926
+73, -1.5179
+74, -1.5433
+75, -1.5689
+76, -1.5947
+77, -1.6205
+78, -1.6465
+79, -1.6727
+80, -1.6989
+ENDTABLE
+
+#EMBEDDED_NOTES
+#NOTE:  Sign convention of the CS 7.01b and earlier datasets was reversed and demonstrated a pro-dive suspension.  This dataset represents an anti-dive suspension.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Suspension: Dive Angle (Caster Change); { VW_PASSAT } PASSAT_NA_Frt.Dive_php
+#Library : Suspension: Dive Angle (Caster Change)
+#DataSet : PASSAT_NA_Frt.Dive_php
+#Category: VW_PASSAT
+#FileID  : Dive_f6691037-fd55-44ac-9b3f-5a342605b5d2
+#Product : CarSim 2018.0
+#VehCode Dive
+
+END
+/F Suspensions\Longitudinal\SusX_0042dad2-7ce2-43be-9803-4f8b85b15e9c.par`Suspension: Longitudinal Movement`PASSAT_NA_Frt.X_php`VW_PASSAT
+PARSFILE
+#FullDataName Suspension: Longitudinal Movement`PASSAT_NA_Frt.X_php`VW_PASSAT
+#CheckBox0 0    
+
+#RingCtrl0 LINEAR
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+SUSP_X_COMBINE ADD
+
+#DiagramOne0
+SUSP_X_TABLE LINEAR
+-75, -1.2314
+-74, -1.2042
+-73, -1.1775
+-72, -1.1513
+-71, -1.1257
+-70, -1.1006
+-69, -1.0761
+-68, -1.052
+-67, -1.0284
+-66, -1.0053
+-65, -0.9827
+-64, -0.9605
+-63, -0.93873
+-62, -0.91738
+-61, -0.89644
+-60, -0.87589
+-59, -0.85572
+-58, -0.83592
+-57, -0.81647
+-56, -0.79737
+-55, -0.77861
+-54, -0.76016
+-53, -0.74203
+-52, -0.7242
+-51, -0.70665
+-50, -0.68939
+-49, -0.67239
+-48, -0.65565
+-47, -0.63916
+-46, -0.6229
+-45, -0.60688
+-44, -0.59108
+-43, -0.57548
+-42, -0.56009
+-41, -0.54489
+-40, -0.52988
+-39, -0.51504
+-38, -0.50037
+-37, -0.48587
+-36, -0.47151
+-35, -0.4573
+-34, -0.44323
+-33, -0.42929
+-32, -0.41548
+-31, -0.40178
+-30, -0.3882
+-29, -0.37472
+-28, -0.36134
+-27, -0.34806
+-26, -0.33486
+-25, -0.32175
+-24, -0.30871
+-23, -0.29575
+-22, -0.28286
+-21, -0.27003
+-20, -0.25726
+-19, -0.24455
+-18, -0.23188
+-17, -0.21927
+-16, -0.2067
+-15, -0.19417
+-14, -0.18168
+-13, -0.16923
+-12, -0.15681
+-11, -0.14442
+-10, -0.13205
+-9, -0.11972
+-8, -0.10741
+-7, -0.09512
+-6, -0.082854
+-5, -0.070608
+-4, -0.058382
+-3, -0.046175
+-2, -0.033986
+-1, -0.021815
+0, -0.0096621
+1, 0.0024729
+2, 0.01459
+3, 0.026687
+4, 0.038766
+5, 0.050823
+6, 0.06286
+7, 0.074873
+8, 0.086861
+9, 0.098824
+10, 0.11076
+11, 0.12266
+12, 0.13453
+13, 0.14637
+14, 0.15817
+15, 0.16992
+16, 0.18163
+17, 0.1933
+18, 0.20491
+19, 0.21647
+20, 0.22796
+21, 0.2394
+22, 0.25076
+23, 0.26206
+24, 0.27327
+25, 0.2844
+26, 0.29545
+27, 0.3064
+28, 0.31725
+29, 0.32799
+30, 0.33863
+31, 0.34915
+32, 0.35954
+33, 0.3698
+34, 0.37992
+35, 0.3899
+36, 0.39973
+37, 0.40939
+38, 0.41889
+39, 0.42821
+40, 0.43735
+41, 0.44629
+42, 0.45503
+43, 0.46357
+44, 0.47188
+45, 0.47997
+46, 0.48781
+47, 0.49541
+48, 0.50276
+49, 0.50983
+50, 0.51663
+51, 0.52314
+52, 0.52935
+53, 0.53525
+54, 0.54082
+55, 0.54607
+56, 0.55097
+57, 0.55552
+58, 0.5597
+59, 0.56349
+60, 0.5669
+61, 0.5699
+62, 0.57248
+63, 0.57464
+64, 0.57635
+65, 0.5776
+66, 0.57838
+67, 0.57867
+68, 0.57847
+69, 0.57775
+70, 0.57651
+71, 0.57472
+72, 0.57238
+73, 0.56946
+74, 0.56596
+75, 0.56185
+76, 0.55713
+77, 0.55177
+78, 0.54576
+79, 0.53908
+80, 0.53172
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+#DiagramOne0
+SUSP_X_AXLE_TABLE LINEAR
+-75, -1.2314
+-74, -1.2042
+-73, -1.1775
+-72, -1.1513
+-71, -1.1257
+-70, -1.1006
+-69, -1.0761
+-68, -1.052
+-67, -1.0284
+-66, -1.0053
+-65, -0.9827
+-64, -0.9605
+-63, -0.93873
+-62, -0.91738
+-61, -0.89644
+-60, -0.87589
+-59, -0.85572
+-58, -0.83592
+-57, -0.81647
+-56, -0.79737
+-55, -0.77861
+-54, -0.76016
+-53, -0.74203
+-52, -0.7242
+-51, -0.70665
+-50, -0.68939
+-49, -0.67239
+-48, -0.65565
+-47, -0.63916
+-46, -0.6229
+-45, -0.60688
+-44, -0.59108
+-43, -0.57548
+-42, -0.56009
+-41, -0.54489
+-40, -0.52988
+-39, -0.51504
+-38, -0.50037
+-37, -0.48587
+-36, -0.47151
+-35, -0.4573
+-34, -0.44323
+-33, -0.42929
+-32, -0.41548
+-31, -0.40178
+-30, -0.3882
+-29, -0.37472
+-28, -0.36134
+-27, -0.34806
+-26, -0.33486
+-25, -0.32175
+-24, -0.30871
+-23, -0.29575
+-22, -0.28286
+-21, -0.27003
+-20, -0.25726
+-19, -0.24455
+-18, -0.23188
+-17, -0.21927
+-16, -0.2067
+-15, -0.19417
+-14, -0.18168
+-13, -0.16923
+-12, -0.15681
+-11, -0.14442
+-10, -0.13205
+-9, -0.11972
+-8, -0.10741
+-7, -0.09512
+-6, -0.082854
+-5, -0.070608
+-4, -0.058382
+-3, -0.046175
+-2, -0.033986
+-1, -0.021815
+0, -0.0096621
+1, 0.0024729
+2, 0.01459
+3, 0.026687
+4, 0.038766
+5, 0.050823
+6, 0.06286
+7, 0.074873
+8, 0.086861
+9, 0.098824
+10, 0.11076
+11, 0.12266
+12, 0.13453
+13, 0.14637
+14, 0.15817
+15, 0.16992
+16, 0.18163
+17, 0.1933
+18, 0.20491
+19, 0.21647
+20, 0.22796
+21, 0.2394
+22, 0.25076
+23, 0.26206
+24, 0.27327
+25, 0.2844
+26, 0.29545
+27, 0.3064
+28, 0.31725
+29, 0.32799
+30, 0.33863
+31, 0.34915
+32, 0.35954
+33, 0.3698
+34, 0.37992
+35, 0.3899
+36, 0.39973
+37, 0.40939
+38, 0.41889
+39, 0.42821
+40, 0.43735
+41, 0.44629
+42, 0.45503
+43, 0.46357
+44, 0.47188
+45, 0.47997
+46, 0.48781
+47, 0.49541
+48, 0.50276
+49, 0.50983
+50, 0.51663
+51, 0.52314
+52, 0.52935
+53, 0.53525
+54, 0.54082
+55, 0.54607
+56, 0.55097
+57, 0.55552
+58, 0.5597
+59, 0.56349
+60, 0.5669
+61, 0.5699
+62, 0.57248
+63, 0.57464
+64, 0.57635
+65, 0.5776
+66, 0.57838
+67, 0.57867
+68, 0.57847
+69, 0.57775
+70, 0.57651
+71, 0.57472
+72, 0.57238
+73, 0.56946
+74, 0.56596
+75, 0.56185
+76, 0.55713
+77, 0.55177
+78, 0.54576
+79, 0.53908
+80, 0.53172
+ENDTABLE
+
+LOG_ENTRY Used Dataset: Suspension: Longitudinal Movement; { VW_PASSAT } PASSAT_NA_Frt.X_php
+#Library : Suspension: Longitudinal Movement
+#DataSet : PASSAT_NA_Frt.X_php
+#Category: VW_PASSAT
+#FileID  : SusX_0042dad2-7ce2-43be-9803-4f8b85b15e9c
+#Product : CarSim 2018.0
+#VehCode Longitudinal Movement
+
+END
+/F Suspensions\Camber\Camber_da67f163-a426-4c77-9929-82db3ecdda65.par`Suspension: Camber Angle`PASSAT_NA_Frt.Camber_php`VW_PASSAT
+PARSFILE
+#FullDataName Suspension: Camber Angle`PASSAT_NA_Frt.Camber_php`VW_PASSAT
+#CheckBox0 0    
+
+#RingCtrl0 LINEAR
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+CAMBER_COMBINE ADD
+#DiagramOne0
+CAMBER_TABLE LINEAR
+-75, 1.5038
+-74, 1.4761
+-73, 1.4487
+-72, 1.4214
+-71, 1.3944
+-70, 1.3676
+-69, 1.3411
+-68, 1.3147
+-67, 1.2886
+-66, 1.2627
+-65, 1.2371
+-64, 1.2116
+-63, 1.1864
+-62, 1.1613
+-61, 1.1365
+-60, 1.1119
+-59, 1.0876
+-58, 1.0634
+-57, 1.0394
+-56, 1.0157
+-55, 0.99214
+-54, 0.9688
+-53, 0.94568
+-52, 0.92276
+-51, 0.90004
+-50, 0.87753
+-49, 0.85522
+-48, 0.83311
+-47, 0.8112
+-46, 0.78949
+-45, 0.76799
+-44, 0.74668
+-43, 0.72557
+-42, 0.70465
+-41, 0.68394
+-40, 0.66341
+-39, 0.64309
+-38, 0.62296
+-37, 0.60302
+-36, 0.58328
+-35, 0.56372
+-34, 0.54436
+-33, 0.5252
+-32, 0.50622
+-31, 0.48744
+-30, 0.46884
+-29, 0.45044
+-28, 0.43222
+-27, 0.41419
+-26, 0.39635
+-25, 0.3787
+-24, 0.36124
+-23, 0.34397
+-22, 0.32688
+-21, 0.30998
+-20, 0.29327
+-19, 0.27674
+-18, 0.2604
+-17, 0.24425
+-16, 0.22828
+-15, 0.2125
+-14, 0.1969
+-13, 0.18149
+-12, 0.16627
+-11, 0.15123
+-10, 0.13638
+-9, 0.12171
+-8, 0.10723
+-7, 0.092932
+-6, 0.078822
+-5, 0.064898
+-4, 0.05116
+-3, 0.037608
+-2, 0.024243
+-1, 0.011063
+0, -0.001929
+1, -0.014735
+2, -0.027353
+3, -0.039784
+4, -0.052027
+5, -0.064082
+6, -0.075949
+7, -0.087627
+8, -0.099116
+9, -0.11042
+10, -0.12153
+11, -0.13244
+12, -0.14317
+13, -0.15371
+14, -0.16406
+15, -0.17421
+16, -0.18417
+17, -0.19394
+18, -0.20351
+19, -0.21289
+20, -0.22207
+21, -0.23106
+22, -0.23985
+23, -0.24844
+24, -0.25683
+25, -0.26503
+26, -0.27302
+27, -0.28082
+28, -0.28841
+29, -0.2958
+30, -0.30299
+31, -0.30998
+32, -0.31676
+33, -0.32333
+34, -0.3297
+35, -0.33586
+36, -0.34181
+37, -0.34756
+38, -0.35309
+39, -0.35841
+40, -0.36351
+41, -0.36841
+42, -0.37309
+43, -0.37755
+44, -0.38179
+45, -0.38582
+46, -0.38962
+47, -0.39321
+48, -0.39657
+49, -0.39971
+50, -0.40263
+51, -0.40531
+52, -0.40777
+53, -0.41001
+54, -0.41201
+55, -0.41378
+56, -0.41531
+57, -0.41662
+58, -0.41768
+59, -0.41851
+60, -0.4191
+61, -0.41945
+62, -0.41955
+63, -0.41942
+64, -0.41903
+65, -0.4184
+66, -0.41752
+67, -0.41639
+68, -0.41501
+69, -0.41338
+70, -0.41149
+71, -0.40934
+72, -0.40693
+73, -0.40426
+74, -0.40133
+75, -0.39814
+76, -0.39467
+77, -0.39094
+78, -0.38694
+79, -0.38267
+80, -0.37812
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+
+
+LOG_ENTRY Used Dataset: Suspension: Camber Angle; { VW_PASSAT } PASSAT_NA_Frt.Camber_php
+#Library : Suspension: Camber Angle
+#DataSet : PASSAT_NA_Frt.Camber_php
+#Category: VW_PASSAT
+#FileID  : Camber_da67f163-a426-4c77-9929-82db3ecdda65
+#Product : CarSim 2018.0
+#VehCode Camber
+
+END
+/F Suspensions\Lateral\LatJnc_305b6bb4-1fd5-46ec-a3c5-726100349fd7.par`Suspension: Lateral Movement Due to Jounce`PASSAT_NA_Frt.Y_php`VW_PASSAT
+PARSFILE
+#FullDataName Suspension: Lateral Movement Due to Jounce`PASSAT_NA_Frt.Y_php`VW_PASSAT
+#CheckBox0 0    
+
+#RingCtrl0 LINEAR
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+SUSP_LAT_COMBINE ADD
+#DiagramOne0
+SUSP_LAT_TABLE LINEAR
+-75, 4.342
+-74, 4.2095
+-73, 4.0788
+-72, 3.9499
+-71, 3.823
+-70, 3.6979
+-69, 3.5746
+-68, 3.4533
+-67, 3.3339
+-66, 3.2164
+-65, 3.1008
+-64, 2.9872
+-63, 2.8755
+-62, 2.7657
+-61, 2.6579
+-60, 2.552
+-59, 2.4482
+-58, 2.3463
+-57, 2.2463
+-56, 2.1484
+-55, 2.0525
+-54, 1.9585
+-53, 1.8666
+-52, 1.7767
+-51, 1.6888
+-50, 1.603
+-49, 1.5192
+-48, 1.4374
+-47, 1.3577
+-46, 1.28
+-45, 1.2044
+-44, 1.1308
+-43, 1.0594
+-42, 0.98997
+-41, 0.92265
+-40, 0.85742
+-39, 0.79428
+-38, 0.73323
+-37, 0.67428
+-36, 0.61744
+-35, 0.5627
+-34, 0.51008
+-33, 0.45957
+-32, 0.41118
+-31, 0.36491
+-30, 0.32077
+-29, 0.27876
+-28, 0.23889
+-27, 0.20115
+-26, 0.16555
+-25, 0.13209
+-24, 0.10077
+-23, 0.071604
+-22, 0.044586
+-21, 0.019719
+-20, -0.0029942
+-19, -0.023552
+-18, -0.041952
+-17, -0.058194
+-16, -0.072274
+-15, -0.084193
+-14, -0.093949
+-13, -0.10154
+-12, -0.10697
+-11, -0.11023
+-10, -0.11132
+-9, -0.11025
+-8, -0.10701
+-7, -0.1016
+-6, -0.094023
+-5, -0.084279
+-4, -0.072367
+-3, -0.058288
+-2, -0.042042
+-1, -0.02363
+0, -0.0030524
+1, 0.01969
+2, 0.044595
+3, 0.071664
+4, 0.10089
+5, 0.13228
+6, 0.16583
+7, 0.20153
+8, 0.23939
+9, 0.2794
+10, 0.32156
+11, 0.36587
+12, 0.41232
+13, 0.46092
+14, 0.51165
+15, 0.56453
+16, 0.61954
+17, 0.67668
+18, 0.73595
+19, 0.79734
+20, 0.86085
+21, 0.92648
+22, 0.99423
+23, 1.0641
+24, 1.136
+25, 1.2101
+26, 1.2863
+27, 1.3645
+28, 1.4448
+29, 1.5273
+30, 1.6118
+31, 1.6983
+32, 1.787
+33, 1.8777
+34, 1.9704
+35, 2.0652
+36, 2.1621
+37, 2.2609
+38, 2.3619
+39, 2.4648
+40, 2.5698
+41, 2.6768
+42, 2.7858
+43, 2.8967
+44, 3.0097
+45, 3.1247
+46, 3.2416
+47, 3.3606
+48, 3.4814
+49, 3.6043
+50, 3.7291
+51, 3.8558
+52, 3.9844
+53, 4.115
+54, 4.2475
+55, 4.3819
+56, 4.5182
+57, 4.6564
+58, 4.7965
+59, 4.9385
+60, 5.0823
+61, 5.2279
+62, 5.3754
+63, 5.5248
+64, 5.676
+65, 5.8289
+66, 5.9837
+67, 6.1403
+68, 6.2987
+69, 6.4588
+70, 6.6207
+71, 6.7844
+72, 6.9498
+73, 7.1169
+74, 7.2858
+75, 7.4563
+76, 7.6286
+77, 7.8025
+78, 7.9781
+79, 8.1554
+80, 8.3343
+ENDTABLE
+SUSP_Y_AXLE_ROLL_COMBINE ADD ! in case this is for a solid axle
+#DiagramOne0
+SUSP_LAT_AXLE_JOUNCE_TABLE LINEAR
+-75, 4.342
+-74, 4.2095
+-73, 4.0788
+-72, 3.9499
+-71, 3.823
+-70, 3.6979
+-69, 3.5746
+-68, 3.4533
+-67, 3.3339
+-66, 3.2164
+-65, 3.1008
+-64, 2.9872
+-63, 2.8755
+-62, 2.7657
+-61, 2.6579
+-60, 2.552
+-59, 2.4482
+-58, 2.3463
+-57, 2.2463
+-56, 2.1484
+-55, 2.0525
+-54, 1.9585
+-53, 1.8666
+-52, 1.7767
+-51, 1.6888
+-50, 1.603
+-49, 1.5192
+-48, 1.4374
+-47, 1.3577
+-46, 1.28
+-45, 1.2044
+-44, 1.1308
+-43, 1.0594
+-42, 0.98997
+-41, 0.92265
+-40, 0.85742
+-39, 0.79428
+-38, 0.73323
+-37, 0.67428
+-36, 0.61744
+-35, 0.5627
+-34, 0.51008
+-33, 0.45957
+-32, 0.41118
+-31, 0.36491
+-30, 0.32077
+-29, 0.27876
+-28, 0.23889
+-27, 0.20115
+-26, 0.16555
+-25, 0.13209
+-24, 0.10077
+-23, 0.071604
+-22, 0.044586
+-21, 0.019719
+-20, -0.0029942
+-19, -0.023552
+-18, -0.041952
+-17, -0.058194
+-16, -0.072274
+-15, -0.084193
+-14, -0.093949
+-13, -0.10154
+-12, -0.10697
+-11, -0.11023
+-10, -0.11132
+-9, -0.11025
+-8, -0.10701
+-7, -0.1016
+-6, -0.094023
+-5, -0.084279
+-4, -0.072367
+-3, -0.058288
+-2, -0.042042
+-1, -0.02363
+0, -0.0030524
+1, 0.01969
+2, 0.044595
+3, 0.071664
+4, 0.10089
+5, 0.13228
+6, 0.16583
+7, 0.20153
+8, 0.23939
+9, 0.2794
+10, 0.32156
+11, 0.36587
+12, 0.41232
+13, 0.46092
+14, 0.51165
+15, 0.56453
+16, 0.61954
+17, 0.67668
+18, 0.73595
+19, 0.79734
+20, 0.86085
+21, 0.92648
+22, 0.99423
+23, 1.0641
+24, 1.136
+25, 1.2101
+26, 1.2863
+27, 1.3645
+28, 1.4448
+29, 1.5273
+30, 1.6118
+31, 1.6983
+32, 1.787
+33, 1.8777
+34, 1.9704
+35, 2.0652
+36, 2.1621
+37, 2.2609
+38, 2.3619
+39, 2.4648
+40, 2.5698
+41, 2.6768
+42, 2.7858
+43, 2.8967
+44, 3.0097
+45, 3.1247
+46, 3.2416
+47, 3.3606
+48, 3.4814
+49, 3.6043
+50, 3.7291
+51, 3.8558
+52, 3.9844
+53, 4.115
+54, 4.2475
+55, 4.3819
+56, 4.5182
+57, 4.6564
+58, 4.7965
+59, 4.9385
+60, 5.0823
+61, 5.2279
+62, 5.3754
+63, 5.5248
+64, 5.676
+65, 5.8289
+66, 5.9837
+67, 6.1403
+68, 6.2987
+69, 6.4588
+70, 6.6207
+71, 6.7844
+72, 6.9498
+73, 7.1169
+74, 7.2858
+75, 7.4563
+76, 7.6286
+77, 7.8025
+78, 7.9781
+79, 8.1554
+80, 8.3343
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+
+
+LOG_ENTRY Used Dataset: Suspension: Lateral Movement Due to Jounce; { VW_PASSAT } PASSAT_NA_Frt.Y_php
+#Library : Suspension: Lateral Movement Due to Jounce
+#DataSet : PASSAT_NA_Frt.Y_php
+#Category: VW_PASSAT
+#FileID  : LatJnc_305b6bb4-1fd5-46ec-a3c5-726100349fd7
+#Product : CarSim 2018.0
+#VehCode Lateral Movement
+
+END
+/F Suspensions\Toe\Toe_d8fd46e4-fb4e-4e59-8c7f-6d744c9bda57.par`Suspension: Toe Angle`PASSAT_NA_Frt.Toe_php`VW_PASSAT
+PARSFILE
+#FullDataName Suspension: Toe Angle`PASSAT_NA_Frt.Toe_php`VW_PASSAT
+#CheckBox0 0    
+
+#RingCtrl0 LINEAR
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+TOE_COMBINE ADD
+#DiagramOne0
+TOE_TABLE LINEAR
+-75, 0.027237
+-74, 0.030002
+-73, 0.032679
+-72, 0.035269
+-71, 0.037773
+-70, 0.040189
+-69, 0.042519
+-68, 0.044762
+-67, 0.046918
+-66, 0.048988
+-65, 0.050972
+-64, 0.052869
+-63, 0.054679
+-62, 0.056404
+-61, 0.058042
+-60, 0.059594
+-59, 0.06106
+-58, 0.062441
+-57, 0.063735
+-56, 0.064944
+-55, 0.066067
+-54, 0.067105
+-53, 0.068057
+-52, 0.068924
+-51, 0.069706
+-50, 0.070403
+-49, 0.071015
+-48, 0.071542
+-47, 0.071984
+-46, 0.072342
+-45, 0.072615
+-44, 0.072803
+-43, 0.072908
+-42, 0.072928
+-41, 0.072864
+-40, 0.072716
+-39, 0.072485
+-38, 0.072169
+-37, 0.071771
+-36, 0.071289
+-35, 0.070723
+-34, 0.070075
+-33, 0.069343
+-32, 0.068529
+-31, 0.067632
+-30, 0.066653
+-29, 0.065591
+-28, 0.064446
+-27, 0.06322
+-26, 0.061912
+-25, 0.060522
+-24, 0.05905
+-23, 0.057497
+-22, 0.055863
+-21, 0.054147
+-20, 0.052351
+-19, 0.050473
+-18, 0.048515
+-17, 0.046477
+-16, 0.044358
+-15, 0.042159
+-14, 0.03988
+-13, 0.037521
+-12, 0.035083
+-11, 0.032565
+-10, 0.029969
+-9, 0.027293
+-8, 0.024538
+-7, 0.021704
+-6, 0.018792
+-5, 0.015802
+-4, 0.012734
+-3, 0.0095873
+-2, 0.0063633
+-1, 0.0030619
+0, -0.00031683
+1, -0.0037726
+2, -0.0073053
+3, -0.010915
+4, -0.0146
+5, -0.018363
+6, -0.022201
+7, -0.026114
+8, -0.030104
+9, -0.034169
+10, -0.038309
+11, -0.042524
+12, -0.046813
+13, -0.051177
+14, -0.055616
+15, -0.060128
+16, -0.064714
+17, -0.069374
+18, -0.074107
+19, -0.078913
+20, -0.083791
+21, -0.088743
+22, -0.093766
+23, -0.098862
+24, -0.10403
+25, -0.10927
+26, -0.11458
+27, -0.11996
+28, -0.12541
+29, -0.13094
+30, -0.13653
+31, -0.14219
+32, -0.14793
+33, -0.15373
+34, -0.1596
+35, -0.16554
+36, -0.17155
+37, -0.17763
+38, -0.18377
+39, -0.18999
+40, -0.19627
+41, -0.20262
+42, -0.20903
+43, -0.21552
+44, -0.22206
+45, -0.22868
+46, -0.23536
+47, -0.24211
+48, -0.24892
+49, -0.25579
+50, -0.26273
+51, -0.26974
+52, -0.27681
+53, -0.28394
+54, -0.29114
+55, -0.2984
+56, -0.30572
+57, -0.31311
+58, -0.32055
+59, -0.32806
+60, -0.33563
+61, -0.34327
+62, -0.35096
+63, -0.35871
+64, -0.36653
+65, -0.3744
+66, -0.38233
+67, -0.39033
+68, -0.39838
+69, -0.40649
+70, -0.41466
+71, -0.42288
+72, -0.43117
+73, -0.43951
+74, -0.44791
+75, -0.45636
+76, -0.46487
+77, -0.47344
+78, -0.48206
+79, -0.49074
+80, -0.49947
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+
+
+LOG_ENTRY Used Dataset: Suspension: Toe Angle; { VW_PASSAT } PASSAT_NA_Frt.Toe_php
+#Library : Suspension: Toe Angle
+#DataSet : PASSAT_NA_Frt.Toe_php
+#Category: VW_PASSAT
+#FileID  : Toe_d8fd46e4-fb4e-4e59-8c7f-6d744c9bda57
+#Product : CarSim 2018.0
+#VehCode Toe
+
+END
+/F Suspensions\Springs\Spring_fd58c0a3-f6be-48cd-ae1e-f11893b05a09.par`Suspension: Spring`PASSAT_NA_Frt.SPR_php`VW_PASSAT
+PARSFILE
+#FullDataName Suspension: Spring`PASSAT_NA_Frt.SPR_php`VW_PASSAT
+#RingCtrl0 LINEAR
+#DiagramOne0
+FS_COMP_TABLE LINEAR
+-75, 1946.7
+-74, 2026.3
+-73, 2103.7
+-72, 2179
+-71, 2252.3
+-70, 2323.6
+-69, 2393
+-68, 2460.4
+-67, 2526
+-66, 2589.8
+-65, 2651.8
+-64, 2712.1
+-63, 2770.8
+-62, 2827.7
+-61, 2883.1
+-60, 2937
+-59, 2989.3
+-58, 3040.2
+-57, 3089.6
+-56, 3137.7
+-55, 3184.4
+-54, 3229.8
+-53, 3274
+-52, 3316.9
+-51, 3358.7
+-50, 3399.3
+-49, 3438.8
+-48, 3477.3
+-47, 3514.8
+-46, 3551.2
+-45, 3586.7
+-44, 3621.3
+-43, 3655.1
+-42, 3687.9
+-41, 3720
+-40, 3751.4
+-39, 3782
+-38, 3811.9
+-37, 3841.1
+-36, 3869.7
+-35, 3897.8
+-34, 3925.3
+-33, 3952.2
+-32, 3978.7
+-31, 4004.7
+-30, 4030.3
+-29, 4055.5
+-28, 4080.3
+-27, 4104.8
+-26, 4129
+-25, 4153
+-24, 4176.7
+-23, 4200.2
+-22, 4223.6
+-21, 4246.7
+-20, 4269.8
+-19, 4292.8
+-18, 4315.7
+-17, 4338.6
+-16, 4361.5
+-15, 4384.4
+-14, 4407.4
+-13, 4430.4
+-12, 4453.6
+-11, 4476.8
+-10, 4500.3
+-9, 4523.9
+-8, 4547.7
+-7, 4571.7
+-6, 4596
+-5, 4620.6
+-4, 4645.5
+-3, 4670.7
+-2, 4696.3
+-1, 4722.2
+0, 4748.5
+1, 4775.2
+2, 4802.4
+3, 4830
+4, 4858.1
+5, 4886.7
+6, 4915.8
+7, 4945.5
+8, 4975.7
+9, 5006.5
+10, 5037.9
+11, 5069.9
+12, 5102.5
+13, 5135.8
+14, 5169.7
+15, 5204.4
+16, 5239.7
+17, 5275.8
+18, 5312.5
+19, 5350.1
+20, 5388.4
+21, 5427.4
+22, 5467.3
+23, 5508
+24, 5549.5
+25, 5591.8
+26, 5635
+27, 5679
+28, 5724
+29, 5769.8
+30, 5816.5
+31, 5864.1
+32, 5912.6
+33, 5962.1
+34, 6012.5
+35, 6063.8
+36, 6116.1
+37, 6169.4
+38, 6223.7
+39, 6279
+40, 6335.2
+41, 6392.5
+42, 6450.8
+43, 6510
+44, 6570.4
+45, 6631.7
+46, 6694.1
+47, 6757.6
+48, 6822.1
+49, 6887.6
+50, 6954.2
+51, 7021.9
+52, 7090.7
+53, 7160.5
+54, 7231.4
+55, 7303.4
+56, 7376.4
+57, 7450.6
+58, 7525.8
+59, 7602.2
+60, 7679.6
+61, 7758.1
+62, 7837.8
+63, 7918.5
+64, 8000.3
+65, 8083.2
+66, 8167.2
+67, 8252.3
+68, 8338.5
+69, 8425.8
+70, 8514.1
+71, 8603.6
+72, 8694.1
+73, 8785.7
+74, 8878.4
+75, 8972.2
+76, 9067
+77, 9162.9
+78, 9259.9
+79, 9357.9
+80, 9457
+ENDTABLE
+#DiagramOne1
+FS_EXT_TABLE LINEAR
+-75, 1946.7
+-74, 2026.3
+-73, 2103.7
+-72, 2179
+-71, 2252.3
+-70, 2323.6
+-69, 2393
+-68, 2460.4
+-67, 2526
+-66, 2589.8
+-65, 2651.8
+-64, 2712.1
+-63, 2770.8
+-62, 2827.7
+-61, 2883.1
+-60, 2937
+-59, 2989.3
+-58, 3040.2
+-57, 3089.6
+-56, 3137.7
+-55, 3184.4
+-54, 3229.8
+-53, 3274
+-52, 3316.9
+-51, 3358.7
+-50, 3399.3
+-49, 3438.8
+-48, 3477.3
+-47, 3514.8
+-46, 3551.2
+-45, 3586.7
+-44, 3621.3
+-43, 3655.1
+-42, 3687.9
+-41, 3720
+-40, 3751.4
+-39, 3782
+-38, 3811.9
+-37, 3841.1
+-36, 3869.7
+-35, 3897.8
+-34, 3925.3
+-33, 3952.2
+-32, 3978.7
+-31, 4004.7
+-30, 4030.3
+-29, 4055.5
+-28, 4080.3
+-27, 4104.8
+-26, 4129
+-25, 4153
+-24, 4176.7
+-23, 4200.2
+-22, 4223.6
+-21, 4246.7
+-20, 4269.8
+-19, 4292.8
+-18, 4315.7
+-17, 4338.6
+-16, 4361.5
+-15, 4384.4
+-14, 4407.4
+-13, 4430.4
+-12, 4453.6
+-11, 4476.8
+-10, 4500.3
+-9, 4523.9
+-8, 4547.7
+-7, 4571.7
+-6, 4596
+-5, 4620.6
+-4, 4645.5
+-3, 4670.7
+-2, 4696.3
+-1, 4722.2
+0, 4748.5
+1, 4775.2
+2, 4802.4
+3, 4830
+4, 4858.1
+5, 4886.7
+6, 4915.8
+7, 4945.5
+8, 4975.7
+9, 5006.5
+10, 5037.9
+11, 5069.9
+12, 5102.5
+13, 5135.8
+14, 5169.7
+15, 5204.4
+16, 5239.7
+17, 5275.8
+18, 5312.5
+19, 5350.1
+20, 5388.4
+21, 5427.4
+22, 5467.3
+23, 5508
+24, 5549.5
+25, 5591.8
+26, 5635
+27, 5679
+28, 5724
+29, 5769.8
+30, 5816.5
+31, 5864.1
+32, 5912.6
+33, 5962.1
+34, 6012.5
+35, 6063.8
+36, 6116.1
+37, 6169.4
+38, 6223.7
+39, 6279
+40, 6335.2
+41, 6392.5
+42, 6450.8
+43, 6510
+44, 6570.4
+45, 6631.7
+46, 6694.1
+47, 6757.6
+48, 6822.1
+49, 6887.6
+50, 6954.2
+51, 7021.9
+52, 7090.7
+53, 7160.5
+54, 7231.4
+55, 7303.4
+56, 7376.4
+57, 7450.6
+58, 7525.8
+59, 7602.2
+60, 7679.6
+61, 7758.1
+62, 7837.8
+63, 7918.5
+64, 8000.3
+65, 8083.2
+66, 8167.2
+67, 8252.3
+68, 8338.5
+69, 8425.8
+70, 8514.1
+71, 8603.6
+72, 8694.1
+73, 8785.7
+74, 8878.4
+75, 8972.2
+76, 9067
+77, 9162.9
+78, 9259.9
+79, 9357.9
+80, 9457
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+SPRING_COMP_BETA 2
+SPRING_EXT_BETA 2
+
+
+LOG_ENTRY Used Dataset: Suspension: Spring; { VW_PASSAT } PASSAT_NA_Frt.SPR_php
+#Library : Suspension: Spring
+#DataSet : PASSAT_NA_Frt.SPR_php
+#Category: VW_PASSAT
+#FileID  : Spring_fd58c0a3-f6be-48cd-ae1e-f11893b05a09
+#Product : CarSim 2018.0
+#VehCode Spring Alone
+
+END
+/F Suspensions\Shocks\Shock_06339072-ca43-46c4-af82-ec3bf59d6ffc.par`Suspension: Shock Absorber`Big Car`Passenger Car
+PARSFILE
+#FullDataName Suspension: Shock Absorber`Big Car`Passenger Car
+#CheckBox0 0    
+
+#RingCtrl0 SPLINE
+#RadioCtrl0 0    
+
+#DiagramOne0
+FD_TABLE SPLINE
+-1410, -5008
+-720, -3436
+-390, -2324
+-210, -1792
+-90, -1008
+-20, -228
+0, 0
+20, 228
+90, 596
+200, 784
+390, 1100
+760, 1796
+1160, 2560
+ENDTABLE
+
+
+LOG_ENTRY Used Dataset: Suspension: Shock Absorber; { Passenger Car } Big Car
+#Library : Suspension: Shock Absorber
+#DataSet : Big Car
+#Category: Passenger Car
+#FileID  : Shock_06339072-ca43-46c4-af82-ec3bf59d6ffc
+#Product : CarSim 2018.0
+#VehCode Shock Absorber
+
+END
+/F Suspensions\Aux_Roll\AuxMx_a8976181-b801-400d-bbf3-fefbd95da0e0.par`Suspension: Auxiliary Roll Moment`PASSAT_NA_FrtRollbar_php`VW_PASSAT
+PARSFILE
+#FullDataName Suspension: Auxiliary Roll Moment`PASSAT_NA_FrtRollbar_php`VW_PASSAT
+#CheckBox0 0    
+
+#RingCtrl0 COEFFICIENT
+#RingCtrl1 CONSTANT
+#RingCtrl2 MULTIPLY
+MX_AUX_COMBINE MULTIPLY
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+MX_AUX_COEFFICIENT 946.1
+MX_AUX_FSTATIC_CONSTANT 1
+*SCALAR 946.1
+*SCALAR2 1
+
+
+LOG_ENTRY Used Dataset: Suspension: Auxiliary Roll Moment; { VW_PASSAT } PASSAT_NA_FrtRollbar_php
+#Library : Suspension: Auxiliary Roll Moment
+#DataSet : PASSAT_NA_FrtRollbar_php
+#Category: VW_PASSAT
+#FileID  : AuxMx_a8976181-b801-400d-bbf3-fefbd95da0e0
+#Product : CarSim 2018.0
+#VehCode Aux. Roll Moment
+
+END
+/F Animator\STL_Groups\ShpGrp_b46bb8ca-2d76-4ce9-9459-7ed6afac0407.par`Animator: Shape Assembly`Euro Sedan Tire`Tires
+PARSFILE
+#FullDataName Animator: Shape Assembly`Euro Sedan Tire`Tires
+*X_REF_LENGTH 291
+*Y_REF_LENGTH 195
+*Z_REF_LENGTH 291
+*IMAGE_FIT_MODE 1
+#CheckBox0 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 1    
+
+#RingCtrl1 2
+#RingCtrl2 2
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL_Groups\ShpGrp_b46bb8ca-2d76-4ce9-9459-7ed6afac0407.png
+PARSFILE Animator\STL\Shape_2905a7a9-2ebe-425c-855a-2b6e74d0b58f.par
+#BlueLink0 Animator: Shape File Link`Euro. Sedan Tire` Tires` , Shape File`Shape_2905a7a9-2ebe-425c-855a-2b6e74d0b58f
+
+PARSFILE Animator\STL\Shape_3dafe263-b4dc-46a2-bb2e-95660b50dd2e.par
+#BlueLink1 Animator: Shape File Link`Euro. Sedan Wheel` Tires` , Shape File`Shape_3dafe263-b4dc-46a2-bb2e-95660b50dd2e
+
+PARSFILE Animator\STL\Shape_21a8656e-547d-4831-954d-38d95a9dff2b.par
+#BlueLink2 Animator: Shape File Link`Euro. Sedan Stripe` Tires` , Shape File`Shape_21a8656e-547d-4831-954d-38d95a9dff2b
+
+x_ref_length 291
+y_ref_length 195
+z_ref_length 291
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink17 Animator: Camera Setup`Shape Preview (Side)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Tires } Euro Sedan Tire
+#Library : Animator: Shape Assembly
+#DataSet : Euro Sedan Tire
+#Category: Tires
+#FileID  : ShpGrp_b46bb8ca-2d76-4ce9-9459-7ed6afac0407
+#Product : CarSim 2018.0
+#VehCode Shape Assembly
+
+END
+/F Generic\tables\GenTab_6200ca2d-9af8-4768-9d04-87ea0bd47068.par`Generic Table`Lx Variable, Scaled to Tire`Tire Relaxation Length
+PARSFILE
+#FullDataName Generic Table`Lx Variable, Scaled to Tire`Tire Relaxation Length
+#RingCtrl0 SPLINE_FLAT
+#RingCtrl1 MULTIPLY
+#RingCtrl2 LINEAR
+#CheckBox0 1    
+
+L_RELAX_X_COMBINE MULTIPLY
+#MiscYellow0
+SET_UNITS L_RELAX_X_TABLE m
+L_RELAX_X_GAIN = RRE//5
+FZ_SCALE_L_RELAX_X = FZ_REF
+#ENDMYellow
+
+#DiagramOne0
+L_RELAX_X_TABLE SPLINE_FLAT
+-0.1, 0.13526
+-0.095, 0.13793
+-0.09, 0.1431
+-0.085, 0.14862
+-0.08, 0.1552
+-0.075, 0.16251
+-0.07, 0.17087
+-0.065, 0.18085
+-0.06, 0.1926
+-0.055, 0.20631
+-0.05, 0.22324
+-0.045, 0.24389
+-0.04, 0.26989
+-0.035, 0.30301
+-0.03, 0.34575
+-0.025, 0.40397
+-0.02, 0.48251
+-0.015, 0.59275
+-0.01, 0.7393
+-0.005, 0.90707
+0, 1
+0.005, 0.90707
+0.01, 0.7393
+0.015, 0.59275
+0.02, 0.48251
+0.025, 0.40397
+0.03, 0.34575
+0.035, 0.30301
+0.04, 0.26989
+0.045, 0.24389
+0.05, 0.22324
+0.055, 0.20631
+0.06, 0.1926
+0.065, 0.18085
+0.07, 0.17087
+0.075, 0.16251
+0.08, 0.1552
+0.085, 0.14862
+0.09, 0.1431
+0.095, 0.13793
+0.1, 0.13526
+ENDTABLE
+#DiagramOne1
+L_RELAX_X_FZ_TABLE LINEAR
+0, 0.2
+1, 1
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+*KEYWORD L_RELAX_X
+*X_LABEL Lagged Slip Ratio (-)
+*Y_LABEL Relax. Length
+*X_LABEL_2 Vertical Load (Fz)
+*KEYWORD_2 L_RELAX_X_FZ
+
+
+#EMBEDDED_NOTES
+#Normalized dataset. The function gain is scaled to the tire radius and the reference Fz.
+#
+#This dataset requires that the tire reference Fz (FZ_REF) have a reasonable value; otherwise the relaxation length will be huge.
+#
+#The units for relaxation length were changed to meters, to simplify the automatic scaling.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic Table; { Tire Relaxation Length } Lx Variable, Scaled to Tire
+#Library : Generic Table
+#DataSet : Lx Variable, Scaled to Tire
+#Category: Tire Relaxation Length
+#FileID  : GenTab_6200ca2d-9af8-4768-9d04-87ea0bd47068
+#Product : CarSim 2018.0
+#VehCode table
+
+END
+/F Generic\tables\GenTab_edb0dc74-f107-43df-b9cc-c9fa4d21267d.par`Generic Table`Ly Variable, Scaled to Tire`Tire Relaxation Length
+PARSFILE
+#FullDataName Generic Table`Ly Variable, Scaled to Tire`Tire Relaxation Length
+#RingCtrl0 SPLINE_FLAT
+#RingCtrl1 MULTIPLY
+#RingCtrl2 SPLINE
+#CheckBox0 1    
+
+L_RELAX_Y_COMBINE MULTIPLY
+#MiscYellow0
+SET_UNITS L_RELAX_Y_TABLE m
+L_RELAX_Y_GAIN = RRE*2
+FZ_SCALE_L_RELAX_Y = FZ_REF
+#ENDMYellow
+
+#DiagramOne0
+L_RELAX_Y_TABLE SPLINE_FLAT
+-10, 0.039175
+-9.5, 0.042142
+-9, 0.047886
+-8.5, 0.054018
+-8, 0.061335
+-7.5, 0.069451
+-7, 0.078749
+-6.5, 0.089829
+-6, 0.10289
+-5.5, 0.11812
+-5, 0.13693
+-4.5, 0.15988
+-4, 0.18877
+-3.5, 0.22557
+-3, 0.27305
+-2.5, 0.33775
+-2, 0.42501
+-1.5, 0.5475
+-1, 0.71033
+-0.5, 0.89674
+0, 1
+0.5, 0.89674
+1, 0.71033
+1.5, 0.5475
+2, 0.42501
+2.5, 0.33775
+3, 0.27305
+3.5, 0.22557
+4, 0.18877
+4.5, 0.15988
+5, 0.13693
+5.5, 0.11812
+6, 0.10289
+6.5, 0.089829
+7, 0.078749
+7.5, 0.069451
+8, 0.061335
+8.5, 0.054018
+9, 0.047886
+9.5, 0.042142
+10, 0.039175
+ENDTABLE
+#DiagramOne1
+L_RELAX_Y_FZ_TABLE SPLINE
+0, 0.1
+1, 1
+2, 1.5805
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+*KEYWORD L_RELAX_Y
+*X_LABEL Lagged Slip Angle (deg)
+*Y_LABEL Relax. Length
+*X_LABEL_2 Vertical Load (Fz)
+*KEYWORD_2 L_RELAX_Y_FZ
+
+
+#EMBEDDED_NOTES
+#Normalized dataset. The function gain is scaled to the tire radius and the reference Fz.
+#
+#This dataset requires that the tire reference Fz (FZ_REF) have a reasonable value; otherwise the relaxation length will be huge.
+#
+#The units for relaxation length were changed to meters, to simplify the automatic scaling.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic Table; { Tire Relaxation Length } Ly Variable, Scaled to Tire
+#Library : Generic Table
+#DataSet : Ly Variable, Scaled to Tire
+#Category: Tire Relaxation Length
+#FileID  : GenTab_edb0dc74-f107-43df-b9cc-c9fa4d21267d
+#Product : CarSim 2018.0
+#VehCode table
+
+END
+/F Tires\Mz\TireMz_3a71ed18-e842-4d21-9297-9e431964ca79.par`Tire: Aligning Moment`215/55 R17 (2016)`Touring Tires
+PARSFILE
+#FullDataName Tire: Aligning Moment`215//55 R17 (2016)`Touring Tires
+#CheckBox0 0    
+
+#RingCtrl0 CARPET_FROM_ZERO
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+*3D_XLabel Vertical load (N)
+*3D_YLabel Abs. slip angle [Alpha] (deg)
+*3D_ZLabel Aligning moment (N-m)
+
+#DiagramTwo0
+*3D_DATA 8, 51 ! columns x rows
+MZ_TIRE_CARPET 2D_FROM_ZERO
+0, 1593.58, 3187.16, 4780.74, 6374.32, 7967.9, 9561.48, 11155.06, 12748.65
+0.5, 7.452673542, 14.64959626, 21.54915219, 28.13312762, 34.39085259, 40.31966384, 45.90179517, 51.15086512
+1, 15.07509942, 29.65361007, 43.65497795, 57.03124096, 69.75540841, 81.79688942, 93.13987976, 103.7828717
+1.5, 21.32663766, 42.23959603, 62.62702384, 82.4007136, 101.458924, 119.73241, 137.1329889, 153.6016139
+2, 23.73004713, 47.66537269, 71.73982093, 95.84980211, 119.855025, 143.5945442, 166.8858444, 189.5425159
+2.5, 21.99372876, 44.90685727, 68.84963178, 93.8087936, 119.7297538, 146.4726113, 173.8654352, 201.6658753
+3, 18.14074155, 37.59953072, 58.62214546, 81.36260258, 105.9217146, 132.3535328, 160.6255867, 190.6578153
+3.5, 14.06887262, 29.50822021, 46.63490127, 65.71737839, 86.98378571, 110.6688723, 136.9480163, 165.9816456
+4, 10.58879803, 22.42678885, 35.84515029, 51.13312027, 68.60532091, 88.57797644, 111.3885331, 137.3644113
+4.5, 7.836285874, 16.75003754, 27.05137706, 39.02310043, 52.98429643, 69.2748367, 88.29561436, 110.4824822
+5, 5.710646062, 12.34118771, 20.14977005, 29.40150275, 40.39566248, 53.46178464, 68.99360804, 87.46296931
+5.5, 4.07982336, 8.927362915, 14.78169293, 21.86498968, 30.44124912, 40.81873231, 53.37193915, 68.54232854
+6, 2.811946049, 6.269915035, 10.58617046, 15.94927125, 22.58605235, 30.78104994, 40.8620161, 53.23546322
+6.5, 1.809380108, 4.181237372, 7.276479254, 11.26423176, 16.35526284, 22.77307317, 30.83240551, 40.88490488
+7, 1.017756163, 2.511195538, 4.625718621, 7.513991597, 11.3507223, 16.3372078, 22.73749225, 30.883169
+7.5, 0.369513987, 1.15582271, 2.480092299, 4.474975134, 7.292975012, 11.10446589, 16.15025363, 22.71583675
+8, -0.162075367, 0.043765673, 0.721583733, 1.980181037, 3.957411103, 6.806902585, 10.73176979, 15.98696291
+8.5, -0.602193938, -0.881818771, -0.745387126, -0.095373299, 1.181978846, 3.231046404, 6.225841262, 10.39411024
+9, -0.97481139, -1.664305144, -1.979096729, -1.842828165, -1.14775825, 0.225857262, 2.442153575, 5.686489692
+9.5, -1.292306991, -2.32902221, -3.035038589, -3.332473734, -3.135072744, -2.329438581, -0.776874005, 1.691308235
+10, -1.56648864, -2.900098932, -3.939285249, -4.615010055, -4.839588026, -4.52159855, -3.535071449, -1.726082378
+10.5, -1.803440111, -3.400787263, -4.727495909, -5.722504698, -6.318220394, -6.422237318, -5.925739841, -4.688293086
+11, -2.014297278, -3.842957305, -5.423365433, -6.702189151, -7.614620174, -8.083094353, -8.009487844, -7.265664817
+11.5, -2.204684941, -4.232685161, -6.039089273, -7.567096051, -8.759775421, -9.548335669, -9.84446809, -9.537350008
+12, -2.374769821, -4.581170508, -6.58629456, -8.335044607, -9.778075858, -10.85501245, -11.47540471, -11.55036416
+12.5, -2.524628574, -4.899385963, -7.081811426, -9.028944772, -10.69321243, -12.02212719, -12.93407193, -13.34418312
+13, -2.659614692, -5.18206113, -7.525873371, -9.654731928, -11.51715671, -13.07371476, -14.24552626, -14.95701408
+13.5, -2.785051214, -5.44533402, -7.93486284, -10.22368634, -12.26713697, -14.02759627, -15.4341518, -16.41431684
+14, -2.900886747, -5.683772275, -8.308786566, -10.741359, -12.95456424, -14.89553819, -16.51227411, -17.73501202
+14.5, -3.0070464, -5.90266629, -8.65296303, -11.22424815, -13.58501207, -15.69481182, -17.50344211, -18.94938784
+15, -3.108856781, -6.107300207, -8.972736703, -11.66670627, -14.16401758, -16.43109525, -18.41943062, -20.05778026
+15.5, -3.200874527, -6.297540242, -9.267919486, -12.0795864, -14.70822789, -17.11564214, -19.2601596, -21.08398821
+16, -3.288368067, -6.478698001, -9.543773415, -12.46265559, -15.20613473, -17.74823957, -20.04291125, -22.03386974
+16.5, -3.371285052, -6.645156434, -9.800138218, -12.82121134, -15.68004052, -18.34004477, -20.77325299, -22.91911194
+17, -3.444155182, -6.80224243, -10.04775839, -13.16062475, -16.11834359, -18.89649458, -21.4508578, -23.7513539
+17.5, -3.51767811, -6.949795577, -10.27549077, -13.48061809, -16.53206877, -19.41724065, -22.09294179, -24.52428255
+18, -3.586460617, -7.093173326, -10.49410313, -13.78092829, -16.92659322, -19.90772689, -22.69913017, -25.25541387
+18.5, -3.650354932, -7.226767057, -10.7035133, -14.06692276, -17.29591764, -20.37338313, -23.26906222, -25.93840645
+19, -3.714753523, -7.350468858, -10.89791843, -14.33842558, -17.65119399, -20.81386673, -23.80827793, -26.59083669
+19.5, -3.774223363, -7.475134313, -11.0883277, -14.59514517, -17.9864457, -21.23469831, -24.31639205, -27.20627504
+20, -3.82864507, -7.589694958, -11.26899314, -14.84257465, -18.30713281, -21.63551111, -24.80482183, -27.79642297
+20.5, -3.883444674, -7.699531799, -11.4398002, -15.08052062, -18.61302126, -22.01613348, -25.27332363, -28.35487978
+21, -3.938581507, -7.810140861, -11.60058143, -15.30881042, -18.90384817, -22.38200175, -25.71561638, -28.88729382
+21.5, -3.98858859, -7.910320562, -11.76242427, -15.5215519, -19.18518042, -22.73295339, -26.14329644, -29.39940291
+22, -4.033339755, -8.011113636, -11.91403297, -15.73571238, -19.45686391, -23.0687127, -26.55011218, -29.88481795
+22.5, -4.083905407, -8.106879608, -12.06087168, -15.93401885, -19.71286029, -23.3890387, -26.94178715, -30.35535808
+23, -4.129172965, -8.197542219, -12.20287534, -16.12778154, -19.96467699, -23.70553312, -27.3240656, -30.80467474
+23.5, -4.169045156, -8.288726867, -12.3399873, -16.31687009, -20.20626286, -24.00622562, -27.68466753, -31.24470109
+24, -4.214743531, -8.374633295, -12.47205046, -16.50118665, -20.44338012, -24.29677306, -28.04149426, -31.66296255
+24.5, -4.25497, -8.460964357, -12.60476871, -16.6748672, -20.67005308, -24.57708584, -28.38227937, -32.06531652
+25, -4.295425512, -8.541981986, -12.72655819, -16.84352825, -20.89195742, -24.84695846, -28.70674458, -32.45772358
+26, -4.295425512, -8.541981986, -12.72655819, -16.84352825, -20.89195742, -24.84695846, -28.70674458, -32.45772358
+ENDTABLE
+
+
+
+#EMBEDDED_NOTES
+#New for CS 2016
+#
+#This Aligning Moment data replaces the previously shipping Aligning Moment data.
+#
+#The Mz values correspond to a pneumatic trail (deg) obtained from the averaged results of SAE Tire Tests.
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Tire: Aligning Moment; { Touring Tires } 215//55 R17 (2016)
+#Library : Tire: Aligning Moment
+#DataSet : 215//55 R17 (2016)
+#Category: Touring Tires
+#FileID  : TireMz_3a71ed18-e842-4d21-9297-9e431964ca79
+#Product : CarSim 2018.0
+#VehCode Tire: Mz
+
+END
+/F Tires\Fy\TireFy_a3dbd701-dd04-4bbe-ae9d-4f8143ca326f.par`Tire: Lateral Force`215/55 R17`Touring Tires
+PARSFILE
+#FullDataName Tire: Lateral Force`215//55 R17`Touring Tires
+#CheckBox0 0    
+
+#RingCtrl0 CARPET_FROM_ZERO
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+*3D_XLabel Vertical load (N)
+*3D_YLabel Abs. slip angle [Alpha] (deg)
+*3D_ZLabel Abs. lateral tire force Fy (N)
+
+#DiagramTwo0
+*3D_DATA 8, 51 ! columns x rows
+FY_TIRE_CARPET 2D_FROM_ZERO
+0, 1593.58, 3187.16, 4780.74, 6374.32, 7967.9, 9561.48, 11155.06, 12748.65
+0.5, 248.08, 483.5, 704.46, 910.03, 1099.7, 1273.15, 1430.26, 1571
+1, 486, 947.74, 1381.71, 1786.09, 2159.81, 2502.21, 2812.97, 3091.98
+1.5, 704.93, 1375.9, 2007.9, 2598.26, 3145.3, 3647.98, 4105.65, 4518.01
+2, 898.46, 1755.66, 2565.35, 3324.08, 4029.58, 4680.29, 5275.2, 5813.66
+2.5, 1063.18, 2080.29, 3044.12, 3950.55, 4796.73, 5580.62, 6300.7, 6955.9
+3, 1198.64, 2348.57, 3441.97, 4474.17, 5441.86, 6342.46, 7173.99, 7934.9
+3.5, 1306.65, 2563.69, 3762.95, 4899.4, 5969.31, 6969.71, 7898.17, 8752.65
+4, 1390.46, 2731.63, 4015.21, 5235.95, 6389.87, 7473.66, 8484.53, 9420.05
+4.5, 1453.91, 2859.62, 4208.83, 5496.25, 6717.72, 7869.74, 8949.25, 9953.51
+5, 1500.82, 2954.92, 4354.16, 5693.25, 6967.99, 8174.77, 9310.36, 10371.82
+5.5, 1534.64, 3024.19, 4460.73, 5839.08, 7155.04, 8404.98, 9585.61, 10693.86
+6, 1558.28, 3073.11, 4536.82, 5944.36, 7291.62, 8574.99, 9791.17, 10937.07
+6.5, 1574.12, 3106.35, 4589.27, 6017.99, 7388.5, 8697.27, 9941.07, 11116.8
+7, 1584.05, 3127.63, 4623.58, 6067.16, 7454.5, 8782.18, 10047.02, 11246
+7.5, 1589.54, 3139.87, 4644.08, 6097.61, 7496.7, 8838.05, 10118.59, 11335.38
+8, 1591.7, 3145.32, 4654.17, 6113.82, 7520.67, 8871.54, 10163.46, 11393.59
+8.5, 1591.4, 3145.71, 4656.43, 6119.28, 7530.79, 8887.88, 10187.72, 11427.56
+9, 1589.29, 3142.36, 4652.87, 6116.68, 7530.43, 8891.17, 10196.16, 11442.78
+9.5, 1585.88, 3136.27, 4645.01, 6108.08, 7522.22, 8884.59, 10192.55, 11443.6
+10, 1581.52, 3128.2, 4634.02, 6095.06, 7508.17, 8870.59, 10179.81, 11433.4
+10.5, 1576.5, 3118.73, 4620.79, 6078.84, 7489.83, 8851.11, 10160.22, 11414.86
+11, 1571.04, 3108.3, 4605.98, 6060.34, 7468.41, 8827.6, 10135.56, 11390.06
+11.5, 1565.3, 3097.24, 4590.13, 6040.29, 7444.82, 8801.22, 10107.2, 11360.64
+12, 1559.4, 3085.8, 4573.6, 6019.2, 7419.76, 8772.84, 10076.22, 11327.85
+12.5, 1553.42, 3074.17, 4556.71, 5997.51, 7393.78, 8743.14, 10043.45, 11292.71
+13, 1547.43, 3062.48, 4539.67, 5975.51, 7367.28, 8712.65, 10009.53, 11255.98
+13.5, 1541.49, 3050.85, 4522.65, 5953.45, 7340.58, 8681.76, 9974.95, 11218.26
+14, 1535.63, 3039.34, 4505.77, 5931.51, 7313.93, 8650.78, 9940.1, 11180.02
+14.5, 1529.87, 3028.02, 4489.12, 5909.81, 7287.49, 8619.95, 9905.26, 11141.62
+15, 1524.24, 3016.93, 4472.78, 5888.46, 7261.4, 8589.44, 9870.67, 11103.34
+15.5, 1518.75, 3006.09, 4456.78, 5867.52, 7235.76, 8559.37, 9836.49, 11065.39
+16, 1513.4, 2995.53, 4441.16, 5847.04, 7210.63, 8529.85, 9802.84, 11027.93
+16.5, 1508.2, 2985.25, 4425.95, 5827.05, 7186.08, 8500.94, 9769.82, 10991.07
+17, 1503.15, 2975.26, 4411.14, 5807.59, 7162.12, 8472.69, 9737.49, 10954.92
+17.5, 1498.25, 2965.56, 4396.76, 5788.65, 7138.78, 8445.12, 9705.9, 10919.52
+18, 1493.51, 2956.15, 4382.78, 5770.24, 7116.07, 8418.26, 9675.07, 10884.92
+18.5, 1488.91, 2947.02, 4369.23, 5752.35, 7093.98, 8392.12, 9645.02, 10851.14
+19, 1484.45, 2938.18, 4356.07, 5734.99, 7072.52, 8366.68, 9615.76, 10818.21
+19.5, 1480.14, 2929.6, 4343.32, 5718.14, 7051.68, 8341.96, 9587.28, 10786.11
+20, 1475.96, 2921.3, 4330.95, 5701.79, 7031.44, 8317.92, 9559.57, 10754.86
+20.5, 1471.91, 2913.25, 4318.96, 5685.93, 7011.79, 8294.58, 9532.63, 10724.44
+21, 1467.98, 2905.45, 4307.34, 5670.55, 6992.71, 8271.89, 9506.43, 10694.84
+21.5, 1464.18, 2897.89, 4296.06, 5655.62, 6974.19, 8249.86, 9480.97, 10666.04
+22, 1460.5, 2890.56, 4285.13, 5641.13, 6956.21, 8228.45, 9456.21, 10638.03
+22.5, 1456.93, 2883.45, 4274.52, 5627.07, 6938.75, 8207.66, 9432.15, 10610.78
+23, 1453.47, 2876.55, 4264.23, 5613.43, 6921.8, 8187.45, 9408.76, 10584.27
+23.5, 1450.11, 2869.87, 4254.25, 5600.18, 6905.33, 8167.82, 9386.01, 10558.48
+24, 1446.86, 2863.37, 4244.55, 5587.31, 6889.33, 8148.73, 9363.89, 10533.38
+24.5, 1443.69, 2857.07, 4235.13, 5574.81, 6873.79, 8130.18, 9342.38, 10508.96
+25, 1440.63, 2850.95, 4225.98, 5562.66, 6858.67, 8112.14, 9321.44, 10485.19
+26, 1440.63, 2850.95, 4225.98, 5562.66, 6858.67, 8112.14, 9321.44, 10485.19
+ENDTABLE
+
+MU_REF_Y 1.0
+
+
+LOG_ENTRY Used Dataset: Tire: Lateral Force; { Touring Tires } 215//55 R17
+#Library : Tire: Lateral Force
+#DataSet : 215//55 R17
+#Category: Touring Tires
+#FileID  : TireFy_a3dbd701-dd04-4bbe-ae9d-4f8143ca326f
+#Product : CarSim 2018.0
+#VehCode Tire: Fy
+
+END
+/F Tires\Fx\TireFx_912f5e84-bc6f-4cb3-a08e-430ac38b921c.par`Tire: Longitudinal Force`215/55 R17`Touring Tires
+PARSFILE
+#FullDataName Tire: Longitudinal Force`215//55 R17`Touring Tires
+#CheckBox0 0    
+
+#RingCtrl0 CARPET_FROM_ZERO
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+*3D_XLabel Vertical load (N)
+*3D_YLabel Abs. slip ratio [Kappa] (-)
+*3D_ZLabel Abs. longitudinal tire force Fx (N)
+
+#DiagramTwo0
+*3D_DATA 8, 51 ! columns x rows
+FX_TIRE_CARPET 2D_FROM_ZERO
+0, 1593.58, 3187.16, 4780.74, 6374.32, 7967.9, 9561.48, 11155.06, 12748.65
+0.02, 866.05, 1702.47, 2504.68, 3270.08, 3996.91, 4683.85, 5329.94, 5934.48
+0.04, 1297.02, 2555.8, 3770.2, 4936.54, 6052.18, 7115.02, 8123.39, 9075.89
+0.06, 1471.85, 2904.23, 4290.68, 5627.28, 6911.13, 8139.89, 9311.59, 10424.58
+0.08, 1545.6, 3051.97, 4512.64, 5923.67, 7282.08, 8585.47, 9831.8, 11019.3
+0.1, 1577.33, 3115.96, 4609.52, 6054.07, 7446.63, 8784.79, 10066.48, 11289.9
+0.12, 1589.5, 3140.9, 4647.9, 6106.6, 7514.05, 8867.84, 10165.9, 11406.43
+0.14, 1591.76, 3145.99, 4656.47, 6119.35, 7531.7, 8891.14, 10195.61, 11443.29
+0.16, 1588.74, 3140.47, 4649.06, 6110.7, 7522.49, 8882.06, 10187.38, 11436.63
+0.18, 1582.86, 3129.18, 4632.91, 6090.28, 7498.42, 8854.99, 10157.96, 11405.55
+0.2, 1575.45, 3114.8, 4612.04, 6063.46, 7466.22, 8817.98, 10116.76, 11360.75
+0.22, 1567.3, 3098.87, 4588.79, 6033.36, 7429.78, 8775.74, 10069.25, 11308.54
+0.24, 1558.85, 3082.33, 4564.54, 6001.84, 7391.45, 8731.07, 10018.74, 11252.71
+0.26, 1550.39, 3065.72, 4540.14, 5970.03, 7352.65, 8685.71, 9967.27, 11195.59
+0.28, 1542.08, 3049.37, 4516.08, 5938.61, 7314.24, 8640.71, 9916.07, 11138.62
+0.3, 1534.02, 3033.49, 4492.67, 5907.99, 7276.75, 8596.7, 9865.92, 11082.7
+0.32, 1526.25, 3018.18, 4470.08, 5878.41, 7240.48, 8554.07, 9817.27, 11028.37
+0.34, 1518.81, 3003.5, 4448.4, 5849.99, 7205.61, 8513.03, 9770.37, 10975.93
+0.36, 1511.7, 2989.47, 4427.66, 5822.79, 7172.2, 8473.68, 9725.35, 10925.54
+0.38, 1504.92, 2976.09, 4407.88, 5796.82, 7140.27, 8436.04, 9682.26, 10877.27
+0.4, 1498.48, 2963.35, 4389.03, 5772.06, 7109.82, 8400.12, 9641.1, 10831.12
+0.42, 1492.34, 2951.22, 4371.08, 5748.48, 7080.79, 8365.85, 9601.82, 10787.04
+0.44, 1486.51, 2939.69, 4354, 5726.02, 7053.13, 8333.19, 9564.36, 10744.99
+0.46, 1480.96, 2928.72, 4337.75, 5704.64, 7026.79, 8302.07, 9528.64, 10704.87
+0.48, 1475.69, 2918.28, 4322.27, 5684.28, 7001.7, 8272.41, 9494.58, 10666.59
+0.5, 1470.66, 2908.34, 4307.54, 5664.88, 6977.78, 8244.13, 9462.1, 10630.08
+0.52, 1465.88, 2898.87, 4293.5, 5646.4, 6954.99, 8217.16, 9431.11, 10595.23
+0.54, 1461.33, 2889.85, 4280.12, 5628.77, 6933.24, 8191.43, 9401.54, 10561.95
+0.56, 1456.98, 2881.24, 4267.35, 5611.95, 6912.49, 8166.87, 9373.29, 10530.16
+0.58, 1452.84, 2873.03, 4255.17, 5595.89, 6892.67, 8143.41, 9346.3, 10499.78
+0.6, 1448.88, 2865.19, 4243.53, 5580.55, 6873.73, 8120.98, 9320.5, 10470.72
+0.62, 1445.1, 2857.69, 4232.4, 5565.89, 6855.62, 8099.52, 9295.81, 10442.91
+0.64, 1441.48, 2850.53, 4221.76, 5551.85, 6838.28, 8078.98, 9272.17, 10416.28
+0.66, 1438.02, 2843.66, 4211.57, 5538.41, 6821.68, 8059.31, 9249.53, 10390.76
+0.68, 1434.7, 2837.09, 4201.81, 5525.54, 6805.78, 8040.46, 9227.82, 10366.28
+0.7, 1431.53, 2830.79, 4192.45, 5513.19, 6790.52, 8022.37, 9206.99, 10342.8
+0.72, 1428.48, 2824.75, 4183.47, 5501.35, 6775.88, 8005.01, 9186.99, 10320.25
+0.74, 1425.55, 2818.95, 4174.85, 5489.97, 6761.82, 7988.34, 9167.78, 10298.59
+0.76, 1422.74, 2813.37, 4166.57, 5479.04, 6748.31, 7972.31, 9149.32, 10277.76
+0.78, 1420.04, 2808.02, 4158.61, 5468.53, 6735.31, 7956.9, 9131.55, 10257.72
+0.8, 1417.44, 2802.86, 4150.95, 5458.42, 6722.81, 7942.07, 9114.46, 10238.43
+0.82, 1414.94, 2797.9, 4143.57, 5448.69, 6710.77, 7927.78, 9097.99, 10219.85
+0.84, 1412.54, 2793.12, 4136.47, 5439.31, 6699.17, 7914.02, 9082.12, 10201.94
+0.86, 1410.22, 2788.52, 4129.63, 5430.27, 6687.99, 7900.75, 9066.82, 10184.67
+0.88, 1407.98, 2784.08, 4123.02, 5421.55, 6677.2, 7887.95, 9052.06, 10168.01
+0.9, 1405.82, 2779.8, 4116.65, 5413.14, 6666.79, 7875.59, 9037.81, 10151.92
+0.92, 1403.74, 2775.66, 4110.5, 5405.02, 6656.74, 7863.66, 9024.04, 10136.37
+0.94, 1401.72, 2771.66, 4104.56, 5397.17, 6647.02, 7852.12, 9010.74, 10121.35
+0.96, 1399.78, 2767.8, 4098.81, 5389.58, 6637.63, 7840.97, 8997.88, 10106.82
+0.98, 1397.9, 2764.07, 4093.26, 5382.24, 6628.55, 7830.19, 8985.43, 10092.77
+1, 1396.08, 2760.45, 4087.88, 5375.14, 6619.76, 7819.75, 8973.38, 10079.16
+1.02, 1396.08, 2760.45, 4087.88, 5375.14, 6619.76, 7819.75, 8973.38, 10079.16
+ENDTABLE
+
+MU_REF_X 1.0
+
+
+LOG_ENTRY Used Dataset: Tire: Longitudinal Force; { Touring Tires } 215//55 R17
+#Library : Tire: Longitudinal Force
+#DataSet : 215//55 R17
+#Category: Touring Tires
+#FileID  : TireFx_912f5e84-bc6f-4cb3-a08e-430ac38b921c
+#Product : CarSim 2018.0
+#VehCode Tire: Fx
+
+END
+/F Tires\Camber_Thrust\CamStiff_2a6821cf-8efc-4493-aa14-ff8fe1c2cd9a.par`Tire: Camber Thrust Coefficient`215/55 R17`Touring Tires
+PARSFILE
+#FullDataName Tire: Camber Thrust Coefficient`215//55 R17`Touring Tires
+#CheckBox0 0    
+
+#RingCtrl0 SPLINE
+#RadioCtrl0 0    
+
+#DiagramOne0
+KGAMMA_TABLE SPLINE
+0, 0
+637.43225, -6.0332
+1274.8645, -12.0864
+1912.29675, -18.1682
+2549.729, -24.2854
+3187.16125, -30.4433
+3824.5935, -36.6469
+4462.02575, -42.9005
+5099.458, -49.2081
+5736.89025, -55.5734
+6374.3225, -62
+7011.75475, -68.4912
+7649.187, -75.05
+8286.61925, -81.6797
+8924.0515, -88.3829
+9561.48375, -95.1626
+10198.916, -102.0213
+10836.34825, -108.9617
+11473.7805, -115.9864
+12111.21275, -123.0976
+12748.645, -130.2979
+ENDTABLE
+
+
+LOG_ENTRY Used Dataset: Tire: Camber Thrust Coefficient; { Touring Tires } 215//55 R17
+#Library : Tire: Camber Thrust Coefficient
+#DataSet : 215//55 R17
+#Category: Touring Tires
+#FileID  : CamStiff_2a6821cf-8efc-4493-aa14-ff8fe1c2cd9a
+#Product : CarSim 2018.0
+#VehCode Camber Thrust
+
+END
+/F Suspensions\Dive\Dive_c0e4c952-912f-4f73-8677-fea5d228e3f8.par`Suspension: Dive Angle (Caster Change)`PASSAT_NA_RearDive_php`VW_PASSAT
+PARSFILE
+#FullDataName Suspension: Dive Angle (Caster Change)`PASSAT_NA_RearDive_php`VW_PASSAT
+#CheckBox0 0    
+
+#RingCtrl0 LINEAR
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+SUSP_DIVE_COMBINE ADD
+
+#DiagramOne0
+SUSP_DIVE_TABLE LINEAR
+-80, -9.0477
+-79, -8.9317
+-78, -8.8157
+-77, -8.6999
+-76, -8.5841
+-75, -8.4684
+-74, -8.3528
+-73, -8.2373
+-72, -8.1219
+-71, -8.0065
+-70, -7.8913
+-69, -7.7761
+-68, -7.661
+-67, -7.546
+-66, -7.4311
+-65, -7.3163
+-64, -7.2015
+-63, -7.0869
+-62, -6.9723
+-61, -6.8578
+-60, -6.7433
+-59, -6.629
+-58, -6.5147
+-57, -6.4005
+-56, -6.2864
+-55, -6.1724
+-54, -6.0584
+-53, -5.9445
+-52, -5.8307
+-51, -5.717
+-50, -5.6033
+-49, -5.4897
+-48, -5.3762
+-47, -5.2627
+-46, -5.1494
+-45, -5.0361
+-44, -4.9228
+-43, -4.8097
+-42, -4.6966
+-41, -4.5835
+-40, -4.4706
+-39, -4.3577
+-38, -4.2449
+-37, -4.1321
+-36, -4.0194
+-35, -3.9068
+-34, -3.7943
+-33, -3.6818
+-32, -3.5694
+-31, -3.457
+-30, -3.3447
+-29, -3.2325
+-28, -3.1203
+-27, -3.0082
+-26, -2.8962
+-25, -2.7842
+-24, -2.6723
+-23, -2.5605
+-22, -2.4487
+-21, -2.3369
+-20, -2.2253
+-19, -2.1137
+-18, -2.0021
+-17, -1.8906
+-16, -1.7792
+-15, -1.6678
+-14, -1.5565
+-13, -1.4453
+-12, -1.3341
+-11, -1.223
+-10, -1.1119
+-9, -1.0009
+-8, -0.88991
+-7, -0.77901
+-6, -0.66817
+-5, -0.55738
+-4, -0.44665
+-3, -0.33597
+-2, -0.22535
+-1, -0.11479
+0, -0.0042791
+1, 0.10617
+2, 0.21657
+3, 0.32691
+4, 0.4372
+5, 0.54743
+6, 0.65761
+7, 0.76773
+8, 0.8778
+9, 0.98781
+10, 1.0978
+11, 1.2077
+12, 1.3175
+13, 1.4273
+14, 1.5371
+15, 1.6468
+16, 1.7564
+17, 1.866
+18, 1.9755
+19, 2.085
+20, 2.1944
+21, 2.3038
+22, 2.4131
+23, 2.5224
+24, 2.6316
+25, 2.7408
+26, 2.8499
+27, 2.9589
+28, 3.0679
+29, 3.1769
+30, 3.2858
+31, 3.3946
+32, 3.5034
+33, 3.6121
+34, 3.7208
+35, 3.8294
+36, 3.938
+37, 4.0465
+38, 4.155
+39, 4.2634
+40, 4.3718
+41, 4.4801
+42, 4.5884
+43, 4.6966
+44, 4.8047
+45, 4.9128
+46, 5.0208
+47, 5.1288
+48, 5.2368
+49, 5.3446
+50, 5.4525
+51, 5.5602
+52, 5.668
+53, 5.7756
+54, 5.8832
+55, 5.9908
+56, 6.0983
+57, 6.2057
+58, 6.3131
+59, 6.4204
+60, 6.5277
+61, 6.6349
+62, 6.742
+63, 6.8491
+64, 6.9562
+65, 7.0632
+66, 7.1701
+67, 7.277
+68, 7.3838
+69, 7.4905
+70, 7.5972
+71, 7.7039
+72, 7.8104
+73, 7.917
+74, 8.0234
+75, 8.1298
+76, 8.2361
+77, 8.3424
+78, 8.4486
+79, 8.5548
+80, 8.6609
+81, 8.7669
+82, 8.8729
+83, 8.9788
+84, 9.0846
+85, 9.1904
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+#DiagramOne0
+SUSP_DIVE_AXLE_TABLE LINEAR
+-80, -9.0477
+-79, -8.9317
+-78, -8.8157
+-77, -8.6999
+-76, -8.5841
+-75, -8.4684
+-74, -8.3528
+-73, -8.2373
+-72, -8.1219
+-71, -8.0065
+-70, -7.8913
+-69, -7.7761
+-68, -7.661
+-67, -7.546
+-66, -7.4311
+-65, -7.3163
+-64, -7.2015
+-63, -7.0869
+-62, -6.9723
+-61, -6.8578
+-60, -6.7433
+-59, -6.629
+-58, -6.5147
+-57, -6.4005
+-56, -6.2864
+-55, -6.1724
+-54, -6.0584
+-53, -5.9445
+-52, -5.8307
+-51, -5.717
+-50, -5.6033
+-49, -5.4897
+-48, -5.3762
+-47, -5.2627
+-46, -5.1494
+-45, -5.0361
+-44, -4.9228
+-43, -4.8097
+-42, -4.6966
+-41, -4.5835
+-40, -4.4706
+-39, -4.3577
+-38, -4.2449
+-37, -4.1321
+-36, -4.0194
+-35, -3.9068
+-34, -3.7943
+-33, -3.6818
+-32, -3.5694
+-31, -3.457
+-30, -3.3447
+-29, -3.2325
+-28, -3.1203
+-27, -3.0082
+-26, -2.8962
+-25, -2.7842
+-24, -2.6723
+-23, -2.5605
+-22, -2.4487
+-21, -2.3369
+-20, -2.2253
+-19, -2.1137
+-18, -2.0021
+-17, -1.8906
+-16, -1.7792
+-15, -1.6678
+-14, -1.5565
+-13, -1.4453
+-12, -1.3341
+-11, -1.223
+-10, -1.1119
+-9, -1.0009
+-8, -0.88991
+-7, -0.77901
+-6, -0.66817
+-5, -0.55738
+-4, -0.44665
+-3, -0.33597
+-2, -0.22535
+-1, -0.11479
+0, -0.0042791
+1, 0.10617
+2, 0.21657
+3, 0.32691
+4, 0.4372
+5, 0.54743
+6, 0.65761
+7, 0.76773
+8, 0.8778
+9, 0.98781
+10, 1.0978
+11, 1.2077
+12, 1.3175
+13, 1.4273
+14, 1.5371
+15, 1.6468
+16, 1.7564
+17, 1.866
+18, 1.9755
+19, 2.085
+20, 2.1944
+21, 2.3038
+22, 2.4131
+23, 2.5224
+24, 2.6316
+25, 2.7408
+26, 2.8499
+27, 2.9589
+28, 3.0679
+29, 3.1769
+30, 3.2858
+31, 3.3946
+32, 3.5034
+33, 3.6121
+34, 3.7208
+35, 3.8294
+36, 3.938
+37, 4.0465
+38, 4.155
+39, 4.2634
+40, 4.3718
+41, 4.4801
+42, 4.5884
+43, 4.6966
+44, 4.8047
+45, 4.9128
+46, 5.0208
+47, 5.1288
+48, 5.2368
+49, 5.3446
+50, 5.4525
+51, 5.5602
+52, 5.668
+53, 5.7756
+54, 5.8832
+55, 5.9908
+56, 6.0983
+57, 6.2057
+58, 6.3131
+59, 6.4204
+60, 6.5277
+61, 6.6349
+62, 6.742
+63, 6.8491
+64, 6.9562
+65, 7.0632
+66, 7.1701
+67, 7.277
+68, 7.3838
+69, 7.4905
+70, 7.5972
+71, 7.7039
+72, 7.8104
+73, 7.917
+74, 8.0234
+75, 8.1298
+76, 8.2361
+77, 8.3424
+78, 8.4486
+79, 8.5548
+80, 8.6609
+81, 8.7669
+82, 8.8729
+83, 8.9788
+84, 9.0846
+85, 9.1904
+ENDTABLE
+
+#EMBEDDED_NOTES
+#NOTE:  Sign convention of the CS 7.01b and earlier datasets was reversed and demonstrated a pro-dive suspension.  This dataset represents an anti-dive suspension.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Suspension: Dive Angle (Caster Change); { VW_PASSAT } PASSAT_NA_RearDive_php
+#Library : Suspension: Dive Angle (Caster Change)
+#DataSet : PASSAT_NA_RearDive_php
+#Category: VW_PASSAT
+#FileID  : Dive_c0e4c952-912f-4f73-8677-fea5d228e3f8
+#Product : CarSim 2018.0
+#VehCode Dive
+
+END
+/F Suspensions\Longitudinal\SusX_cf81347f-fb9b-48a5-ac88-49a27a9d85c8.par`Suspension: Longitudinal Movement`PASSAT_NA_RearX_php`VW_PASSAT
+PARSFILE
+#FullDataName Suspension: Longitudinal Movement`PASSAT_NA_RearX_php`VW_PASSAT
+#CheckBox0 0    
+
+#RingCtrl0 LINEAR
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+SUSP_X_COMBINE ADD
+
+#DiagramOne0
+SUSP_X_TABLE LINEAR
+-80, 7.2557
+-79, 7.0729
+-78, 6.8927
+-77, 6.7151
+-76, 6.5401
+-75, 6.3677
+-74, 6.1978
+-73, 6.0305
+-72, 5.8658
+-71, 5.7035
+-70, 5.5438
+-69, 5.3866
+-68, 5.2319
+-67, 5.0797
+-66, 4.9299
+-65, 4.7826
+-64, 4.6378
+-63, 4.4954
+-62, 4.3555
+-61, 4.218
+-60, 4.0829
+-59, 3.9502
+-58, 3.8199
+-57, 3.692
+-56, 3.5664
+-55, 3.4433
+-54, 3.3224
+-53, 3.204
+-52, 3.0878
+-51, 2.974
+-50, 2.8625
+-49, 2.7533
+-48, 2.6464
+-47, 2.5418
+-46, 2.4394
+-45, 2.3393
+-44, 2.2415
+-43, 2.1459
+-42, 2.0526
+-41, 1.9614
+-40, 1.8725
+-39, 1.7858
+-38, 1.7013
+-37, 1.619
+-36, 1.5389
+-35, 1.4609
+-34, 1.3851
+-33, 1.3115
+-32, 1.24
+-31, 1.1706
+-30, 1.1033
+-29, 1.0382
+-28, 0.97512
+-27, 0.91418
+-26, 0.85531
+-25, 0.79853
+-24, 0.74381
+-23, 0.69115
+-22, 0.64053
+-21, 0.59196
+-20, 0.54542
+-19, 0.50091
+-18, 0.4584
+-17, 0.4179
+-16, 0.3794
+-15, 0.34289
+-14, 0.30835
+-13, 0.27578
+-12, 0.24518
+-11, 0.21652
+-10, 0.18982
+-9, 0.16504
+-8, 0.1422
+-7, 0.12127
+-6, 0.10225
+-5, 0.085134
+-4, 0.069911
+-3, 0.056573
+-2, 0.045111
+-1, 0.035518
+0, 0.027785
+1, 0.021904
+2, 0.017866
+3, 0.015664
+4, 0.015289
+5, 0.016734
+6, 0.01999
+7, 0.025049
+8, 0.031904
+9, 0.040546
+10, 0.050967
+11, 0.06316
+12, 0.077117
+13, 0.09283
+14, 0.11029
+15, 0.12949
+16, 0.15043
+17, 0.17309
+18, 0.19746
+19, 0.22355
+20, 0.25134
+21, 0.28082
+22, 0.31199
+23, 0.34484
+24, 0.37937
+25, 0.41555
+26, 0.4534
+27, 0.4929
+28, 0.53404
+29, 0.57681
+30, 0.62121
+31, 0.66724
+32, 0.71488
+33, 0.76412
+34, 0.81497
+35, 0.86741
+36, 0.92143
+37, 0.97704
+38, 1.0342
+39, 1.093
+40, 1.1533
+41, 1.2151
+42, 1.2785
+43, 1.3434
+44, 1.4099
+45, 1.4779
+46, 1.5474
+47, 1.6184
+48, 1.6909
+49, 1.7649
+50, 1.8405
+51, 1.9175
+52, 1.9959
+53, 2.0759
+54, 2.1573
+55, 2.2401
+56, 2.3245
+57, 2.4102
+58, 2.4974
+59, 2.5861
+60, 2.6762
+61, 2.7677
+62, 2.8606
+63, 2.9549
+64, 3.0506
+65, 3.1477
+66, 3.2462
+67, 3.3461
+68, 3.4474
+69, 3.55
+70, 3.6541
+71, 3.7594
+72, 3.8662
+73, 3.9742
+74, 4.0837
+75, 4.1944
+76, 4.3065
+77, 4.42
+78, 4.5347
+79, 4.6508
+80, 4.7682
+81, 4.8868
+82, 5.0068
+83, 5.1281
+84, 5.2507
+85, 5.3745
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+#DiagramOne0
+SUSP_X_AXLE_TABLE LINEAR
+-80, 7.2557
+-79, 7.0729
+-78, 6.8927
+-77, 6.7151
+-76, 6.5401
+-75, 6.3677
+-74, 6.1978
+-73, 6.0305
+-72, 5.8658
+-71, 5.7035
+-70, 5.5438
+-69, 5.3866
+-68, 5.2319
+-67, 5.0797
+-66, 4.9299
+-65, 4.7826
+-64, 4.6378
+-63, 4.4954
+-62, 4.3555
+-61, 4.218
+-60, 4.0829
+-59, 3.9502
+-58, 3.8199
+-57, 3.692
+-56, 3.5664
+-55, 3.4433
+-54, 3.3224
+-53, 3.204
+-52, 3.0878
+-51, 2.974
+-50, 2.8625
+-49, 2.7533
+-48, 2.6464
+-47, 2.5418
+-46, 2.4394
+-45, 2.3393
+-44, 2.2415
+-43, 2.1459
+-42, 2.0526
+-41, 1.9614
+-40, 1.8725
+-39, 1.7858
+-38, 1.7013
+-37, 1.619
+-36, 1.5389
+-35, 1.4609
+-34, 1.3851
+-33, 1.3115
+-32, 1.24
+-31, 1.1706
+-30, 1.1033
+-29, 1.0382
+-28, 0.97512
+-27, 0.91418
+-26, 0.85531
+-25, 0.79853
+-24, 0.74381
+-23, 0.69115
+-22, 0.64053
+-21, 0.59196
+-20, 0.54542
+-19, 0.50091
+-18, 0.4584
+-17, 0.4179
+-16, 0.3794
+-15, 0.34289
+-14, 0.30835
+-13, 0.27578
+-12, 0.24518
+-11, 0.21652
+-10, 0.18982
+-9, 0.16504
+-8, 0.1422
+-7, 0.12127
+-6, 0.10225
+-5, 0.085134
+-4, 0.069911
+-3, 0.056573
+-2, 0.045111
+-1, 0.035518
+0, 0.027785
+1, 0.021904
+2, 0.017866
+3, 0.015664
+4, 0.015289
+5, 0.016734
+6, 0.01999
+7, 0.025049
+8, 0.031904
+9, 0.040546
+10, 0.050967
+11, 0.06316
+12, 0.077117
+13, 0.09283
+14, 0.11029
+15, 0.12949
+16, 0.15043
+17, 0.17309
+18, 0.19746
+19, 0.22355
+20, 0.25134
+21, 0.28082
+22, 0.31199
+23, 0.34484
+24, 0.37937
+25, 0.41555
+26, 0.4534
+27, 0.4929
+28, 0.53404
+29, 0.57681
+30, 0.62121
+31, 0.66724
+32, 0.71488
+33, 0.76412
+34, 0.81497
+35, 0.86741
+36, 0.92143
+37, 0.97704
+38, 1.0342
+39, 1.093
+40, 1.1533
+41, 1.2151
+42, 1.2785
+43, 1.3434
+44, 1.4099
+45, 1.4779
+46, 1.5474
+47, 1.6184
+48, 1.6909
+49, 1.7649
+50, 1.8405
+51, 1.9175
+52, 1.9959
+53, 2.0759
+54, 2.1573
+55, 2.2401
+56, 2.3245
+57, 2.4102
+58, 2.4974
+59, 2.5861
+60, 2.6762
+61, 2.7677
+62, 2.8606
+63, 2.9549
+64, 3.0506
+65, 3.1477
+66, 3.2462
+67, 3.3461
+68, 3.4474
+69, 3.55
+70, 3.6541
+71, 3.7594
+72, 3.8662
+73, 3.9742
+74, 4.0837
+75, 4.1944
+76, 4.3065
+77, 4.42
+78, 4.5347
+79, 4.6508
+80, 4.7682
+81, 4.8868
+82, 5.0068
+83, 5.1281
+84, 5.2507
+85, 5.3745
+ENDTABLE
+
+#EMBEDDED_NOTES
+#Rear Tri-Link Strut Suspension Longitudinal movement vs. Jounce.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Suspension: Longitudinal Movement; { VW_PASSAT } PASSAT_NA_RearX_php
+#Library : Suspension: Longitudinal Movement
+#DataSet : PASSAT_NA_RearX_php
+#Category: VW_PASSAT
+#FileID  : SusX_cf81347f-fb9b-48a5-ac88-49a27a9d85c8
+#Product : CarSim 2018.0
+#VehCode Longitudinal Movement
+
+END
+/F Suspensions\Camber\Camber_c7c2ec86-f4f9-4490-a0c1-8ca54c06cf21.par`Suspension: Camber Angle`PASSAT_NA_RearCamber_php`VW_PASSAT
+PARSFILE
+#FullDataName Suspension: Camber Angle`PASSAT_NA_RearCamber_php`VW_PASSAT
+#CheckBox0 0    
+
+#RingCtrl0 LINEAR
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+CAMBER_COMBINE ADD
+#DiagramOne0
+CAMBER_TABLE LINEAR
+-80, 1.2814
+-79, 1.2651
+-78, 1.2488
+-77, 1.2326
+-76, 1.2164
+-75, 1.2003
+-74, 1.1842
+-73, 1.1681
+-72, 1.1521
+-71, 1.1362
+-70, 1.1203
+-69, 1.1044
+-68, 1.0885
+-67, 1.0727
+-66, 1.057
+-65, 1.0412
+-64, 1.0255
+-63, 1.0098
+-62, 0.9941
+-61, 0.97845
+-60, 0.96281
+-59, 0.9472
+-58, 0.9316
+-57, 0.91602
+-56, 0.90045
+-55, 0.88489
+-54, 0.86934
+-53, 0.85379
+-52, 0.83826
+-51, 0.82272
+-50, 0.80719
+-49, 0.79166
+-48, 0.77613
+-47, 0.7606
+-46, 0.74506
+-45, 0.72952
+-44, 0.71397
+-43, 0.69841
+-42, 0.68284
+-41, 0.66726
+-40, 0.65166
+-39, 0.63605
+-38, 0.62042
+-37, 0.60477
+-36, 0.5891
+-35, 0.57341
+-34, 0.55769
+-33, 0.54195
+-32, 0.52618
+-31, 0.51039
+-30, 0.49456
+-29, 0.47871
+-28, 0.46282
+-27, 0.44689
+-26, 0.43094
+-25, 0.41494
+-24, 0.3989
+-23, 0.38283
+-22, 0.36671
+-21, 0.35055
+-20, 0.33435
+-19, 0.3181
+-18, 0.3018
+-17, 0.28545
+-16, 0.26906
+-15, 0.25261
+-14, 0.23611
+-13, 0.21955
+-12, 0.20294
+-11, 0.18628
+-10, 0.16955
+-9, 0.15277
+-8, 0.13592
+-7, 0.11901
+-6, 0.10204
+-5, 0.085005
+-4, 0.067903
+-3, 0.050733
+-2, 0.033495
+-1, 0.016187
+0, -0.0011922
+1, -0.018644
+2, -0.036168
+3, -0.053768
+4, -0.071443
+5, -0.089196
+6, -0.10703
+7, -0.12494
+8, -0.14293
+9, -0.161
+10, -0.17916
+11, -0.1974
+12, -0.21572
+13, -0.23413
+14, -0.25263
+15, -0.27122
+16, -0.28989
+17, -0.30866
+18, -0.32752
+19, -0.34647
+20, -0.36552
+21, -0.38466
+22, -0.4039
+23, -0.42323
+24, -0.44266
+25, -0.46219
+26, -0.48182
+27, -0.50155
+28, -0.52139
+29, -0.54132
+30, -0.56136
+31, -0.58151
+32, -0.60176
+33, -0.62211
+34, -0.64258
+35, -0.66315
+36, -0.68383
+37, -0.70462
+38, -0.72553
+39, -0.74654
+40, -0.76767
+41, -0.78891
+42, -0.81027
+43, -0.83174
+44, -0.85333
+45, -0.87504
+46, -0.89686
+47, -0.9188
+48, -0.94086
+49, -0.96304
+50, -0.98535
+51, -1.0078
+52, -1.0303
+53, -1.053
+54, -1.0758
+55, -1.0987
+56, -1.1217
+57, -1.1449
+58, -1.1682
+59, -1.1916
+60, -1.2152
+61, -1.2389
+62, -1.2627
+63, -1.2866
+64, -1.3107
+65, -1.3349
+66, -1.3592
+67, -1.3837
+68, -1.4083
+69, -1.433
+70, -1.4579
+71, -1.4829
+72, -1.508
+73, -1.5333
+74, -1.5587
+75, -1.5843
+76, -1.6099
+77, -1.6358
+78, -1.6617
+79, -1.6878
+80, -1.7141
+81, -1.7404
+82, -1.767
+83, -1.7936
+84, -1.8204
+85, -1.8474
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+
+
+#EMBEDDED_NOTES
+#Rear Tri-Link Strut Suspension Camber change vs. Jounce.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Suspension: Camber Angle; { VW_PASSAT } PASSAT_NA_RearCamber_php
+#Library : Suspension: Camber Angle
+#DataSet : PASSAT_NA_RearCamber_php
+#Category: VW_PASSAT
+#FileID  : Camber_c7c2ec86-f4f9-4490-a0c1-8ca54c06cf21
+#Product : CarSim 2018.0
+#VehCode Camber
+
+END
+/F Suspensions\Lateral\LatJnc_2713623a-258d-4c76-97a6-1cae48484bbf.par`Suspension: Lateral Movement Due to Jounce`PASSAT_NA_RearY_php`VW_PASSAT
+PARSFILE
+#FullDataName Suspension: Lateral Movement Due to Jounce`PASSAT_NA_RearY_php`VW_PASSAT
+#CheckBox0 0    
+
+#RingCtrl0 LINEAR
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+SUSP_LAT_COMBINE ADD
+#DiagramOne0
+SUSP_LAT_TABLE LINEAR
+-80, 18.613
+-79, 18.262
+-78, 17.913
+-77, 17.568
+-76, 17.227
+-75, 16.888
+-74, 16.553
+-73, 16.221
+-72, 15.892
+-71, 15.567
+-70, 15.244
+-69, 14.925
+-68, 14.609
+-67, 14.297
+-66, 13.987
+-65, 13.681
+-64, 13.377
+-63, 13.077
+-62, 12.78
+-61, 12.486
+-60, 12.195
+-59, 11.907
+-58, 11.622
+-57, 11.34
+-56, 11.061
+-55, 10.786
+-54, 10.513
+-53, 10.243
+-52, 9.9765
+-51, 9.7127
+-50, 9.4519
+-49, 9.1941
+-48, 8.9392
+-47, 8.6873
+-46, 8.4383
+-45, 8.1922
+-44, 7.9491
+-43, 7.7088
+-42, 7.4715
+-41, 7.237
+-40, 7.0054
+-39, 6.7767
+-38, 6.5508
+-37, 6.3278
+-36, 6.1076
+-35, 5.8903
+-34, 5.6758
+-33, 5.4641
+-32, 5.2552
+-31, 5.0491
+-30, 4.8458
+-29, 4.6453
+-28, 4.4476
+-27, 4.2527
+-26, 4.0605
+-25, 3.8711
+-24, 3.6844
+-23, 3.5005
+-22, 3.3194
+-21, 3.1409
+-20, 2.9652
+-19, 2.7922
+-18, 2.622
+-17, 2.4544
+-16, 2.2896
+-15, 2.1274
+-14, 1.9679
+-13, 1.8112
+-12, 1.6571
+-11, 1.5056
+-10, 1.3569
+-9, 1.2108
+-8, 1.0674
+-7, 0.92667
+-6, 0.78857
+-5, 0.65312
+-4, 0.52032
+-3, 0.39016
+-2, 0.26264
+-1, 0.13776
+0, 0.015505
+1, -0.10412
+2, -0.22112
+3, -0.33551
+4, -0.44727
+5, -0.55642
+6, -0.66295
+7, -0.76688
+8, -0.8682
+9, -0.96691
+10, -1.063
+11, -1.1565
+12, -1.2475
+13, -1.3358
+14, -1.4215
+15, -1.5046
+16, -1.5852
+17, -1.6631
+18, -1.7385
+19, -1.8112
+20, -1.8814
+21, -1.949
+22, -2.014
+23, -2.0765
+24, -2.1363
+25, -2.1936
+26, -2.2482
+27, -2.3003
+28, -2.3498
+29, -2.3968
+30, -2.4411
+31, -2.4828
+32, -2.522
+33, -2.5586
+34, -2.5926
+35, -2.624
+36, -2.6528
+37, -2.679
+38, -2.7027
+39, -2.7237
+40, -2.7421
+41, -2.758
+42, -2.7712
+43, -2.7819
+44, -2.7899
+45, -2.7954
+46, -2.7982
+47, -2.7984
+48, -2.796
+49, -2.791
+50, -2.7833
+51, -2.7731
+52, -2.7602
+53, -2.7447
+54, -2.7266
+55, -2.7058
+56, -2.6824
+57, -2.6563
+58, -2.6276
+59, -2.5962
+60, -2.5622
+61, -2.5255
+62, -2.4861
+63, -2.4441
+64, -2.3994
+65, -2.3521
+66, -2.302
+67, -2.2492
+68, -2.1938
+69, -2.1356
+70, -2.0748
+71, -2.0112
+72, -1.9449
+73, -1.8759
+74, -1.8042
+75, -1.7297
+76, -1.6525
+77, -1.5725
+78, -1.4898
+79, -1.4043
+80, -1.316
+81, -1.225
+82, -1.1311
+83, -1.0345
+84, -0.9351
+85, -0.83287
+ENDTABLE
+SUSP_Y_AXLE_ROLL_COMBINE ADD ! in case this is for a solid axle
+#DiagramOne0
+SUSP_LAT_AXLE_JOUNCE_TABLE LINEAR
+-80, 18.613
+-79, 18.262
+-78, 17.913
+-77, 17.568
+-76, 17.227
+-75, 16.888
+-74, 16.553
+-73, 16.221
+-72, 15.892
+-71, 15.567
+-70, 15.244
+-69, 14.925
+-68, 14.609
+-67, 14.297
+-66, 13.987
+-65, 13.681
+-64, 13.377
+-63, 13.077
+-62, 12.78
+-61, 12.486
+-60, 12.195
+-59, 11.907
+-58, 11.622
+-57, 11.34
+-56, 11.061
+-55, 10.786
+-54, 10.513
+-53, 10.243
+-52, 9.9765
+-51, 9.7127
+-50, 9.4519
+-49, 9.1941
+-48, 8.9392
+-47, 8.6873
+-46, 8.4383
+-45, 8.1922
+-44, 7.9491
+-43, 7.7088
+-42, 7.4715
+-41, 7.237
+-40, 7.0054
+-39, 6.7767
+-38, 6.5508
+-37, 6.3278
+-36, 6.1076
+-35, 5.8903
+-34, 5.6758
+-33, 5.4641
+-32, 5.2552
+-31, 5.0491
+-30, 4.8458
+-29, 4.6453
+-28, 4.4476
+-27, 4.2527
+-26, 4.0605
+-25, 3.8711
+-24, 3.6844
+-23, 3.5005
+-22, 3.3194
+-21, 3.1409
+-20, 2.9652
+-19, 2.7922
+-18, 2.622
+-17, 2.4544
+-16, 2.2896
+-15, 2.1274
+-14, 1.9679
+-13, 1.8112
+-12, 1.6571
+-11, 1.5056
+-10, 1.3569
+-9, 1.2108
+-8, 1.0674
+-7, 0.92667
+-6, 0.78857
+-5, 0.65312
+-4, 0.52032
+-3, 0.39016
+-2, 0.26264
+-1, 0.13776
+0, 0.015505
+1, -0.10412
+2, -0.22112
+3, -0.33551
+4, -0.44727
+5, -0.55642
+6, -0.66295
+7, -0.76688
+8, -0.8682
+9, -0.96691
+10, -1.063
+11, -1.1565
+12, -1.2475
+13, -1.3358
+14, -1.4215
+15, -1.5046
+16, -1.5852
+17, -1.6631
+18, -1.7385
+19, -1.8112
+20, -1.8814
+21, -1.949
+22, -2.014
+23, -2.0765
+24, -2.1363
+25, -2.1936
+26, -2.2482
+27, -2.3003
+28, -2.3498
+29, -2.3968
+30, -2.4411
+31, -2.4828
+32, -2.522
+33, -2.5586
+34, -2.5926
+35, -2.624
+36, -2.6528
+37, -2.679
+38, -2.7027
+39, -2.7237
+40, -2.7421
+41, -2.758
+42, -2.7712
+43, -2.7819
+44, -2.7899
+45, -2.7954
+46, -2.7982
+47, -2.7984
+48, -2.796
+49, -2.791
+50, -2.7833
+51, -2.7731
+52, -2.7602
+53, -2.7447
+54, -2.7266
+55, -2.7058
+56, -2.6824
+57, -2.6563
+58, -2.6276
+59, -2.5962
+60, -2.5622
+61, -2.5255
+62, -2.4861
+63, -2.4441
+64, -2.3994
+65, -2.3521
+66, -2.302
+67, -2.2492
+68, -2.1938
+69, -2.1356
+70, -2.0748
+71, -2.0112
+72, -1.9449
+73, -1.8759
+74, -1.8042
+75, -1.7297
+76, -1.6525
+77, -1.5725
+78, -1.4898
+79, -1.4043
+80, -1.316
+81, -1.225
+82, -1.1311
+83, -1.0345
+84, -0.9351
+85, -0.83287
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+
+
+#EMBEDDED_NOTES
+#Rear Tri-Link Strut Suspension Lateral movement vs. Jounce.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Suspension: Lateral Movement Due to Jounce; { VW_PASSAT } PASSAT_NA_RearY_php
+#Library : Suspension: Lateral Movement Due to Jounce
+#DataSet : PASSAT_NA_RearY_php
+#Category: VW_PASSAT
+#FileID  : LatJnc_2713623a-258d-4c76-97a6-1cae48484bbf
+#Product : CarSim 2018.0
+#VehCode Lateral Movement
+
+END
+/F Suspensions\Toe\Toe_736c560b-096d-4275-a507-83c2ee9ee5a8.par`Suspension: Toe Angle`PASSAT_NA_RearToe_php`VW_PASSAT
+PARSFILE
+#FullDataName Suspension: Toe Angle`PASSAT_NA_RearToe_php`VW_PASSAT
+#CheckBox0 0    
+
+#RingCtrl0 LINEAR
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+TOE_COMBINE ADD
+#DiagramOne0
+TOE_TABLE LINEAR
+-80, -0.090972
+-79, -0.088677
+-78, -0.0864
+-77, -0.084143
+-76, -0.081907
+-75, -0.079691
+-74, -0.077497
+-73, -0.075325
+-72, -0.073175
+-71, -0.071049
+-70, -0.068946
+-69, -0.066868
+-68, -0.064815
+-67, -0.062787
+-66, -0.060786
+-65, -0.05881
+-64, -0.056862
+-63, -0.054941
+-62, -0.053048
+-61, -0.051183
+-60, -0.049347
+-59, -0.04754
+-58, -0.045763
+-57, -0.044016
+-56, -0.0423
+-55, -0.040614
+-54, -0.038959
+-53, -0.037336
+-52, -0.035745
+-51, -0.034186
+-50, -0.032659
+-49, -0.031166
+-48, -0.029705
+-47, -0.028278
+-46, -0.026885
+-45, -0.025526
+-44, -0.024201
+-43, -0.02291
+-42, -0.021654
+-41, -0.020433
+-40, -0.019247
+-39, -0.018096
+-38, -0.016981
+-37, -0.015901
+-36, -0.014858
+-35, -0.01385
+-34, -0.012878
+-33, -0.011942
+-32, -0.011042
+-31, -0.010179
+-30, -0.0093526
+-29, -0.0085623
+-28, -0.0078087
+-27, -0.0070916
+-26, -0.0064111
+-25, -0.0057673
+-24, -0.0051601
+-23, -0.0045895
+-22, -0.0040556
+-21, -0.0035583
+-20, -0.0030975
+-19, -0.0026732
+-18, -0.0022854
+-17, -0.0019338
+-16, -0.0016186
+-15, -0.0013395
+-14, -0.0010965
+-13, -0.00088932
+-12, -0.00071796
+-11, -0.00058222
+-10, -0.00048194
+-9, -0.00041694
+-8, -0.00038705
+-7, -0.00039204
+-6, -0.00043173
+-5, -0.00050587
+-4, -0.00061424
+-3, -0.00075658
+-2, -0.00093264
+-1, -0.0011421
+0, -0.0013848
+1, -0.0016603
+2, -0.0019684
+3, -0.0023087
+4, -0.0026809
+5, -0.0030846
+6, -0.0035196
+7, -0.0039854
+8, -0.0044816
+9, -0.0050078
+10, -0.0055638
+11, -0.0061489
+12, -0.0067628
+13, -0.0074051
+14, -0.0080753
+15, -0.0087729
+16, -0.0094975
+17, -0.010248
+18, -0.011025
+19, -0.011828
+20, -0.012655
+21, -0.013507
+22, -0.014383
+23, -0.015281
+24, -0.016203
+25, -0.017146
+26, -0.018112
+27, -0.019098
+28, -0.020104
+29, -0.02113
+30, -0.022174
+31, -0.023238
+32, -0.024318
+33, -0.025416
+34, -0.02653
+35, -0.02766
+36, -0.028804
+37, -0.029963
+38, -0.031135
+39, -0.032319
+40, -0.033515
+41, -0.034723
+42, -0.03594
+43, -0.037167
+44, -0.038403
+45, -0.039646
+46, -0.040897
+47, -0.042153
+48, -0.043415
+49, -0.044681
+50, -0.045951
+51, -0.047223
+52, -0.048497
+53, -0.049771
+54, -0.051045
+55, -0.052318
+56, -0.053589
+57, -0.054857
+58, -0.056121
+59, -0.057379
+60, -0.058632
+61, -0.059877
+62, -0.061114
+63, -0.062342
+64, -0.06356
+65, -0.064766
+66, -0.06596
+67, -0.067141
+68, -0.068306
+69, -0.069456
+70, -0.070589
+71, -0.071704
+72, -0.0728
+73, -0.073875
+74, -0.074929
+75, -0.07596
+76, -0.076967
+77, -0.077949
+78, -0.078905
+79, -0.079833
+80, -0.080732
+81, -0.0816
+82, -0.082438
+83, -0.083242
+84, -0.084013
+85, -0.084748
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+
+
+#EMBEDDED_NOTES
+#Rear Tri-Link Strut Suspension Toe change vs. Jounce.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Suspension: Toe Angle; { VW_PASSAT } PASSAT_NA_RearToe_php
+#Library : Suspension: Toe Angle
+#DataSet : PASSAT_NA_RearToe_php
+#Category: VW_PASSAT
+#FileID  : Toe_736c560b-096d-4275-a507-83c2ee9ee5a8
+#Product : CarSim 2018.0
+#VehCode Toe
+
+END
+/F Suspensions\Springs\Spring_512be096-05c4-480a-8c75-7d7964f14fc6.par`Suspension: Spring`PASSAT_NA_RearSPR_php`VW_PASSAT
+PARSFILE
+#FullDataName Suspension: Spring`PASSAT_NA_RearSPR_php`VW_PASSAT
+#RingCtrl0 SPLINE
+#DiagramOne0
+FS_COMP_TABLE SPLINE
+-80, 977.67
+-79, 1017
+-78, 1055.7
+-77, 1093.9
+-76, 1131.6
+-75, 1168.7
+-74, 1205.3
+-73, 1241.5
+-72, 1277.1
+-71, 1312.2
+-70, 1346.8
+-69, 1381
+-68, 1414.7
+-67, 1447.9
+-66, 1480.7
+-65, 1513.1
+-64, 1545.1
+-63, 1576.6
+-62, 1607.7
+-61, 1638.5
+-60, 1668.8
+-59, 1698.8
+-58, 1728.4
+-57, 1757.6
+-56, 1786.5
+-55, 1815.1
+-54, 1843.3
+-53, 1871.2
+-52, 1898.8
+-51, 1926.1
+-50, 1953.1
+-49, 1979.8
+-48, 2006.2
+-47, 2032.3
+-46, 2058.2
+-45, 2083.8
+-44, 2109.2
+-43, 2134.4
+-42, 2159.3
+-41, 2184
+-40, 2208.6
+-39, 2232.9
+-38, 2257
+-37, 2280.9
+-36, 2304.7
+-35, 2328.2
+-34, 2351.7
+-33, 2374.9
+-32, 2398.1
+-31, 2421.1
+-30, 2444
+-29, 2466.7
+-28, 2489.4
+-27, 2511.9
+-26, 2534.4
+-25, 2556.7
+-24, 2579
+-23, 2601.3
+-22, 2623.4
+-21, 2645.5
+-20, 2667.6
+-19, 2689.6
+-18, 2711.6
+-17, 2733.6
+-16, 2755.6
+-15, 2777.5
+-14, 2799.5
+-13, 2821.4
+-12, 2843.4
+-11, 2865.4
+-10, 2887.4
+-9, 2909.5
+-8, 2931.6
+-7, 2953.8
+-6, 2976
+-5, 2998.3
+-4, 3020.7
+-3, 3043.2
+-2, 3065.7
+-1, 3088.4
+0, 3111.1
+1, 3134
+2, 3156.9
+3, 3180
+4, 3203.3
+5, 3226.6
+6, 3250.2
+7, 3273.8
+8, 3297.7
+9, 3321.7
+10, 3345.8
+11, 3370.2
+12, 3394.7
+13, 3419.4
+14, 3444.4
+15, 3469.5
+16, 3494.9
+17, 3520.4
+18, 3546.2
+19, 3572.3
+20, 3598.5
+21, 3625.1
+22, 3651.8
+23, 3678.9
+24, 3706.2
+25, 3733.7
+26, 3761.6
+27, 3789.7
+28, 3818.1
+29, 3846.8
+30, 3875.8
+31, 3905.1
+32, 3934.8
+33, 3964.7
+34, 3995
+35, 4025.6
+36, 4056.6
+37, 4087.8
+38, 4119.5
+39, 4151.5
+40, 4183.8
+41, 4216.6
+42, 4249.7
+43, 4283.1
+44, 4317
+45, 4351.2
+46, 4385.9
+47, 4420.9
+48, 4456.4
+49, 4492.2
+50, 4528.5
+51, 4565.2
+52, 4602.3
+53, 4639.9
+54, 4677.8
+55, 4716.3
+56, 4755.2
+57, 4794.5
+58, 4834.3
+59, 4874.5
+60, 4915.3
+61, 4956.5
+62, 4998.1
+63, 5040.3
+64, 5082.9
+65, 5126.1
+66, 5169.7
+67, 5213.8
+68, 5258.5
+69, 5303.6
+70, 5349.3
+71, 5395.5
+72, 5442.2
+73, 5489.5
+74, 5537.3
+75, 5585.6
+76, 5634.5
+77, 5683.9
+78, 5733.9
+79, 5784.4
+80, 5835.5
+81, 5887.1
+82, 5939.4
+83, 5992.2
+84, 6045.5
+85, 6099.5
+ENDTABLE
+#DiagramOne1
+FS_EXT_TABLE SPLINE
+-80, 977.67
+-79, 1017
+-78, 1055.7
+-77, 1093.9
+-76, 1131.6
+-75, 1168.7
+-74, 1205.3
+-73, 1241.5
+-72, 1277.1
+-71, 1312.2
+-70, 1346.8
+-69, 1381
+-68, 1414.7
+-67, 1447.9
+-66, 1480.7
+-65, 1513.1
+-64, 1545.1
+-63, 1576.6
+-62, 1607.7
+-61, 1638.5
+-60, 1668.8
+-59, 1698.8
+-58, 1728.4
+-57, 1757.6
+-56, 1786.5
+-55, 1815.1
+-54, 1843.3
+-53, 1871.2
+-52, 1898.8
+-51, 1926.1
+-50, 1953.1
+-49, 1979.8
+-48, 2006.2
+-47, 2032.3
+-46, 2058.2
+-45, 2083.8
+-44, 2109.2
+-43, 2134.4
+-42, 2159.3
+-41, 2184
+-40, 2208.6
+-39, 2232.9
+-38, 2257
+-37, 2280.9
+-36, 2304.7
+-35, 2328.2
+-34, 2351.7
+-33, 2374.9
+-32, 2398.1
+-31, 2421.1
+-30, 2444
+-29, 2466.7
+-28, 2489.4
+-27, 2511.9
+-26, 2534.4
+-25, 2556.7
+-24, 2579
+-23, 2601.3
+-22, 2623.4
+-21, 2645.5
+-20, 2667.6
+-19, 2689.6
+-18, 2711.6
+-17, 2733.6
+-16, 2755.6
+-15, 2777.5
+-14, 2799.5
+-13, 2821.4
+-12, 2843.4
+-11, 2865.4
+-10, 2887.4
+-9, 2909.5
+-8, 2931.6
+-7, 2953.8
+-6, 2976
+-5, 2998.3
+-4, 3020.7
+-3, 3043.2
+-2, 3065.7
+-1, 3088.4
+0, 3111.1
+1, 3134
+2, 3156.9
+3, 3180
+4, 3203.3
+5, 3226.6
+6, 3250.2
+7, 3273.8
+8, 3297.7
+9, 3321.7
+10, 3345.8
+11, 3370.2
+12, 3394.7
+13, 3419.4
+14, 3444.4
+15, 3469.5
+16, 3494.9
+17, 3520.4
+18, 3546.2
+19, 3572.3
+20, 3598.5
+21, 3625.1
+22, 3651.8
+23, 3678.9
+24, 3706.2
+25, 3733.7
+26, 3761.6
+27, 3789.7
+28, 3818.1
+29, 3846.8
+30, 3875.8
+31, 3905.1
+32, 3934.8
+33, 3964.7
+34, 3995
+35, 4025.6
+36, 4056.6
+37, 4087.8
+38, 4119.5
+39, 4151.5
+40, 4183.8
+41, 4216.6
+42, 4249.7
+43, 4283.1
+44, 4317
+45, 4351.2
+46, 4385.9
+47, 4420.9
+48, 4456.4
+49, 4492.2
+50, 4528.5
+51, 4565.2
+52, 4602.3
+53, 4639.9
+54, 4677.8
+55, 4716.3
+56, 4755.2
+57, 4794.5
+58, 4834.3
+59, 4874.5
+60, 4915.3
+61, 4956.5
+62, 4998.1
+63, 5040.3
+64, 5082.9
+65, 5126.1
+66, 5169.7
+67, 5213.8
+68, 5258.5
+69, 5303.6
+70, 5349.3
+71, 5395.5
+72, 5442.2
+73, 5489.5
+74, 5537.3
+75, 5585.6
+76, 5634.5
+77, 5683.9
+78, 5733.9
+79, 5784.4
+80, 5835.5
+81, 5887.1
+82, 5939.4
+83, 5992.2
+84, 6045.5
+85, 6099.5
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+SPRING_COMP_BETA 2
+SPRING_EXT_BETA 2
+
+
+LOG_ENTRY Used Dataset: Suspension: Spring; { VW_PASSAT } PASSAT_NA_RearSPR_php
+#Library : Suspension: Spring
+#DataSet : PASSAT_NA_RearSPR_php
+#Category: VW_PASSAT
+#FileID  : Spring_512be096-05c4-480a-8c75-7d7964f14fc6
+#Product : CarSim 2018.0
+#VehCode Spring Alone
+
+END
+/F Suspensions\Aux_Roll\AuxMx_f56e6365-6f89-452a-a76e-ab5a85c2e1ea.par`Suspension: Auxiliary Roll Moment`PASSAT_NA_RearRollbar_php`VW_PASSAT
+PARSFILE
+#FullDataName Suspension: Auxiliary Roll Moment`PASSAT_NA_RearRollbar_php`VW_PASSAT
+#CheckBox0 0    
+
+#RingCtrl0 COEFFICIENT
+#RingCtrl1 CONSTANT
+#RingCtrl2 MULTIPLY
+MX_AUX_COMBINE MULTIPLY
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+MX_AUX_COEFFICIENT 506.2
+MX_AUX_FSTATIC_CONSTANT 1
+*SCALAR 506.2
+*SCALAR2 1
+
+
+LOG_ENTRY Used Dataset: Suspension: Auxiliary Roll Moment; { VW_PASSAT } PASSAT_NA_RearRollbar_php
+#Library : Suspension: Auxiliary Roll Moment
+#DataSet : PASSAT_NA_RearRollbar_php
+#Category: VW_PASSAT
+#FileID  : AuxMx_f56e6365-6f89-452a-a76e-ab5a85c2e1ea
+#Product : CarSim 2018.0
+#VehCode Aux. Roll Moment
+
+END
+/F Aerodynamics\Aero_Fx\AirCFx_1b10dee9-0a20-49ce-aeb4-a80287f5a08e.par`Aerodynamics: Fx (Drag) Coef. vs. Aero Slip`0.30 at 0 Degrees`
+PARSFILE
+#FullDataName Aerodynamics: Fx (Drag) Coef. vs. Aero Slip`0.30 at 0 Degrees`
+#CheckBox0 0    
+
+#RingCtrl0 SPLINE_FLAT
+#RadioCtrl0 0    
+
+#DiagramOne0
+FX_AERO_SHAPING_TABLE SPLINE_FLAT
+-180, -0.45
+-160, -0.45
+-90, 0
+-20, 0.325
+0, 0.3
+20, 0.325
+90, 0
+160, -0.45
+180, -0.45
+ENDTABLE
+
+
+#EMBEDDED_NOTES
+#A nominal drag coefficient of 0.3 is typical of contemporary mid-size sedans, such as Honda Accord, Toyota Camry, and Ford Fusion.
+#
+#The drag coefficient typically increases a few percent as the vehicle develops an aerodynamic side slip angle, peaking around 20 degrees. Drag reduces as side slip increases because the component of the airspeed in the vehicle X direction reduces.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Aerodynamics: Fx (Drag) Coef. vs. Aero Slip; 0.30 at 0 Degrees
+#Library : Aerodynamics: Fx (Drag) Coef. vs. Aero Slip
+#DataSet : 0.30 at 0 Degrees
+#Category: 
+#FileID  : AirCFx_1b10dee9-0a20-49ce-aeb4-a80287f5a08e
+#Product : CarSim 2018.0
+#VehCode Drag vs. Aero Slip
+
+END
+/F Aerodynamics\Aero_Fy\AirCFy_edc41c2e-26ec-4dd4-8a26-78811435f233.par`Aerodynamics: Fy (Side Force) Coef. vs. Aero Slip`0.5 at 90 deg`
+PARSFILE
+#FullDataName Aerodynamics: Fy (Side Force) Coef. vs. Aero Slip`0.5 at 90 deg`
+#CheckBox0 0    
+
+#RingCtrl0 SPLINE
+#RadioCtrl0 0    
+
+#DiagramOne0
+FY_AERO_SHAPING_TABLE SPLINE
+-180, 0
+-90, -0.5
+0, 0
+90, 0.5
+180, 0
+ENDTABLE
+
+
+#EMBEDDED_NOTES
+#The side force coefficient is typically larger than the drag coefficent because the width of the vehicle is less than the length, contributing to drag in the lateral direction. Also, the calculation of the coefficient is based on the projected frontal area of the car, while the side force is developed against the larger side area.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Aerodynamics: Fy (Side Force) Coef. vs. Aero Slip; 0.5 at 90 deg
+#Library : Aerodynamics: Fy (Side Force) Coef. vs. Aero Slip
+#DataSet : 0.5 at 90 deg
+#Category: 
+#FileID  : AirCFy_edc41c2e-26ec-4dd4-8a26-78811435f233
+#Product : CarSim 2018.0
+#VehCode Fy vs. Aero Slip
+
+END
+/F Aerodynamics\Aero_Fz\AirCFz_2bd7b5e8-8499-40e6-bccc-0c23b363d70a.par`Aerodynamics: Fz (Lift) Coef. vs. Aero Slip`0.18 at 0 Degrees`
+PARSFILE
+#FullDataName Aerodynamics: Fz (Lift) Coef. vs. Aero Slip`0.18 at 0 Degrees`
+#CheckBox0 0    
+
+#RingCtrl0 SPLINE_FLAT
+#RadioCtrl0 0    
+
+#DiagramOne0
+FZ_AERO_SHAPING_TABLE SPLINE_FLAT
+-180, 0.4
+-135, 0.45
+-90, 0.35
+-20, 0.185
+0, 0.18
+20, 0.185
+90, 0.35
+135, 0.45
+180, 0.4
+ENDTABLE
+
+
+#EMBEDDED_NOTES
+#Nearly all passenger cars develop a small positive lift force at highway speeeds.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Aerodynamics: Fz (Lift) Coef. vs. Aero Slip; 0.18 at 0 Degrees
+#Library : Aerodynamics: Fz (Lift) Coef. vs. Aero Slip
+#DataSet : 0.18 at 0 Degrees
+#Category: 
+#FileID  : AirCFz_2bd7b5e8-8499-40e6-bccc-0c23b363d70a
+#Product : CarSim 2018.0
+#VehCode Lift vs. Aero Slip
+
+END
+/F Aerodynamics\Aero_Mx\AirCMx_1b06e67c-1729-4e91-9ce9-aad23a79dac3.par`Aerodynamics: Mx (Roll Moment) Coef. vs. Aero Slip`0.3 at 90 deg`
+PARSFILE
+#FullDataName Aerodynamics: Mx (Roll Moment) Coef. vs. Aero Slip`0.3 at 90 deg`
+#CheckBox0 0    
+
+#RingCtrl0 SPLINE
+#RadioCtrl0 0    
+
+#DiagramOne0
+MX_AERO_SHAPING_TABLE SPLINE
+-180, 0
+-90, -0.3
+0, 0
+90, 0.3
+180, 0
+ENDTABLE
+
+
+#EMBEDDED_NOTES
+#The aerodynamic moments relate the location of the aerodynamic center of pressure to the location of the aerodynamic reference point.
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Aerodynamics: Mx (Roll Moment) Coef. vs. Aero Slip; 0.3 at 90 deg
+#Library : Aerodynamics: Mx (Roll Moment) Coef. vs. Aero Slip
+#DataSet : 0.3 at 90 deg
+#Category: 
+#FileID  : AirCMx_1b06e67c-1729-4e91-9ce9-aad23a79dac3
+#Product : CarSim 2018.0
+#VehCode Mx vs. Aero Slip
+
+END
+/F Aerodynamics\Aero_My\AirCMy_95ace942-43cf-4051-b3f6-64da1a06e4e1.par`Aerodynamics: My (Pitch Moment) Coef. vs. Aero Slip`-0.15 at 0 Degrees`
+PARSFILE
+#FullDataName Aerodynamics: My (Pitch Moment) Coef. vs. Aero Slip`-0.15 at 0 Degrees`
+#CheckBox0 0    
+
+#RingCtrl0 SPLINE
+#RadioCtrl0 0    
+
+#DiagramOne0
+MY_AERO_SHAPING_TABLE SPLINE
+-180, -0.25
+-160, -0.25
+-90, 0
+-20, 0.17
+0, 0.15
+20, 0.17
+90, 0
+160, -0.25
+180, -0.25
+ENDTABLE
+
+
+#EMBEDDED_NOTES
+#The aerodynamic moments relate the location of the aerodynamic center of pressure to the location of the aerodynamic reference point.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Aerodynamics: My (Pitch Moment) Coef. vs. Aero Slip; -0.15 at 0 Degrees
+#Library : Aerodynamics: My (Pitch Moment) Coef. vs. Aero Slip
+#DataSet : -0.15 at 0 Degrees
+#Category: 
+#FileID  : AirCMy_95ace942-43cf-4051-b3f6-64da1a06e4e1
+#Product : CarSim 2018.0
+#VehCode My vs. Aero Slip
+
+END
+/F Aerodynamics\Aero_Mz\AirCMz_57ed564c-dd83-4157-a1e0-252d83f9f723.par`Aerodynamics: Mz (Yaw Moment) Coef. vs. Aero Slip`0.05 at 90 deg`
+PARSFILE
+#FullDataName Aerodynamics: Mz (Yaw Moment) Coef. vs. Aero Slip`0.05 at 90 deg`
+#CheckBox0 0    
+
+#RingCtrl0 SPLINE
+#RadioCtrl0 0    
+
+#DiagramOne0
+MZ_AERO_SHAPING_TABLE SPLINE
+-180, 0
+-90, 0.05
+0, 0
+90, -0.05
+180, 0
+ENDTABLE
+
+
+#EMBEDDED_NOTES
+#The aerodynamic moments relate the location of the aerodynamic center of pressure to the location of the aerodynamic reference point.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Aerodynamics: Mz (Yaw Moment) Coef. vs. Aero Slip; 0.05 at 90 deg
+#Library : Aerodynamics: Mz (Yaw Moment) Coef. vs. Aero Slip
+#DataSet : 0.05 at 90 deg
+#Category: 
+#FileID  : AirCMz_57ed564c-dd83-4157-a1e0-252d83f9f723
+#Product : CarSim 2018.0
+#VehCode Mz vs. Aero Slip
+
+END
+/F Animator\STL\Shape_a42c3474-8a83-4edf-b890-a781be4fbdd4.par`Animator: Shape File Link`Blurred Tire`Tires
+PARSFILE
+#FullDataName Animator: Shape File Link`Blurred Tire`Tires
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Common_Vehicle_Assets\Tires\Blurred_Single_Car\blurred_tire.obj
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 0.3
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 0.3 0.3 0.3
+vsv_enable_shadows_recursive
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink2 Animator: Camera Setup`Shape Preview (Side)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_a42c3474-8a83-4edf-b890-a781be4fbdd4.png
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Tires } Blurred Tire
+#Library : Animator: Shape File Link
+#DataSet : Blurred Tire
+#Category: Tires
+#FileID  : Shape_a42c3474-8a83-4edf-b890-a781be4fbdd4
+#Product : CarSim 2018.0
+#VehCode Shape File
+
+END
+/F Animator\STL_Groups\ShpGrp_a17de929-746e-4f45-b555-ab0ae2864120.par`Animator: Shape Assembly`PASSAT_NA_php`VW_PASSAT
+PARSFILE
+#FullDataName Animator: Shape Assembly`PASSAT_NA_php`VW_PASSAT
+*COLOR .36 .117 .117
+*OFFSET_X 0
+*OFFSET_Y 0
+*OFFSET_Z 0.25
+*X_REF_LENGTH 2711
+*Y_REF_LENGTH 1753
+*Z_REF_LENGTH 1433
+*IMAGE_FIT_MODE 1
+#CheckBox0 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 1    
+#CheckBox5 1    
+
+#RingCtrl1 0
+#RingCtrl2 2
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL_Groups\ShpGrp_a17de929-746e-4f45-b555-ab0ae2864120.png
+PARSFILE Animator\STL\Shape_46bbd8c3-972b-491b-ada8-8b076bd1780a.par
+#BlueLink0 Animator: Shape File Link`European Sedan: Body` CS European Sedan` , Shape File`Shape_46bbd8c3-972b-491b-ada8-8b076bd1780a
+
+set_lighting on
+set_offset_x 0
+set_offset_y 0
+set_offset_z 0.25
+PARSFILE Animator\STL\Shape_51efed0b-495d-497a-b06e-54b3bdbe64f5.par
+#BlueLink1 Animator: Shape File Link`European Sedan: Details` CS European Sedan` , Shape File`Shape_51efed0b-495d-497a-b06e-54b3bdbe64f5
+
+set_lighting on
+set_offset_x 0
+set_offset_y 0
+set_offset_z 0.25
+PARSFILE Animator\STL\Shape_a6fdcf39-2ef6-4cd9-b8e6-ca4fb16952b9.par
+#BlueLink2 Animator: Shape File Link`European Sedan: Windows` CS European Sedan` , Shape File`Shape_a6fdcf39-2ef6-4cd9-b8e6-ca4fb16952b9
+
+set_lighting on
+set_offset_x 0
+set_offset_y 0
+set_offset_z 0.25
+PARSFILE Animator\STL\Shape_1e1d097c-c1ab-498a-a67e-e726af1a87d5.par
+#BlueLink3 Animator: Shape File Link`European Sedan: Interior Trim` CS European Sedan` , Shape File`Shape_1e1d097c-c1ab-498a-a67e-e726af1a87d5
+
+set_lighting on
+set_offset_x 0
+set_offset_y 0
+set_offset_z 0.25
+PARSFILE Animator\STL\Shape_8ffc3080-d8a4-4315-b702-7fa11154a2e4.par
+#BlueLink4 Animator: Shape File Link`European Sedan: Steering Wheel` CS European Sedan` , Shape File`Shape_8ffc3080-d8a4-4315-b702-7fa11154a2e4
+
+set_lighting on
+set_offset_x 0
+set_offset_y 0
+set_offset_z 0.25
+PARSFILE Animator\STL\Shape_553b0025-1973-4c33-a914-46aeb25f6ef9.par
+#BlueLink5 Animator: Shape File Link`European Sedan: Seats` CS European Sedan` , Shape File`Shape_553b0025-1973-4c33-a914-46aeb25f6ef9
+
+set_lighting on
+set_offset_x 0
+set_offset_y 0
+set_offset_z 0.25
+PARSFILE Animator\STL\Shape_587aa98f-459e-4d62-9de9-550a9a2ed6ea.par
+#BlueLink13 Animator: Shape File Link`European Sedan: Driver` CS European Sedan` , Shape File`Shape_587aa98f-459e-4d62-9de9-550a9a2ed6ea
+
+set_lighting on
+set_offset_x 0
+set_offset_y 0
+set_offset_z 0.25
+x_ref_length 2711
+y_ref_length 1753
+z_ref_length 1433
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink17 Animator: Camera Setup`Shape Preview (Side)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { VW_PASSAT } PASSAT_NA_php
+#Library : Animator: Shape Assembly
+#DataSet : PASSAT_NA_php
+#Category: VW_PASSAT
+#FileID  : ShpGrp_a17de929-746e-4f45-b555-ab0ae2864120
+#Product : CarSim 2018.0
+#VehCode Shape Assembly
+
+END
+/F Animator\STL\Shape_4250ebb0-9e56-4f9f-a058-c568dd085a60.par`Animator: Shape File Link`European Sedan: Brake Lights (D-Class)`CS European Sedan
+PARSFILE
+#FullDataName Animator: Shape File Link`European Sedan: Brake Lights (D-Class)`CS European Sedan
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Cars\European_Sedan_Left_Drive\brakes_on.obj
+#ENDMYellow
+
+SET_COLOR 1 .8 .8
+SET_SCALE_X 1
+SET_SCALE_Y 1.005
+SET_SCALE_Z 1
+SET_OFFSET_X -0.01
+SET_OFFSET_Y 0
+SET_OFFSET_Z 0.25
+X_REF_LENGTH 2711
+Y_REF_LENGTH 1753
+Z_REF_LENGTH 1433
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 0    
+
+SET_SPECULAR 1 1 1
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink2 Animator: Camera Setup`Shape Preview (Side)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_4250ebb0-9e56-4f9f-a058-c568dd085a60.png
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { CS European Sedan } European Sedan: Brake Lights (D-Class)
+#Library : Animator: Shape File Link
+#DataSet : European Sedan: Brake Lights (D-Class)
+#Category: CS European Sedan
+#FileID  : Shape_4250ebb0-9e56-4f9f-a058-c568dd085a60
+#Product : CarSim 2018.0
+#VehCode Shape File
+
+END
+/F Animator\Cameras\Camera_aad9f5dd-7a61-4319-88b3-b90a1214f577.par`Animator: Camera Setup`Vehicle Pictures`Shape Preview
+PARSFILE
+#FullDataName Animator: Camera Setup`Vehicle Pictures`Shape Preview
+#RingCtrl1 0
+
+#CheckBox1 1    
+#CheckBox2 0    
+#CheckBox3 0    
+
+SET_CAMERA_Reference_Frame Shape Preview: Generic Yaw for Shape Preview
+PARSFILE Animator\Frames\Frame_02b47476-96e6-474b-919e-07d03b43f1ec.par
+#BlueLink0 Animator: Reference Frame`Yaw for Shape Preview` Shape Preview: Generic` , Reference frame for outside camera`Frame_02b47476-96e6-474b-919e-07d03b43f1ec
+
+SET_LOOKPOINT_Reference_Frame Shape Preview: Generic Yaw for Shape Preview
+SET_LOOKPOINT_X 1
+SET_LOOKPOINT_Y 0
+SET_LOOKPOINT_Z 0.5
+SET_AZIMUTH 230
+SET_ELEVATION 6
+SET_DISTANCE 12
+SET_CAMERAMAN_NAME External camera
+*SET_LOOKPOINT_X 1
+*SET_LOOKPOINT_Y 0
+*SET_LOOKPOINT_Z 0.5
+*SET_AZIMUTH 230
+*SET_ELEVATION 6
+*SET_DISTANCE 12
+FOG_SCALE 0
+SET_FIELD_OF_VIEW 21.1
+SUN_POSITION 10 10 100
+
+#EMBEDDED_NOTES
+#Pause the animation at the very start and center the vehicle in the animator to take a picture for the Animator: Vehicle screen.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Animator: Camera Setup; { Shape Preview } Vehicle Pictures
+#Library : Animator: Camera Setup
+#DataSet : Vehicle Pictures
+#Category: Shape Preview
+#FileID  : Camera_aad9f5dd-7a61-4319-88b3-b90a1214f577
+#Product : CarSim 2018.0
+#VehCode Camera
+
+END
+/F Powertrain\Engine\Engine_5fd8cccf-3f87-4967-bf2c-05672393be86.par`Powertrain: Engine`150 kW Engine`150 kW Engines
+PARSFILE
+#FullDataName Powertrain: Engine`150 kW Engine`150 kW Engines
+#RingCtrl0 CARPET
+#CheckBox0 0    
+OPT_THROTTLE_DELAY 0
+
+*3D_XLabel Throttle (-)
+*3D_YLabel Engine speed (rpm)
+*3D_ZLabel Engine torque (N-m)
+
+#DiagramTwo0
+*3D_DATA 10, 22 ! columns x rows
+MENGINE_CARPET 2D_LINEAR
+0, 0, 0.1, 0.15, 0.2, 0.35, 0.5, 0.7, 0.85, 0.95, 1
+0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+400, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+517, 24.75, 76.11, 101.37, 103.43, 104.6, 105.18, 105.38, 105.43, 105.46, 105.43
+633, 29.7, 92.87, 139.66, 149.15, 150.67, 151.28, 151.5, 151.52, 151.52, 151.52
+750, 0, 87.39, 148.02, 161.35, 164.95, 166.25, 166.73, 166.77, 166.77, 166.75
+1107, -9.9, 70.62, 173.59, 198.66, 208.61, 212.02, 213.29, 213.4, 213.37, 213.29
+1463, -14.85, 47.12, 167.31, 207.9, 221.15, 227.15, 230.09, 230.77, 231.22, 235.62
+1820, -16.83, 25.74, 148.5, 211.6, 233.68, 242.29, 246.89, 248.14, 249.06, 255.42
+2177, -20.17, 9.9, 117.65, 203.67, 237.6, 257.4, 260.37, 263.34, 266.31, 272.88
+2533, -25.32, -6.41, 81.3, 182.08, 239.58, 267, 274.23, 279.24, 282.15, 287.1
+2890, -30.14, -15.16, 56.41, 153.5, 233.12, 269.9, 285.22, 289.08, 295.02, 299.97
+3247, -34.39, -22.06, 37.66, 122.49, 223.45, 267.3, 287.1, 295.02, 300.96, 306.9
+3603, -38.57, -28.1, 23.48, 96.53, 201.04, 259.38, 288.09, 297, 303.93, 309.87
+3960, -42.77, -33.71, 11.8, 76.42, 174.35, 248.62, 285.12, 296.01, 302.94, 306.9
+4317, -47.21, -39.38, 0.28, 57.45, 150.24, 237.3, 280.17, 290.07, 297, 302.88
+4673, -51.83, -45.01, -9.97, 41.19, 125.06, 220.31, 272.25, 282.15, 292.05, 297
+5030, -56.74, -50.57, -19.08, 26.99, 102.65, 198.96, 262.35, 272.25, 282.15, 287.1
+5387, -61.67, -56.24, -27.53, 14.45, 83.52, 176.58, 246.84, 256.41, 269.64, 272.49
+5743, -67.19, -62.17, -35.72, 2.82, 66.2, 153.28, 221.41, 236.52, 243.61, 246.41
+6100, -73.21, -68.41, -43.88, -8.16, 50.38, 130.66, 193.86, 207.92, 214.52, 217.05
+6500, -80.19, -80.19, -80.19, -80.19, -80.19, -80.19, -80.19, -80.19, -80.19, -80.19
+6700, -81.18, -81.18, -81.18, -81.18, -81.18, -81.18, -81.18, -81.18, -81.18, -81.18
+ENDTABLE
+
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+PARSFILE Powertrain\Fuel_Rate\FuelRate_a32b7233-c00b-43fa-b605-4c55b974550c.par
+#BlueLink0 Powertrain: Fuel Consumption Rate`150 kW Gasoline Engine` ` , Fuel Rate`FuelRate_a32b7233-c00b-43fa-b605-4c55b974550c
+
+AV_ENG_IDLE 750
+IENG 0.2
+
+LOG_ENTRY Used Dataset: Powertrain: Engine; { 150 kW Engines } 150 kW Engine
+#Library : Powertrain: Engine
+#DataSet : 150 kW Engine
+#Category: 150 kW Engines
+#FileID  : Engine_5fd8cccf-3f87-4967-bf2c-05672393be86
+#Product : CarSim 2018.0
+#VehCode 2D Table 
+
+END
+/F Powertrain\TConv\TC_6167f7ca-1ba7-4746-98f1-f7e38f6f5f0a.par`Powertrain: Torque Converter`Torque Converter for 150 kW Engine`
+PARSFILE
+#FullDataName Powertrain: Torque Converter`Torque Converter for 150 kW Engine`
+#RingCtrl0 SPLINE_FLAT
+#RingCtrl1 SPLINE_FLAT
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+ITC_INPUT_SHAFT 0.015
+ITC_OUTPUT_SHAFT 0.015
+
+#DiagramOne0
+INV_CAP_TC_TABLE SPLINE_FLAT
+0, 0.00704273
+0.1, 0.00704273
+0.2, 0.00704273
+0.3, 0.00704269
+0.4, 0.00704199
+0.5, 0.00703585
+0.6, 0.00700014
+0.7, 0.00684379
+0.8, 0.00628652
+0.9, 0.00458708
+0.95, 0.00282599
+0.99, 0.000673411
+1.01, -0.000673411
+1.05, -0.00282599
+1.1, -0.00458708
+1.2, -0.00628652
+1.3, -0.00684379
+1.4, -0.00700014
+1.5, -0.00703585
+1.6, -0.00704199
+1.7, -0.00704269
+1.8, -0.00704273
+1.9, -0.00704273
+2, -0.00704273
+ENDTABLE
+#DiagramOne1
+RM_TC_TABLE SPLINE_FLAT
+0, 1.864
+0.102, 1.78
+0.202, 1.701
+0.306, 1.608
+0.353, 1.56
+0.4, 1.519
+0.452, 1.464
+0.502, 1.412
+0.551, 1.356
+0.6, 1.309
+0.65, 1.259
+0.7, 1.203
+0.75, 1.151
+0.801, 1.098
+0.82, 1.074
+0.84, 1.048
+0.849, 1.041
+0.861, 1.027
+0.87, 1.014
+0.881, 0.996
+0.89, 0.996
+0.9, 0.993
+0.91, 0.998
+0.921, 0.986
+0.928, 0.993
+0.94, 0.996
+0.951, 0.981
+0.99, 1
+1, 1
+ENDTABLE
+
+LOG_ENTRY Used Dataset: Powertrain: Torque Converter; Torque Converter for 150 kW Engine
+#Library : Powertrain: Torque Converter
+#DataSet : Torque Converter for 150 kW Engine
+#Category: 
+#FileID  : TC_6167f7ca-1ba7-4746-98f1-f7e38f6f5f0a
+#Product : CarSim 2018.0
+#VehCode Torque Converter
+
+END
+/F Powertrain\TransExt\Trans18_55b3d8ee-e987-4803-8615-8a5b5c910733.par`Powertrain: Transmission (18 Gears or CVT)`6-Speed`6-Speed Transmissions
+PARSFILE
+#FullDataName Powertrain: Transmission (18 Gears or CVT)`6-Speed`6-Speed Transmissions
+#RingCtrl0 6
+NGEARS 6
+#RingCtrl1 1
+OPT_SHIFT_INTERNAL 1
+#RingCtrl2 1
+OPT_TR_GEAR_INTERNAL 1
+#CheckBox0 0    
+R_GEAR_TR_REVERSE -3.168
+R_GEAR_TR(1) 3.538
+R_GEAR_TR(2) 2.06
+R_GEAR_TR(3) 1.404
+R_GEAR_TR(4) 1.00
+R_GEAR_TR(5) 0.713
+R_GEAR_TR(6) 0.582
+ITR_REVERSE 0.034
+ITR_NEUTRAL 0.034
+ITR(1) 0.037
+ITR(2) 0.034
+ITR(3) 0.042
+ITR(4) 0.04
+ITR(5) 0.04
+ITR(6) 0.04
+R_EFF_TR_F_REVERSE 0.9
+R_EFF_TR_F(1) 0.92
+R_EFF_TR_F(2) 0.92
+R_EFF_TR_F(3) 0.95
+R_EFF_TR_F(4) 0.95
+R_EFF_TR_F(5) 0.98
+R_EFF_TR_F(6) 0.99
+R_EFF_TR_R_REVERSE 0.9
+R_EFF_TR_R(1) 0.92
+R_EFF_TR_R(2) 0.92
+R_EFF_TR_R(3) 0.95
+R_EFF_TR_R(4) 0.95
+R_EFF_TR_R(5) 0.98
+R_EFF_TR_R(6) 0.99
+T_SHIFT 0.25
+
+
+igear 1
+PARSFILE Powertrain\Shift\Shift_28d508f4-a9e5-4d5f-93e0-da2839bd20ad.par
+#BlueLink0 Powertrain: Shift Schedule`6-speed, 1-2 Shift` 6-speed` , Shift schedule`Shift_28d508f4-a9e5-4d5f-93e0-da2839bd20ad
+
+
+igear 2
+PARSFILE Powertrain\Shift\Shift_458185ed-acb4-414f-bccd-d9bffa8cb1d0.par
+#BlueLink1 Powertrain: Shift Schedule`6-speed, 2-3 Shift` 6-speed` , Shift schedule`Shift_458185ed-acb4-414f-bccd-d9bffa8cb1d0
+
+
+igear 3
+PARSFILE Powertrain\Shift\Shift_227434b7-0668-495c-a01a-0881f536f932.par
+#BlueLink2 Powertrain: Shift Schedule`6-speed, 3-4 Shift` 6-speed` , Shift schedule`Shift_227434b7-0668-495c-a01a-0881f536f932
+
+
+igear 4
+PARSFILE Powertrain\Shift\Shift_4c7e0778-d050-4bc4-ae32-5ddb69fa99e5.par
+#BlueLink3 Powertrain: Shift Schedule`6-speed, 4-5 Shift` 6-speed` , Shift schedule`Shift_4c7e0778-d050-4bc4-ae32-5ddb69fa99e5
+
+
+igear 5
+PARSFILE Powertrain\Shift\Shift_1ca55221-d7d9-4a14-a7cc-e661498a08ca.par
+#BlueLink4 Powertrain: Shift Schedule`6-speed, 5-6 Shift` 6-speed` , Shift schedule`Shift_1ca55221-d7d9-4a14-a7cc-e661498a08ca
+
+
+igear 6
+
+LOG_ENTRY Used Dataset: Powertrain: Transmission (18 Gears or CVT); { 6-Speed Transmissions } 6-Speed
+#Library : Powertrain: Transmission (18 Gears or CVT)
+#DataSet : 6-Speed
+#Category: 6-Speed Transmissions
+#FileID  : Trans18_55b3d8ee-e987-4803-8615-8a5b5c910733
+#Product : CarSim 2018.0
+#VehCode Transmission
+
+END
+/F Powertrain\Frontdiff\DiffF_0e6d0a7d-5a3d-4cf9-b4d6-7adbda9605b1.par`Powertrain: Front Differential`Open: Gear Ratio 4.1`
+PARSFILE
+#FullDataName Powertrain: Front Differential`Open: Gear Ratio 4.1`
+#CheckBox0 0    
+LOCKED_FD_OPT 0
+
+#RingCtrl0 CONSTANT
+OPT_LOCKED_DIFF 0
+M_DIFF_VISC_CONSTANT 0
+#RadioCtrl0 0    
+
+M_DIFF_FD_CONSTANT 0
+R_GEAR_FD 4.1
+R_EFF_F_FD 0.99
+R_EFF_R_FD 0.99
+LOCKED_FD_DAMP 0.8
+LOCKED_FD_K 80
+IDS_F 0.013
+IHS_LF 0.009
+IHS_RF 0.009
+*SCALAR 0
+
+R_GEAR_DIFF 4.1
+R_EFF_F_DIFF 0.99
+R_EFF_R_DIFF 0.99
+LOCKED_DIFF_DAMP 0.8
+LOCKED_DIFF_K 80
+IDS 0.013
+IHS_L 0.009
+IHS_R 0.009
+
+LOG_ENTRY Used Dataset: Powertrain: Front Differential; Open: Gear Ratio 4.1
+#Library : Powertrain: Front Differential
+#DataSet : Open: Gear Ratio 4.1
+#Category: 
+#FileID  : DiffF_0e6d0a7d-5a3d-4cf9-b4d6-7adbda9605b1
+#Product : CarSim 2018.0
+#VehCode Front Differential
+
+END
+/F Steering\Kinematics\StrKin_d1844003-2d78-4964-996b-26ce6de5b7f4.par`Steering System: Kinematics for One Wheel`PASSAT_NA_SteeringLeft_php`VW_PASSAT
+PARSFILE
+#FullDataName Steering System: Kinematics for One Wheel`PASSAT_NA_SteeringLeft_php`VW_PASSAT
+#CheckBox0 0    
+
+#RingCtrl0 LINEAR
+#RadioCtrl0 0    
+
+#DiagramOne0
+STEER_KIN_TABLE LINEAR
+-23.94, -22.007
+-23.67, -21.75
+-23.4, -21.493
+-23.13, -21.237
+-22.86, -20.982
+-22.59, -20.727
+-22.32, -20.472
+-22.05, -20.218
+-21.78, -19.964
+-21.51, -19.71
+-21.24, -19.457
+-20.97, -19.205
+-20.7, -18.953
+-20.43, -18.701
+-20.16, -18.449
+-19.89, -18.198
+-19.62, -17.947
+-19.35, -17.697
+-19.08, -17.447
+-18.81, -17.197
+-18.54, -16.947
+-18.27, -16.698
+-18, -16.449
+-17.73, -16.201
+-17.46, -15.952
+-17.19, -15.704
+-16.92, -15.456
+-16.65, -15.209
+-16.38, -14.961
+-16.11, -14.714
+-15.84, -14.467
+-15.57, -14.22
+-15.3, -13.974
+-15.03, -13.727
+-14.76, -13.481
+-14.49, -13.235
+-14.22, -12.989
+-13.95, -12.743
+-13.68, -12.497
+-13.41, -12.252
+-13.14, -12.007
+-12.87, -11.761
+-12.6, -11.516
+-12.33, -11.271
+-12.06, -11.026
+-11.79, -10.781
+-11.52, -10.536
+-11.25, -10.291
+-10.98, -10.046
+-10.71, -9.8012
+-10.44, -9.5564
+-10.17, -9.3115
+-9.9, -9.0667
+-9.63, -8.8219
+-9.36, -8.577
+-9.09, -8.3321
+-8.82, -8.0871
+-8.55, -7.8421
+-8.28, -7.5971
+-8.01, -7.3519
+-7.74, -7.1067
+-7.47, -6.8614
+-7.2, -6.616
+-6.93, -6.3705
+-6.66, -6.1248
+-6.39, -5.8791
+-6.12, -5.6332
+-5.85, -5.3871
+-5.58, -5.1409
+-5.31, -4.8945
+-5.04, -4.6479
+-4.77, -4.4011
+-4.5, -4.1542
+-4.23, -3.907
+-3.96, -3.6596
+-3.69, -3.412
+-3.42, -3.1642
+-3.15, -2.9161
+-2.88, -2.6677
+-2.61, -2.4191
+-2.34, -2.1702
+-2.07, -1.921
+-1.8, -1.6715
+-1.53, -1.4217
+-1.26, -1.1716
+-0.99, -0.92118
+-0.72, -0.67042
+-0.45, -0.41931
+-0.18, -0.16784
+0.09, 0.083983
+0.36, 0.33618
+0.63, 0.58877
+0.9, 0.84175
+1.17, 1.0951
+1.44, 1.3489
+1.71, 1.6031
+1.98, 1.8578
+2.25, 2.1129
+2.52, 2.3684
+2.79, 2.6244
+3.06, 2.8809
+3.33, 3.1378
+3.6, 3.3953
+3.87, 3.6532
+4.14, 3.9117
+4.41, 4.1707
+4.68, 4.4302
+4.95, 4.6902
+5.22, 4.9508
+5.49, 5.2119
+5.76, 5.4737
+6.03, 5.736
+6.3, 5.9988
+6.57, 6.2623
+6.84, 6.5264
+7.11, 6.7911
+7.38, 7.0565
+7.65, 7.3224
+7.92, 7.589
+8.19, 7.8563
+8.46, 8.1242
+8.73, 8.3928
+9, 8.6621
+9.27, 8.9321
+9.54, 9.2028
+9.81, 9.4742
+10.08, 9.7464
+10.35, 10.019
+10.62, 10.293
+10.89, 10.567
+11.16, 10.842
+11.43, 11.118
+11.7, 11.395
+11.97, 11.672
+12.24, 11.951
+12.51, 12.23
+12.78, 12.51
+13.05, 12.79
+13.32, 13.072
+13.59, 13.354
+13.86, 13.638
+14.13, 13.922
+14.4, 14.207
+14.67, 14.493
+14.94, 14.78
+15.21, 15.067
+15.48, 15.356
+15.75, 15.646
+16.02, 15.936
+16.29, 16.227
+16.56, 16.52
+16.83, 16.813
+17.1, 17.108
+17.37, 17.403
+17.64, 17.699
+17.91, 17.997
+18.18, 18.295
+18.45, 18.594
+18.72, 18.895
+18.99, 19.196
+19.26, 19.499
+19.53, 19.802
+19.8, 20.107
+20.07, 20.413
+20.34, 20.72
+20.61, 21.028
+20.88, 21.337
+21.15, 21.647
+21.42, 21.958
+21.69, 22.271
+21.96, 22.584
+22.23, 22.899
+22.5, 23.215
+22.77, 23.532
+23.04, 23.85
+23.31, 24.17
+23.58, 24.491
+23.85, 24.812
+ENDTABLE
+
+
+LOG_ENTRY Used Dataset: Steering System: Kinematics for One Wheel; { VW_PASSAT } PASSAT_NA_SteeringLeft_php
+#Library : Steering System: Kinematics for One Wheel
+#DataSet : PASSAT_NA_SteeringLeft_php
+#Category: VW_PASSAT
+#FileID  : StrKin_d1844003-2d78-4964-996b-26ce6de5b7f4
+#Product : CarSim 2018.0
+#VehCode Steering Kinematics
+
+END
+/F Steering\Kinematics\StrKin_915419ad-1669-4fa8-bc37-b487d20e6319.par`Steering System: Kinematics for One Wheel`PASSAT_NA_SteeringRight_php`VW_PASSAT
+PARSFILE
+#FullDataName Steering System: Kinematics for One Wheel`PASSAT_NA_SteeringRight_php`VW_PASSAT
+#CheckBox0 0    
+
+#RingCtrl0 LINEAR
+#RadioCtrl0 0    
+
+#DiagramOne0
+STEER_KIN_TABLE LINEAR
+-23.94, -24.875
+-23.67, -24.553
+-23.4, -24.232
+-23.13, -23.913
+-22.86, -23.594
+-22.59, -23.277
+-22.32, -22.961
+-22.05, -22.646
+-21.78, -22.333
+-21.51, -22.02
+-21.24, -21.709
+-20.97, -21.398
+-20.7, -21.089
+-20.43, -20.781
+-20.16, -20.474
+-19.89, -20.169
+-19.62, -19.864
+-19.35, -19.56
+-19.08, -19.258
+-18.81, -18.956
+-18.54, -18.655
+-18.27, -18.356
+-18, -18.058
+-17.73, -17.76
+-17.46, -17.464
+-17.19, -17.168
+-16.92, -16.874
+-16.65, -16.58
+-16.38, -16.288
+-16.11, -15.996
+-15.84, -15.706
+-15.57, -15.416
+-15.3, -15.127
+-15.03, -14.84
+-14.76, -14.553
+-14.49, -14.267
+-14.22, -13.982
+-13.95, -13.698
+-13.68, -13.414
+-13.41, -13.132
+-13.14, -12.85
+-12.87, -12.57
+-12.6, -12.29
+-12.33, -12.011
+-12.06, -11.733
+-11.79, -11.455
+-11.52, -11.179
+-11.25, -10.903
+-10.98, -10.628
+-10.71, -10.354
+-10.44, -10.08
+-10.17, -9.8076
+-9.9, -9.5357
+-9.63, -9.2645
+-9.36, -8.994
+-9.09, -8.7243
+-8.82, -8.4552
+-8.55, -8.1869
+-8.28, -7.9193
+-8.01, -7.6523
+-7.74, -7.386
+-7.47, -7.1204
+-7.2, -6.8555
+-6.93, -6.5912
+-6.66, -6.3275
+-6.39, -6.0645
+-6.12, -5.802
+-5.85, -5.5402
+-5.58, -5.279
+-5.31, -5.0184
+-5.04, -4.7584
+-4.77, -4.499
+-4.5, -4.2401
+-4.23, -3.9817
+-3.96, -3.7239
+-3.69, -3.4667
+-3.42, -3.21
+-3.15, -2.9538
+-2.88, -2.6981
+-2.61, -2.4429
+-2.34, -2.1882
+-2.07, -1.934
+-1.8, -1.6802
+-1.53, -1.427
+-1.26, -1.1741
+-0.99, -0.92174
+-0.72, -0.6698
+-0.45, -0.41828
+-0.18, -0.16717
+0.09, 0.08352
+0.36, 0.33382
+0.63, 0.58372
+0.9, 0.83325
+1.17, 1.0824
+1.44, 1.3312
+1.71, 1.5796
+1.98, 1.8277
+2.25, 2.0755
+2.52, 2.3229
+2.79, 2.5701
+3.06, 2.8169
+3.33, 3.0634
+3.6, 3.3096
+3.87, 3.5556
+4.14, 3.8013
+4.41, 4.0467
+4.68, 4.2919
+4.95, 4.5368
+5.22, 4.7815
+5.49, 5.026
+5.76, 5.2702
+6.03, 5.5143
+6.3, 5.7581
+6.57, 6.0018
+6.84, 6.2453
+7.11, 6.4886
+7.38, 6.7318
+7.65, 6.9748
+7.92, 7.2177
+8.19, 7.4604
+8.46, 7.7031
+8.73, 7.9456
+9, 8.188
+9.27, 8.4303
+9.54, 8.6725
+9.81, 8.9147
+10.08, 9.1568
+10.35, 9.3988
+10.62, 9.6408
+10.89, 9.8827
+11.16, 10.125
+11.43, 10.367
+11.7, 10.608
+11.97, 10.85
+12.24, 11.092
+12.51, 11.334
+12.78, 11.576
+13.05, 11.818
+13.32, 12.06
+13.59, 12.302
+13.86, 12.544
+14.13, 12.786
+14.4, 13.029
+14.67, 13.271
+14.94, 13.514
+15.21, 13.756
+15.48, 13.999
+15.75, 14.242
+16.02, 14.485
+16.29, 14.728
+16.56, 14.971
+16.83, 15.214
+17.1, 15.458
+17.37, 15.702
+17.64, 15.946
+17.91, 16.19
+18.18, 16.434
+18.45, 16.679
+18.72, 16.924
+18.99, 17.169
+19.26, 17.414
+19.53, 17.66
+19.8, 17.906
+20.07, 18.152
+20.34, 18.398
+20.61, 18.645
+20.88, 18.892
+21.15, 19.139
+21.42, 19.387
+21.69, 19.635
+21.96, 19.883
+22.23, 20.132
+22.5, 20.381
+22.77, 20.63
+23.04, 20.88
+23.31, 21.13
+23.58, 21.381
+23.85, 21.632
+ENDTABLE
+
+
+LOG_ENTRY Used Dataset: Steering System: Kinematics for One Wheel; { VW_PASSAT } PASSAT_NA_SteeringRight_php
+#Library : Steering System: Kinematics for One Wheel
+#DataSet : PASSAT_NA_SteeringRight_php
+#Category: VW_PASSAT
+#FileID  : StrKin_915419ad-1669-4fa8-bc37-b487d20e6319
+#Product : CarSim 2018.0
+#VehCode Steering Kinematics
+
+END
+/F Animator\STL\Shape_2905a7a9-2ebe-425c-855a-2b6e74d0b58f.par`Animator: Shape File Link`Euro. Sedan Tire`Tires
+PARSFILE
+#FullDataName Animator: Shape File Link`Euro. Sedan Tire`Tires
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Common_Vehicle_Assets\Tires\195_45R16\tire.obj
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 0.3
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 0.3 0.3 0.3
+vsv_enable_shadows_recursive
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_52079630-c01a-43a9-bc0c-30080f01066f.par
+#BlueLink2 Animator: Camera Setup`Shape Preview (Top)` Shape Preview` , Video Camera`Camera_52079630-c01a-43a9-bc0c-30080f01066f
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_2905a7a9-2ebe-425c-855a-2b6e74d0b58f.png
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Tires } Euro. Sedan Tire
+#Library : Animator: Shape File Link
+#DataSet : Euro. Sedan Tire
+#Category: Tires
+#FileID  : Shape_2905a7a9-2ebe-425c-855a-2b6e74d0b58f
+#Product : CarSim 2018.0
+#VehCode Shape File
+
+END
+/F Animator\STL\Shape_3dafe263-b4dc-46a2-bb2e-95660b50dd2e.par`Animator: Shape File Link`Euro. Sedan Wheel`Tires
+PARSFILE
+#FullDataName Animator: Shape File Link`Euro. Sedan Wheel`Tires
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Common_Vehicle_Assets\Tires\195_45R16\wheel.obj
+#ENDMYellow
+
+SET_COLOR .62 .62 .62
+*SPECULAR 0.5
+*IMAGE_FIT_MODE 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 0.5 0.5 0.5
+vsv_enable_shadows_recursive
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_52079630-c01a-43a9-bc0c-30080f01066f.par
+#BlueLink2 Animator: Camera Setup`Shape Preview (Top)` Shape Preview` , Video Camera`Camera_52079630-c01a-43a9-bc0c-30080f01066f
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_3dafe263-b4dc-46a2-bb2e-95660b50dd2e.png
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Tires } Euro. Sedan Wheel
+#Library : Animator: Shape File Link
+#DataSet : Euro. Sedan Wheel
+#Category: Tires
+#FileID  : Shape_3dafe263-b4dc-46a2-bb2e-95660b50dd2e
+#Product : CarSim 2018.0
+#VehCode Shape File
+
+END
+/F Animator\STL\Shape_21a8656e-547d-4831-954d-38d95a9dff2b.par`Animator: Shape File Link`Euro. Sedan Stripe`Tires
+PARSFILE
+#FullDataName Animator: Shape File Link`Euro. Sedan Stripe`Tires
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Common_Vehicle_Assets\Tires\195_45R16\stripe.obj
+#ENDMYellow
+
+SET_COLOR 1 1 1
+SET_OFFSET_X 0
+SET_OFFSET_Y 0.01
+SET_OFFSET_Z 0.01
+*SPECULAR 0
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 0    
+
+SET_SPECULAR 0 0 0
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_52079630-c01a-43a9-bc0c-30080f01066f.par
+#BlueLink2 Animator: Camera Setup`Shape Preview (Top)` Shape Preview` , Video Camera`Camera_52079630-c01a-43a9-bc0c-30080f01066f
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_21a8656e-547d-4831-954d-38d95a9dff2b.png
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Tires } Euro. Sedan Stripe
+#Library : Animator: Shape File Link
+#DataSet : Euro. Sedan Stripe
+#Category: Tires
+#FileID  : Shape_21a8656e-547d-4831-954d-38d95a9dff2b
+#Product : CarSim 2018.0
+#VehCode Shape File
+
+END
+/F Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par`Animator: Camera Setup`Shape Preview (Side)`Shape Preview
+PARSFILE
+#FullDataName Animator: Camera Setup`Shape Preview (Side)`Shape Preview
+#RingCtrl1 0
+
+#CheckBox1 1    
+#CheckBox2 0    
+#CheckBox3 0    
+
+SET_CAMERA_Reference_Frame Shape Preview: Generic Yaw for Shape Preview
+PARSFILE Animator\Frames\Frame_02b47476-96e6-474b-919e-07d03b43f1ec.par
+#BlueLink0 Animator: Reference Frame`Yaw for Shape Preview` Shape Preview: Generic` , Reference frame for outside camera`Frame_02b47476-96e6-474b-919e-07d03b43f1ec
+
+SET_LOOKPOINT_Reference_Frame Shape Preview: Generic Yaw for Shape Preview
+SET_LOOKPOINT_X 0
+SET_LOOKPOINT_Y 0
+SET_LOOKPOINT_Z 0
+SET_AZIMUTH 0
+SET_ELEVATION 0
+SET_DISTANCE 35
+SET_CAMERAMAN_NAME External camera
+*SET_LOOKPOINT_X 0
+*SET_LOOKPOINT_Y 0
+*SET_LOOKPOINT_Z 0
+*SET_AZIMUTH 0
+*SET_ELEVATION 0
+*SET_DISTANCE 35
+FOG_SCALE 0
+SET_FIELD_OF_VIEW 21.1
+SUN_POSITION 10 10 100
+
+LOG_ENTRY Used Dataset: Animator: Camera Setup; { Shape Preview } Shape Preview (Side)
+#Library : Animator: Camera Setup
+#DataSet : Shape Preview (Side)
+#Category: Shape Preview
+#FileID  : Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+#Product : CarSim 2018.0
+#VehCode Camera
+
+END
+/F Animator\STL\Shape_46bbd8c3-972b-491b-ada8-8b076bd1780a.par`Animator: Shape File Link`European Sedan: Body`CS European Sedan
+PARSFILE
+#FullDataName Animator: Shape File Link`European Sedan: Body`CS European Sedan
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Cars\European_Sedan_Left_Drive\body.obj
+#ENDMYellow
+
+SET_COLOR 0 0 .6
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 1    
+USE_RUN_COLOR
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink2 Animator: Camera Setup`Shape Preview (Side)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_46bbd8c3-972b-491b-ada8-8b076bd1780a.png
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { CS European Sedan } European Sedan: Body
+#Library : Animator: Shape File Link
+#DataSet : European Sedan: Body
+#Category: CS European Sedan
+#FileID  : Shape_46bbd8c3-972b-491b-ada8-8b076bd1780a
+#Product : CarSim 2018.0
+#VehCode Shape File
+
+END
+/F Animator\STL\Shape_51efed0b-495d-497a-b06e-54b3bdbe64f5.par`Animator: Shape File Link`European Sedan: Details`CS European Sedan
+PARSFILE
+#FullDataName Animator: Shape File Link`European Sedan: Details`CS European Sedan
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Cars\European_Sedan_Left_Drive\details.obj
+#ENDMYellow
+
+SET_COLOR 0.753 0.753 0.753
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink2 Animator: Camera Setup`Shape Preview (Side)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_51efed0b-495d-497a-b06e-54b3bdbe64f5.png
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { CS European Sedan } European Sedan: Details
+#Library : Animator: Shape File Link
+#DataSet : European Sedan: Details
+#Category: CS European Sedan
+#FileID  : Shape_51efed0b-495d-497a-b06e-54b3bdbe64f5
+#Product : CarSim 2018.0
+#VehCode Shape File
+
+END
+/F Animator\STL\Shape_a6fdcf39-2ef6-4cd9-b8e6-ca4fb16952b9.par`Animator: Shape File Link`European Sedan: Windows`CS European Sedan
+PARSFILE
+#FullDataName Animator: Shape File Link`European Sedan: Windows`CS European Sedan
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Cars\European_Sedan_Left_Drive\windows.obj
+#ENDMYellow
+
+SET_COLOR 0 0 0
+*SPECULAR 1
+*TRANSPARENCY 0.7
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 0    
+
+set_transparency 0.7
+SET_SPECULAR 1 1 1
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink2 Animator: Camera Setup`Shape Preview (Side)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_a6fdcf39-2ef6-4cd9-b8e6-ca4fb16952b9.png
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { CS European Sedan } European Sedan: Windows
+#Library : Animator: Shape File Link
+#DataSet : European Sedan: Windows
+#Category: CS European Sedan
+#FileID  : Shape_a6fdcf39-2ef6-4cd9-b8e6-ca4fb16952b9
+#Product : CarSim 2018.0
+#VehCode Shape File
+
+END
+/F Animator\STL\Shape_1e1d097c-c1ab-498a-a67e-e726af1a87d5.par`Animator: Shape File Link`European Sedan: Interior Trim`CS European Sedan
+PARSFILE
+#FullDataName Animator: Shape File Link`European Sedan: Interior Trim`CS European Sedan
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Cars\European_Sedan_Left_Drive\interior_trim.obj
+#ENDMYellow
+
+SET_COLOR 0.314 0.314 0.314
+*SPECULAR 0.3
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 0.3 0.3 0.3
+vsv_enable_shadows_recursive
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink2 Animator: Camera Setup`Shape Preview (Side)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_1e1d097c-c1ab-498a-a67e-e726af1a87d5.png
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { CS European Sedan } European Sedan: Interior Trim
+#Library : Animator: Shape File Link
+#DataSet : European Sedan: Interior Trim
+#Category: CS European Sedan
+#FileID  : Shape_1e1d097c-c1ab-498a-a67e-e726af1a87d5
+#Product : CarSim 2018.0
+#VehCode Shape File
+
+END
+/F Animator\STL\Shape_8ffc3080-d8a4-4315-b702-7fa11154a2e4.par`Animator: Shape File Link`European Sedan: Steering Wheel`CS European Sedan
+PARSFILE
+#FullDataName Animator: Shape File Link`European Sedan: Steering Wheel`CS European Sedan
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Cars\European_Sedan_Left_Drive\steering_wheel.obj
+#ENDMYellow
+
+SET_COLOR 0.878 0.878 0.878
+*SPECULAR 0.3
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 0.3 0.3 0.3
+vsv_enable_shadows_recursive
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink2 Animator: Camera Setup`Shape Preview (Side)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_8ffc3080-d8a4-4315-b702-7fa11154a2e4.png
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { CS European Sedan } European Sedan: Steering Wheel
+#Library : Animator: Shape File Link
+#DataSet : European Sedan: Steering Wheel
+#Category: CS European Sedan
+#FileID  : Shape_8ffc3080-d8a4-4315-b702-7fa11154a2e4
+#Product : CarSim 2018.0
+#VehCode Shape File
+
+END
+/F Animator\STL\Shape_553b0025-1973-4c33-a914-46aeb25f6ef9.par`Animator: Shape File Link`European Sedan: Seats`CS European Sedan
+PARSFILE
+#FullDataName Animator: Shape File Link`European Sedan: Seats`CS European Sedan
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Cars\European_Sedan_Left_Drive\seats.obj
+#ENDMYellow
+
+SET_COLOR 0.878 0.878 0.878
+*SPECULAR 0.3
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 0.3 0.3 0.3
+vsv_enable_shadows_recursive
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink2 Animator: Camera Setup`Shape Preview (Side)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_553b0025-1973-4c33-a914-46aeb25f6ef9.png
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { CS European Sedan } European Sedan: Seats
+#Library : Animator: Shape File Link
+#DataSet : European Sedan: Seats
+#Category: CS European Sedan
+#FileID  : Shape_553b0025-1973-4c33-a914-46aeb25f6ef9
+#Product : CarSim 2018.0
+#VehCode Shape File
+
+END
+/F Animator\STL\Shape_587aa98f-459e-4d62-9de9-550a9a2ed6ea.par`Animator: Shape File Link`European Sedan: Driver`CS European Sedan
+PARSFILE
+#FullDataName Animator: Shape File Link`European Sedan: Driver`CS European Sedan
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Cars\European_Sedan_Left_Drive\Drivers\Caucasian_Male\Caucasian_Male.obj
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 0.75
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 0.75 0.75 0.75
+vsv_enable_shadows_recursive
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink2 Animator: Camera Setup`Shape Preview (Side)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_587aa98f-459e-4d62-9de9-550a9a2ed6ea.png
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { CS European Sedan } European Sedan: Driver
+#Library : Animator: Shape File Link
+#DataSet : European Sedan: Driver
+#Category: CS European Sedan
+#FileID  : Shape_587aa98f-459e-4d62-9de9-550a9a2ed6ea
+#Product : CarSim 2018.0
+#VehCode Shape File
+
+END
+/F Animator\Frames\Frame_02b47476-96e6-474b-919e-07d03b43f1ec.par`Animator: Reference Frame`Yaw for Shape Preview`Shape Preview: Generic
+PARSFILE
+#FullDataName Animator: Reference Frame`Yaw for Shape Preview`Shape Preview: Generic
+ADD_REFERENCE_FRAME Shape Preview: Generic Yaw for Shape Preview
+#RingCtrl0 yaw_pitch_roll
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME Yaw
+
+WRT_Yaw
+ANI_Yaw
+
+LOG_ENTRY Used Dataset: Animator: Reference Frame; { Shape Preview: Generic } Yaw for Shape Preview
+#Library : Animator: Reference Frame
+#DataSet : Yaw for Shape Preview
+#Category: Shape Preview: Generic
+#FileID  : Frame_02b47476-96e6-474b-919e-07d03b43f1ec
+#Product : CarSim 2018.0
+#VehCode Reference Frame
+
+END
+/F Powertrain\Fuel_Rate\FuelRate_a32b7233-c00b-43fa-b605-4c55b974550c.par`Powertrain: Fuel Consumption Rate`150 kW Gasoline Engine`
+PARSFILE
+#FullDataName Powertrain: Fuel Consumption Rate`150 kW Gasoline Engine`
+#CheckBox0 0    
+
+#RingCtrl0 CARPET
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+*3D_XLabel Throttle (-)
+*3D_YLabel Engine speed (rpm)
+*3D_ZLabel Fuel rate (kg//sec)
+
+#DiagramTwo0
+*3D_DATA 26, 19 ! columns x rows
+FUEL_RATE_CARPET 2D_LINEAR
+0, 0, 0.04, 0.08, 0.12, 0.16, 0.2, 0.24, 0.28, 0.32, 0.36, 0.4, 0.44, 0.48, 0.52, 0.56, 0.6, 0.64, 0.68, 0.72, 0.76, 0.8, 0.84, 0.88, 0.92, 0.96, 1
+600, 8e-05, 0.0002, 0.0003, 0.00032, 0.00034, 0.00037, 0.00039, 0.00041, 0.00043, 0.00046, 0.00048, 0.0005, 0.00052, 0.00055, 0.00057, 0.00059, 0.00061, 0.00064, 0.00066, 0.00068, 0.0007, 0.00073, 0.00075, 0.00077, 0.00079, 0.00082
+800, 0.00013, 0.0002, 0.0004, 0.00059, 0.00071, 0.0008, 0.00083, 0.00085, 0.00086, 0.00087, 0.00088, 0.00089, 0.0009, 0.00091, 0.00092, 0.00093, 0.00094, 0.00096, 0.00097, 0.00098, 0.00099, 0.001, 0.00101, 0.00102, 0.00103, 0.00104
+1000, 0.00016, 0.0002, 0.00039, 0.00062, 0.00079, 0.00091, 0.00099, 0.00104, 0.00107, 0.00108, 0.00109, 0.00111, 0.00112, 0.00113, 0.00114, 0.00115, 0.00117, 0.00118, 0.00119, 0.0012, 0.00121, 0.00123, 0.00124, 0.00125, 0.00126, 0.00127
+1200, 0.00016, 0.00021, 0.00039, 0.00064, 0.00088, 0.00104, 0.00114, 0.00123, 0.00128, 0.00131, 0.00133, 0.00134, 0.00135, 0.00137, 0.00138, 0.0014, 0.00141, 0.00142, 0.00144, 0.00145, 0.00147, 0.00148, 0.00149, 0.00151, 0.00152, 0.00154
+1400, 0.00017, 0.00023, 0.00039, 0.00066, 0.00091, 0.00113, 0.0013, 0.0014, 0.00148, 0.00153, 0.00156, 0.00158, 0.0016, 0.00161, 0.00163, 0.00165, 0.00167, 0.00168, 0.0017, 0.00172, 0.00174, 0.00175, 0.00177, 0.00179, 0.00181, 0.00182
+1600, 0.0002, 0.00026, 0.0004, 0.00066, 0.00095, 0.00119, 0.00139, 0.00154, 0.00164, 0.00173, 0.00178, 0.00181, 0.00183, 0.00184, 0.00186, 0.00188, 0.0019, 0.00192, 0.00194, 0.00195, 0.00197, 0.00199, 0.00201, 0.00203, 0.00205, 0.00207
+1800, 0.00021, 0.00028, 0.00039, 0.00067, 0.00095, 0.00124, 0.00147, 0.00166, 0.00178, 0.00189, 0.00195, 0.002, 0.00203, 0.00206, 0.00209, 0.00212, 0.00215, 0.00218, 0.00222, 0.00225, 0.00228, 0.00231, 0.00234, 0.00237, 0.0024, 0.00243
+2000, 0.00023, 0.0003, 0.00038, 0.00065, 0.00096, 0.00129, 0.00156, 0.00178, 0.00195, 0.00207, 0.00215, 0.00221, 0.00227, 0.00231, 0.00234, 0.00238, 0.00241, 0.00245, 0.00249, 0.00252, 0.00256, 0.00259, 0.00263, 0.00267, 0.0027, 0.00274
+2200, 0.00025, 0.00033, 0.00041, 0.00065, 0.00098, 0.0013, 0.00162, 0.00189, 0.00212, 0.00226, 0.00239, 0.00246, 0.00252, 0.00257, 0.00261, 0.00264, 0.00268, 0.00272, 0.00275, 0.00279, 0.00282, 0.00286, 0.0029, 0.00293, 0.00297, 0.003
+2400, 0.00027, 0.00036, 0.00044, 0.00065, 0.00095, 0.00133, 0.00168, 0.00199, 0.00223, 0.0024, 0.00255, 0.00265, 0.00272, 0.00278, 0.00284, 0.0029, 0.00296, 0.00302, 0.00308, 0.00314, 0.00319, 0.00325, 0.00331, 0.00337, 0.00343, 0.00349
+2800, 0.00033, 0.00039, 0.00046, 0.00065, 0.00097, 0.00134, 0.00174, 0.00207, 0.00239, 0.00265, 0.0028, 0.00296, 0.00307, 0.00313, 0.0032, 0.00326, 0.00331, 0.00336, 0.00342, 0.00347, 0.00352, 0.00357, 0.00363, 0.00368, 0.00373, 0.00379
+3200, 0.00038, 0.00045, 0.00053, 0.00064, 0.00097, 0.00136, 0.00175, 0.00216, 0.00256, 0.00287, 0.0031, 0.00326, 0.00343, 0.00365, 0.00388, 0.0041, 0.00424, 0.00425, 0.00427, 0.00429, 0.0043, 0.00432, 0.00434, 0.00435, 0.00437, 0.00439
+3600, 0.00043, 0.00052, 0.00061, 0.0007, 0.00095, 0.00137, 0.00179, 0.00221, 0.00272, 0.00315, 0.00347, 0.00384, 0.00423, 0.00463, 0.00487, 0.00495, 0.00502, 0.00509, 0.00513, 0.00514, 0.00516, 0.00517, 0.00519, 0.0052, 0.00521, 0.00523
+4000, 0.00047, 0.00059, 0.00083, 0.00118, 0.00162, 0.0021, 0.00259, 0.00317, 0.00367, 0.00403, 0.00436, 0.00487, 0.00537, 0.00587, 0.00603, 0.00608, 0.00614, 0.0062, 0.00624, 0.00625, 0.00626, 0.00627, 0.00629, 0.0063, 0.00631, 0.00633
+4400, 0.00051, 0.00064, 0.00085, 0.00122, 0.00165, 0.00218, 0.0027, 0.00333, 0.00392, 0.00443, 0.00477, 0.00514, 0.00568, 0.00621, 0.00675, 0.00703, 0.00709, 0.00715, 0.00721, 0.00726, 0.00731, 0.00732, 0.00733, 0.00735, 0.00736, 0.00738
+4800, 0.00052, 0.00074, 0.00095, 0.00121, 0.00167, 0.00218, 0.00272, 0.00336, 0.00404, 0.00459, 0.00538, 0.0064, 0.00701, 0.00725, 0.0075, 0.00774, 0.00793, 0.00799, 0.00805, 0.00811, 0.00817, 0.00822, 0.00828, 0.00829, 0.0083, 0.00831
+5200, 0.00059, 0.00078, 0.00098, 0.00117, 0.00164, 0.00216, 0.00272, 0.0034, 0.0041, 0.00505, 0.00633, 0.0069, 0.00747, 0.00779, 0.00807, 0.00835, 0.00863, 0.0088, 0.00886, 0.00891, 0.00897, 0.00903, 0.00909, 0.00914, 0.0092, 0.00926
+5600, 0.00065, 0.00083, 0.001, 0.00119, 0.0016, 0.00212, 0.00273, 0.00356, 0.00462, 0.00551, 0.00638, 0.00704, 0.00762, 0.00803, 0.0083, 0.00857, 0.00885, 0.00912, 0.00925, 0.00931, 0.00937, 0.00943, 0.00949, 0.00955, 0.00961, 0.00967
+5800, 0.00076, 0.0009, 0.00103, 0.00119, 0.00162, 0.00211, 0.00271, 0.00357, 0.0046, 0.00548, 0.00642, 0.00712, 0.00772, 0.00816, 0.00841, 0.00867, 0.00892, 0.00918, 0.0093, 0.00935, 0.0094, 0.00945, 0.00951, 0.00956, 0.00961, 0.00966
+ENDTABLE
+
+
+
+LOG_ENTRY Used Dataset: Powertrain: Fuel Consumption Rate; 150 kW Gasoline Engine
+#Library : Powertrain: Fuel Consumption Rate
+#DataSet : 150 kW Gasoline Engine
+#Category: 
+#FileID  : FuelRate_a32b7233-c00b-43fa-b605-4c55b974550c
+#Product : CarSim 2018.0
+#VehCode Fuel Rate
+
+END
+/F Powertrain\Shift\Shift_28d508f4-a9e5-4d5f-93e0-da2839bd20ad.par`Powertrain: Shift Schedule`6-speed, 1-2 Shift`6-speed
+PARSFILE
+#FullDataName Powertrain: Shift Schedule`6-speed, 1-2 Shift`6-speed
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+
+#DiagramOne0
+UPSHIFT_TRANS_TABLE
+0, 874
+0.2, 874
+0.8, 1653
+1, 1653
+ENDTABLE
+#DiagramOne1
+DOWNSHIFT_TRANS_TABLE
+0, 699
+0.4, 699
+0.8, 1240
+1, 1240
+ENDTABLE
+
+LOG_ENTRY Used Dataset: Powertrain: Shift Schedule; { 6-speed } 6-speed, 1-2 Shift
+#Library : Powertrain: Shift Schedule
+#DataSet : 6-speed, 1-2 Shift
+#Category: 6-speed
+#FileID  : Shift_28d508f4-a9e5-4d5f-93e0-da2839bd20ad
+#Product : CarSim 2018.0
+#VehCode Shift Schedule
+
+END
+/F Powertrain\Shift\Shift_458185ed-acb4-414f-bccd-d9bffa8cb1d0.par`Powertrain: Shift Schedule`6-speed, 2-3 Shift`6-speed
+PARSFILE
+#FullDataName Powertrain: Shift Schedule`6-speed, 2-3 Shift`6-speed
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+
+#DiagramOne0
+UPSHIFT_TRANS_TABLE
+0, 1282
+0.2, 1282
+0.8, 2840
+1, 2840
+ENDTABLE
+#DiagramOne1
+DOWNSHIFT_TRANS_TABLE
+0, 1026
+0.4, 1026
+0.8, 2130
+1, 2130
+ENDTABLE
+
+LOG_ENTRY Used Dataset: Powertrain: Shift Schedule; { 6-speed } 6-speed, 2-3 Shift
+#Library : Powertrain: Shift Schedule
+#DataSet : 6-speed, 2-3 Shift
+#Category: 6-speed
+#FileID  : Shift_458185ed-acb4-414f-bccd-d9bffa8cb1d0
+#Product : CarSim 2018.0
+#VehCode Shift Schedule
+
+END
+/F Powertrain\Shift\Shift_227434b7-0668-495c-a01a-0881f536f932.par`Powertrain: Shift Schedule`6-speed, 3-4 Shift`6-speed
+PARSFILE
+#FullDataName Powertrain: Shift Schedule`6-speed, 3-4 Shift`6-speed
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+
+#DiagramOne0
+UPSHIFT_TRANS_TABLE
+0, 1800
+0.2, 1800
+0.8, 4167
+1, 4167
+ENDTABLE
+#DiagramOne1
+DOWNSHIFT_TRANS_TABLE
+0, 1440
+0.4, 1440
+0.8, 3125
+1, 3125
+ENDTABLE
+
+LOG_ENTRY Used Dataset: Powertrain: Shift Schedule; { 6-speed } 6-speed, 3-4 Shift
+#Library : Powertrain: Shift Schedule
+#DataSet : 6-speed, 3-4 Shift
+#Category: 6-speed
+#FileID  : Shift_227434b7-0668-495c-a01a-0881f536f932
+#Product : CarSim 2018.0
+#VehCode Shift Schedule
+
+END
+/F Powertrain\Shift\Shift_4c7e0778-d050-4bc4-ae32-5ddb69fa99e5.par`Powertrain: Shift Schedule`6-speed, 4-5 Shift`6-speed
+PARSFILE
+#FullDataName Powertrain: Shift Schedule`6-speed, 4-5 Shift`6-speed
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+
+#DiagramOne0
+UPSHIFT_TRANS_TABLE
+0, 2525
+0.2, 2525
+0.8, 5850
+1, 5850
+ENDTABLE
+#DiagramOne1
+DOWNSHIFT_TRANS_TABLE
+0, 2020
+0.4, 2020
+0.8, 4388
+1, 4388
+ENDTABLE
+
+LOG_ENTRY Used Dataset: Powertrain: Shift Schedule; { 6-speed } 6-speed, 4-5 Shift
+#Library : Powertrain: Shift Schedule
+#DataSet : 6-speed, 4-5 Shift
+#Category: 6-speed
+#FileID  : Shift_4c7e0778-d050-4bc4-ae32-5ddb69fa99e5
+#Product : CarSim 2018.0
+#VehCode Shift Schedule
+
+END
+/F Powertrain\Shift\Shift_1ca55221-d7d9-4a14-a7cc-e661498a08ca.par`Powertrain: Shift Schedule`6-speed, 5-6 Shift`6-speed
+PARSFILE
+#FullDataName Powertrain: Shift Schedule`6-speed, 5-6 Shift`6-speed
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+
+#DiagramOne0
+UPSHIFT_TRANS_TABLE
+0, 3093
+0.2, 3093
+0.8, 8205
+1, 8205
+ENDTABLE
+#DiagramOne1
+DOWNSHIFT_TRANS_TABLE
+0, 2474
+0.4, 2474
+0.8, 6154
+1, 6154
+ENDTABLE
+
+LOG_ENTRY Used Dataset: Powertrain: Shift Schedule; { 6-speed } 6-speed, 5-6 Shift
+#Library : Powertrain: Shift Schedule
+#DataSet : 6-speed, 5-6 Shift
+#Category: 6-speed
+#FileID  : Shift_1ca55221-d7d9-4a14-a7cc-e661498a08ca
+#Product : CarSim 2018.0
+#VehCode Shift Schedule
+
+END
+/F Animator\Cameras\Camera_52079630-c01a-43a9-bc0c-30080f01066f.par`Animator: Camera Setup`Shape Preview (Top)`Shape Preview
+PARSFILE
+#FullDataName Animator: Camera Setup`Shape Preview (Top)`Shape Preview
+#RingCtrl1 0
+
+#CheckBox1 1    
+#CheckBox2 0    
+#CheckBox3 0    
+
+SET_CAMERA_Reference_Frame Shape Preview: Generic Fixed
+PARSFILE Animator\Frames\Frame_8d039c3c-753d-406b-9c28-9406943a988c.par
+#BlueLink0 Animator: Reference Frame`Fixed` Shape Preview: Generic` , Reference frame for outside camera`Frame_8d039c3c-753d-406b-9c28-9406943a988c
+
+SET_LOOKPOINT_Reference_Frame Shape Preview: Generic Fixed
+SET_LOOKPOINT_X -1.2
+SET_LOOKPOINT_Y 0
+SET_LOOKPOINT_Z 0
+SET_AZIMUTH 180
+SET_ELEVATION 90
+SET_DISTANCE 35
+SET_CAMERAMAN_NAME External camera
+*SET_LOOKPOINT_X -1.2
+*SET_LOOKPOINT_Y 0
+*SET_LOOKPOINT_Z 0
+*SET_AZIMUTH 180
+*SET_ELEVATION 90
+*SET_DISTANCE 35
+FOG_SCALE 0
+SET_FIELD_OF_VIEW 21.1
+SUN_POSITION 10 10 100
+
+LOG_ENTRY Used Dataset: Animator: Camera Setup; { Shape Preview } Shape Preview (Top)
+#Library : Animator: Camera Setup
+#DataSet : Shape Preview (Top)
+#Category: Shape Preview
+#FileID  : Camera_52079630-c01a-43a9-bc0c-30080f01066f
+#Product : CarSim 2018.0
+#VehCode Camera
+
+END
+/F Animator\Frames\Frame_8d039c3c-753d-406b-9c28-9406943a988c.par`Animator: Reference Frame`Fixed`Shape Preview: Generic
+PARSFILE
+#FullDataName Animator: Reference Frame`Fixed`Shape Preview: Generic
+ADD_REFERENCE_FRAME Shape Preview: Generic Fixed
+#RingCtrl0 yaw_pitch_roll
+SET_EULER_ANGLES yaw_pitch_roll
+
+
+LOG_ENTRY Used Dataset: Animator: Reference Frame; { Shape Preview: Generic } Fixed
+#Library : Animator: Reference Frame
+#DataSet : Fixed
+#Category: Shape Preview: Generic
+#FileID  : Frame_8d039c3c-753d-406b-9c28-9406943a988c
+#Product : CarSim 2018.0
+#VehCode Reference Frame
+
+END

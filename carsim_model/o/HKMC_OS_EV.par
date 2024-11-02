@@ -1,0 +1,8406 @@
+/! VS Export Parsfile v3.1.0, 87 files.
+/! 2021-12-01T13:17:09
+/!
+/!
+/F Runs\Run_cb1eafdd-be83-46ca-bab8-ac1a23530d2e.par`CarSim Run Control`MODEL3_php`TESLA
+PARSFILE
+#FullDataName CarSim Run Control`MODEL3_php`TESLA
+#VEHICLECODE Ind_Ind
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_cb1eafdd-be83-46ca-bab8-ac1a23530d2e
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+OPT_INT_METHOD 2
+OPT_VS_FILETYPE 2
+PARSFILE Animator\Cameras\Camera_358f7aeb-0e81-446e-a19f-f2c18b21801b.par
+#BlueLink0 Animator: Camera Setup`13 deg. Azimuth, Veh. Ref.` Vehicle Reference` , Animator camera`Camera_358f7aeb-0e81-446e-a19f-f2c18b21801b
+
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 1    
+#CheckBox5 0    
+#CheckBox6 1    
+#CheckBox7 0    
+#CheckBox8 1    
+#CheckBox9 1    
+#CheckBox10 0    
+#CheckBox11 0    
+
+#RingCtrl0 4
+#RingCtrl1 0
+#RingCtrl2 3
+#RingCtrl3 0
+#RingCtrl6 0
+#RingCtrl7 4
+*RUN_COLOR 0 0 1
+SET_RUN_COLOR 0 0 1
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Assembly\Vehicle_c828d998-62c7-4a59-8ce6-87d70ba3cd6e.par
+#BlueLink2 Vehicle: Assembly`OSEV_php` HMC_OS_EV` , Math Model`Vehicle_c828d998-62c7-4a59-8ce6-87d70ba3cd6e
+
+PARSFILE Procedures\Proc_1a922b19-95ee-49ba-ba57-1896c35f1b62.par
+#BlueLink28 Procedures`Step` KH Handling` , Procedure`Proc_1a922b19-95ee-49ba-ba57-1896c35f1b62
+
+*TSTEP 0.001
+*FREQ_MODEL 1000
+*TSTEP_OUT 0.01
+*FREQ_OUT 100
+tstep 0.001
+iprint 10
+OPT_VS_FILETYPE 4
+#BlueLink23 CarSim Run Control`HMC_OS_EV` HMC` , Overlay run or ERD file`Run_baba7c5d-319d-4711-9b30-a4f16b05dd8b
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Animator\STL_Groups\ShpGrp_8bbb24d9-060d-4e02-85d1-21fe78bbec29.png
+
+OPT_ALL_WRITE 1
+WRITE_SENSOR_DETECT
+Title MODEL3_php <TESLA>
+CATEGORY TESLA 
+DATASET_TITLE MODEL3_php
+#RingCtrl8 1
+#RingCtrl9 1
+
+#EMBEDDED_NOTES
+#This is a baseline example used in the CarSim Demo Tutorial (see Help > Guides and Tutorials). It is similar to the example used in the CarSim Quick Start Guide.
+#
+#This example has the box checked to "Write all outputs." That simplifies the use of this run as a reference for comparisons with other runs that might have different plot settings.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { TESLA } MODEL3_php
+#Library : CarSim Run Control
+#DataSet : MODEL3_php
+#Category: TESLA
+#FileID  : Run_cb1eafdd-be83-46ca-bab8-ac1a23530d2e
+#Product : CarSim 2018.0
+#VehCode Run
+
+END
+/F Animator\Cameras\Camera_358f7aeb-0e81-446e-a19f-f2c18b21801b.par`Animator: Camera Setup`13 deg. Azimuth, Veh. Ref.`Vehicle Reference
+PARSFILE
+#FullDataName Animator: Camera Setup`13 deg. Azimuth, Veh. Ref.`Vehicle Reference
+#RingCtrl1 0
+
+#CheckBox1 1    
+#CheckBox2 0    
+#CheckBox3 0    
+
+SET_CAMERA_Reference_Frame Tracking: Vehicle Car X-Y-Z
+PARSFILE Animator\Frames\Frame_d2b5165c-cec2-4d4b-a319-0d7cf12b8f0d.par
+#BlueLink0 Animator: Reference Frame`Car X-Y-Z` Tracking: Vehicle` , Reference frame for outside camera`Frame_d2b5165c-cec2-4d4b-a319-0d7cf12b8f0d
+
+SET_LOOKPOINT_Reference_Frame Tracking: Vehicle Car X-Y-Z
+SET_LOOKPOINT_X -2
+SET_LOOKPOINT_Y 0
+SET_LOOKPOINT_Z 0.25
+SET_AZIMUTH 13
+SET_ELEVATION 9.5
+SET_DISTANCE 18
+SET_CAMERAMAN_NAME External camera
+*SET_LOOKPOINT_X -2
+*SET_LOOKPOINT_Y 0
+*SET_LOOKPOINT_Z 0.25
+*SET_AZIMUTH 13
+*SET_ELEVATION 9.5
+*SET_DISTANCE 18
+FOG_SCALE 0
+SET_FIELD_OF_VIEW 45
+SUN_POSITION 250 250 1000
+
+LOG_ENTRY Used Dataset: Animator: Camera Setup; { Vehicle Reference } 13 deg. Azimuth, Veh. Ref.
+#Library : Animator: Camera Setup
+#DataSet : 13 deg. Azimuth, Veh. Ref.
+#Category: Vehicle Reference
+#FileID  : Camera_358f7aeb-0e81-446e-a19f-f2c18b21801b
+#Product : CarSim 2018.0
+#VehCode Camera
+
+END
+/F Vehicles\Assembly\Vehicle_c828d998-62c7-4a59-8ce6-87d70ba3cd6e.par`Vehicle: Assembly`OSEV_php`HMC_OS_EV
+PARSFILE
+#FullDataName Vehicle: Assembly`OSEV_php`HMC_OS_EV
+#VehCode Ind_Ind
+#CheckBox0 1    
+#CheckBox1 0    
+
+#RingCtrl0 0
+OPT_PT 0
+#RingCtrl1 1
+#RingCtrl2 1
+#RingCtrl3 0
+
+* Front components
+iaxle 1
+symbol_push  <<axle>> 1
+PARSFILE Suspensions\Kin_Indy\KinInd_08cdf224-d757-4468-8bf7-23a336129925.par
+#BlueLink19 Suspension: Independent System Kinematics`OSEV_frontKinematics_php` HMC_OS_EV` , Kinematics`KinInd_08cdf224-d757-4468-8bf7-23a336129925
+
+PARSFILE Suspensions\Compliance\CmpInd_29d137d7-70b3-462c-9d01-8fa17023910f.par
+#BlueLink16 Suspension: Independent Compliance, Springs, and Dampers`OSEV_FrontCompliance_php` HMC_OS_EV` , Compliance`CmpInd_29d137d7-70b3-462c-9d01-8fa17023910f
+
+
+OPT_ALL_FOUR_TIRES_ALIKE 1
+
+* LF tire
+iside 1
+WRITE_ADD_REFERENCE_FRAME_WHEEL
+symbol_push  <<tire>> L<<axle>>
+PARSFILE Tires\External\TireExt_85e02624-2b2e-4335-b8b8-943048f31119.par
+#BlueLink999 Tire (External)`215_55_R17_PS71` HMC_OS_EV` , Tire`TireExt_85e02624-2b2e-4335-b8b8-943048f31119
+
+
+* RF tire
+iside 2
+WRITE_ADD_REFERENCE_FRAME_WHEEL
+symbol_push  <<tire>> R<<axle>>
+PARSFILE Tires\External\TireExt_85e02624-2b2e-4335-b8b8-943048f31119.par
+#BlueLink10 Tire (External)`215_55_R17_PS71` HMC_OS_EV` , Tire`TireExt_85e02624-2b2e-4335-b8b8-943048f31119
+
+* Rear components
+iaxle 2
+symbol_add  <<axle>> 1
+PARSFILE Suspensions\Kin_Indy\KinInd_6162423f-81ca-4976-973b-45f05f183b70.par
+#BlueLink20 Suspension: Independent System Kinematics`OSEV_RearKinematics_php` HMC_OS_EV` , Kinematics`KinInd_6162423f-81ca-4976-973b-45f05f183b70
+
+PARSFILE Suspensions\Compliance\CmpInd_38848020-dc1e-4e39-abef-7f6e51d9487c.par
+#BlueLink17 Suspension: Independent Compliance, Springs, and Dampers`OSEV_RearCompliance_php` HMC_OS_EV` , Compliance`CmpInd_38848020-dc1e-4e39-abef-7f6e51d9487c
+
+
+* LR tire
+iside 1
+WRITE_ADD_REFERENCE_FRAME_WHEEL
+symbol_push  <<tire>> L<<axle>>
+PARSFILE Tires\External\TireExt_85e02624-2b2e-4335-b8b8-943048f31119.par
+#BlueLink999 Tire (External)`215_55_R17_PS71` HMC_OS_EV` , Tire`TireExt_85e02624-2b2e-4335-b8b8-943048f31119
+
+
+* RR tire
+iside 2
+WRITE_ADD_REFERENCE_FRAME_WHEEL
+symbol_push  <<tire>> R<<axle>>
+PARSFILE Tires\External\TireExt_85e02624-2b2e-4335-b8b8-943048f31119.par
+#BlueLink999 Tire (External)`215_55_R17_PS71` HMC_OS_EV` , Tire`TireExt_85e02624-2b2e-4335-b8b8-943048f31119
+
+symbol_set <<axle>> 1
+WRITE_ADD_REFERENCE_FRAME_BODY
+PARSFILE Vehicles\Sprung_Mass\SprMass_f45d9dc6-8402-4367-ba02-0c472c194fcc.par
+#BlueLink0 Vehicle: Sprung Mass`OSEV_sprungmass_php` HMC_OS_EV` , Sprung Mass`SprMass_f45d9dc6-8402-4367-ba02-0c472c194fcc
+
+PARSFILE Animator\STL_Groups\ShpGrp_8bbb24d9-060d-4e02-85d1-21fe78bbec29.par
+#BlueLink2 Animator: Shape Assembly`SUV, Full Size V9` CS SUV, Full Size` , Vehicle 3D Shape`ShpGrp_8bbb24d9-060d-4e02-85d1-21fe78bbec29
+
+R_REAR_DRIVE_SC 0
+PMAX_SC 350
+PARSFILE Steering\System\StrSys_cd74cb1a-3ba8-4fac-a8d6-38fe5f753156.par
+#BlueLink7 Steering (Legacy)`OSEV_Steer_php` HMC_OS_EV` , Steering System`StrSys_cd74cb1a-3ba8-4fac-a8d6-38fe5f753156
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Animator\STL_Groups\ShpGrp_8bbb24d9-060d-4e02-85d1-21fe78bbec29.png
+
+LOG_ENTRY Used Dataset: Vehicle: Assembly; { HMC_OS_EV } OSEV_php
+#Library : Vehicle: Assembly
+#DataSet : OSEV_php
+#Category: HMC_OS_EV
+#FileID  : Vehicle_c828d998-62c7-4a59-8ce6-87d70ba3cd6e
+#Product : CarSim 2018.0
+#VehCode Ind_Ind
+
+END
+/F Procedures\Proc_1a922b19-95ee-49ba-ba57-1896c35f1b62.par`Procedures`Step`KH Handling
+PARSFILE
+#FullDataName Procedures`Step`KH Handling
+#CheckBox0 1    
+OPT_INIT_CONFIG 1
+#CheckBox1 1    
+OPT_INIT_PATH 1
+#CheckBox2 1    
+OPT_INIT_SPEED 1
+#CheckBox3 1    
+#CheckBox4 0    
+
+#RingCtrl0 1
+#RingCtrl1 0
+#RingCtrl2 0
+OPT_STOP 0
+TSTART 0
+SSTART 0
+TSTART_WRITE = TSTART;
+TSTOP 11
+SSTOP =  SSTART + 1 ;
+OPT_DIRECTION 1
+*SPEED 80
+*TSTOP 11
+*TSTART 0
+*SSTART 0
+*SSTOP 2000
+
+INSTALL_DRIVER_SPEED_CONTROLLER CarSim9
+OPT_SC 3
+SPEED_TARGET_COMBINE ADD
+SPEED_TARGET_CONSTANT 0
+SPEED_TARGET_S_CONSTANT 80
+OPT_SC_ENGINE_BRAKING 0
+PARSFILE Control\Steer\StrSW_1858c1af-3b44-43fd-9774-c5c02a5cf659.par
+#BlueLink27 Control: Steering (Open Loop)`KUMHO_STEP(80kph, 40deg)` KH Handling` , Steering`StrSW_1858c1af-3b44-43fd-9774-c5c02a5cf659
+
+PARSFILE Control\Braking\PbkCon_7e6c39bb-10df-4541-a77a-c9702e79f2d1.par
+#BlueLink28 Control: Braking MC Pressure (Open Loop)`No Open-Loop Braking Pressure` KH Handling` , Braking`PbkCon_7e6c39bb-10df-4541-a77a-c9702e79f2d1
+
+PARSFILE Control\Gear_at\GearCL_3f60e7d2-b8c4-4d68-a9c4-d897bb3e2a86.par
+#BlueLink30 Control: Shifting (Closed Loop)`AT All Gears` Closed-Loop Shifting Modes` , Shifting Control`GearCL_3f60e7d2-b8c4-4d68-a9c4-d897bb3e2a86
+
+PARSFILE Roads\3D_Road\Road_cc73fa07-928b-470e-b16a-138bcaa60d82.par
+#BlueLink0 Road: 3D Surface (All Properties)`1 km Square, Mu = 0.85` Flat Test Pads` , Miscellaneous`Road_cc73fa07-928b-470e-b16a-138bcaa60d82
+
+PARSFILE Generic\Group\GenGrp_c11e4bbe-5e3a-4498-91a5-6c42d1db378a.par
+#BlueLink1 Generic Data Group`2 Axle - Fx, Fy, Fz` Tire Force Arrows` , Miscellaneous`GenGrp_c11e4bbe-5e3a-4498-91a5-6c42d1db378a
+
+PARSFILE Plot\Setup\Plot_310b0189-b08d-49fc-a484-ee359eb89744.par
+#BlueLink8 Plot: Setup`Yaw Rate of Sprung Masses vs. Time` Vehicle Motion` , Plot`Plot_310b0189-b08d-49fc-a484-ee359eb89744
+
+PARSFILE Plot\Setup\Plot_986ce074-9acb-4be0-8bd7-ac8e03eb16ab.par
+#BlueLink9 Plot: Setup`Steer Torque` Steering` , Plot`Plot_986ce074-9acb-4be0-8bd7-ac8e03eb16ab
+
+PARSFILE Plot\Setup\Plot_8b22f20a-1297-43cf-9e59-a0b1d530d136.par
+#BlueLink10 Plot: Setup`Lateral Accel. of CG's vs. Time` Vehicle Motion` , Plot`Plot_8b22f20a-1297-43cf-9e59-a0b1d530d136
+
+PARSFILE Plot\Setup\Plot_b86d8c49-db4e-400a-a282-322334d38a2e.par
+#BlueLink11 Plot: Setup`Vehicle Sideslip Angle` Vehicle Motion` , Plot`Plot_b86d8c49-db4e-400a-a282-322334d38a2e
+
+PARSFILE Plot\Setup\Plot_2865bd77-14b2-4e51-9c7f-3484aa98e979.par
+#BlueLink12 Plot: Setup`Roll Angle of Sprung Masses vs. Time` Vehicle Motion` , Plot`Plot_2865bd77-14b2-4e51-9c7f-3484aa98e979
+
+PARSFILE Plot\Setup\Plot_7a35820a-a0eb-411b-8232-4db8e14274c2.par
+#BlueLink13 Plot: Setup`Roll Rate (Body-fixed) of Sprung Mass` Vehicle Motion` , Plot`Plot_7a35820a-a0eb-411b-8232-4db8e14274c2
+
+PARSFILE Plot\Setup\Plot_c8881ed1-d7d6-4521-a07d-9f8e9e38b3a4.par
+#BlueLink14 Plot: Setup`Steering Wheel Angle` KH Handling` , Plot`Plot_c8881ed1-d7d6-4521-a07d-9f8e9e38b3a4
+
+PARSFILE Plot\Setup\Plot_de12eea2-c7e6-47ac-a8f6-4f491244b283.par
+#BlueLink15 Plot: Setup`Vertical Forces (Front)` Tire Forces` , Plot`Plot_de12eea2-c7e6-47ac-a8f6-4f491244b283
+
+PARSFILE Plot\Setup\Plot_4fae6e50-2618-44f6-8ed7-08b8ed3fe10e.par
+#BlueLink16 Plot: Setup`Vertical Forces (Rear)` Tire Forces` , Plot`Plot_4fae6e50-2618-44f6-8ed7-08b8ed3fe10e
+
+PARSFILE Plot\Setup\Plot_3c5f8bac-e2f6-4ebc-ab48-a1828a269fd4.par
+#BlueLink17 Plot: Setup`Slip Angles: Instant` Tire Kinematics` , Plot`Plot_3c5f8bac-e2f6-4ebc-ab48-a1828a269fd4
+
+PARSFILE Plot\Setup\Plot_12590fa3-2891-49cc-8869-cdde903a8983.par
+#BlueLink18 Plot: Setup`Ay vs. toe Front` KH Handling` , Plot`Plot_12590fa3-2891-49cc-8869-cdde903a8983
+
+PARSFILE Plot\Setup\Plot_3d5bcde9-1adc-4ef7-a8b9-55222ae10117.par
+#BlueLink19 Plot: Setup`Camber - Front` Suspension Motion` , Plot`Plot_3d5bcde9-1adc-4ef7-a8b9-55222ae10117
+
+
+LOG_ENTRY Used Dataset: Procedures; { KH Handling } Step
+#Library : Procedures
+#DataSet : Step
+#Category: KH Handling
+#FileID  : Proc_1a922b19-95ee-49ba-ba57-1896c35f1b62
+#Product : CarSim 2018.0
+#VehCode Procedure
+
+END
+/F Animator\Frames\Frame_d2b5165c-cec2-4d4b-a319-0d7cf12b8f0d.par`Animator: Reference Frame`Car X-Y-Z`Tracking: Vehicle
+PARSFILE
+#FullDataName Animator: Reference Frame`Car X-Y-Z`Tracking: Vehicle
+ADD_REFERENCE_FRAME Tracking: Vehicle Car X-Y-Z
+#RingCtrl0 yaw_pitch_roll
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME Xo
+SET_Y_NAME Yo
+SET_Z_NAME Zo
+
+WRT_Xo
+ANI_Xo
+WRT_Yo
+ANI_Yo
+WRT_Zo
+ANI_Zo
+
+LOG_ENTRY Used Dataset: Animator: Reference Frame; { Tracking: Vehicle } Car X-Y-Z
+#Library : Animator: Reference Frame
+#DataSet : Car X-Y-Z
+#Category: Tracking: Vehicle
+#FileID  : Frame_d2b5165c-cec2-4d4b-a319-0d7cf12b8f0d
+#Product : CarSim 2018.0
+#VehCode Reference Frame
+
+END
+/F Suspensions\Kin_Indy\KinInd_08cdf224-d757-4468-8bf7-23a336129925.par`Suspension: Independent System Kinematics`OSEV_frontKinematics_php`HMC_OS_EV
+PARSFILE
+#FullDataName Suspension: Independent System Kinematics`OSEV_frontKinematics_php`HMC_OS_EV
+iside 1
+#RingCtrl0 0
+OPT_JNC_DESIGN 0
+#RingCtrl1 2
+#RingCtrl2 2
+#RingCtrl3 2
+#RingCtrl4 2
+#RingCtrl5 2
+#CheckBox0 0    
+#CheckBox1 0    
+#CheckBox2 0    
+
+R_US_STR 0.8
+L_TRACK 1560
+Y_CL_SUSP 0
+H_WC 0
+M_US 138.9
+*IW_L 1.0
+*IW_R 1.0
+*TOE_L 0.04
+*TOE_R -0.007
+*CAMBER_L -0.44
+*CAMBER_R -0.760
+
+PARSFILE Suspensions\Dive\Dive_76bdd892-9599-4d95-9571-95a305a86066.par
+#BlueLink0 Suspension: Dive Angle (Caster Change)`OSEV_frontDiveLeft_php` HMC_OS_EV` , Left wheel dive (caster change)`Dive_76bdd892-9599-4d95-9571-95a305a86066
+
+PARSFILE Suspensions\Longitudinal\SusX_3109a12c-9e94-4cc4-a738-e96661cd596f.par
+#BlueLink1 Suspension: Longitudinal Movement`OSEV_frontDxLeft_php` HMC_OS_EV` , Left wheel X`SusX_3109a12c-9e94-4cc4-a738-e96661cd596f
+
+PARSFILE Suspensions\Camber\Camber_6a19baf1-51a8-4915-9891-ba6fe6911647.par
+#BlueLink2 Suspension: Camber Angle`OSEV_Front_CamberLeft_php` HMC_OS_EV` , Left wheel camber`Camber_6a19baf1-51a8-4915-9891-ba6fe6911647
+
+PARSFILE Suspensions\Lateral\LatJnc_c69a8302-2f3f-4a6d-8f22-72f613a40557.par
+#BlueLink3 Suspension: Lateral Movement Due to Jounce`OSEV_FrontDyLeft_php` HMC_OS_EV` , Left wheel lateral (-Y)`LatJnc_c69a8302-2f3f-4a6d-8f22-72f613a40557
+
+PARSFILE Suspensions\Toe\Toe_4b62e521-052c-4df5-a35c-63a8d1c057e9.par
+#BlueLink4 Suspension: Toe Angle`OSEV_FrontToeLeft_php` HMC_OS_EV` , Left wheel toe`Toe_4b62e521-052c-4df5-a35c-63a8d1c057e9
+
+IW 1.0
+A_TOE 0.04
+A_CAMBER -0.44
+
+iside 2
+PARSFILE Suspensions\Dive\Dive_76bdd892-9599-4d95-9571-95a305a86066.par
+#BlueLink0 Suspension: Dive Angle (Caster Change)`OSEV_frontDiveLeft_php` HMC_OS_EV` , Left wheel dive (caster change)`Dive_76bdd892-9599-4d95-9571-95a305a86066
+
+PARSFILE Suspensions\Longitudinal\SusX_3109a12c-9e94-4cc4-a738-e96661cd596f.par
+#BlueLink1 Suspension: Longitudinal Movement`OSEV_frontDxLeft_php` HMC_OS_EV` , Left wheel X`SusX_3109a12c-9e94-4cc4-a738-e96661cd596f
+
+PARSFILE Suspensions\Camber\Camber_6a19baf1-51a8-4915-9891-ba6fe6911647.par
+#BlueLink2 Suspension: Camber Angle`OSEV_Front_CamberLeft_php` HMC_OS_EV` , Left wheel camber`Camber_6a19baf1-51a8-4915-9891-ba6fe6911647
+
+PARSFILE Suspensions\Lateral\LatJnc_c69a8302-2f3f-4a6d-8f22-72f613a40557.par
+#BlueLink3 Suspension: Lateral Movement Due to Jounce`OSEV_FrontDyLeft_php` HMC_OS_EV` , Left wheel lateral (-Y)`LatJnc_c69a8302-2f3f-4a6d-8f22-72f613a40557
+
+PARSFILE Suspensions\Toe\Toe_4b62e521-052c-4df5-a35c-63a8d1c057e9.par
+#BlueLink4 Suspension: Toe Angle`OSEV_FrontToeLeft_php` HMC_OS_EV` , Left wheel toe`Toe_4b62e521-052c-4df5-a35c-63a8d1c057e9
+
+IW 1.0
+A_TOE 0.04
+A_CAMBER -0.44
+H_WC 0
+
+LOG_ENTRY Used Dataset: Suspension: Independent System Kinematics; { HMC_OS_EV } OSEV_frontKinematics_php
+#Library : Suspension: Independent System Kinematics
+#DataSet : OSEV_frontKinematics_php
+#Category: HMC_OS_EV
+#FileID  : KinInd_08cdf224-d757-4468-8bf7-23a336129925
+#Product : CarSim 2018.0
+#VehCode Independent
+
+END
+/F Suspensions\Compliance\CmpInd_29d137d7-70b3-462c-9d01-8fa17023910f.par`Suspension: Independent Compliance, Springs, and Dampers`OSEV_FrontCompliance_php`HMC_OS_EV
+PARSFILE
+#FullDataName Suspension: Independent Compliance, Springs, and Dampers`OSEV_FrontCompliance_php`HMC_OS_EV
+#CheckBox0 0    
+#CheckBox1 0    
+
+#RingCtrl0 0
+*OPT_SPR 0
+#RingCtrl1 2
+#RingCtrl3 1
+#RingCtrl5 1
+#RingCtrl7 1
+#RingCtrl9 1
+#RingCtrl11 1
+#RingCtrl13 1
+*L_SPG_ADJ_L 0
+*L_SPG_ADJ_R 0
+*FS_OFFSET_L 0
+*FS_OFFSET_R 0
+*R_SPRING_L 1.0
+*R_SPRING_R 1.0
+*DAMPER_L 8.0
+*R_DAMPER_L 1.0
+*R_DAMPER_R 1.0
+*CT_FX_L -1.460E-4
+*CT_FX_R -1.402e-004
+*CS_FY_L -8.659E-6
+*CS_FY_R 1.143e-005
+*CS_MZ_L 9.639E-4
+*CS_MZ_R 1.042e-003
+*CC_FX_L 4.647E-5
+*CC_FX_R 4.103e-005
+*CI_FY_L 1.715E-4
+*CI_FY_R 1.258e-004
+*CI_MZ_L -2.421E-4
+*CI_MZ_R -1.425e-004
+*C_LONG_L 3.979E-3
+*C_LONG_R 4.231e-003
+*C_LAT_L -2.973E-5
+*C_LAT_R 2.681e-006
+
+iside 1
+OPT_EXT_SP 0
+PARSFILE Suspensions\Springs\Spring_d66a8425-1847-454f-9a5a-d6470425fbfc.par
+#BlueLink0 Suspension: Spring`OSEV_FrontWheelrate_php #1` HMC_OS_EV` , Spring force`Spring_d66a8425-1847-454f-9a5a-d6470425fbfc
+
+CMP_SPR_SEAT_COEFFICIENT 1.0
+L_SPG_ADJ 0
+FS_OFFSET 0
+CMP_OFFSET 0
+FD_COEFFICIENT 8.0
+CMP_DAMP_COEFFICIENT 1.0
+CT_FX_COEFFICIENT -1.460E-4
+CS_FY_COEFFICIENT -8.659E-6
+CS_MZ_COEFFICIENT 9.639E-4
+CC_FX_COEFFICIENT 4.647E-5
+CI_FY_COEFFICIENT 1.715E-4
+CI_MZ_COEFFICIENT -2.421E-4
+C_LONG_COEFFICIENT 3.979E-3
+C_LAT_COEFFICIENT -2.973E-5
+
+iside 2
+OPT_EXT_SP 0
+PARSFILE Suspensions\Springs\Spring_d66a8425-1847-454f-9a5a-d6470425fbfc.par
+#BlueLink0 Suspension: Spring`OSEV_FrontWheelrate_php #1` HMC_OS_EV` , Spring force`Spring_d66a8425-1847-454f-9a5a-d6470425fbfc
+
+CMP_SPR_SEAT_COEFFICIENT 1.0
+L_SPG_ADJ 0
+FS_OFFSET 0
+CMP_OFFSET 0
+FD_COEFFICIENT 8.0
+CMP_DAMP_COEFFICIENT 1.0
+CT_FX_COEFFICIENT -1.460E-4
+CS_FY_COEFFICIENT -8.659E-6
+CS_MZ_COEFFICIENT 9.639E-4
+CC_FX_COEFFICIENT 4.647E-5
+CI_FY_COEFFICIENT 1.715E-4
+CI_MZ_COEFFICIENT -2.421E-4
+C_LONG_COEFFICIENT 3.979E-3
+C_LAT_COEFFICIENT -2.973E-5
+PARSFILE Suspensions\Aux_Roll\AuxMx_875d0c9e-a78e-49d1-b97d-9ccb63249910.par
+#BlueLink2 Suspension: Auxiliary Roll Moment`OSEV_AuxiliaryRoll_php` HMC_OS_EV` , Roll Moment`AuxMx_875d0c9e-a78e-49d1-b97d-9ccb63249910
+
+
+LOG_ENTRY Used Dataset: Suspension: Independent Compliance, Springs, and Dampers; { HMC_OS_EV } OSEV_FrontCompliance_php
+#Library : Suspension: Independent Compliance, Springs, and Dampers
+#DataSet : OSEV_FrontCompliance_php
+#Category: HMC_OS_EV
+#FileID  : CmpInd_29d137d7-70b3-462c-9d01-8fa17023910f
+#Product : CarSim 2018.0
+#VehCode Springs and Dampers
+
+END
+/F Tires\External\TireExt_85e02624-2b2e-4335-b8b8-943048f31119.par`Tire (External)`215_55_R17_PS71`HMC_OS_EV
+PARSFILE
+#FullDataName Tire (External)`215_55_R17_PS71`HMC_OS_EV
+FZ_REF 4312
+Y_LENGTH 215
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 0    
+
+#RingCtrl0 9
+#RingCtrl1 0
+#RingCtrl2 1
+#RingCtrl3 1
+#RingCtrl4 3
+OPT_TIRE_MODEL 8
+
+X_LENGTH 320.784
+Z_LENGTH 320.784
+PARSFILE Animator\STL_Groups\ShpGrp_d5b55623-3c6f-43ea-b7a0-880a3303d1d2.par
+#BlueLink0 Animator: Shape Assembly`Sports Car` Tires` , Animator`ShpGrp_d5b55623-3c6f-43ea-b7a0-880a3303d1d2
+
+WRITE_WHEEL_OFFSET
+*SET_THICKNESS 215
+*SET_RADIUS 320.784
+OPT_TIRE_INERTIA_EXTERNAL 0
+
+#External API information
+EXTERNAL_TIRE_MODULE_DLL Extensions\External_Tire_API\win32\DelftTyreWrapper.dll
+INSTALL_EXTERNAL_TIRE_API
+
+#TASS MF-Tyre//MF-Swift setting data
+DELFT_TYRE_DATA H:\VI_CRT\HMC_OS_EV1.cdb\tires.tbl\21555R17PS71.tir
+DELFT_TYRE_DLL Extensions\TNO_DelftTyre\win32\TNO_DelftTyre.dll
+DELFT_TYRE_SW 0113
+DELFT_TYRE_INIT
+
+*DELFT_TYRE_DATA H:\VI_CRT\HMC_OS_EV1.cdb\tires.tbl\21555R17PS71.tir
+
+#EMBEDDED_NOTES
+#This tire data selects the model option "TNO MF-Tyre v6.2", which adopts MF-Tyre model and bypass the CarSim internal tire model.  In this option, MF-Tyre calculates all tire forces and moments, and also searches a tire//ground contact point or an effective contact plane.Users are allowed to select several types of options in each of categories: Tire side, Contact method, Dynamics and Slip forces. All tire properties are set in a tire property file (TIR), which you can select an existing file from this screen and also can view//edit by clicking "View File" button.In this example, Tire side is selected as Automatic. The selected tire property file is based on the data of left side tire. Therefore, all characteristics are based on the property data if this dataset is selected as left side of vehicle. If this dataset is selected as right, the tire model automatically mirror the property data.
+#
+#At CarSim Version 9.0, Tire side is changed from automatic to left.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Tire (External); { HMC_OS_EV } 215_55_R17_PS71
+#Library : Tire (External)
+#DataSet : 215_55_R17_PS71
+#Category: HMC_OS_EV
+#FileID  : TireExt_85e02624-2b2e-4335-b8b8-943048f31119
+#Product : CarSim 2018.0
+#VehCode Tire (External)
+
+END
+/F Suspensions\Kin_Indy\KinInd_6162423f-81ca-4976-973b-45f05f183b70.par`Suspension: Independent System Kinematics`OSEV_RearKinematics_php`HMC_OS_EV
+PARSFILE
+#FullDataName Suspension: Independent System Kinematics`OSEV_RearKinematics_php`HMC_OS_EV
+iside 1
+#RingCtrl0 0
+OPT_JNC_DESIGN 0
+#RingCtrl1 2
+#RingCtrl2 2
+#RingCtrl3 2
+#RingCtrl4 2
+#RingCtrl5 2
+#CheckBox0 0    
+#CheckBox1 0    
+#CheckBox2 0    
+
+R_US_STR 0.8
+L_TRACK 1560
+Y_CL_SUSP 0
+H_WC 0
+M_US 116.1
+*IW_L 1.0
+*IW_R 1.0
+*TOE_L 0.065
+*TOE_R 0.024
+*CAMBER_L -1.2
+*CAMBER_R -1.060
+
+PARSFILE Suspensions\Dive\Dive_e9016540-076a-497d-b077-c7d94d66874e.par
+#BlueLink0 Suspension: Dive Angle (Caster Change)`OSEV_RearDiveLeft_php` HMC_OS_EV` , Left wheel dive (caster change)`Dive_e9016540-076a-497d-b077-c7d94d66874e
+
+PARSFILE Suspensions\Longitudinal\SusX_805371e8-4978-4251-a3aa-c4711b91866f.par
+#BlueLink1 Suspension: Longitudinal Movement`OSEV_RearDxLeft_php` HMC_OS_EV` , Left wheel X`SusX_805371e8-4978-4251-a3aa-c4711b91866f
+
+PARSFILE Suspensions\Camber\Camber_a5fe2a27-dd9b-42cd-adcf-a60dc63eb2db.par
+#BlueLink2 Suspension: Camber Angle`OSEV_RearCamberLeft_php` HMC_OS_EV` , Left wheel camber`Camber_a5fe2a27-dd9b-42cd-adcf-a60dc63eb2db
+
+PARSFILE Suspensions\Lateral\LatJnc_49b5465c-b0b3-4e68-9e58-50fad3c3c910.par
+#BlueLink3 Suspension: Lateral Movement Due to Jounce`OSEV_RearDyLeft_php` HMC_OS_EV` , Left wheel lateral (-Y)`LatJnc_49b5465c-b0b3-4e68-9e58-50fad3c3c910
+
+PARSFILE Suspensions\Toe\Toe_ddaf2306-1dd8-4af2-8256-b18ade37d206.par
+#BlueLink4 Suspension: Toe Angle`OSEV_RearToeLeft_php` HMC_OS_EV` , Left wheel toe`Toe_ddaf2306-1dd8-4af2-8256-b18ade37d206
+
+IW 1.0
+A_TOE 0.065
+A_CAMBER -1.2
+
+iside 2
+PARSFILE Suspensions\Dive\Dive_e9016540-076a-497d-b077-c7d94d66874e.par
+#BlueLink0 Suspension: Dive Angle (Caster Change)`OSEV_RearDiveLeft_php` HMC_OS_EV` , Left wheel dive (caster change)`Dive_e9016540-076a-497d-b077-c7d94d66874e
+
+PARSFILE Suspensions\Longitudinal\SusX_805371e8-4978-4251-a3aa-c4711b91866f.par
+#BlueLink1 Suspension: Longitudinal Movement`OSEV_RearDxLeft_php` HMC_OS_EV` , Left wheel X`SusX_805371e8-4978-4251-a3aa-c4711b91866f
+
+PARSFILE Suspensions\Camber\Camber_a5fe2a27-dd9b-42cd-adcf-a60dc63eb2db.par
+#BlueLink2 Suspension: Camber Angle`OSEV_RearCamberLeft_php` HMC_OS_EV` , Left wheel camber`Camber_a5fe2a27-dd9b-42cd-adcf-a60dc63eb2db
+
+PARSFILE Suspensions\Lateral\LatJnc_49b5465c-b0b3-4e68-9e58-50fad3c3c910.par
+#BlueLink3 Suspension: Lateral Movement Due to Jounce`OSEV_RearDyLeft_php` HMC_OS_EV` , Left wheel lateral (-Y)`LatJnc_49b5465c-b0b3-4e68-9e58-50fad3c3c910
+
+PARSFILE Suspensions\Toe\Toe_ddaf2306-1dd8-4af2-8256-b18ade37d206.par
+#BlueLink4 Suspension: Toe Angle`OSEV_RearToeLeft_php` HMC_OS_EV` , Left wheel toe`Toe_ddaf2306-1dd8-4af2-8256-b18ade37d206
+
+IW 1.0
+A_TOE 0.065
+A_CAMBER -1.2
+H_WC 0
+
+LOG_ENTRY Used Dataset: Suspension: Independent System Kinematics; { HMC_OS_EV } OSEV_RearKinematics_php
+#Library : Suspension: Independent System Kinematics
+#DataSet : OSEV_RearKinematics_php
+#Category: HMC_OS_EV
+#FileID  : KinInd_6162423f-81ca-4976-973b-45f05f183b70
+#Product : CarSim 2018.0
+#VehCode Independent
+
+END
+/F Suspensions\Compliance\CmpInd_38848020-dc1e-4e39-abef-7f6e51d9487c.par`Suspension: Independent Compliance, Springs, and Dampers`OSEV_RearCompliance_php`HMC_OS_EV
+PARSFILE
+#FullDataName Suspension: Independent Compliance, Springs, and Dampers`OSEV_RearCompliance_php`HMC_OS_EV
+#CheckBox0 0    
+#CheckBox1 0    
+
+#RingCtrl0 0
+*OPT_SPR 0
+#RingCtrl1 2
+#RingCtrl3 1
+#RingCtrl5 1
+#RingCtrl7 1
+#RingCtrl9 1
+#RingCtrl11 1
+#RingCtrl13 1
+*L_SPG_ADJ_L 0
+*L_SPG_ADJ_R 0
+*FS_OFFSET_L 0
+*FS_OFFSET_R 0
+*R_SPRING_L 1.0
+*R_SPRING_R 1.0
+*DAMPER_L 8.0
+*R_DAMPER_L 1.0
+*R_DAMPER_R 1.0
+*CT_FX_L -8.669E-5
+*CT_FX_R 4.419e-005
+*CS_FY_L 9.422E-5
+*CS_FY_R -5.443e-005
+*CS_MZ_L 1.049E-3
+*CS_MZ_R 6.495e-004
+*CC_FX_L 1.329E-5
+*CC_FX_R -4.866e-005
+*CI_FY_L 2.380E-4
+*CI_FY_R 2.871e-004
+*CI_MZ_L 2.947E-4
+*CI_MZ_R -6.786e-005
+*C_LONG_L 3.166E-3
+*C_LONG_R 2.553e-004
+*C_LAT_L 6.849E-5
+*C_LAT_R 1.375e-004
+
+iside 1
+OPT_EXT_SP 0
+PARSFILE Suspensions\Springs\Spring_58009255-e3fc-4640-b374-156a134bc044.par
+#BlueLink0 Suspension: Spring`OSEV_Rearwheelrate_php #1` HMC_OS_EV` , Spring force`Spring_58009255-e3fc-4640-b374-156a134bc044
+
+CMP_SPR_SEAT_COEFFICIENT 1.0
+L_SPG_ADJ 0
+FS_OFFSET 0
+CMP_OFFSET 0
+FD_COEFFICIENT 8.0
+CMP_DAMP_COEFFICIENT 1.0
+CT_FX_COEFFICIENT -8.669E-5
+CS_FY_COEFFICIENT 9.422E-5
+CS_MZ_COEFFICIENT 1.049E-3
+CC_FX_COEFFICIENT 1.329E-5
+CI_FY_COEFFICIENT 2.380E-4
+CI_MZ_COEFFICIENT 2.947E-4
+C_LONG_COEFFICIENT 3.166E-3
+C_LAT_COEFFICIENT 6.849E-5
+
+iside 2
+OPT_EXT_SP 0
+PARSFILE Suspensions\Springs\Spring_58009255-e3fc-4640-b374-156a134bc044.par
+#BlueLink0 Suspension: Spring`OSEV_Rearwheelrate_php #1` HMC_OS_EV` , Spring force`Spring_58009255-e3fc-4640-b374-156a134bc044
+
+CMP_SPR_SEAT_COEFFICIENT 1.0
+L_SPG_ADJ 0
+FS_OFFSET 0
+CMP_OFFSET 0
+FD_COEFFICIENT 8.0
+CMP_DAMP_COEFFICIENT 1.0
+CT_FX_COEFFICIENT -8.669E-5
+CS_FY_COEFFICIENT 9.422E-5
+CS_MZ_COEFFICIENT 1.049E-3
+CC_FX_COEFFICIENT 1.329E-5
+CI_FY_COEFFICIENT 2.380E-4
+CI_MZ_COEFFICIENT 2.947E-4
+C_LONG_COEFFICIENT 3.166E-3
+C_LAT_COEFFICIENT 6.849E-5
+PARSFILE Suspensions\Aux_Roll\AuxMx_0f6997a2-93c2-4a0e-840b-95772e4a874a.par
+#BlueLink2 Suspension: Auxiliary Roll Moment`OSEV_RearAuxiliaryRollMoment_php` HMC_OS_EV` , Roll Moment`AuxMx_0f6997a2-93c2-4a0e-840b-95772e4a874a
+
+
+LOG_ENTRY Used Dataset: Suspension: Independent Compliance, Springs, and Dampers; { HMC_OS_EV } OSEV_RearCompliance_php
+#Library : Suspension: Independent Compliance, Springs, and Dampers
+#DataSet : OSEV_RearCompliance_php
+#Category: HMC_OS_EV
+#FileID  : CmpInd_38848020-dc1e-4e39-abef-7f6e51d9487c
+#Product : CarSim 2018.0
+#VehCode Springs and Dampers
+
+END
+/F Vehicles\Sprung_Mass\SprMass_f45d9dc6-8402-4367-ba02-0c472c194fcc.par`Vehicle: Sprung Mass`OSEV_sprungmass_php`HMC_OS_EV
+PARSFILE
+#FullDataName Vehicle: Sprung Mass`OSEV_sprungmass_php`HMC_OS_EV
+#VehCode Rigid sprung mass
+#RingCtrl0 0
+X_LENGTH 2600
+Y_LENGTH 1500
+iaxle 2
+iside 1
+LX_H 3600
+H_H 484.15
+H_CG_SU 506
+LX_AXLE 2600
+LX_CG_SU 1184
+M_SU 1645
+IXX_SU 608
+IYY_SU 2037
+IZZ_SU 2257
+IXZ_SU 40
+*RX 0.608
+*RY 1.113
+*RZ 1.171
+Y_CG_SU 0
+Y_H 0
+Z_LENGTH 1506
+Y_LENGTH 1968
+*HWC_LF 334.15
+*HWC_RF 334.15
+*HWC_LR 334.15
+*HWC_RR 334.15
+
+symbol_set <<hitch_x>> -3.6
+symbol_set <<hitch_y>> 0
+symbol_set <<hitch_z>> 0.48415
+H_WC 334.15
+iside 2
+H_WC 334.15
+iaxle 1
+iside 1
+H_WC 334.15
+iside 2
+H_WC 334.15
+iaxle 2
+iside 1
+
+LOG_ENTRY Used Dataset: Vehicle: Sprung Mass; { HMC_OS_EV } OSEV_sprungmass_php
+#Library : Vehicle: Sprung Mass
+#DataSet : OSEV_sprungmass_php
+#Category: HMC_OS_EV
+#FileID  : SprMass_f45d9dc6-8402-4367-ba02-0c472c194fcc
+#Product : CarSim 2018.0
+#VehCode Rigid sprung mass
+
+END
+/F Animator\STL_Groups\ShpGrp_8bbb24d9-060d-4e02-85d1-21fe78bbec29.par`Animator: Shape Assembly`SUV, Full Size V9`CS SUV, Full Size
+PARSFILE
+#FullDataName Animator: Shape Assembly`SUV, Full Size V9`CS SUV, Full Size
+*COLOR 0.4 0 1
+*OFFSET_X 0
+*OFFSET_Y 0
+*OFFSET_Z 0.35
+*X_REF_LENGTH 3140
+*Y_REF_LENGTH 2029
+*Z_REF_LENGTH 1955
+*IMAGE_FIT_MODE 1
+#CheckBox0 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 1    
+#CheckBox5 1    
+
+#RingCtrl1 2
+#RingCtrl2 2
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL_Groups\ShpGrp_8bbb24d9-060d-4e02-85d1-21fe78bbec29.png
+PARSFILE Animator\STL\Shape_7247fe76-a5b3-439f-9e2f-f06467f18f2d.par
+#BlueLink0 Animator: Shape File Link`SUV, Full Size: Body V9` CS SUV, Full Size` , Shape File`Shape_7247fe76-a5b3-439f-9e2f-f06467f18f2d
+
+set_offset_x 0
+set_offset_y 0
+set_offset_z 0.35
+PARSFILE Animator\STL\Shape_6d44aad8-fc73-4a8d-9a90-38eeecbf0e92.par
+#BlueLink1 Animator: Shape File Link`SUV, Full Size: Details V9` CS SUV, Full Size` , Shape File`Shape_6d44aad8-fc73-4a8d-9a90-38eeecbf0e92
+
+set_offset_x 0
+set_offset_y 0
+set_offset_z 0.35
+PARSFILE Animator\STL\Shape_99d1160e-2379-4680-9aa5-16fc4507b17a.par
+#BlueLink2 Animator: Shape File Link`SUV, Full Size: Windows V9` CS SUV, Full Size` , Shape File`Shape_99d1160e-2379-4680-9aa5-16fc4507b17a
+
+set_offset_x 0
+set_offset_y 0
+set_offset_z 0.35
+PARSFILE Animator\STL\Shape_8cb376cf-2a46-44d2-9241-d588b3490b71.par
+#BlueLink3 Animator: Shape File Link`SUV, Full Size: Driver` CS SUV, Full Size` , Shape File`Shape_8cb376cf-2a46-44d2-9241-d588b3490b71
+
+set_offset_x 0
+set_offset_y 0
+set_offset_z 0.35
+x_ref_length 3140
+y_ref_length 2029
+z_ref_length 1955
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink17 Animator: Camera Setup`Shape Preview (Side)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { CS SUV, Full Size } SUV, Full Size V9
+#Library : Animator: Shape Assembly
+#DataSet : SUV, Full Size V9
+#Category: CS SUV, Full Size
+#FileID  : ShpGrp_8bbb24d9-060d-4e02-85d1-21fe78bbec29
+#Product : CarSim 2018.0
+#VehCode Shape Assembly
+
+END
+/F Steering\System\StrSys_cd74cb1a-3ba8-4fac-a8d6-38fe5f753156.par`Steering (Legacy)`OSEV_Steer_php`HMC_OS_EV
+PARSFILE
+#FullDataName Steering (Legacy)`OSEV_Steer_php`HMC_OS_EV
+OPT_STEER 0
+OPT_POWER 0
+OPT_M_SW_CALC 0
+
+OPT_STEER_DEF 1
+*RSW_F 1.0
+*RSW_R 1.0
+*L1_LKPO 64.92
+*L2_LKPO 0
+*R1_LKPO 64.53
+*R2_LKPO 0
+*L1_AKPI 13.20
+*L2_AKPI 0
+*R1_AKPI 13.22
+*R2_AKPI 0
+*L1_ACAST 4.82
+*L2_ACAST 0
+*R1_ACAST 4.78
+*R2_ACASTI 0
+*L1_XKPO 0.24
+*L2_XKPO 0
+*R1_XKPO -1.29
+*R2_XKPO 0
+
+
+iside 1
+iaxle 2
+R_GEAR_STR 1.0
+OPT_RACK 0
+GEAR_ROT_COEFFICIENT 1//1.0
+
+L_KPO 0
+A_KPI 0
+A_CASTER 0
+X_KPO 0
+
+iaxle 1
+R_GEAR_STR 1.0
+OPT_RACK 0
+GEAR_ROT_COEFFICIENT 1//1.0
+
+PARSFILE Steering\Compliance\StrCmp_80e2e8f8-dbaa-4ad1-8761-5020a8c566e5.par
+#BlueLink4 Steering System: Compliance`OSEV_SteeringCompliance` HMC_OS_EV` , Front Compliance`StrCmp_80e2e8f8-dbaa-4ad1-8761-5020a8c566e5
+
+PARSFILE Steering\Kinematics\StrKin_aca8ee17-8bd2-4da4-b277-70c7906289a9.par
+#BlueLink0 Steering System: Kinematics for One Wheel`OSEV_SteeringLeft_php #7` HMC_OS_EV` , Left Front Wheel`StrKin_aca8ee17-8bd2-4da4-b277-70c7906289a9
+
+L_KPO 64.92
+A_KPI 13.20
+A_CASTER 4.82
+X_KPO 0.24
+
+iside 2
+PARSFILE Steering\Kinematics\StrKin_b5876153-f2a9-40d6-85d0-962a7ef70e86.par
+#BlueLink2 Steering System: Kinematics for One Wheel`OSEV_SteeringRight_php #7` HMC_OS_EV` , Right Front Wheel`StrKin_b5876153-f2a9-40d6-85d0-962a7ef70e86
+
+L_KPO 64.53
+A_KPI 13.22
+A_CASTER 4.78
+X_KPO -1.29
+
+iaxle 2
+L_KPO 0
+A_KPI 0
+A_CASTER 0
+X_KPO 0
+
+LOG_ENTRY Used Dataset: Steering (Legacy); { HMC_OS_EV } OSEV_Steer_php
+#Library : Steering (Legacy)
+#DataSet : OSEV_Steer_php
+#Category: HMC_OS_EV
+#FileID  : StrSys_cd74cb1a-3ba8-4fac-a8d6-38fe5f753156
+#Product : CarSim 2018.0
+#VehCode 4-Wheel Steer (Legacy)
+
+END
+/F Control\Steer\StrSW_1858c1af-3b44-43fd-9774-c5c02a5cf659.par`Control: Steering (Open Loop)`KUMHO_STEP(80kph, 40deg)`KH Handling
+PARSFILE
+#FullDataName Control: Steering (Open Loop)`KUMHO_STEP(80kph, 40deg)`KH Handling
+OPT_DRIVER_MODEL 0
+OPT_STEER 0
+#CheckBox0 0    
+
+#RingCtrl0 LINEAR
+#RadioCtrl0 0    
+
+#DiagramOne0
+STEER_SW_TABLE LINEAR
+0, 0
+1, 0
+1.1, 40
+11, 40
+ENDTABLE
+*SCALAR 0
+
+
+LOG_ENTRY Used Dataset: Control: Steering (Open Loop); { KH Handling } KUMHO_STEP(80kph, 40deg)
+#Library : Control: Steering (Open Loop)
+#DataSet : KUMHO_STEP(80kph, 40deg)
+#Category: KH Handling
+#FileID  : StrSW_1858c1af-3b44-43fd-9774-c5c02a5cf659
+#Product : CarSim 2018.0
+#VehCode Open-Loop Steering
+
+END
+/F Control\Braking\PbkCon_7e6c39bb-10df-4541-a77a-c9702e79f2d1.par`Control: Braking MC Pressure (Open Loop)`No Open-Loop Braking Pressure`KH Handling
+PARSFILE
+#FullDataName Control: Braking MC Pressure (Open Loop)`No Open-Loop Braking Pressure`KH Handling
+#CheckBox0 0    
+
+#RingCtrl0 CONSTANT
+#RadioCtrl0 0    
+
+PBK_CON_CONSTANT 0
+OPT_VMIN -1
+*SCALAR 0
+
+
+LOG_ENTRY Used Dataset: Control: Braking MC Pressure (Open Loop); No Open-Loop Braking Pressure
+#Library : Control: Braking MC Pressure (Open Loop)
+#DataSet : No Open-Loop Braking Pressure
+#Category: 
+#FileID  : PbkCon_7e6c39bb-10df-4541-a77a-c9702e79f2d1
+#Product : CarSim 2017.1
+#VehCode Brake Control
+
+END
+/F Control\Gear_at\GearCL_3f60e7d2-b8c4-4d68-a9c4-d897bb3e2a86.par`Control: Shifting (Closed Loop)`AT All Gears`Closed-Loop Shifting Modes
+PARSFILE
+#FullDataName Control: Shifting (Closed Loop)`AT All Gears`Closed-Loop Shifting Modes
+#CheckBox0 0    
+
+#RingCtrl0 CONSTANT
+MODE_TRANS_CONSTANT NGEARS
+#RadioCtrl0 0    
+
+*SCALAR NGEARS
+
+
+#EMBEDDED_NOTES
+#NGEARS is the internal symbol for the number of gears in a transmission. By setting the Mode to NGEARS, CarSim is told to use all of the transmission gears.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Control: Shifting (Closed Loop); { Closed-Loop Shifting Modes } AT All Gears
+#Library : Control: Shifting (Closed Loop)
+#DataSet : AT All Gears
+#Category: Closed-Loop Shifting Modes
+#FileID  : GearCL_3f60e7d2-b8c4-4d68-a9c4-d897bb3e2a86
+#Product : CarSim 2018.0
+#VehCode Closed-Loop Shift Control
+
+END
+/F Roads\3D_Road\Road_cc73fa07-928b-470e-b16a-138bcaa60d82.par`Road: 3D Surface (All Properties)`1 km Square, Mu = 0.85`Flat Test Pads
+PARSFILE
+#FullDataName Road: 3D Surface (All Properties)`1 km Square, Mu = 0.85`Flat Test Pads
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Roads\3D_Road\Road_cc73fa07-928b-470e-b16a-138bcaa60d82.png
+#RingCtrl0 1
+#CheckBox0 0    
+
+DEFINE_ROADS 1
+IROAD = NROAD
+ROAD_ID IROAD
+CURRENT_ROAD_ID = ROAD_ID
+set_description road_id 1 km Square, Mu = 0.85
+PARSFILE Roads\BuilderSegment\RoadSeg_299f5dd8-31b0-44f2-9251-eaaf215df33c.par
+#BlueLink0 Path: Segment Builder`Straight East` Straight` , Reference Path`RoadSeg_299f5dd8-31b0-44f2-9251-eaaf215df33c
+
+ROAD_PATH_ID = PATH_ID
+
+set_description road_path_id PATH_ID for: Straight East
+#BlueLink1 ` , Path Elevation` , Path Elevation` , Path Elevation`
+
+#BlueLink2 ` , Miscellaneous` , Miscellaneous` , Miscellaneous`
+
+PARSFILE Roads\Friction\RdMu_25e73395-9471-44b9-9c60-27bd9cc24921.par
+#BlueLink3 Road: Friction Map, S-L Grid`Constant: 0.85` Constant` , Friction`RdMu_25e73395-9471-44b9-9c60-27bd9cc24921
+
+PARSFILE Roads\Shapes\RdShape_4058acf0-6e14-4af6-a5b0-660d3c6188e7.par
+#BlueLink4 Road: Animator Surface Shapes`1 km Square` Roads` , Road shape definitions`RdShape_4058acf0-6e14-4af6-a5b0-660d3c6188e7
+
+#BlueLink10 ` , Miscellaneous` , Miscellaneous` , Miscellaneous`
+
+RR_SURF 1
+L_CAMERA_FRONT 0.5
+L_CAMERA_REAR 0.5
+add_reference_frame road_stuff_1
+reference_frame_ghosts off
+PARSFILE Animator\Groups\Group_4ccae742-4649-427a-8871-7b3629a730a2.par
+#BlueLink6 Animator: Group`Partly Cloudy Sky` Skies` , 3D Shapes`Group_4ccae742-4649-427a-8871-7b3629a730a2
+
+add_reference_frame road_stuff_2
+reference_frame_ghosts off
+add_reference_frame road_stuff_3
+reference_frame_ghosts off
+add_reference_frame road_stuff_4
+reference_frame_ghosts off
+add_reference_frame road_stuff_5
+reference_frame_ghosts off
+add_reference_frame road_stuff_6
+reference_frame_ghosts off
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36b2ee7b-54ec-4c39-9781-51b289ab39c0.par
+#BlueLink5 Animator: Camera Setup`Rear View , Road Ref. (Frt. Facing)` Road Reference` , Camera`Camera_36b2ee7b-54ec-4c39-9781-51b289ab39c0
+
+parsfile Roads\3D_Road\Road_cc73fa07-928b-470e-b16a-138bcaa60d82.ani
+
+#EMBEDDED_NOTES
+#This is a flat level surface. A road is defined going east, such that global X = road station and global Y= road lateral coordinate L.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Road: 3D Surface (All Properties); { Flat Test Pads } 1 km Square, Mu = 0.85
+#Library : Road: 3D Surface (All Properties)
+#DataSet : 1 km Square, Mu = 0.85
+#Category: Flat Test Pads
+#FileID  : Road_cc73fa07-928b-470e-b16a-138bcaa60d82
+#Product : CarSim 2018.0
+#VehCode 3D Road
+
+END
+/F Generic\Group\GenGrp_c11e4bbe-5e3a-4498-91a5-6c42d1db378a.par`Generic Data Group`2 Axle - Fx, Fy, Fz`Tire Force Arrows
+PARSFILE
+#FullDataName Generic Data Group`2 Axle - Fx, Fy, Fz`Tire Force Arrows
+#VehCode Generic Group
+PARSFILE Animator\Arrows\Arrows_4e3feb5a-68cd-4d99-b6af-c725ceea66fe.par
+#BlueLink0 Animator: Wheel Arrows and Other Indicators`2A - Fx Tire Force Arrows` Tire Force Arrows (2 Axles)` , Link 1`Arrows_4e3feb5a-68cd-4d99-b6af-c725ceea66fe
+
+
+PARSFILE Animator\Arrows\Arrows_94aef88b-f22e-4c93-b17a-72a15e42b3fb.par
+#BlueLink1 Animator: Wheel Arrows and Other Indicators`2A - Fy Tire Force Arrows` Tire Force Arrows (2 Axles)` , Link 2`Arrows_94aef88b-f22e-4c93-b17a-72a15e42b3fb
+
+
+PARSFILE Animator\Arrows\Arrows_f2c29d4b-df79-4c67-b153-729d3f552770.par
+#BlueLink2 Animator: Wheel Arrows and Other Indicators`2A - Fz Tire Force Arrows` Tire Force Arrows (2 Axles)` , Link 3`Arrows_f2c29d4b-df79-4c67-b153-729d3f552770
+
+
+
+
+
+
+
+
+
+LOG_ENTRY Used Dataset: Generic Data Group; { Tire Force Arrows } 2 Axle - Fx, Fy, Fz
+#Library : Generic Data Group
+#DataSet : 2 Axle - Fx, Fy, Fz
+#Category: Tire Force Arrows
+#FileID  : GenGrp_c11e4bbe-5e3a-4498-91a5-6c42d1db378a
+#Product : CarSim 2018.0
+#VehCode Generic Group
+
+END
+/F Plot\Setup\Plot_310b0189-b08d-49fc-a484-ee359eb89744.par`Plot: Setup`Yaw Rate of Sprung Masses vs. Time`Vehicle Motion
+PARSFILE
+#FullDataName Plot: Setup`Yaw Rate of Sprung Masses vs. Time`Vehicle Motion
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d.par
+#BlueLink0 Plot: Format`Lines without Symbols` ` , Plot format`PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS AVz, Time
+PLOTCHANNELS AVz_2, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Yaw Rate of Sprung Masses vs. Time
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Vehicle Motion } Yaw Rate of Sprung Masses vs. Time
+#Library : Plot: Setup
+#DataSet : Yaw Rate of Sprung Masses vs. Time
+#Category: Vehicle Motion
+#FileID  : Plot_310b0189-b08d-49fc-a484-ee359eb89744
+#Product : CarSim 2018.0
+#VehCode Plot Setup
+
+END
+/F Plot\Setup\Plot_986ce074-9acb-4be0-8bd7-ac8e03eb16ab.par`Plot: Setup`Steer Torque`Steering
+PARSFILE
+#FullDataName Plot: Setup`Steer Torque`Steering
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d.par
+#BlueLink0 Plot: Format`Lines without Symbols` ` , Plot format`PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS M_SW, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Steer Torque
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Steering } Steer Torque
+#Library : Plot: Setup
+#DataSet : Steer Torque
+#Category: Steering
+#FileID  : Plot_986ce074-9acb-4be0-8bd7-ac8e03eb16ab
+#Product : CarSim 2018.0
+#VehCode Plot Setup
+
+END
+/F Plot\Setup\Plot_8b22f20a-1297-43cf-9e59-a0b1d530d136.par`Plot: Setup`Lateral Accel. of CG's vs. Time`Vehicle Motion
+PARSFILE
+#FullDataName Plot: Setup`Lateral Accel. of CG's vs. Time`Vehicle Motion
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d.par
+#BlueLink0 Plot: Format`Lines without Symbols` ` , Plot format`PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS Ay, Time
+PLOTCHANNELS Ay_2, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Lateral Accel. of CG's vs. Time
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Vehicle Motion } Lateral Accel. of CG's vs. Time
+#Library : Plot: Setup
+#DataSet : Lateral Accel. of CG's vs. Time
+#Category: Vehicle Motion
+#FileID  : Plot_8b22f20a-1297-43cf-9e59-a0b1d530d136
+#Product : CarSim 2018.0
+#VehCode Plot Setup
+
+END
+/F Plot\Setup\Plot_b86d8c49-db4e-400a-a282-322334d38a2e.par`Plot: Setup`Vehicle Sideslip Angle`Vehicle Motion
+PARSFILE
+#FullDataName Plot: Setup`Vehicle Sideslip Angle`Vehicle Motion
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d.par
+#BlueLink0 Plot: Format`Lines without Symbols` ` , Plot format`PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS Beta, Time
+PLOTCHANNELS Beta_2, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Vehicle Sideslip Angle
+
+END_ENTITY Plot
+
+
+#EMBEDDED_NOTES
+#The vehicle sideslip angle is the angle between the vehicle's heading (yaw angle) and its trajectory (tangent to the actual path of motion).
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Vehicle Motion } Vehicle Sideslip Angle
+#Library : Plot: Setup
+#DataSet : Vehicle Sideslip Angle
+#Category: Vehicle Motion
+#FileID  : Plot_b86d8c49-db4e-400a-a282-322334d38a2e
+#Product : CarSim 2018.0
+#VehCode Plot Setup
+
+END
+/F Plot\Setup\Plot_2865bd77-14b2-4e51-9c7f-3484aa98e979.par`Plot: Setup`Roll Angle of Sprung Masses vs. Time`Vehicle Motion
+PARSFILE
+#FullDataName Plot: Setup`Roll Angle of Sprung Masses vs. Time`Vehicle Motion
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d.par
+#BlueLink0 Plot: Format`Lines without Symbols` ` , Plot format`PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS Roll, Time
+PLOTCHANNELS Roll_2, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Roll Angle of Sprung Masses vs. Time
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Vehicle Motion } Roll Angle of Sprung Masses vs. Time
+#Library : Plot: Setup
+#DataSet : Roll Angle of Sprung Masses vs. Time
+#Category: Vehicle Motion
+#FileID  : Plot_2865bd77-14b2-4e51-9c7f-3484aa98e979
+#Product : CarSim 2018.0
+#VehCode Plot Setup
+
+END
+/F Plot\Setup\Plot_7a35820a-a0eb-411b-8232-4db8e14274c2.par`Plot: Setup`Roll Rate (Body-fixed) of Sprung Mass`Vehicle Motion
+PARSFILE
+#FullDataName Plot: Setup`Roll Rate (Body-fixed) of Sprung Mass`Vehicle Motion
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d.par
+#BlueLink0 Plot: Format`Lines without Symbols` ` , Plot format`PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS AVx, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Roll Rate (Body-fixed) of Sprung Mass
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Vehicle Motion } Roll Rate (Body-fixed) of Sprung Mass
+#Library : Plot: Setup
+#DataSet : Roll Rate (Body-fixed) of Sprung Mass
+#Category: Vehicle Motion
+#FileID  : Plot_7a35820a-a0eb-411b-8232-4db8e14274c2
+#Product : CarSim 2018.0
+#VehCode Plot Setup
+
+END
+/F Plot\Setup\Plot_c8881ed1-d7d6-4521-a07d-9f8e9e38b3a4.par`Plot: Setup`Steering Wheel Angle`KH Handling
+PARSFILE
+#FullDataName Plot: Setup`Steering Wheel Angle`KH Handling
+
+ADD_ENTITY Plot
+
+#BlueLink1 `No Filter` ` , Discontinued`
+
+
+PARSFILE Plot\Format\PlotFmt_01028e0f-04b1-4222-bdf3-7848a11f4ae5.par
+#CheckBox0 1    
+
+
+#MiscYellow0
+PLOTCHANNELS Steer_SW, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Steering Wheel Angle
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Steering } Steering Wheel Angle
+#Library : Plot: Setup
+#DataSet : Steering Wheel Angle
+#Category: Steering
+#FileID  : Plot_c8881ed1-d7d6-4521-a07d-9f8e9e38b3a4
+#Product : CarSim 2017.1
+#VehCode Plot Setup
+
+END
+/F Plot\Setup\Plot_de12eea2-c7e6-47ac-a8f6-4f491244b283.par`Plot: Setup`Vertical Forces (Front)`Tire Forces
+PARSFILE
+#FullDataName Plot: Setup`Vertical Forces (Front)`Tire Forces
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+#BlueLink0 Plot: Format`Default Plot Settings` ` , Plot format`PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS Fz_L1, Time
+PLOTCHANNELS Fz_R1, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Vertical Forces (Front)
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Tire Forces } Vertical Forces (Front)
+#Library : Plot: Setup
+#DataSet : Vertical Forces (Front)
+#Category: Tire Forces
+#FileID  : Plot_de12eea2-c7e6-47ac-a8f6-4f491244b283
+#Product : CarSim 2018.0
+#VehCode Plot Setup
+
+END
+/F Plot\Setup\Plot_4fae6e50-2618-44f6-8ed7-08b8ed3fe10e.par`Plot: Setup`Vertical Forces (Rear)`Tire Forces
+PARSFILE
+#FullDataName Plot: Setup`Vertical Forces (Rear)`Tire Forces
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+#BlueLink0 Plot: Format`Default Plot Settings` ` , Plot format`PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS Fz_L2, Time
+PLOTCHANNELS Fz_R2, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Vertical Forces (Rear)
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Tire Forces } Vertical Forces (Rear)
+#Library : Plot: Setup
+#DataSet : Vertical Forces (Rear)
+#Category: Tire Forces
+#FileID  : Plot_4fae6e50-2618-44f6-8ed7-08b8ed3fe10e
+#Product : CarSim 2018.0
+#VehCode Plot Setup
+
+END
+/F Plot\Setup\Plot_3c5f8bac-e2f6-4ebc-ab48-a1828a269fd4.par`Plot: Setup`Slip Angles: Instant`Tire Kinematics
+PARSFILE
+#FullDataName Plot: Setup`Slip Angles: Instant`Tire Kinematics
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+#BlueLink0 Plot: Format`Default Plot Settings` ` , Plot format`PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS Alpha_L1, Time
+PLOTCHANNELS Alpha_R1, Time
+PLOTCHANNELS Alpha_L2, Time
+PLOTCHANNELS Alpha_R2, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Slip Angles: Instant
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Tire Kinematics } Slip Angles: Instant
+#Library : Plot: Setup
+#DataSet : Slip Angles: Instant
+#Category: Tire Kinematics
+#FileID  : Plot_3c5f8bac-e2f6-4ebc-ab48-a1828a269fd4
+#Product : CarSim 2018.0
+#VehCode Plot Setup
+
+END
+/F Plot\Setup\Plot_12590fa3-2891-49cc-8869-cdde903a8983.par`Plot: Setup`Ay vs. toe Front`KH Handling
+PARSFILE
+#FullDataName Plot: Setup`Ay vs. toe Front`KH Handling
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+#BlueLink0 Plot: Format`Default Plot Settings` ` , Plot format`PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862
+
+#CheckBox1 0    
+
+
+#MiscYellow1
+define_output toe_l2 = -1*steer_l2; units = deg;
+define_output toe_r2 = steer_r2; units = deg;
+#ENDMYellow
+
+#MiscYellow0
+PLOTCHANNELS toe_L2, Fx_L2
+PLOTCHANNELS toe_R2, Fx_R2
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Ay vs. toe Front
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Suspension Motion } Ay vs. toe Front
+#Library : Plot: Setup
+#DataSet : Ay vs. toe Front
+#Category: Suspension Motion
+#FileID  : Plot_12590fa3-2891-49cc-8869-cdde903a8983
+#Product : CarSim 2018.0
+#VehCode Plot Setup
+
+END
+/F Plot\Setup\Plot_3d5bcde9-1adc-4ef7-a8b9-55222ae10117.par`Plot: Setup`Camber - Front`Suspension Motion
+PARSFILE
+#FullDataName Plot: Setup`Camber - Front`Suspension Motion
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+#BlueLink0 Plot: Format`Default Plot Settings` ` , Plot format`PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS CamberL1, time
+PLOTCHANNELS CamberR1, time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Camber - Front
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Suspension Motion } Camber - Front
+#Library : Plot: Setup
+#DataSet : Camber - Front
+#Category: Suspension Motion
+#FileID  : Plot_3d5bcde9-1adc-4ef7-a8b9-55222ae10117
+#Product : CarSim 2018.0
+#VehCode Plot Setup
+
+END
+/F Suspensions\Dive\Dive_76bdd892-9599-4d95-9571-95a305a86066.par`Suspension: Dive Angle (Caster Change)`OSEV_frontDiveLeft_php`HMC_OS_EV
+PARSFILE
+#FullDataName Suspension: Dive Angle (Caster Change)`OSEV_frontDiveLeft_php`HMC_OS_EV
+#CheckBox0 0    
+
+#RingCtrl0 SPLINE
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+SUSP_DIVE_COMBINE ADD
+
+#DiagramOne0
+SUSP_DIVE_TABLE SPLINE
+-73, 0.85458
+-72, 0.84367
+-71, 0.83274
+-70, 0.8218
+-69, 0.81085
+-68, 0.79988
+-67, 0.7889
+-66, 0.7779
+-65, 0.76689
+-64, 0.75586
+-63, 0.74481
+-62, 0.73375
+-61, 0.72267
+-60, 0.71158
+-59, 0.70046
+-58, 0.68933
+-57, 0.67818
+-56, 0.66701
+-55, 0.65582
+-54, 0.64461
+-53, 0.63338
+-52, 0.62213
+-51, 0.61086
+-50, 0.59957
+-49, 0.58825
+-48, 0.57691
+-47, 0.56555
+-46, 0.55417
+-45, 0.54276
+-44, 0.53132
+-43, 0.51986
+-42, 0.50838
+-41, 0.49687
+-40, 0.48533
+-39, 0.47376
+-38, 0.46217
+-37, 0.45055
+-36, 0.4389
+-35, 0.42722
+-34, 0.41552
+-33, 0.40378
+-32, 0.39201
+-31, 0.38021
+-30, 0.36838
+-29, 0.35651
+-28, 0.34461
+-27, 0.33268
+-26, 0.32072
+-25, 0.30872
+-24, 0.29668
+-23, 0.28461
+-22, 0.2725
+-21, 0.26036
+-20, 0.24818
+-19, 0.23596
+-18, 0.2237
+-17, 0.2114
+-16, 0.19906
+-15, 0.18668
+-14, 0.17426
+-13, 0.1618
+-12, 0.14929
+-11, 0.13675
+-10, 0.12415
+-9, 0.11152
+-8, 0.098837
+-7, 0.086111
+-6, 0.073338
+-5, 0.060518
+-4, 0.047651
+-3, 0.034735
+-2, 0.021771
+-1, 0.0087562
+0, -0.0043084
+1, -0.017424
+2, -0.030591
+3, -0.043811
+4, -0.057084
+5, -0.07041
+6, -0.083791
+7, -0.097227
+8, -0.11072
+9, -0.12427
+10, -0.13787
+11, -0.15154
+12, -0.16526
+13, -0.17904
+14, -0.19289
+15, -0.20679
+16, -0.22076
+17, -0.23478
+18, -0.24887
+19, -0.26303
+20, -0.27725
+21, -0.29154
+22, -0.30589
+23, -0.32031
+24, -0.33479
+25, -0.34935
+26, -0.36398
+27, -0.37867
+28, -0.39344
+29, -0.40828
+30, -0.42319
+31, -0.43817
+32, -0.45323
+33, -0.46837
+34, -0.48358
+35, -0.49886
+36, -0.51423
+37, -0.52967
+38, -0.54519
+39, -0.5608
+40, -0.57648
+41, -0.59225
+42, -0.60809
+43, -0.62403
+44, -0.64004
+45, -0.65615
+46, -0.67233
+47, -0.68861
+48, -0.70497
+49, -0.72143
+50, -0.73797
+51, -0.7546
+52, -0.77133
+53, -0.78814
+54, -0.80505
+55, -0.82206
+56, -0.83916
+57, -0.85636
+58, -0.87365
+59, -0.89104
+60, -0.90853
+61, -0.92612
+62, -0.94381
+63, -0.96161
+64, -0.97951
+65, -0.99751
+66, -1.0156
+67, -1.0338
+68, -1.0521
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+#DiagramOne0
+SUSP_DIVE_AXLE_TABLE SPLINE
+-73, 0.85458
+-72, 0.84367
+-71, 0.83274
+-70, 0.8218
+-69, 0.81085
+-68, 0.79988
+-67, 0.7889
+-66, 0.7779
+-65, 0.76689
+-64, 0.75586
+-63, 0.74481
+-62, 0.73375
+-61, 0.72267
+-60, 0.71158
+-59, 0.70046
+-58, 0.68933
+-57, 0.67818
+-56, 0.66701
+-55, 0.65582
+-54, 0.64461
+-53, 0.63338
+-52, 0.62213
+-51, 0.61086
+-50, 0.59957
+-49, 0.58825
+-48, 0.57691
+-47, 0.56555
+-46, 0.55417
+-45, 0.54276
+-44, 0.53132
+-43, 0.51986
+-42, 0.50838
+-41, 0.49687
+-40, 0.48533
+-39, 0.47376
+-38, 0.46217
+-37, 0.45055
+-36, 0.4389
+-35, 0.42722
+-34, 0.41552
+-33, 0.40378
+-32, 0.39201
+-31, 0.38021
+-30, 0.36838
+-29, 0.35651
+-28, 0.34461
+-27, 0.33268
+-26, 0.32072
+-25, 0.30872
+-24, 0.29668
+-23, 0.28461
+-22, 0.2725
+-21, 0.26036
+-20, 0.24818
+-19, 0.23596
+-18, 0.2237
+-17, 0.2114
+-16, 0.19906
+-15, 0.18668
+-14, 0.17426
+-13, 0.1618
+-12, 0.14929
+-11, 0.13675
+-10, 0.12415
+-9, 0.11152
+-8, 0.098837
+-7, 0.086111
+-6, 0.073338
+-5, 0.060518
+-4, 0.047651
+-3, 0.034735
+-2, 0.021771
+-1, 0.0087562
+0, -0.0043084
+1, -0.017424
+2, -0.030591
+3, -0.043811
+4, -0.057084
+5, -0.07041
+6, -0.083791
+7, -0.097227
+8, -0.11072
+9, -0.12427
+10, -0.13787
+11, -0.15154
+12, -0.16526
+13, -0.17904
+14, -0.19289
+15, -0.20679
+16, -0.22076
+17, -0.23478
+18, -0.24887
+19, -0.26303
+20, -0.27725
+21, -0.29154
+22, -0.30589
+23, -0.32031
+24, -0.33479
+25, -0.34935
+26, -0.36398
+27, -0.37867
+28, -0.39344
+29, -0.40828
+30, -0.42319
+31, -0.43817
+32, -0.45323
+33, -0.46837
+34, -0.48358
+35, -0.49886
+36, -0.51423
+37, -0.52967
+38, -0.54519
+39, -0.5608
+40, -0.57648
+41, -0.59225
+42, -0.60809
+43, -0.62403
+44, -0.64004
+45, -0.65615
+46, -0.67233
+47, -0.68861
+48, -0.70497
+49, -0.72143
+50, -0.73797
+51, -0.7546
+52, -0.77133
+53, -0.78814
+54, -0.80505
+55, -0.82206
+56, -0.83916
+57, -0.85636
+58, -0.87365
+59, -0.89104
+60, -0.90853
+61, -0.92612
+62, -0.94381
+63, -0.96161
+64, -0.97951
+65, -0.99751
+66, -1.0156
+67, -1.0338
+68, -1.0521
+ENDTABLE
+
+LOG_ENTRY Used Dataset: Suspension: Dive Angle (Caster Change); { HMC_OS_EV } OSEV_frontDiveLeft_php
+#Library : Suspension: Dive Angle (Caster Change)
+#DataSet : OSEV_frontDiveLeft_php
+#Category: HMC_OS_EV
+#FileID  : Dive_76bdd892-9599-4d95-9571-95a305a86066
+#Product : CarSim 2018.0
+#VehCode Dive
+
+END
+/F Suspensions\Longitudinal\SusX_3109a12c-9e94-4cc4-a738-e96661cd596f.par`Suspension: Longitudinal Movement`OSEV_frontDxLeft_php`HMC_OS_EV
+PARSFILE
+#FullDataName Suspension: Longitudinal Movement`OSEV_frontDxLeft_php`HMC_OS_EV
+#CheckBox0 0    
+
+#RingCtrl0 SPLINE
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+SUSP_X_COMBINE ADD
+
+#DiagramOne0
+SUSP_X_TABLE SPLINE
+-73, -2.4776
+-72, -2.4239
+-71, -2.3711
+-70, -2.3192
+-69, -2.2683
+-68, -2.2182
+-67, -2.169
+-66, -2.1206
+-65, -2.0731
+-64, -2.0263
+-63, -1.9803
+-62, -1.9351
+-61, -1.8906
+-60, -1.8468
+-59, -1.8037
+-58, -1.7612
+-57, -1.7195
+-56, -1.6784
+-55, -1.6379
+-54, -1.598
+-53, -1.5586
+-52, -1.5199
+-51, -1.4817
+-50, -1.444
+-49, -1.4069
+-48, -1.3702
+-47, -1.3341
+-46, -1.2984
+-45, -1.2631
+-44, -1.2283
+-43, -1.194
+-42, -1.16
+-41, -1.1264
+-40, -1.0932
+-39, -1.0604
+-38, -1.0279
+-37, -0.99581
+-36, -0.96402
+-35, -0.93253
+-34, -0.90136
+-33, -0.87047
+-32, -0.83986
+-31, -0.80952
+-30, -0.77944
+-29, -0.7496
+-28, -0.72
+-27, -0.69063
+-26, -0.66146
+-25, -0.63251
+-24, -0.60375
+-23, -0.57518
+-22, -0.54678
+-21, -0.51856
+-20, -0.49049
+-19, -0.46258
+-18, -0.43481
+-17, -0.40718
+-16, -0.37968
+-15, -0.3523
+-14, -0.32504
+-13, -0.29789
+-12, -0.27084
+-11, -0.24389
+-10, -0.21703
+-9, -0.19026
+-8, -0.16357
+-7, -0.13696
+-6, -0.11042
+-5, -0.083954
+-4, -0.05755
+-3, -0.031207
+-2, -0.0049216
+-1, 0.021309
+0, 0.047487
+1, 0.073616
+2, 0.099697
+3, 0.12573
+4, 0.15172
+5, 0.17767
+6, 0.20358
+7, 0.22945
+8, 0.25528
+9, 0.28106
+10, 0.30681
+11, 0.33252
+12, 0.35818
+13, 0.38381
+14, 0.40939
+15, 0.43493
+16, 0.46042
+17, 0.48586
+18, 0.51125
+19, 0.53659
+20, 0.56188
+21, 0.5871
+22, 0.61226
+23, 0.63736
+24, 0.66239
+25, 0.68734
+26, 0.71221
+27, 0.737
+28, 0.76171
+29, 0.78631
+30, 0.81082
+31, 0.83523
+32, 0.85952
+33, 0.88369
+34, 0.90774
+35, 0.93165
+36, 0.95543
+37, 0.97906
+38, 1.0025
+39, 1.0258
+40, 1.049
+41, 1.0719
+42, 1.0947
+43, 1.1173
+44, 1.1396
+45, 1.1618
+46, 1.1837
+47, 1.2054
+48, 1.2268
+49, 1.248
+50, 1.2689
+51, 1.2895
+52, 1.3098
+53, 1.3298
+54, 1.3495
+55, 1.3689
+56, 1.3879
+57, 1.4066
+58, 1.4248
+59, 1.4427
+60, 1.4602
+61, 1.4773
+62, 1.494
+63, 1.5102
+64, 1.526
+65, 1.5412
+66, 1.556
+67, 1.5703
+68, 1.5841
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+#DiagramOne0
+SUSP_X_AXLE_TABLE SPLINE
+-73, -2.4776
+-72, -2.4239
+-71, -2.3711
+-70, -2.3192
+-69, -2.2683
+-68, -2.2182
+-67, -2.169
+-66, -2.1206
+-65, -2.0731
+-64, -2.0263
+-63, -1.9803
+-62, -1.9351
+-61, -1.8906
+-60, -1.8468
+-59, -1.8037
+-58, -1.7612
+-57, -1.7195
+-56, -1.6784
+-55, -1.6379
+-54, -1.598
+-53, -1.5586
+-52, -1.5199
+-51, -1.4817
+-50, -1.444
+-49, -1.4069
+-48, -1.3702
+-47, -1.3341
+-46, -1.2984
+-45, -1.2631
+-44, -1.2283
+-43, -1.194
+-42, -1.16
+-41, -1.1264
+-40, -1.0932
+-39, -1.0604
+-38, -1.0279
+-37, -0.99581
+-36, -0.96402
+-35, -0.93253
+-34, -0.90136
+-33, -0.87047
+-32, -0.83986
+-31, -0.80952
+-30, -0.77944
+-29, -0.7496
+-28, -0.72
+-27, -0.69063
+-26, -0.66146
+-25, -0.63251
+-24, -0.60375
+-23, -0.57518
+-22, -0.54678
+-21, -0.51856
+-20, -0.49049
+-19, -0.46258
+-18, -0.43481
+-17, -0.40718
+-16, -0.37968
+-15, -0.3523
+-14, -0.32504
+-13, -0.29789
+-12, -0.27084
+-11, -0.24389
+-10, -0.21703
+-9, -0.19026
+-8, -0.16357
+-7, -0.13696
+-6, -0.11042
+-5, -0.083954
+-4, -0.05755
+-3, -0.031207
+-2, -0.0049216
+-1, 0.021309
+0, 0.047487
+1, 0.073616
+2, 0.099697
+3, 0.12573
+4, 0.15172
+5, 0.17767
+6, 0.20358
+7, 0.22945
+8, 0.25528
+9, 0.28106
+10, 0.30681
+11, 0.33252
+12, 0.35818
+13, 0.38381
+14, 0.40939
+15, 0.43493
+16, 0.46042
+17, 0.48586
+18, 0.51125
+19, 0.53659
+20, 0.56188
+21, 0.5871
+22, 0.61226
+23, 0.63736
+24, 0.66239
+25, 0.68734
+26, 0.71221
+27, 0.737
+28, 0.76171
+29, 0.78631
+30, 0.81082
+31, 0.83523
+32, 0.85952
+33, 0.88369
+34, 0.90774
+35, 0.93165
+36, 0.95543
+37, 0.97906
+38, 1.0025
+39, 1.0258
+40, 1.049
+41, 1.0719
+42, 1.0947
+43, 1.1173
+44, 1.1396
+45, 1.1618
+46, 1.1837
+47, 1.2054
+48, 1.2268
+49, 1.248
+50, 1.2689
+51, 1.2895
+52, 1.3098
+53, 1.3298
+54, 1.3495
+55, 1.3689
+56, 1.3879
+57, 1.4066
+58, 1.4248
+59, 1.4427
+60, 1.4602
+61, 1.4773
+62, 1.494
+63, 1.5102
+64, 1.526
+65, 1.5412
+66, 1.556
+67, 1.5703
+68, 1.5841
+ENDTABLE
+
+LOG_ENTRY Used Dataset: Suspension: Longitudinal Movement; { HMC_OS_EV } OSEV_frontDxLeft_php
+#Library : Suspension: Longitudinal Movement
+#DataSet : OSEV_frontDxLeft_php
+#Category: HMC_OS_EV
+#FileID  : SusX_3109a12c-9e94-4cc4-a738-e96661cd596f
+#Product : CarSim 2018.0
+#VehCode Longitudinal Movement
+
+END
+/F Suspensions\Camber\Camber_6a19baf1-51a8-4915-9891-ba6fe6911647.par`Suspension: Camber Angle`OSEV_Front_CamberLeft_php`HMC_OS_EV
+PARSFILE
+#FullDataName Suspension: Camber Angle`OSEV_Front_CamberLeft_php`HMC_OS_EV
+#CheckBox0 0    
+
+#RingCtrl0 SPLINE
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+CAMBER_COMBINE ADD
+#DiagramOne0
+CAMBER_TABLE SPLINE
+-73, 1.6508
+-72, 1.6177
+-71, 1.585
+-70, 1.5527
+-69, 1.5207
+-68, 1.4892
+-67, 1.458
+-66, 1.4272
+-65, 1.3968
+-64, 1.3668
+-63, 1.3371
+-62, 1.3077
+-61, 1.2787
+-60, 1.2501
+-59, 1.2217
+-58, 1.1938
+-57, 1.1661
+-56, 1.1388
+-55, 1.1117
+-54, 1.085
+-53, 1.0586
+-52, 1.0325
+-51, 1.0068
+-50, 0.98125
+-49, 0.95604
+-48, 0.93111
+-47, 0.90646
+-46, 0.88209
+-45, 0.858
+-44, 0.83417
+-43, 0.81061
+-42, 0.78731
+-41, 0.76426
+-40, 0.74147
+-39, 0.71893
+-38, 0.69664
+-37, 0.67458
+-36, 0.65277
+-35, 0.63119
+-34, 0.60984
+-33, 0.58873
+-32, 0.56784
+-31, 0.54717
+-30, 0.52672
+-29, 0.50649
+-28, 0.48647
+-27, 0.46667
+-26, 0.44707
+-25, 0.42768
+-24, 0.40849
+-23, 0.3895
+-22, 0.37071
+-21, 0.35212
+-20, 0.33372
+-19, 0.31551
+-18, 0.29749
+-17, 0.27966
+-16, 0.26201
+-15, 0.24454
+-14, 0.22726
+-13, 0.21016
+-12, 0.19324
+-11, 0.17649
+-10, 0.15992
+-9, 0.14352
+-8, 0.12729
+-7, 0.11123
+-6, 0.095346
+-5, 0.079627
+-4, 0.064076
+-3, 0.04869
+-2, 0.03347
+-1, 0.018414
+0, 0.0035215
+1, -0.011208
+2, -0.025776
+3, -0.040182
+4, -0.054427
+5, -0.068512
+6, -0.082436
+7, -0.0962
+8, -0.10981
+9, -0.12325
+10, -0.13654
+11, -0.14966
+12, -0.16263
+13, -0.17544
+14, -0.18808
+15, -0.20057
+16, -0.2129
+17, -0.22506
+18, -0.23707
+19, -0.24891
+20, -0.26059
+21, -0.2721
+22, -0.28345
+23, -0.29464
+24, -0.30566
+25, -0.31651
+26, -0.32719
+27, -0.33771
+28, -0.34805
+29, -0.35822
+30, -0.36822
+31, -0.37805
+32, -0.38769
+33, -0.39716
+34, -0.40645
+35, -0.41556
+36, -0.42448
+37, -0.43322
+38, -0.44177
+39, -0.45013
+40, -0.4583
+41, -0.46627
+42, -0.47405
+43, -0.48164
+44, -0.48902
+45, -0.49619
+46, -0.50317
+47, -0.50993
+48, -0.51648
+49, -0.52282
+50, -0.52894
+51, -0.53484
+52, -0.54051
+53, -0.54597
+54, -0.55119
+55, -0.55618
+56, -0.56093
+57, -0.56544
+58, -0.56972
+59, -0.57374
+60, -0.57752
+61, -0.58104
+62, -0.5843
+63, -0.58731
+64, -0.59005
+65, -0.59252
+66, -0.59471
+67, -0.59663
+68, -0.59827
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+
+
+LOG_ENTRY Used Dataset: Suspension: Camber Angle; { HMC_OS_EV } OSEV_Front_CamberLeft_php
+#Library : Suspension: Camber Angle
+#DataSet : OSEV_Front_CamberLeft_php
+#Category: HMC_OS_EV
+#FileID  : Camber_6a19baf1-51a8-4915-9891-ba6fe6911647
+#Product : CarSim 2018.0
+#VehCode Camber
+
+END
+/F Suspensions\Lateral\LatJnc_c69a8302-2f3f-4a6d-8f22-72f613a40557.par`Suspension: Lateral Movement Due to Jounce`OSEV_FrontDyLeft_php`HMC_OS_EV
+PARSFILE
+#FullDataName Suspension: Lateral Movement Due to Jounce`OSEV_FrontDyLeft_php`HMC_OS_EV
+#CheckBox0 0    
+
+#RingCtrl0 SPLINE
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+SUSP_LAT_COMBINE ADD
+#DiagramOne0
+SUSP_LAT_TABLE SPLINE
+-73, 9.1134
+-72, 8.9215
+-71, 8.7309
+-70, 8.5418
+-69, 8.3542
+-68, 8.168
+-67, 7.9833
+-66, 7.8001
+-65, 7.6185
+-64, 7.4384
+-63, 7.26
+-62, 7.0831
+-61, 6.9079
+-60, 6.7343
+-59, 6.5624
+-58, 6.3922
+-57, 6.2237
+-56, 6.0569
+-55, 5.8919
+-54, 5.7286
+-53, 5.5672
+-52, 5.4076
+-51, 5.2498
+-50, 5.0938
+-49, 4.9397
+-48, 4.7875
+-47, 4.6372
+-46, 4.4888
+-45, 4.3424
+-44, 4.1979
+-43, 4.0553
+-42, 3.9148
+-41, 3.7762
+-40, 3.6396
+-39, 3.5051
+-38, 3.3726
+-37, 3.2422
+-36, 3.1138
+-35, 2.9875
+-34, 2.8632
+-33, 2.7411
+-32, 2.6211
+-31, 2.5032
+-30, 2.3875
+-29, 2.2739
+-28, 2.1624
+-27, 2.0531
+-26, 1.946
+-25, 1.8411
+-24, 1.7384
+-23, 1.6379
+-22, 1.5395
+-21, 1.4435
+-20, 1.3496
+-19, 1.258
+-18, 1.1686
+-17, 1.0814
+-16, 0.99655
+-15, 0.91392
+-14, 0.83356
+-13, 0.75548
+-12, 0.67966
+-11, 0.60613
+-10, 0.53489
+-9, 0.46593
+-8, 0.39926
+-7, 0.33489
+-6, 0.27282
+-5, 0.21305
+-4, 0.15558
+-3, 0.10042
+-2, 0.047565
+-1, -0.0029837
+0, -0.051224
+1, -0.097156
+2, -0.14078
+3, -0.18209
+4, -0.2211
+5, -0.2578
+6, -0.29219
+7, -0.32428
+8, -0.35407
+9, -0.38155
+10, -0.40674
+11, -0.42964
+12, -0.45024
+13, -0.46855
+14, -0.48459
+15, -0.49834
+16, -0.50982
+17, -0.51903
+18, -0.52598
+19, -0.53066
+20, -0.5331
+21, -0.53329
+22, -0.53124
+23, -0.52696
+24, -0.52046
+25, -0.51174
+26, -0.50081
+27, -0.48768
+28, -0.47236
+29, -0.45485
+30, -0.43518
+31, -0.41334
+32, -0.38935
+33, -0.36322
+34, -0.33495
+35, -0.30457
+36, -0.27208
+37, -0.23749
+38, -0.20082
+39, -0.16208
+40, -0.12128
+41, -0.078428
+42, -0.03355
+43, 0.013346
+44, 0.062245
+45, 0.11313
+46, 0.16599
+47, 0.22081
+48, 0.27758
+49, 0.33627
+50, 0.39686
+51, 0.45936
+52, 0.52373
+53, 0.58995
+54, 0.65802
+55, 0.72792
+56, 0.79961
+57, 0.8731
+58, 0.94835
+59, 1.0253
+60, 1.1041
+61, 1.1845
+62, 1.2666
+63, 1.3504
+64, 1.4358
+65, 1.5229
+66, 1.6115
+67, 1.7018
+68, 1.7936
+ENDTABLE
+SUSP_Y_AXLE_ROLL_COMBINE ADD ! in case this is for a solid axle
+#DiagramOne0
+SUSP_LAT_AXLE_JOUNCE_TABLE SPLINE
+-73, 9.1134
+-72, 8.9215
+-71, 8.7309
+-70, 8.5418
+-69, 8.3542
+-68, 8.168
+-67, 7.9833
+-66, 7.8001
+-65, 7.6185
+-64, 7.4384
+-63, 7.26
+-62, 7.0831
+-61, 6.9079
+-60, 6.7343
+-59, 6.5624
+-58, 6.3922
+-57, 6.2237
+-56, 6.0569
+-55, 5.8919
+-54, 5.7286
+-53, 5.5672
+-52, 5.4076
+-51, 5.2498
+-50, 5.0938
+-49, 4.9397
+-48, 4.7875
+-47, 4.6372
+-46, 4.4888
+-45, 4.3424
+-44, 4.1979
+-43, 4.0553
+-42, 3.9148
+-41, 3.7762
+-40, 3.6396
+-39, 3.5051
+-38, 3.3726
+-37, 3.2422
+-36, 3.1138
+-35, 2.9875
+-34, 2.8632
+-33, 2.7411
+-32, 2.6211
+-31, 2.5032
+-30, 2.3875
+-29, 2.2739
+-28, 2.1624
+-27, 2.0531
+-26, 1.946
+-25, 1.8411
+-24, 1.7384
+-23, 1.6379
+-22, 1.5395
+-21, 1.4435
+-20, 1.3496
+-19, 1.258
+-18, 1.1686
+-17, 1.0814
+-16, 0.99655
+-15, 0.91392
+-14, 0.83356
+-13, 0.75548
+-12, 0.67966
+-11, 0.60613
+-10, 0.53489
+-9, 0.46593
+-8, 0.39926
+-7, 0.33489
+-6, 0.27282
+-5, 0.21305
+-4, 0.15558
+-3, 0.10042
+-2, 0.047565
+-1, -0.0029837
+0, -0.051224
+1, -0.097156
+2, -0.14078
+3, -0.18209
+4, -0.2211
+5, -0.2578
+6, -0.29219
+7, -0.32428
+8, -0.35407
+9, -0.38155
+10, -0.40674
+11, -0.42964
+12, -0.45024
+13, -0.46855
+14, -0.48459
+15, -0.49834
+16, -0.50982
+17, -0.51903
+18, -0.52598
+19, -0.53066
+20, -0.5331
+21, -0.53329
+22, -0.53124
+23, -0.52696
+24, -0.52046
+25, -0.51174
+26, -0.50081
+27, -0.48768
+28, -0.47236
+29, -0.45485
+30, -0.43518
+31, -0.41334
+32, -0.38935
+33, -0.36322
+34, -0.33495
+35, -0.30457
+36, -0.27208
+37, -0.23749
+38, -0.20082
+39, -0.16208
+40, -0.12128
+41, -0.078428
+42, -0.03355
+43, 0.013346
+44, 0.062245
+45, 0.11313
+46, 0.16599
+47, 0.22081
+48, 0.27758
+49, 0.33627
+50, 0.39686
+51, 0.45936
+52, 0.52373
+53, 0.58995
+54, 0.65802
+55, 0.72792
+56, 0.79961
+57, 0.8731
+58, 0.94835
+59, 1.0253
+60, 1.1041
+61, 1.1845
+62, 1.2666
+63, 1.3504
+64, 1.4358
+65, 1.5229
+66, 1.6115
+67, 1.7018
+68, 1.7936
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+
+
+LOG_ENTRY Used Dataset: Suspension: Lateral Movement Due to Jounce; { HMC_OS_EV } OSEV_FrontDyLeft_php
+#Library : Suspension: Lateral Movement Due to Jounce
+#DataSet : OSEV_FrontDyLeft_php
+#Category: HMC_OS_EV
+#FileID  : LatJnc_c69a8302-2f3f-4a6d-8f22-72f613a40557
+#Product : CarSim 2018.0
+#VehCode Lateral Movement
+
+END
+/F Suspensions\Toe\Toe_4b62e521-052c-4df5-a35c-63a8d1c057e9.par`Suspension: Toe Angle`OSEV_FrontToeLeft_php`HMC_OS_EV
+PARSFILE
+#FullDataName Suspension: Toe Angle`OSEV_FrontToeLeft_php`HMC_OS_EV
+#CheckBox0 0    
+
+#RingCtrl0 SPLINE
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+TOE_COMBINE ADD
+#DiagramOne0
+TOE_TABLE SPLINE
+-73, 0.17546
+-72, 0.17588
+-71, 0.17616
+-70, 0.17631
+-69, 0.17634
+-68, 0.17623
+-67, 0.176
+-66, 0.17565
+-65, 0.17519
+-64, 0.1746
+-63, 0.1739
+-62, 0.17309
+-61, 0.17217
+-60, 0.17114
+-59, 0.17001
+-58, 0.16878
+-57, 0.16745
+-56, 0.16601
+-55, 0.16449
+-54, 0.16286
+-53, 0.16115
+-52, 0.15935
+-51, 0.15746
+-50, 0.15548
+-49, 0.15342
+-48, 0.15128
+-47, 0.14906
+-46, 0.14676
+-45, 0.14438
+-44, 0.14193
+-43, 0.13941
+-42, 0.13682
+-41, 0.13416
+-40, 0.13142
+-39, 0.12863
+-38, 0.12577
+-37, 0.12284
+-36, 0.11986
+-35, 0.11681
+-34, 0.11371
+-33, 0.11055
+-32, 0.10733
+-31, 0.10406
+-30, 0.10074
+-29, 0.097363
+-28, 0.093937
+-27, 0.090461
+-26, 0.086938
+-25, 0.083368
+-24, 0.079751
+-23, 0.07609
+-22, 0.072385
+-21, 0.068637
+-20, 0.064848
+-19, 0.061017
+-18, 0.057147
+-17, 0.053237
+-16, 0.049289
+-15, 0.045304
+-14, 0.041282
+-13, 0.037224
+-12, 0.03313
+-11, 0.029003
+-10, 0.024841
+-9, 0.020645
+-8, 0.016417
+-7, 0.012157
+-6, 0.0078642
+-5, 0.0035406
+-4, -0.00081398
+-3, -0.0051991
+-2, -0.0096143
+-1, -0.014059
+0, -0.018534
+1, -0.023038
+2, -0.027571
+3, -0.032133
+4, -0.036723
+5, -0.041342
+6, -0.04599
+7, -0.050666
+8, -0.05537
+9, -0.060103
+10, -0.064865
+11, -0.069655
+12, -0.074473
+13, -0.079321
+14, -0.084197
+15, -0.089103
+16, -0.094038
+17, -0.099002
+18, -0.104
+19, -0.10902
+20, -0.11408
+21, -0.11917
+22, -0.12428
+23, -0.12944
+24, -0.13462
+25, -0.13984
+26, -0.14509
+27, -0.15037
+28, -0.15569
+29, -0.16105
+30, -0.16644
+31, -0.17187
+32, -0.17734
+33, -0.18284
+34, -0.18839
+35, -0.19398
+36, -0.19961
+37, -0.20528
+38, -0.21099
+39, -0.21675
+40, -0.22255
+41, -0.2284
+42, -0.2343
+43, -0.24025
+44, -0.24625
+45, -0.2523
+46, -0.2584
+47, -0.26456
+48, -0.27077
+49, -0.27703
+50, -0.28336
+51, -0.28974
+52, -0.29619
+53, -0.3027
+54, -0.30927
+55, -0.31591
+56, -0.32261
+57, -0.32939
+58, -0.33623
+59, -0.34315
+60, -0.35014
+61, -0.3572
+62, -0.36435
+63, -0.37157
+64, -0.37887
+65, -0.38626
+66, -0.39373
+67, -0.40129
+68, -0.40893
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+
+
+LOG_ENTRY Used Dataset: Suspension: Toe Angle; { HMC_OS_EV } OSEV_FrontToeLeft_php
+#Library : Suspension: Toe Angle
+#DataSet : OSEV_FrontToeLeft_php
+#Category: HMC_OS_EV
+#FileID  : Toe_4b62e521-052c-4df5-a35c-63a8d1c057e9
+#Product : CarSim 2018.0
+#VehCode Toe
+
+END
+/F Suspensions\Springs\Spring_d66a8425-1847-454f-9a5a-d6470425fbfc.par`Suspension: Spring`OSEV_FrontWheelrate_php #1`HMC_OS_EV
+PARSFILE
+#FullDataName Suspension: Spring`OSEV_FrontWheelrate_php #1`HMC_OS_EV
+#RingCtrl0 SPLINE
+#DiagramOne0
+FS_COMP_TABLE SPLINE
+-73.46177, -91.8810659
+-72.0245116, 510.607165
+-70.5872532, 962.099921
+-69.1499948, 1283.90313
+-67.7127365, 1506.49511
+-66.2754781, 1659.7389
+-64.8382197, 1768.37133
+-63.4009613, 1850.64371
+-61.9637029, 1918.68267
+-60.5264445, 1979.64478
+-59.0891862, 2037.09792
+-57.6519278, 2092.31171
+-56.2146694, 2145.3049
+-54.777411, 2195.60325
+-53.3401526, 2242.72292
+-51.9028942, 2286.42625
+-50.4656359, 2326.8083
+-49.0283775, 2364.27196
+-47.5911191, 2399.44142
+-46.1538607, 2433.0529
+-44.7166023, 2465.85004
+-43.2793439, 2498.50027
+-41.8420856, 2531.54007
+-40.4048272, 2565.34973
+-38.9675688, 2600.15405
+-37.5303104, 2636.04258
+-36.093052, 2673.00196
+-34.6557936, 2710.95329
+-33.2185353, 2749.78833
+-31.7812769, 2789.40003
+-30.3440185, 2829.70458
+-28.9067601, 2870.65374
+-27.4695017, 2912.23791
+-26.0322433, 2954.48114
+-24.5949849, 2997.43045
+-23.1577266, 3041.14181
+-21.7204682, 3085.66534
+-20.2832098, 3131.03189
+-18.8459514, 3177.24281
+-17.408693, 3224.26396
+-15.9714346, 3272.02433
+-14.5341763, 3320.41932
+-13.0969179, 3369.31773
+-11.6596595, 3418.5715
+-10.2224011, 3468.02689
+-8.78514273, 3517.53563
+-7.34788434, 3566.9648
+-5.91062596, 3616.20446
+-4.47336758, 3665.17218
+-3.03610919, 3713.81432
+-1.59885081, 3762.10411
+-0.161592424, 3810.03699
+1.27566596, 3857.62423
+2.71292434, 3904.88566
+4.15018273, 3951.84285
+5.58744111, 3998.51381
+7.02469949, 4044.91008
+8.46195788, 4091.03709
+9.89921626, 4136.89785
+11.3364746, 4182.49992
+12.773733, 4227.86515
+14.2109914, 4273.04104
+15.6482498, 4318.11239
+17.0855082, 4363.21174
+18.5227666, 4408.52695
+19.9600249, 4454.30437
+21.3972833, 4500.84646
+22.8345417, 4548.50319
+24.2718001, 4597.65711
+25.7090585, 4648.70291
+27.1463169, 4702.02282
+28.5835753, 4757.96027
+30.0208336, 4816.79451
+31.458092, 4878.71956
+32.8953504, 4943.83076
+34.3326088, 5012.12196
+35.7698672, 5083.4956
+37.2071256, 5157.78681
+38.6443839, 5234.80088
+40.0816423, 5314.36181
+41.5189007, 5396.36722
+42.9561591, 5480.84338
+44.3934175, 5567.99192
+45.8306759, 5658.21952
+47.2679342, 5752.14174
+48.7051926, 5850.55418
+50.142451, 5954.36793
+51.5797094, 6064.5121
+53.0169678, 6181.81471
+54.4542262, 6306.88314
+55.8914845, 6440.01689
+57.3287429, 6581.19698
+58.7660013, 6730.2046
+60.2032597, 6886.92487
+61.6405181, 7051.88276
+63.0777765, 7227.03174
+64.5150348, 7416.7606
+65.9522932, 7628.98862
+67.3895516, 7876.06574
+68.82681, 8174.95634
+ENDTABLE
+#DiagramOne1
+FS_EXT_TABLE SPLINE
+-73.46177, -91.8810659
+-72.0245116, 510.607165
+-70.5872532, 962.099921
+-69.1499948, 1283.90313
+-67.7127365, 1506.49511
+-66.2754781, 1659.7389
+-64.8382197, 1768.37133
+-63.4009613, 1850.64371
+-61.9637029, 1918.68267
+-60.5264445, 1979.64478
+-59.0891862, 2037.09792
+-57.6519278, 2092.31171
+-56.2146694, 2145.3049
+-54.777411, 2195.60325
+-53.3401526, 2242.72292
+-51.9028942, 2286.42625
+-50.4656359, 2326.8083
+-49.0283775, 2364.27196
+-47.5911191, 2399.44142
+-46.1538607, 2433.0529
+-44.7166023, 2465.85004
+-43.2793439, 2498.50027
+-41.8420856, 2531.54007
+-40.4048272, 2565.34973
+-38.9675688, 2600.15405
+-37.5303104, 2636.04258
+-36.093052, 2673.00196
+-34.6557936, 2710.95329
+-33.2185353, 2749.78833
+-31.7812769, 2789.40003
+-30.3440185, 2829.70458
+-28.9067601, 2870.65374
+-27.4695017, 2912.23791
+-26.0322433, 2954.48114
+-24.5949849, 2997.43045
+-23.1577266, 3041.14181
+-21.7204682, 3085.66534
+-20.2832098, 3131.03189
+-18.8459514, 3177.24281
+-17.408693, 3224.26396
+-15.9714346, 3272.02433
+-14.5341763, 3320.41932
+-13.0969179, 3369.31773
+-11.6596595, 3418.5715
+-10.2224011, 3468.02689
+-8.78514273, 3517.53563
+-7.34788434, 3566.9648
+-5.91062596, 3616.20446
+-4.47336758, 3665.17218
+-3.03610919, 3713.81432
+-1.59885081, 3762.10411
+-0.161592424, 3810.03699
+1.27566596, 3857.62423
+2.71292434, 3904.88566
+4.15018273, 3951.84285
+5.58744111, 3998.51381
+7.02469949, 4044.91008
+8.46195788, 4091.03709
+9.89921626, 4136.89785
+11.3364746, 4182.49992
+12.773733, 4227.86515
+14.2109914, 4273.04104
+15.6482498, 4318.11239
+17.0855082, 4363.21174
+18.5227666, 4408.52695
+19.9600249, 4454.30437
+21.3972833, 4500.84646
+22.8345417, 4548.50319
+24.2718001, 4597.65711
+25.7090585, 4648.70291
+27.1463169, 4702.02282
+28.5835753, 4757.96027
+30.0208336, 4816.79451
+31.458092, 4878.71956
+32.8953504, 4943.83076
+34.3326088, 5012.12196
+35.7698672, 5083.4956
+37.2071256, 5157.78681
+38.6443839, 5234.80088
+40.0816423, 5314.36181
+41.5189007, 5396.36722
+42.9561591, 5480.84338
+44.3934175, 5567.99192
+45.8306759, 5658.21952
+47.2679342, 5752.14174
+48.7051926, 5850.55418
+50.142451, 5954.36793
+51.5797094, 6064.5121
+53.0169678, 6181.81471
+54.4542262, 6306.88314
+55.8914845, 6440.01689
+57.3287429, 6581.19698
+58.7660013, 6730.2046
+60.2032597, 6886.92487
+61.6405181, 7051.88276
+63.0777765, 7227.03174
+64.5150348, 7416.7606
+65.9522932, 7628.98862
+67.3895516, 7876.06574
+68.82681, 8174.95634
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+SPRING_COMP_BETA 2
+SPRING_EXT_BETA 2
+
+
+LOG_ENTRY Used Dataset: Suspension: Spring; { HMC_OS_EV } OSEV_FrontWheelrate_php #1
+#Library : Suspension: Spring
+#DataSet : OSEV_FrontWheelrate_php #1
+#Category: HMC_OS_EV
+#FileID  : Spring_d66a8425-1847-454f-9a5a-d6470425fbfc
+#Product : CarSim 2018.0
+#VehCode Spring Alone
+
+END
+/F Suspensions\Aux_Roll\AuxMx_875d0c9e-a78e-49d1-b97d-9ccb63249910.par`Suspension: Auxiliary Roll Moment`OSEV_AuxiliaryRoll_php`HMC_OS_EV
+PARSFILE
+#FullDataName Suspension: Auxiliary Roll Moment`OSEV_AuxiliaryRoll_php`HMC_OS_EV
+#CheckBox0 0    
+
+#RingCtrl0 COEFFICIENT
+#RingCtrl1 CONSTANT
+#RingCtrl2 MULTIPLY
+MX_AUX_COMBINE MULTIPLY
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+MX_AUX_COEFFICIENT 1178
+*SCALAR 1178
+
+
+LOG_ENTRY Used Dataset: Suspension: Auxiliary Roll Moment; { HMC_OS_EV } OSEV_AuxiliaryRoll_php
+#Library : Suspension: Auxiliary Roll Moment
+#DataSet : OSEV_AuxiliaryRoll_php
+#Category: HMC_OS_EV
+#FileID  : AuxMx_875d0c9e-a78e-49d1-b97d-9ccb63249910
+#Product : CarSim 2018.0
+#VehCode Aux. Roll Moment
+
+END
+/F Animator\STL_Groups\ShpGrp_d5b55623-3c6f-43ea-b7a0-880a3303d1d2.par`Animator: Shape Assembly`Sports Car`Tires
+PARSFILE
+#FullDataName Animator: Shape Assembly`Sports Car`Tires
+*X_REF_LENGTH 291
+*Y_REF_LENGTH 195
+*Z_REF_LENGTH 291
+*IMAGE_FIT_MODE 3
+#CheckBox0 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 1    
+
+#RingCtrl1 2
+#RingCtrl2 2
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL_Groups\ShpGrp_d5b55623-3c6f-43ea-b7a0-880a3303d1d2.png
+PARSFILE Animator\STL\Shape_9e9cf3ff-6a77-4076-a9f0-1b70114e603e.par
+#BlueLink0 Animator: Shape File Link`Sports Car Tire` Tires` , Shape File`Shape_9e9cf3ff-6a77-4076-a9f0-1b70114e603e
+
+PARSFILE Animator\STL\Shape_e8969a6e-9ef6-43c7-9f40-228c21b5b4a1.par
+#BlueLink1 Animator: Shape File Link`Sports Car Wheel` Tires` , Shape File`Shape_e8969a6e-9ef6-43c7-9f40-228c21b5b4a1
+
+PARSFILE Animator\STL\Shape_8ffa6ffc-1b17-4180-964d-d52d768c1b70.par
+#BlueLink2 Animator: Shape File Link`Sports Car Stripe` Tires` , Shape File`Shape_8ffa6ffc-1b17-4180-964d-d52d768c1b70
+
+x_ref_length 291
+y_ref_length 195
+z_ref_length 291
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink17 Animator: Camera Setup`Shape Preview (Side)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Tires } Sports Car
+#Library : Animator: Shape Assembly
+#DataSet : Sports Car
+#Category: Tires
+#FileID  : ShpGrp_d5b55623-3c6f-43ea-b7a0-880a3303d1d2
+#Product : CarSim 2018.0
+#VehCode Shape Assembly
+
+END
+/F Suspensions\Dive\Dive_e9016540-076a-497d-b077-c7d94d66874e.par`Suspension: Dive Angle (Caster Change)`OSEV_RearDiveLeft_php`HMC_OS_EV
+PARSFILE
+#FullDataName Suspension: Dive Angle (Caster Change)`OSEV_RearDiveLeft_php`HMC_OS_EV
+#CheckBox0 0    
+
+#RingCtrl0 SPLINE
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+SUSP_DIVE_COMBINE ADD
+
+#DiagramOne0
+SUSP_DIVE_TABLE SPLINE
+-74, -7.7609
+-73, -7.6553
+-72, -7.5497
+-71, -7.4441
+-70, -7.3385
+-69, -7.2329
+-68, -7.1274
+-67, -7.0219
+-66, -6.9163
+-65, -6.8108
+-64, -6.7053
+-63, -6.5998
+-62, -6.4944
+-61, -6.3889
+-60, -6.2835
+-59, -6.1781
+-58, -6.0727
+-57, -5.9673
+-56, -5.8619
+-55, -5.7566
+-54, -5.6512
+-53, -5.5459
+-52, -5.4406
+-51, -5.3353
+-50, -5.2301
+-49, -5.1248
+-48, -5.0196
+-47, -4.9144
+-46, -4.8092
+-45, -4.7041
+-44, -4.5989
+-43, -4.4938
+-42, -4.3887
+-41, -4.2837
+-40, -4.1786
+-39, -4.0736
+-38, -3.9686
+-37, -3.8637
+-36, -3.7587
+-35, -3.6538
+-34, -3.549
+-33, -3.4441
+-32, -3.3393
+-31, -3.2345
+-30, -3.1297
+-29, -3.025
+-28, -2.9203
+-27, -2.8157
+-26, -2.711
+-25, -2.6064
+-24, -2.5019
+-23, -2.3974
+-22, -2.2929
+-21, -2.1884
+-20, -2.084
+-19, -1.9796
+-18, -1.8753
+-17, -1.771
+-16, -1.6668
+-15, -1.5625
+-14, -1.4584
+-13, -1.3543
+-12, -1.2502
+-11, -1.1462
+-10, -1.0422
+-9, -0.93823
+-8, -0.83434
+-7, -0.7305
+-6, -0.62671
+-5, -0.52297
+-4, -0.41929
+-3, -0.31565
+-2, -0.21207
+-1, -0.10855
+0, -0.0050819
+1, 0.098329
+2, 0.20168
+3, 0.30498
+4, 0.40821
+5, 0.51138
+6, 0.61449
+7, 0.71754
+8, 0.82053
+9, 0.92344
+10, 1.0263
+11, 1.1291
+12, 1.2318
+13, 1.3344
+14, 1.437
+15, 1.5395
+16, 1.6419
+17, 1.7443
+18, 1.8466
+19, 1.9488
+20, 2.0509
+21, 2.1529
+22, 2.2549
+23, 2.3568
+24, 2.4586
+25, 2.5603
+26, 2.6619
+27, 2.7635
+28, 2.8649
+29, 2.9663
+30, 3.0675
+31, 3.1687
+32, 3.2698
+33, 3.3708
+34, 3.4717
+35, 3.5725
+36, 3.6732
+37, 3.7738
+38, 3.8743
+39, 3.9747
+40, 4.0749
+41, 4.1751
+42, 4.2752
+43, 4.3752
+44, 4.475
+45, 4.5748
+46, 4.6744
+47, 4.7739
+48, 4.8733
+49, 4.9726
+50, 5.0717
+51, 5.1708
+52, 5.2697
+53, 5.3685
+54, 5.4671
+55, 5.5657
+56, 5.6641
+57, 5.7624
+58, 5.8605
+59, 5.9585
+60, 6.0564
+61, 6.1541
+62, 6.2517
+63, 6.3492
+64, 6.4465
+65, 6.5437
+66, 6.6407
+67, 6.7376
+68, 6.8343
+69, 6.9309
+70, 7.0273
+71, 7.1236
+72, 7.2197
+73, 7.3156
+74, 7.4114
+75, 7.5071
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+#DiagramOne0
+SUSP_DIVE_AXLE_TABLE SPLINE
+-74, -7.7609
+-73, -7.6553
+-72, -7.5497
+-71, -7.4441
+-70, -7.3385
+-69, -7.2329
+-68, -7.1274
+-67, -7.0219
+-66, -6.9163
+-65, -6.8108
+-64, -6.7053
+-63, -6.5998
+-62, -6.4944
+-61, -6.3889
+-60, -6.2835
+-59, -6.1781
+-58, -6.0727
+-57, -5.9673
+-56, -5.8619
+-55, -5.7566
+-54, -5.6512
+-53, -5.5459
+-52, -5.4406
+-51, -5.3353
+-50, -5.2301
+-49, -5.1248
+-48, -5.0196
+-47, -4.9144
+-46, -4.8092
+-45, -4.7041
+-44, -4.5989
+-43, -4.4938
+-42, -4.3887
+-41, -4.2837
+-40, -4.1786
+-39, -4.0736
+-38, -3.9686
+-37, -3.8637
+-36, -3.7587
+-35, -3.6538
+-34, -3.549
+-33, -3.4441
+-32, -3.3393
+-31, -3.2345
+-30, -3.1297
+-29, -3.025
+-28, -2.9203
+-27, -2.8157
+-26, -2.711
+-25, -2.6064
+-24, -2.5019
+-23, -2.3974
+-22, -2.2929
+-21, -2.1884
+-20, -2.084
+-19, -1.9796
+-18, -1.8753
+-17, -1.771
+-16, -1.6668
+-15, -1.5625
+-14, -1.4584
+-13, -1.3543
+-12, -1.2502
+-11, -1.1462
+-10, -1.0422
+-9, -0.93823
+-8, -0.83434
+-7, -0.7305
+-6, -0.62671
+-5, -0.52297
+-4, -0.41929
+-3, -0.31565
+-2, -0.21207
+-1, -0.10855
+0, -0.0050819
+1, 0.098329
+2, 0.20168
+3, 0.30498
+4, 0.40821
+5, 0.51138
+6, 0.61449
+7, 0.71754
+8, 0.82053
+9, 0.92344
+10, 1.0263
+11, 1.1291
+12, 1.2318
+13, 1.3344
+14, 1.437
+15, 1.5395
+16, 1.6419
+17, 1.7443
+18, 1.8466
+19, 1.9488
+20, 2.0509
+21, 2.1529
+22, 2.2549
+23, 2.3568
+24, 2.4586
+25, 2.5603
+26, 2.6619
+27, 2.7635
+28, 2.8649
+29, 2.9663
+30, 3.0675
+31, 3.1687
+32, 3.2698
+33, 3.3708
+34, 3.4717
+35, 3.5725
+36, 3.6732
+37, 3.7738
+38, 3.8743
+39, 3.9747
+40, 4.0749
+41, 4.1751
+42, 4.2752
+43, 4.3752
+44, 4.475
+45, 4.5748
+46, 4.6744
+47, 4.7739
+48, 4.8733
+49, 4.9726
+50, 5.0717
+51, 5.1708
+52, 5.2697
+53, 5.3685
+54, 5.4671
+55, 5.5657
+56, 5.6641
+57, 5.7624
+58, 5.8605
+59, 5.9585
+60, 6.0564
+61, 6.1541
+62, 6.2517
+63, 6.3492
+64, 6.4465
+65, 6.5437
+66, 6.6407
+67, 6.7376
+68, 6.8343
+69, 6.9309
+70, 7.0273
+71, 7.1236
+72, 7.2197
+73, 7.3156
+74, 7.4114
+75, 7.5071
+ENDTABLE
+
+LOG_ENTRY Used Dataset: Suspension: Dive Angle (Caster Change); { HMC_OS_EV } OSEV_RearDiveLeft_php
+#Library : Suspension: Dive Angle (Caster Change)
+#DataSet : OSEV_RearDiveLeft_php
+#Category: HMC_OS_EV
+#FileID  : Dive_e9016540-076a-497d-b077-c7d94d66874e
+#Product : CarSim 2018.0
+#VehCode Dive
+
+END
+/F Suspensions\Longitudinal\SusX_805371e8-4978-4251-a3aa-c4711b91866f.par`Suspension: Longitudinal Movement`OSEV_RearDxLeft_php`HMC_OS_EV
+PARSFILE
+#FullDataName Suspension: Longitudinal Movement`OSEV_RearDxLeft_php`HMC_OS_EV
+#CheckBox0 0    
+
+#RingCtrl0 SPLINE
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+SUSP_X_COMBINE ADD
+
+#DiagramOne0
+SUSP_X_TABLE SPLINE
+-74, 10.333
+-73, 10.112
+-72, 9.8936
+-71, 9.6773
+-70, 9.4635
+-69, 9.2521
+-68, 9.0431
+-67, 8.8366
+-66, 8.6324
+-65, 8.4306
+-64, 8.2312
+-63, 8.0342
+-62, 7.8395
+-61, 7.6472
+-60, 7.4571
+-59, 7.2694
+-58, 7.084
+-57, 6.901
+-56, 6.7201
+-55, 6.5416
+-54, 6.3654
+-53, 6.1914
+-52, 6.0196
+-51, 5.8501
+-50, 5.6828
+-49, 5.5177
+-48, 5.3548
+-47, 5.1942
+-46, 5.0357
+-45, 4.8794
+-44, 4.7252
+-43, 4.5732
+-42, 4.4234
+-41, 4.2757
+-40, 4.1302
+-39, 3.9868
+-38, 3.8454
+-37, 3.7062
+-36, 3.5691
+-35, 3.4341
+-34, 3.3012
+-33, 3.1703
+-32, 3.0415
+-31, 2.9148
+-30, 2.7901
+-29, 2.6675
+-28, 2.5468
+-27, 2.4283
+-26, 2.3117
+-25, 2.1971
+-24, 2.0846
+-23, 1.974
+-22, 1.8654
+-21, 1.7589
+-20, 1.6542
+-19, 1.5516
+-18, 1.4509
+-17, 1.3522
+-16, 1.2554
+-15, 1.1606
+-14, 1.0677
+-13, 0.97669
+-12, 0.88764
+-11, 0.80051
+-10, 0.71528
+-9, 0.63197
+-8, 0.55055
+-7, 0.47102
+-6, 0.39338
+-5, 0.31763
+-4, 0.24375
+-3, 0.17174
+-2, 0.1016
+-1, 0.033318
+0, -0.033106
+1, -0.097679
+2, -0.16041
+3, -0.22129
+4, -0.28034
+5, -0.33756
+6, -0.39294
+7, -0.44651
+8, -0.49825
+9, -0.54818
+10, -0.5963
+11, -0.64262
+12, -0.68712
+13, -0.72983
+14, -0.77075
+15, -0.80987
+16, -0.8472
+17, -0.88275
+18, -0.91651
+19, -0.9485
+20, -0.97871
+21, -1.0071
+22, -1.0338
+23, -1.0587
+24, -1.0818
+25, -1.1032
+26, -1.1228
+27, -1.1407
+28, -1.1568
+29, -1.1711
+30, -1.1837
+31, -1.1946
+32, -1.2037
+33, -1.2111
+34, -1.2167
+35, -1.2205
+36, -1.2227
+37, -1.2231
+38, -1.2217
+39, -1.2187
+40, -1.2139
+41, -1.2073
+42, -1.199
+43, -1.189
+44, -1.1773
+45, -1.1638
+46, -1.1486
+47, -1.1317
+48, -1.113
+49, -1.0927
+50, -1.0705
+51, -1.0467
+52, -1.0211
+53, -0.99383
+54, -0.96481
+55, -0.93405
+56, -0.90156
+57, -0.86735
+58, -0.8314
+59, -0.79372
+60, -0.75431
+61, -0.71316
+62, -0.67029
+63, -0.62567
+64, -0.57932
+65, -0.53124
+66, -0.48141
+67, -0.42984
+68, -0.37653
+69, -0.32148
+70, -0.26468
+71, -0.20614
+72, -0.14584
+73, -0.083796
+74, -0.019996
+75, 0.04556
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+#DiagramOne0
+SUSP_X_AXLE_TABLE SPLINE
+-74, 10.333
+-73, 10.112
+-72, 9.8936
+-71, 9.6773
+-70, 9.4635
+-69, 9.2521
+-68, 9.0431
+-67, 8.8366
+-66, 8.6324
+-65, 8.4306
+-64, 8.2312
+-63, 8.0342
+-62, 7.8395
+-61, 7.6472
+-60, 7.4571
+-59, 7.2694
+-58, 7.084
+-57, 6.901
+-56, 6.7201
+-55, 6.5416
+-54, 6.3654
+-53, 6.1914
+-52, 6.0196
+-51, 5.8501
+-50, 5.6828
+-49, 5.5177
+-48, 5.3548
+-47, 5.1942
+-46, 5.0357
+-45, 4.8794
+-44, 4.7252
+-43, 4.5732
+-42, 4.4234
+-41, 4.2757
+-40, 4.1302
+-39, 3.9868
+-38, 3.8454
+-37, 3.7062
+-36, 3.5691
+-35, 3.4341
+-34, 3.3012
+-33, 3.1703
+-32, 3.0415
+-31, 2.9148
+-30, 2.7901
+-29, 2.6675
+-28, 2.5468
+-27, 2.4283
+-26, 2.3117
+-25, 2.1971
+-24, 2.0846
+-23, 1.974
+-22, 1.8654
+-21, 1.7589
+-20, 1.6542
+-19, 1.5516
+-18, 1.4509
+-17, 1.3522
+-16, 1.2554
+-15, 1.1606
+-14, 1.0677
+-13, 0.97669
+-12, 0.88764
+-11, 0.80051
+-10, 0.71528
+-9, 0.63197
+-8, 0.55055
+-7, 0.47102
+-6, 0.39338
+-5, 0.31763
+-4, 0.24375
+-3, 0.17174
+-2, 0.1016
+-1, 0.033318
+0, -0.033106
+1, -0.097679
+2, -0.16041
+3, -0.22129
+4, -0.28034
+5, -0.33756
+6, -0.39294
+7, -0.44651
+8, -0.49825
+9, -0.54818
+10, -0.5963
+11, -0.64262
+12, -0.68712
+13, -0.72983
+14, -0.77075
+15, -0.80987
+16, -0.8472
+17, -0.88275
+18, -0.91651
+19, -0.9485
+20, -0.97871
+21, -1.0071
+22, -1.0338
+23, -1.0587
+24, -1.0818
+25, -1.1032
+26, -1.1228
+27, -1.1407
+28, -1.1568
+29, -1.1711
+30, -1.1837
+31, -1.1946
+32, -1.2037
+33, -1.2111
+34, -1.2167
+35, -1.2205
+36, -1.2227
+37, -1.2231
+38, -1.2217
+39, -1.2187
+40, -1.2139
+41, -1.2073
+42, -1.199
+43, -1.189
+44, -1.1773
+45, -1.1638
+46, -1.1486
+47, -1.1317
+48, -1.113
+49, -1.0927
+50, -1.0705
+51, -1.0467
+52, -1.0211
+53, -0.99383
+54, -0.96481
+55, -0.93405
+56, -0.90156
+57, -0.86735
+58, -0.8314
+59, -0.79372
+60, -0.75431
+61, -0.71316
+62, -0.67029
+63, -0.62567
+64, -0.57932
+65, -0.53124
+66, -0.48141
+67, -0.42984
+68, -0.37653
+69, -0.32148
+70, -0.26468
+71, -0.20614
+72, -0.14584
+73, -0.083796
+74, -0.019996
+75, 0.04556
+ENDTABLE
+
+LOG_ENTRY Used Dataset: Suspension: Longitudinal Movement; { HMC_OS_EV } OSEV_RearDxLeft_php
+#Library : Suspension: Longitudinal Movement
+#DataSet : OSEV_RearDxLeft_php
+#Category: HMC_OS_EV
+#FileID  : SusX_805371e8-4978-4251-a3aa-c4711b91866f
+#Product : CarSim 2018.0
+#VehCode Longitudinal Movement
+
+END
+/F Suspensions\Camber\Camber_a5fe2a27-dd9b-42cd-adcf-a60dc63eb2db.par`Suspension: Camber Angle`OSEV_RearCamberLeft_php`HMC_OS_EV
+PARSFILE
+#FullDataName Suspension: Camber Angle`OSEV_RearCamberLeft_php`HMC_OS_EV
+#CheckBox0 0    
+
+#RingCtrl0 SPLINE
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+CAMBER_COMBINE ADD
+#DiagramOne0
+CAMBER_TABLE SPLINE
+-75, 1.4679
+-74, 1.4469
+-73, 1.4261
+-72, 1.4053
+-71, 1.3846
+-70, 1.3639
+-69, 1.3433
+-68, 1.3228
+-67, 1.3024
+-66, 1.2821
+-65, 1.2618
+-64, 1.2415
+-63, 1.2213
+-62, 1.2012
+-61, 1.1812
+-60, 1.1612
+-59, 1.1412
+-58, 1.1214
+-57, 1.1015
+-56, 1.0817
+-55, 1.062
+-54, 1.0423
+-53, 1.0227
+-52, 1.0031
+-51, 0.9835
+-50, 0.96398
+-49, 0.9445
+-48, 0.92506
+-47, 0.90566
+-46, 0.88629
+-45, 0.86695
+-44, 0.84764
+-43, 0.82836
+-42, 0.80912
+-41, 0.78989
+-40, 0.7707
+-39, 0.75152
+-38, 0.73237
+-37, 0.71324
+-36, 0.69413
+-35, 0.67503
+-34, 0.65595
+-33, 0.63689
+-32, 0.61784
+-31, 0.59879
+-30, 0.57976
+-29, 0.56074
+-28, 0.54172
+-27, 0.52271
+-26, 0.5037
+-25, 0.48469
+-24, 0.46569
+-23, 0.44668
+-22, 0.42767
+-21, 0.40866
+-20, 0.38964
+-19, 0.37061
+-18, 0.35158
+-17, 0.33253
+-16, 0.31347
+-15, 0.2944
+-14, 0.27532
+-13, 0.25622
+-12, 0.2371
+-11, 0.21797
+-10, 0.19881
+-9, 0.17963
+-8, 0.16043
+-7, 0.1412
+-6, 0.12195
+-5, 0.10267
+-4, 0.08336
+-3, 0.06402
+-2, 0.044649
+-1, 0.025243
+0, 0.0058032
+1, -0.013673
+2, -0.033187
+3, -0.05274
+4, -0.072334
+5, -0.09197
+6, -0.11165
+7, -0.13137
+8, -0.15114
+9, -0.17096
+10, -0.19083
+11, -0.21074
+12, -0.23071
+13, -0.25074
+14, -0.27081
+15, -0.29094
+16, -0.31113
+17, -0.33138
+18, -0.35169
+19, -0.37206
+20, -0.3925
+21, -0.41299
+22, -0.43356
+23, -0.45419
+24, -0.47489
+25, -0.49565
+26, -0.51649
+27, -0.5374
+28, -0.55839
+29, -0.57945
+30, -0.60059
+31, -0.6218
+32, -0.64309
+33, -0.66447
+34, -0.68592
+35, -0.70746
+36, -0.72908
+37, -0.75079
+38, -0.77259
+39, -0.79447
+40, -0.81645
+41, -0.83851
+42, -0.86067
+43, -0.88292
+44, -0.90526
+45, -0.9277
+46, -0.95024
+47, -0.97288
+48, -0.99562
+49, -1.0185
+50, -1.0414
+51, -1.0644
+52, -1.0876
+53, -1.1108
+54, -1.1342
+55, -1.1577
+56, -1.1813
+57, -1.205
+58, -1.2288
+59, -1.2527
+60, -1.2767
+61, -1.3009
+62, -1.3251
+63, -1.3495
+64, -1.374
+65, -1.3987
+66, -1.4234
+67, -1.4483
+68, -1.4733
+69, -1.4984
+70, -1.5237
+71, -1.5491
+72, -1.5746
+73, -1.6002
+74, -1.626
+75, -1.6519
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+
+
+LOG_ENTRY Used Dataset: Suspension: Camber Angle; { HMC_OS_EV } OSEV_RearCamberLeft_php
+#Library : Suspension: Camber Angle
+#DataSet : OSEV_RearCamberLeft_php
+#Category: HMC_OS_EV
+#FileID  : Camber_a5fe2a27-dd9b-42cd-adcf-a60dc63eb2db
+#Product : CarSim 2018.0
+#VehCode Camber
+
+END
+/F Suspensions\Lateral\LatJnc_49b5465c-b0b3-4e68-9e58-50fad3c3c910.par`Suspension: Lateral Movement Due to Jounce`OSEV_RearDyLeft_php`HMC_OS_EV
+PARSFILE
+#FullDataName Suspension: Lateral Movement Due to Jounce`OSEV_RearDyLeft_php`HMC_OS_EV
+#CheckBox0 0    
+
+#RingCtrl0 SPLINE
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+SUSP_LAT_COMBINE ADD
+#DiagramOne0
+SUSP_LAT_TABLE SPLINE
+-74, 17.824
+-73, 17.477
+-72, 17.135
+-71, 16.795
+-70, 16.458
+-69, 16.124
+-68, 15.794
+-67, 15.466
+-66, 15.142
+-65, 14.82
+-64, 14.502
+-63, 14.187
+-62, 13.874
+-61, 13.565
+-60, 13.259
+-59, 12.955
+-58, 12.655
+-57, 12.357
+-56, 12.063
+-55, 11.771
+-54, 11.483
+-53, 11.197
+-52, 10.914
+-51, 10.634
+-50, 10.357
+-49, 10.083
+-48, 9.8113
+-47, 9.5428
+-46, 9.2771
+-45, 9.0143
+-44, 8.7543
+-43, 8.4972
+-42, 8.2428
+-41, 7.9913
+-40, 7.7425
+-39, 7.4966
+-38, 7.2534
+-37, 7.0129
+-36, 6.7753
+-35, 6.5404
+-34, 6.3082
+-33, 6.0788
+-32, 5.8521
+-31, 5.6281
+-30, 5.4069
+-29, 5.1883
+-28, 4.9725
+-27, 4.7593
+-26, 4.5489
+-25, 4.3411
+-24, 4.136
+-23, 3.9335
+-22, 3.7338
+-21, 3.5366
+-20, 3.3422
+-19, 3.1503
+-18, 2.9611
+-17, 2.7746
+-16, 2.5906
+-15, 2.4093
+-14, 2.2306
+-13, 2.0546
+-12, 1.8811
+-11, 1.7102
+-10, 1.5419
+-9, 1.3762
+-8, 1.2131
+-7, 1.0526
+-6, 0.89466
+-5, 0.73928
+-4, 0.58648
+-3, 0.43624
+-2, 0.28857
+-1, 0.14345
+0, 0.00088089
+1, -0.13913
+2, -0.2766
+3, -0.41153
+4, -0.54391
+5, -0.67376
+6, -0.80107
+7, -0.92586
+8, -1.0481
+9, -1.1678
+10, -1.285
+11, -1.3997
+12, -1.5119
+13, -1.6215
+14, -1.7287
+15, -1.8333
+16, -1.9354
+17, -2.035
+18, -2.1321
+19, -2.2266
+20, -2.3187
+21, -2.4083
+22, -2.4954
+23, -2.5799
+24, -2.662
+25, -2.7415
+26, -2.8186
+27, -2.8932
+28, -2.9652
+29, -3.0348
+30, -3.1018
+31, -3.1664
+32, -3.2284
+33, -3.288
+34, -3.3451
+35, -3.3996
+36, -3.4517
+37, -3.5012
+38, -3.5483
+39, -3.5928
+40, -3.6349
+41, -3.6744
+42, -3.7114
+43, -3.7459
+44, -3.7779
+45, -3.8074
+46, -3.8344
+47, -3.8588
+48, -3.8808
+49, -3.9002
+50, -3.9171
+51, -3.9314
+52, -3.9433
+53, -3.9526
+54, -3.9594
+55, -3.9636
+56, -3.9653
+57, -3.9644
+58, -3.961
+59, -3.9551
+60, -3.9466
+61, -3.9355
+62, -3.9219
+63, -3.9057
+64, -3.8869
+65, -3.8656
+66, -3.8417
+67, -3.8152
+68, -3.7861
+69, -3.7545
+70, -3.7202
+71, -3.6834
+72, -3.6439
+73, -3.6018
+74, -3.5571
+75, -3.5098
+ENDTABLE
+SUSP_Y_AXLE_ROLL_COMBINE ADD ! in case this is for a solid axle
+#DiagramOne0
+SUSP_LAT_AXLE_JOUNCE_TABLE SPLINE
+-74, 17.824
+-73, 17.477
+-72, 17.135
+-71, 16.795
+-70, 16.458
+-69, 16.124
+-68, 15.794
+-67, 15.466
+-66, 15.142
+-65, 14.82
+-64, 14.502
+-63, 14.187
+-62, 13.874
+-61, 13.565
+-60, 13.259
+-59, 12.955
+-58, 12.655
+-57, 12.357
+-56, 12.063
+-55, 11.771
+-54, 11.483
+-53, 11.197
+-52, 10.914
+-51, 10.634
+-50, 10.357
+-49, 10.083
+-48, 9.8113
+-47, 9.5428
+-46, 9.2771
+-45, 9.0143
+-44, 8.7543
+-43, 8.4972
+-42, 8.2428
+-41, 7.9913
+-40, 7.7425
+-39, 7.4966
+-38, 7.2534
+-37, 7.0129
+-36, 6.7753
+-35, 6.5404
+-34, 6.3082
+-33, 6.0788
+-32, 5.8521
+-31, 5.6281
+-30, 5.4069
+-29, 5.1883
+-28, 4.9725
+-27, 4.7593
+-26, 4.5489
+-25, 4.3411
+-24, 4.136
+-23, 3.9335
+-22, 3.7338
+-21, 3.5366
+-20, 3.3422
+-19, 3.1503
+-18, 2.9611
+-17, 2.7746
+-16, 2.5906
+-15, 2.4093
+-14, 2.2306
+-13, 2.0546
+-12, 1.8811
+-11, 1.7102
+-10, 1.5419
+-9, 1.3762
+-8, 1.2131
+-7, 1.0526
+-6, 0.89466
+-5, 0.73928
+-4, 0.58648
+-3, 0.43624
+-2, 0.28857
+-1, 0.14345
+0, 0.00088089
+1, -0.13913
+2, -0.2766
+3, -0.41153
+4, -0.54391
+5, -0.67376
+6, -0.80107
+7, -0.92586
+8, -1.0481
+9, -1.1678
+10, -1.285
+11, -1.3997
+12, -1.5119
+13, -1.6215
+14, -1.7287
+15, -1.8333
+16, -1.9354
+17, -2.035
+18, -2.1321
+19, -2.2266
+20, -2.3187
+21, -2.4083
+22, -2.4954
+23, -2.5799
+24, -2.662
+25, -2.7415
+26, -2.8186
+27, -2.8932
+28, -2.9652
+29, -3.0348
+30, -3.1018
+31, -3.1664
+32, -3.2284
+33, -3.288
+34, -3.3451
+35, -3.3996
+36, -3.4517
+37, -3.5012
+38, -3.5483
+39, -3.5928
+40, -3.6349
+41, -3.6744
+42, -3.7114
+43, -3.7459
+44, -3.7779
+45, -3.8074
+46, -3.8344
+47, -3.8588
+48, -3.8808
+49, -3.9002
+50, -3.9171
+51, -3.9314
+52, -3.9433
+53, -3.9526
+54, -3.9594
+55, -3.9636
+56, -3.9653
+57, -3.9644
+58, -3.961
+59, -3.9551
+60, -3.9466
+61, -3.9355
+62, -3.9219
+63, -3.9057
+64, -3.8869
+65, -3.8656
+66, -3.8417
+67, -3.8152
+68, -3.7861
+69, -3.7545
+70, -3.7202
+71, -3.6834
+72, -3.6439
+73, -3.6018
+74, -3.5571
+75, -3.5098
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+
+
+LOG_ENTRY Used Dataset: Suspension: Lateral Movement Due to Jounce; { HMC_OS_EV } OSEV_RearDyLeft_php
+#Library : Suspension: Lateral Movement Due to Jounce
+#DataSet : OSEV_RearDyLeft_php
+#Category: HMC_OS_EV
+#FileID  : LatJnc_49b5465c-b0b3-4e68-9e58-50fad3c3c910
+#Product : CarSim 2018.0
+#VehCode Lateral Movement
+
+END
+/F Suspensions\Toe\Toe_ddaf2306-1dd8-4af2-8256-b18ade37d206.par`Suspension: Toe Angle`OSEV_RearToeLeft_php`HMC_OS_EV
+PARSFILE
+#FullDataName Suspension: Toe Angle`OSEV_RearToeLeft_php`HMC_OS_EV
+#CheckBox0 0    
+
+#RingCtrl0 SPLINE
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+TOE_COMBINE ADD
+#DiagramOne0
+TOE_TABLE SPLINE
+-74, -0.094022
+-73, -0.0963
+-72, -0.098424
+-71, -0.1004
+-70, -0.10222
+-69, -0.1039
+-68, -0.10543
+-67, -0.10682
+-66, -0.10808
+-65, -0.1092
+-64, -0.11019
+-63, -0.11104
+-62, -0.11177
+-61, -0.11238
+-60, -0.11286
+-59, -0.11322
+-58, -0.11347
+-57, -0.1136
+-56, -0.11361
+-55, -0.11352
+-54, -0.11332
+-53, -0.11301
+-52, -0.1126
+-51, -0.11209
+-50, -0.11148
+-49, -0.11077
+-48, -0.10997
+-47, -0.10908
+-46, -0.1081
+-45, -0.10703
+-44, -0.10587
+-43, -0.10463
+-42, -0.10331
+-41, -0.10191
+-40, -0.10043
+-39, -0.098875
+-38, -0.097247
+-37, -0.095548
+-36, -0.093779
+-35, -0.091942
+-34, -0.090039
+-33, -0.088072
+-32, -0.086043
+-31, -0.083953
+-30, -0.081804
+-29, -0.079598
+-28, -0.077337
+-27, -0.075023
+-26, -0.072656
+-25, -0.070239
+-24, -0.067773
+-23, -0.06526
+-22, -0.062701
+-21, -0.060098
+-20, -0.057453
+-19, -0.054766
+-18, -0.05204
+-17, -0.049276
+-16, -0.046474
+-15, -0.043638
+-14, -0.040767
+-13, -0.037863
+-12, -0.034928
+-11, -0.031963
+-10, -0.028969
+-9, -0.025947
+-8, -0.022899
+-7, -0.019825
+-6, -0.016728
+-5, -0.013607
+-4, -0.010464
+-3, -0.0073007
+-2, -0.0041174
+-1, -0.00091535
+0, 0.0023045
+1, 0.0055411
+2, 0.0087936
+3, 0.012061
+4, 0.015342
+5, 0.018637
+6, 0.021944
+7, 0.025262
+8, 0.028591
+9, 0.03193
+10, 0.035277
+11, 0.038634
+12, 0.041998
+13, 0.045369
+14, 0.048746
+15, 0.052129
+16, 0.055518
+17, 0.058911
+18, 0.062308
+19, 0.065708
+20, 0.069111
+21, 0.072517
+22, 0.075926
+23, 0.079335
+24, 0.082746
+25, 0.086158
+26, 0.089571
+27, 0.092983
+28, 0.096396
+29, 0.099808
+30, 0.10322
+31, 0.10663
+32, 0.11004
+33, 0.11345
+34, 0.11686
+35, 0.12026
+36, 0.12367
+37, 0.12707
+38, 0.13047
+39, 0.13387
+40, 0.13727
+41, 0.14066
+42, 0.14406
+43, 0.14745
+44, 0.15084
+45, 0.15423
+46, 0.15762
+47, 0.16101
+48, 0.1644
+49, 0.16779
+50, 0.17117
+51, 0.17456
+52, 0.17795
+53, 0.18134
+54, 0.18473
+55, 0.18812
+56, 0.19151
+57, 0.1949
+58, 0.1983
+59, 0.2017
+60, 0.20511
+61, 0.20852
+62, 0.21193
+63, 0.21535
+64, 0.21877
+65, 0.22221
+66, 0.22565
+67, 0.22909
+68, 0.23255
+69, 0.23601
+70, 0.23949
+71, 0.24298
+72, 0.24647
+73, 0.24998
+74, 0.25351
+75, 0.25705
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+
+
+LOG_ENTRY Used Dataset: Suspension: Toe Angle; { HMC_OS_EV } OSEV_RearToeLeft_php
+#Library : Suspension: Toe Angle
+#DataSet : OSEV_RearToeLeft_php
+#Category: HMC_OS_EV
+#FileID  : Toe_ddaf2306-1dd8-4af2-8256-b18ade37d206
+#Product : CarSim 2018.0
+#VehCode Toe
+
+END
+/F Suspensions\Springs\Spring_58009255-e3fc-4640-b374-156a134bc044.par`Suspension: Spring`OSEV_Rearwheelrate_php #1`HMC_OS_EV
+PARSFILE
+#FullDataName Suspension: Spring`OSEV_Rearwheelrate_php #1`HMC_OS_EV
+#RingCtrl0 SPLINE
+#DiagramOne0
+FS_COMP_TABLE SPLINE
+-75.30387, -146.262597
+-73.7792588, 259.911773
+-72.2546476, 496.425487
+-70.7300364, 640.903544
+-69.2054252, 745.778797
+-67.6808139, 835.593859
+-66.1562027, 919.965847
+-64.6315915, 1001.3424
+-63.1069803, 1079.35599
+-61.5823691, 1153.04281
+-60.0577579, 1221.7907
+-58.5331467, 1285.58787
+-57.0085355, 1344.93426
+-55.4839242, 1400.63202
+-53.959313, 1453.57294
+-52.4347018, 1504.57718
+-50.9100906, 1554.29914
+-49.3854794, 1603.19465
+-47.8608682, 1651.53418
+-46.336257, 1699.44387
+-44.8116458, 1746.95807
+-43.2870345, 1794.07064
+-41.7624233, 1840.77664
+-40.2378121, 1887.10024
+-38.7132009, 1933.10788
+-37.1885897, 1978.90848
+-35.6639785, 2024.64358
+-34.1393673, 2070.47152
+-32.6147561, 2116.54912
+-31.0901448, 2163.01444
+-29.5655336, 2209.97289
+-28.0409224, 2257.48833
+-26.5163112, 2305.57974
+-24.9917, 2354.22327
+-23.4670888, 2403.35877
+-21.9424776, 2452.89948
+-20.4178664, 2502.74353
+-18.8932552, 2552.7855
+-17.3686439, 2602.9269
+-15.8440327, 2653.08439
+-14.3194215, 2703.19513
+-12.7948103, 2753.21886
+-11.2701991, 2803.13692
+-9.74558788, 2852.94863
+-8.22097667, 2902.66562
+-6.69636545, 2952.30509
+-5.17175424, 3001.88284
+-3.64714303, 3051.40706
+-2.12253182, 3100.87339
+-0.597920606, 3150.2622
+0.926690606, 3199.53798
+2.45130182, 3248.65129
+3.97591303, 3297.54282
+5.50052424, 3346.14929
+7.02513545, 3394.4105
+8.54974667, 3442.277
+10.0743579, 3489.71743
+11.5989691, 3536.72497
+13.1235803, 3583.32238
+14.6481915, 3629.56493
+16.1728027, 3675.54129
+17.6974139, 3721.37221
+19.2220252, 3767.20722
+20.7466364, 3813.21974
+22.2712476, 3859.6012
+23.7958588, 3906.55475
+25.32047, 3954.28912
+26.8450812, 4003.01336
+28.3696924, 4052.93264
+29.8943036, 4104.24553
+31.4189148, 4157.14252
+32.9435261, 4211.80574
+34.4681373, 4268.40916
+35.9927485, 4327.11876
+37.5173597, 4388.09201
+39.0419709, 4451.47597
+40.5665821, 4517.40366
+42.0911933, 4585.98876
+43.6158045, 4657.31898
+45.1404158, 4731.44918
+46.665027, 4808.39579
+48.1896382, 4888.13447
+49.7142494, 4970.6032
+51.2388606, 5055.71273
+52.7634718, 5143.36566
+54.288083, 5233.48419
+55.8126942, 5326.04453
+57.3373055, 5421.11345
+58.8619167, 5518.87991
+60.3865279, 5619.67199
+61.9111391, 5723.94812
+63.4357503, 5832.25294
+64.9603615, 5945.13442
+66.4849727, 6063.03231
+68.0095839, 6186.17436
+69.5341952, 6314.55962
+71.0588064, 6448.17654
+72.5834176, 6587.70607
+74.1080288, 6736.10902
+75.63264, 6901.70803
+ENDTABLE
+#DiagramOne1
+FS_EXT_TABLE SPLINE
+-75.30387, -146.262597
+-73.7792588, 259.911773
+-72.2546476, 496.425487
+-70.7300364, 640.903544
+-69.2054252, 745.778797
+-67.6808139, 835.593859
+-66.1562027, 919.965847
+-64.6315915, 1001.3424
+-63.1069803, 1079.35599
+-61.5823691, 1153.04281
+-60.0577579, 1221.7907
+-58.5331467, 1285.58787
+-57.0085355, 1344.93426
+-55.4839242, 1400.63202
+-53.959313, 1453.57294
+-52.4347018, 1504.57718
+-50.9100906, 1554.29914
+-49.3854794, 1603.19465
+-47.8608682, 1651.53418
+-46.336257, 1699.44387
+-44.8116458, 1746.95807
+-43.2870345, 1794.07064
+-41.7624233, 1840.77664
+-40.2378121, 1887.10024
+-38.7132009, 1933.10788
+-37.1885897, 1978.90848
+-35.6639785, 2024.64358
+-34.1393673, 2070.47152
+-32.6147561, 2116.54912
+-31.0901448, 2163.01444
+-29.5655336, 2209.97289
+-28.0409224, 2257.48833
+-26.5163112, 2305.57974
+-24.9917, 2354.22327
+-23.4670888, 2403.35877
+-21.9424776, 2452.89948
+-20.4178664, 2502.74353
+-18.8932552, 2552.7855
+-17.3686439, 2602.9269
+-15.8440327, 2653.08439
+-14.3194215, 2703.19513
+-12.7948103, 2753.21886
+-11.2701991, 2803.13692
+-9.74558788, 2852.94863
+-8.22097667, 2902.66562
+-6.69636545, 2952.30509
+-5.17175424, 3001.88284
+-3.64714303, 3051.40706
+-2.12253182, 3100.87339
+-0.597920606, 3150.2622
+0.926690606, 3199.53798
+2.45130182, 3248.65129
+3.97591303, 3297.54282
+5.50052424, 3346.14929
+7.02513545, 3394.4105
+8.54974667, 3442.277
+10.0743579, 3489.71743
+11.5989691, 3536.72497
+13.1235803, 3583.32238
+14.6481915, 3629.56493
+16.1728027, 3675.54129
+17.6974139, 3721.37221
+19.2220252, 3767.20722
+20.7466364, 3813.21974
+22.2712476, 3859.6012
+23.7958588, 3906.55475
+25.32047, 3954.28912
+26.8450812, 4003.01336
+28.3696924, 4052.93264
+29.8943036, 4104.24553
+31.4189148, 4157.14252
+32.9435261, 4211.80574
+34.4681373, 4268.40916
+35.9927485, 4327.11876
+37.5173597, 4388.09201
+39.0419709, 4451.47597
+40.5665821, 4517.40366
+42.0911933, 4585.98876
+43.6158045, 4657.31898
+45.1404158, 4731.44918
+46.665027, 4808.39579
+48.1896382, 4888.13447
+49.7142494, 4970.6032
+51.2388606, 5055.71273
+52.7634718, 5143.36566
+54.288083, 5233.48419
+55.8126942, 5326.04453
+57.3373055, 5421.11345
+58.8619167, 5518.87991
+60.3865279, 5619.67199
+61.9111391, 5723.94812
+63.4357503, 5832.25294
+64.9603615, 5945.13442
+66.4849727, 6063.03231
+68.0095839, 6186.17436
+69.5341952, 6314.55962
+71.0588064, 6448.17654
+72.5834176, 6587.70607
+74.1080288, 6736.10902
+75.63264, 6901.70803
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+SPRING_COMP_BETA 2
+SPRING_EXT_BETA 2
+
+
+LOG_ENTRY Used Dataset: Suspension: Spring; { HMC_OS_EV } OSEV_Rearwheelrate_php #1
+#Library : Suspension: Spring
+#DataSet : OSEV_Rearwheelrate_php #1
+#Category: HMC_OS_EV
+#FileID  : Spring_58009255-e3fc-4640-b374-156a134bc044
+#Product : CarSim 2018.0
+#VehCode Spring Alone
+
+END
+/F Suspensions\Aux_Roll\AuxMx_0f6997a2-93c2-4a0e-840b-95772e4a874a.par`Suspension: Auxiliary Roll Moment`OSEV_RearAuxiliaryRollMoment_php`HMC_OS_EV
+PARSFILE
+#FullDataName Suspension: Auxiliary Roll Moment`OSEV_RearAuxiliaryRollMoment_php`HMC_OS_EV
+#CheckBox0 0    
+
+#RingCtrl0 COEFFICIENT
+#RingCtrl1 CONSTANT
+#RingCtrl2 MULTIPLY
+MX_AUX_COMBINE MULTIPLY
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+MX_AUX_COEFFICIENT 595.2
+*SCALAR 595.2
+
+
+LOG_ENTRY Used Dataset: Suspension: Auxiliary Roll Moment; { HMC_OS_EV } OSEV_RearAuxiliaryRollMoment_php
+#Library : Suspension: Auxiliary Roll Moment
+#DataSet : OSEV_RearAuxiliaryRollMoment_php
+#Category: HMC_OS_EV
+#FileID  : AuxMx_0f6997a2-93c2-4a0e-840b-95772e4a874a
+#Product : CarSim 2018.0
+#VehCode Aux. Roll Moment
+
+END
+/F Animator\STL\Shape_7247fe76-a5b3-439f-9e2f-f06467f18f2d.par`Animator: Shape File Link`SUV, Full Size: Body V9`CS SUV, Full Size
+PARSFILE
+#FullDataName Animator: Shape File Link`SUV, Full Size: Body V9`CS SUV, Full Size
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Cars\Large_SUV\body.obj
+#ENDMYellow
+
+SET_COLOR 0.2 0.4 0.6
+*SPECULAR 0.8
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 1    
+USE_RUN_COLOR
+#CheckBox4 1    
+
+SET_SPECULAR 0.8 0.8 0.8
+vsv_enable_shadows_recursive
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink2 Animator: Camera Setup`Shape Preview (Side)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_7247fe76-a5b3-439f-9e2f-f06467f18f2d.png
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { CS SUV, Full Size } SUV, Full Size: Body V9
+#Library : Animator: Shape File Link
+#DataSet : SUV, Full Size: Body V9
+#Category: CS SUV, Full Size
+#FileID  : Shape_7247fe76-a5b3-439f-9e2f-f06467f18f2d
+#Product : CarSim 2018.0
+#VehCode Shape File
+
+END
+/F Animator\STL\Shape_6d44aad8-fc73-4a8d-9a90-38eeecbf0e92.par`Animator: Shape File Link`SUV, Full Size: Details V9`CS SUV, Full Size
+PARSFILE
+#FullDataName Animator: Shape File Link`SUV, Full Size: Details V9`CS SUV, Full Size
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Cars\Large_SUV\details.obj
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 0.8
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 0.8 0.8 0.8
+vsv_enable_shadows_recursive
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink2 Animator: Camera Setup`Shape Preview (Side)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_6d44aad8-fc73-4a8d-9a90-38eeecbf0e92.png
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { CS SUV, Full Size } SUV, Full Size: Details V9
+#Library : Animator: Shape File Link
+#DataSet : SUV, Full Size: Details V9
+#Category: CS SUV, Full Size
+#FileID  : Shape_6d44aad8-fc73-4a8d-9a90-38eeecbf0e92
+#Product : CarSim 2018.0
+#VehCode Shape File
+
+END
+/F Animator\STL\Shape_99d1160e-2379-4680-9aa5-16fc4507b17a.par`Animator: Shape File Link`SUV, Full Size: Windows V9`CS SUV, Full Size
+PARSFILE
+#FullDataName Animator: Shape File Link`SUV, Full Size: Windows V9`CS SUV, Full Size
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Cars\Large_SUV\windows.obj
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 0.8
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 0    
+
+SET_SPECULAR 0.8 0.8 0.8
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink2 Animator: Camera Setup`Shape Preview (Side)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_99d1160e-2379-4680-9aa5-16fc4507b17a.png
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { CS SUV, Full Size } SUV, Full Size: Windows V9
+#Library : Animator: Shape File Link
+#DataSet : SUV, Full Size: Windows V9
+#Category: CS SUV, Full Size
+#FileID  : Shape_99d1160e-2379-4680-9aa5-16fc4507b17a
+#Product : CarSim 2018.0
+#VehCode Shape File
+
+END
+/F Animator\STL\Shape_8cb376cf-2a46-44d2-9241-d588b3490b71.par`Animator: Shape File Link`SUV, Full Size: Driver`CS SUV, Full Size
+PARSFILE
+#FullDataName Animator: Shape File Link`SUV, Full Size: Driver`CS SUV, Full Size
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Cars\Large_SUV\Drivers\Caucasian_Male\Caucasian_Male.obj
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 0.75
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 0.75 0.75 0.75
+vsv_enable_shadows_recursive
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink2 Animator: Camera Setup`Shape Preview (Side)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_8cb376cf-2a46-44d2-9241-d588b3490b71.png
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { CS SUV, Full Size } SUV, Full Size: Driver
+#Library : Animator: Shape File Link
+#DataSet : SUV, Full Size: Driver
+#Category: CS SUV, Full Size
+#FileID  : Shape_8cb376cf-2a46-44d2-9241-d588b3490b71
+#Product : CarSim 2018.0
+#VehCode Shape File
+
+END
+/F Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par`Animator: Camera Setup`Shape Preview (Side)`Shape Preview
+PARSFILE
+#FullDataName Animator: Camera Setup`Shape Preview (Side)`Shape Preview
+#RingCtrl1 0
+
+#CheckBox1 1    
+#CheckBox2 0    
+#CheckBox3 0    
+
+SET_CAMERA_Reference_Frame Shape Preview: Generic Yaw for Shape Preview
+PARSFILE Animator\Frames\Frame_02b47476-96e6-474b-919e-07d03b43f1ec.par
+#BlueLink0 Animator: Reference Frame`Yaw for Shape Preview` Shape Preview: Generic` , Reference frame for outside camera`Frame_02b47476-96e6-474b-919e-07d03b43f1ec
+
+SET_LOOKPOINT_Reference_Frame Shape Preview: Generic Yaw for Shape Preview
+SET_LOOKPOINT_X 0
+SET_LOOKPOINT_Y 0
+SET_LOOKPOINT_Z 0
+SET_AZIMUTH 0
+SET_ELEVATION 0
+SET_DISTANCE 35
+SET_CAMERAMAN_NAME External camera
+*SET_LOOKPOINT_X 0
+*SET_LOOKPOINT_Y 0
+*SET_LOOKPOINT_Z 0
+*SET_AZIMUTH 0
+*SET_ELEVATION 0
+*SET_DISTANCE 35
+FOG_SCALE 0
+SET_FIELD_OF_VIEW 21.1
+SUN_POSITION 10 10 100
+
+LOG_ENTRY Used Dataset: Animator: Camera Setup; { Shape Preview } Shape Preview (Side)
+#Library : Animator: Camera Setup
+#DataSet : Shape Preview (Side)
+#Category: Shape Preview
+#FileID  : Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+#Product : CarSim 2018.0
+#VehCode Camera
+
+END
+/F Steering\Compliance\StrCmp_80e2e8f8-dbaa-4ad1-8761-5020a8c566e5.par`Steering System: Compliance`OSEV_SteeringCompliance`HMC_OS_EV
+PARSFILE
+#FullDataName Steering System: Compliance`OSEV_SteeringCompliance`HMC_OS_EV
+#CheckBox0 0    
+
+#RingCtrl0 COEFFICIENT
+#RadioCtrl0 0    
+
+STEER_COMP_COEFFICIENT 0.000336
+*SCALAR 0.000336
+
+
+LOG_ENTRY Used Dataset: Steering System: Compliance; { HMC_OS_EV } OSEV_SteeringCompliance
+#Library : Steering System: Compliance
+#DataSet : OSEV_SteeringCompliance
+#Category: HMC_OS_EV
+#FileID  : StrCmp_80e2e8f8-dbaa-4ad1-8761-5020a8c566e5
+#Product : CarSim 2018.0
+#VehCode Steering Compliance
+
+END
+/F Steering\Kinematics\StrKin_aca8ee17-8bd2-4da4-b277-70c7906289a9.par`Steering System: Kinematics for One Wheel`OSEV_SteeringLeft_php #7`HMC_OS_EV
+PARSFILE
+#FullDataName Steering System: Kinematics for One Wheel`OSEV_SteeringLeft_php #7`HMC_OS_EV
+#CheckBox0 0    
+
+#RingCtrl0 SPLINE
+#RadioCtrl0 0    
+
+#DiagramOne0
+STEER_KIN_TABLE SPLINE
+-455, -32.107
+-454, -32.031
+-453, -31.955
+-452, -31.879
+-451, -31.803
+-450, -31.728
+-449, -31.652
+-448, -31.576
+-447, -31.5
+-446, -31.425
+-445, -31.349
+-444, -31.274
+-443, -31.198
+-442, -31.123
+-441, -31.047
+-440, -30.972
+-439, -30.897
+-438, -30.822
+-437, -30.746
+-436, -30.671
+-435, -30.596
+-434, -30.521
+-433, -30.446
+-432, -30.371
+-431, -30.296
+-430, -30.221
+-429, -30.147
+-428, -30.072
+-427, -29.997
+-426, -29.922
+-425, -29.848
+-424, -29.773
+-423, -29.699
+-422, -29.624
+-421, -29.55
+-420, -29.475
+-419, -29.401
+-418, -29.327
+-417, -29.253
+-416, -29.178
+-415, -29.104
+-414, -29.03
+-413, -28.956
+-412, -28.882
+-411, -28.808
+-410, -28.734
+-409, -28.66
+-408, -28.586
+-407, -28.512
+-406, -28.439
+-405, -28.365
+-404, -28.291
+-403, -28.217
+-402, -28.144
+-401, -28.07
+-400, -27.997
+-399, -27.923
+-398, -27.85
+-397, -27.776
+-396, -27.703
+-395, -27.63
+-394, -27.556
+-393, -27.483
+-392, -27.41
+-391, -27.337
+-390, -27.264
+-389, -27.191
+-388, -27.118
+-387, -27.045
+-386, -26.972
+-385, -26.899
+-384, -26.826
+-383, -26.753
+-382, -26.68
+-381, -26.607
+-380, -26.535
+-379, -26.462
+-378, -26.389
+-377, -26.317
+-376, -26.244
+-375, -26.172
+-374, -26.099
+-373, -26.027
+-372, -25.954
+-371, -25.882
+-370, -25.81
+-369, -25.737
+-368, -25.665
+-367, -25.593
+-366, -25.521
+-365, -25.448
+-364, -25.376
+-363, -25.304
+-362, -25.232
+-361, -25.16
+-360, -25.088
+-359, -25.016
+-358, -24.944
+-357, -24.872
+-356, -24.8
+-355, -24.729
+-354, -24.657
+-353, -24.585
+-352, -24.513
+-351, -24.442
+-350, -24.37
+-349, -24.298
+-348, -24.227
+-347, -24.155
+-346, -24.084
+-345, -24.012
+-344, -23.941
+-343, -23.869
+-342, -23.798
+-341, -23.727
+-340, -23.655
+-339, -23.584
+-338, -23.513
+-337, -23.442
+-336, -23.37
+-335, -23.299
+-334, -23.228
+-333, -23.157
+-332, -23.086
+-331, -23.015
+-330, -22.944
+-329, -22.873
+-328, -22.802
+-327, -22.731
+-326, -22.66
+-325, -22.589
+-324, -22.518
+-323, -22.448
+-322, -22.377
+-321, -22.306
+-320, -22.235
+-319, -22.165
+-318, -22.094
+-317, -22.023
+-316, -21.953
+-315, -21.882
+-314, -21.812
+-313, -21.741
+-312, -21.67
+-311, -21.6
+-310, -21.53
+-309, -21.459
+-308, -21.389
+-307, -21.318
+-306, -21.248
+-305, -21.178
+-304, -21.107
+-303, -21.037
+-302, -20.967
+-301, -20.897
+-300, -20.826
+-299, -20.756
+-298, -20.686
+-297, -20.616
+-296, -20.546
+-295, -20.476
+-294, -20.406
+-293, -20.336
+-292, -20.266
+-291, -20.196
+-290, -20.126
+-289, -20.056
+-288, -19.986
+-287, -19.916
+-286, -19.846
+-285, -19.776
+-284, -19.707
+-283, -19.637
+-282, -19.567
+-281, -19.497
+-280, -19.428
+-279, -19.358
+-278, -19.288
+-277, -19.219
+-276, -19.149
+-275, -19.079
+-274, -19.01
+-273, -18.94
+-272, -18.871
+-271, -18.801
+-270, -18.731
+-269, -18.662
+-268, -18.592
+-267, -18.523
+-266, -18.454
+-265, -18.384
+-264, -18.315
+-263, -18.245
+-262, -18.176
+-261, -18.107
+-260, -18.037
+-259, -17.968
+-258, -17.899
+-257, -17.829
+-256, -17.76
+-255, -17.691
+-254, -17.622
+-253, -17.552
+-252, -17.483
+-251, -17.414
+-250, -17.345
+-249, -17.276
+-248, -17.207
+-247, -17.138
+-246, -17.069
+-245, -16.999
+-244, -16.93
+-243, -16.861
+-242, -16.792
+-241, -16.723
+-240, -16.654
+-239, -16.585
+-238, -16.516
+-237, -16.447
+-236, -16.378
+-235, -16.309
+-234, -16.241
+-233, -16.172
+-232, -16.103
+-231, -16.034
+-230, -15.965
+-229, -15.896
+-228, -15.827
+-227, -15.759
+-226, -15.69
+-225, -15.621
+-224, -15.552
+-223, -15.483
+-222, -15.415
+-221, -15.346
+-220, -15.277
+-219, -15.208
+-218, -15.14
+-217, -15.071
+-216, -15.002
+-215, -14.934
+-214, -14.865
+-213, -14.796
+-212, -14.728
+-211, -14.659
+-210, -14.59
+-209, -14.522
+-208, -14.453
+-207, -14.385
+-206, -14.316
+-205, -14.247
+-204, -14.179
+-203, -14.11
+-202, -14.042
+-201, -13.973
+-200, -13.905
+-199, -13.836
+-198, -13.768
+-197, -13.699
+-196, -13.631
+-195, -13.562
+-194, -13.494
+-193, -13.425
+-192, -13.357
+-191, -13.288
+-190, -13.22
+-189, -13.151
+-188, -13.083
+-187, -13.014
+-186, -12.946
+-185, -12.877
+-184, -12.809
+-183, -12.74
+-182, -12.672
+-181, -12.604
+-180, -12.535
+-179, -12.467
+-178, -12.398
+-177, -12.33
+-176, -12.262
+-175, -12.193
+-174, -12.125
+-173, -12.056
+-172, -11.988
+-171, -11.92
+-170, -11.851
+-169, -11.783
+-168, -11.715
+-167, -11.646
+-166, -11.578
+-165, -11.51
+-164, -11.441
+-163, -11.373
+-162, -11.304
+-161, -11.236
+-160, -11.168
+-159, -11.099
+-158, -11.031
+-157, -10.963
+-156, -10.894
+-155, -10.826
+-154, -10.758
+-153, -10.689
+-152, -10.621
+-151, -10.553
+-150, -10.484
+-149, -10.416
+-148, -10.348
+-147, -10.279
+-146, -10.211
+-145, -10.143
+-144, -10.074
+-143, -10.006
+-142, -9.9375
+-141, -9.8692
+-140, -9.8008
+-139, -9.7325
+-138, -9.6641
+-137, -9.5957
+-136, -9.5274
+-135, -9.459
+-134, -9.3906
+-133, -9.3223
+-132, -9.2539
+-131, -9.1855
+-130, -9.1171
+-129, -9.0487
+-128, -8.9804
+-127, -8.912
+-126, -8.8436
+-125, -8.7752
+-124, -8.7067
+-123, -8.6383
+-122, -8.5699
+-121, -8.5015
+-120, -8.4331
+-119, -8.3646
+-118, -8.2962
+-117, -8.2278
+-116, -8.1593
+-115, -8.0908
+-114, -8.0224
+-113, -7.9539
+-112, -7.8854
+-111, -7.817
+-110, -7.7485
+-109, -7.68
+-108, -7.6115
+-107, -7.543
+-106, -7.4744
+-105, -7.4059
+-104, -7.3374
+-103, -7.2688
+-102, -7.2003
+-101, -7.1317
+-100, -7.0632
+-99, -6.9946
+-98, -6.926
+-97, -6.8574
+-96, -6.7888
+-95, -6.7202
+-94, -6.6516
+-93, -6.5829
+-92, -6.5143
+-91, -6.4456
+-90, -6.377
+-89, -6.3083
+-88, -6.2396
+-87, -6.1709
+-86, -6.1022
+-85, -6.0335
+-84, -5.9648
+-83, -5.896
+-82, -5.8273
+-81, -5.7585
+-80, -5.6897
+-79, -5.6209
+-78, -5.5521
+-77, -5.4833
+-76, -5.4145
+-75, -5.3457
+-74, -5.2768
+-73, -5.208
+-72, -5.1391
+-71, -5.0702
+-70, -5.0013
+-69, -4.9324
+-68, -4.8634
+-67, -4.7945
+-66, -4.7255
+-65, -4.6566
+-64, -4.5876
+-63, -4.5186
+-62, -4.4495
+-61, -4.3805
+-60, -4.3115
+-59, -4.2424
+-58, -4.1733
+-57, -4.1042
+-56, -4.0351
+-55, -3.966
+-54, -3.8968
+-53, -3.8277
+-52, -3.7585
+-51, -3.6893
+-50, -3.6201
+-49, -3.5509
+-48, -3.4816
+-47, -3.4124
+-46, -3.3431
+-45, -3.2738
+-44, -3.2045
+-43, -3.1351
+-42, -3.0658
+-41, -2.9964
+-40, -2.927
+-39, -2.8576
+-38, -2.7882
+-37, -2.7187
+-36, -2.6493
+-35, -2.5798
+-34, -2.5103
+-33, -2.4407
+-32, -2.3712
+-31, -2.3016
+-30, -2.232
+-29, -2.1624
+-28, -2.0928
+-27, -2.0232
+-26, -1.9535
+-25, -1.8838
+-24, -1.8141
+-23, -1.7443
+-22, -1.6746
+-21, -1.6048
+-20, -1.535
+-19, -1.4652
+-18, -1.3953
+-17, -1.3255
+-16, -1.2556
+-15, -1.1857
+-14, -1.1157
+-13, -1.0458
+-12, -0.9758
+-11, -0.9058
+-10, -0.83577
+-9, -0.76572
+-8, -0.69564
+-7, -0.62554
+-6, -0.55541
+-5, -0.48526
+-4, -0.41509
+-3, -0.34489
+-2, -0.27467
+-1, -0.20442
+0, -0.13414
+1, -0.063839
+2, 0.0064873
+3, 0.07684
+4, 0.14722
+5, 0.21762
+6, 0.28805
+7, 0.35851
+8, 0.429
+9, 0.49951
+10, 0.57005
+11, 0.64061
+12, 0.7112
+13, 0.78183
+14, 0.85247
+15, 0.92315
+16, 0.99385
+17, 1.0646
+18, 1.1353
+19, 1.2061
+20, 1.277
+21, 1.3478
+22, 1.4187
+23, 1.4896
+24, 1.5605
+25, 1.6315
+26, 1.7025
+27, 1.7735
+28, 1.8446
+29, 1.9156
+30, 1.9868
+31, 2.0579
+32, 2.1291
+33, 2.2003
+34, 2.2715
+35, 2.3428
+36, 2.4141
+37, 2.4854
+38, 2.5568
+39, 2.6282
+40, 2.6996
+41, 2.7711
+42, 2.8426
+43, 2.9141
+44, 2.9857
+45, 3.0572
+46, 3.1289
+47, 3.2005
+48, 3.2722
+49, 3.3439
+50, 3.4157
+51, 3.4875
+52, 3.5593
+53, 3.6312
+54, 3.7031
+55, 3.775
+56, 3.847
+57, 3.919
+58, 3.991
+59, 4.0631
+60, 4.1352
+61, 4.2073
+62, 4.2795
+63, 4.3517
+64, 4.424
+65, 4.4963
+66, 4.5686
+67, 4.6409
+68, 4.7133
+69, 4.7858
+70, 4.8582
+71, 4.9307
+72, 5.0033
+73, 5.0759
+74, 5.1485
+75, 5.2212
+76, 5.2939
+77, 5.3666
+78, 5.4394
+79, 5.5122
+80, 5.585
+81, 5.6579
+82, 5.7308
+83, 5.8038
+84, 5.8768
+85, 5.9499
+86, 6.023
+87, 6.0961
+88, 6.1692
+89, 6.2425
+90, 6.3157
+91, 6.389
+92, 6.4623
+93, 6.5357
+94, 6.6091
+95, 6.6826
+96, 6.7561
+97, 6.8296
+98, 6.9032
+99, 6.9768
+100, 7.0505
+101, 7.1242
+102, 7.1979
+103, 7.2717
+104, 7.3455
+105, 7.4194
+106, 7.4933
+107, 7.5673
+108, 7.6413
+109, 7.7153
+110, 7.7894
+111, 7.8636
+112, 7.9378
+113, 8.012
+114, 8.0863
+115, 8.1606
+116, 8.2349
+117, 8.3093
+118, 8.3838
+119, 8.4583
+120, 8.5328
+121, 8.6074
+122, 8.682
+123, 8.7567
+124, 8.8314
+125, 8.9062
+126, 8.981
+127, 9.0559
+128, 9.1308
+129, 9.2058
+130, 9.2808
+131, 9.3558
+132, 9.4309
+133, 9.5061
+134, 9.5813
+135, 9.6565
+136, 9.7318
+137, 9.8072
+138, 9.8826
+139, 9.958
+140, 10.033
+141, 10.109
+142, 10.185
+143, 10.26
+144, 10.336
+145, 10.412
+146, 10.487
+147, 10.563
+148, 10.639
+149, 10.715
+150, 10.791
+151, 10.867
+152, 10.943
+153, 11.019
+154, 11.096
+155, 11.172
+156, 11.248
+157, 11.324
+158, 11.401
+159, 11.477
+160, 11.554
+161, 11.63
+162, 11.707
+163, 11.784
+164, 11.86
+165, 11.937
+166, 12.014
+167, 12.091
+168, 12.168
+169, 12.245
+170, 12.322
+171, 12.399
+172, 12.476
+173, 12.553
+174, 12.63
+175, 12.708
+176, 12.785
+177, 12.862
+178, 12.94
+179, 13.017
+180, 13.095
+181, 13.173
+182, 13.25
+183, 13.328
+184, 13.406
+185, 13.484
+186, 13.562
+187, 13.64
+188, 13.718
+189, 13.796
+190, 13.874
+191, 13.952
+192, 14.03
+193, 14.109
+194, 14.187
+195, 14.266
+196, 14.344
+197, 14.423
+198, 14.501
+199, 14.58
+200, 14.659
+201, 14.737
+202, 14.816
+203, 14.895
+204, 14.974
+205, 15.053
+206, 15.132
+207, 15.211
+208, 15.291
+209, 15.37
+210, 15.449
+211, 15.529
+212, 15.608
+213, 15.688
+214, 15.767
+215, 15.847
+216, 15.926
+217, 16.006
+218, 16.086
+219, 16.166
+220, 16.246
+221, 16.326
+222, 16.406
+223, 16.486
+224, 16.566
+225, 16.647
+226, 16.727
+227, 16.807
+228, 16.888
+229, 16.968
+230, 17.049
+231, 17.129
+232, 17.21
+233, 17.291
+234, 17.372
+235, 17.453
+236, 17.534
+237, 17.615
+238, 17.696
+239, 17.777
+240, 17.858
+241, 17.939
+242, 18.021
+243, 18.102
+244, 18.184
+245, 18.265
+246, 18.347
+247, 18.429
+248, 18.51
+249, 18.592
+250, 18.674
+251, 18.756
+252, 18.838
+253, 18.92
+254, 19.002
+255, 19.085
+256, 19.167
+257, 19.249
+258, 19.332
+259, 19.414
+260, 19.497
+261, 19.579
+262, 19.662
+263, 19.745
+264, 19.828
+265, 19.911
+266, 19.994
+267, 20.077
+268, 20.16
+269, 20.243
+270, 20.326
+271, 20.41
+272, 20.493
+273, 20.577
+274, 20.66
+275, 20.744
+276, 20.828
+277, 20.911
+278, 20.995
+279, 21.079
+280, 21.163
+281, 21.247
+282, 21.331
+283, 21.415
+284, 21.5
+285, 21.584
+286, 21.669
+287, 21.753
+288, 21.838
+289, 21.922
+290, 22.007
+291, 22.092
+292, 22.177
+293, 22.262
+294, 22.347
+295, 22.432
+296, 22.517
+297, 22.602
+298, 22.688
+299, 22.773
+300, 22.858
+301, 22.944
+302, 23.03
+303, 23.115
+304, 23.201
+305, 23.287
+306, 23.373
+307, 23.459
+308, 23.545
+309, 23.631
+310, 23.717
+311, 23.804
+312, 23.89
+313, 23.977
+314, 24.063
+315, 24.15
+316, 24.236
+317, 24.323
+318, 24.41
+319, 24.497
+320, 24.584
+321, 24.671
+322, 24.758
+323, 24.846
+324, 24.933
+325, 25.02
+326, 25.108
+327, 25.196
+328, 25.283
+329, 25.371
+330, 25.459
+331, 25.547
+332, 25.635
+333, 25.723
+334, 25.811
+335, 25.899
+336, 25.987
+337, 26.076
+338, 26.164
+339, 26.253
+340, 26.342
+341, 26.43
+342, 26.519
+343, 26.608
+344, 26.697
+345, 26.786
+346, 26.875
+347, 26.964
+348, 27.054
+349, 27.143
+350, 27.233
+351, 27.322
+352, 27.412
+353, 27.502
+354, 27.591
+355, 27.681
+356, 27.771
+357, 27.861
+358, 27.952
+359, 28.042
+360, 28.132
+361, 28.223
+362, 28.313
+363, 28.404
+364, 28.494
+365, 28.585
+366, 28.676
+367, 28.767
+368, 28.858
+369, 28.949
+370, 29.04
+371, 29.131
+372, 29.223
+373, 29.314
+374, 29.406
+375, 29.498
+376, 29.589
+377, 29.681
+378, 29.773
+379, 29.865
+380, 29.957
+381, 30.049
+382, 30.141
+383, 30.234
+384, 30.326
+385, 30.419
+386, 30.511
+387, 30.604
+388, 30.697
+389, 30.79
+390, 30.883
+391, 30.976
+392, 31.069
+393, 31.162
+394, 31.256
+395, 31.349
+396, 31.443
+397, 31.536
+398, 31.63
+399, 31.724
+400, 31.818
+401, 31.912
+402, 32.006
+403, 32.1
+404, 32.194
+405, 32.289
+406, 32.383
+407, 32.478
+408, 32.572
+409, 32.667
+410, 32.762
+411, 32.857
+412, 32.952
+413, 33.047
+414, 33.142
+415, 33.238
+416, 33.333
+417, 33.428
+418, 33.524
+419, 33.62
+420, 33.716
+421, 33.811
+422, 33.907
+423, 34.004
+424, 34.1
+425, 34.196
+426, 34.292
+427, 34.389
+428, 34.485
+429, 34.582
+430, 34.679
+431, 34.776
+432, 34.873
+433, 34.97
+434, 35.067
+435, 35.164
+436, 35.261
+437, 35.359
+438, 35.456
+439, 35.554
+440, 35.652
+441, 35.75
+442, 35.848
+443, 35.946
+444, 36.044
+445, 36.142
+446, 36.24
+447, 36.339
+448, 36.437
+449, 36.536
+450, 36.635
+451, 36.734
+452, 36.833
+453, 36.932
+454, 37.031
+455, 37.13
+ENDTABLE
+
+
+LOG_ENTRY Used Dataset: Steering System: Kinematics for One Wheel; { HMC_OS_EV } OSEV_SteeringLeft_php #7
+#Library : Steering System: Kinematics for One Wheel
+#DataSet : OSEV_SteeringLeft_php #7
+#Category: HMC_OS_EV
+#FileID  : StrKin_aca8ee17-8bd2-4da4-b277-70c7906289a9
+#Product : CarSim 2018.0
+#VehCode Steering Kinematics
+
+END
+/F Steering\Kinematics\StrKin_b5876153-f2a9-40d6-85d0-962a7ef70e86.par`Steering System: Kinematics for One Wheel`OSEV_SteeringRight_php #7`HMC_OS_EV
+PARSFILE
+#FullDataName Steering System: Kinematics for One Wheel`OSEV_SteeringRight_php #7`HMC_OS_EV
+#CheckBox0 0    
+
+#RingCtrl0 SPLINE
+#RadioCtrl0 0    
+
+#DiagramOne0
+STEER_KIN_TABLE SPLINE
+-455, -37.033
+-454, -36.934
+-453, -36.836
+-452, -36.738
+-451, -36.639
+-450, -36.541
+-449, -36.443
+-448, -36.345
+-447, -36.248
+-446, -36.15
+-445, -36.052
+-444, -35.955
+-443, -35.857
+-442, -35.76
+-441, -35.663
+-440, -35.565
+-439, -35.468
+-438, -35.371
+-437, -35.275
+-436, -35.178
+-435, -35.081
+-434, -34.985
+-433, -34.888
+-432, -34.792
+-431, -34.696
+-430, -34.599
+-429, -34.503
+-428, -34.407
+-427, -34.311
+-426, -34.216
+-425, -34.12
+-424, -34.024
+-423, -33.929
+-422, -33.833
+-421, -33.738
+-420, -33.643
+-419, -33.548
+-418, -33.453
+-417, -33.358
+-416, -33.263
+-415, -33.168
+-414, -33.073
+-413, -32.979
+-412, -32.884
+-411, -32.79
+-410, -32.695
+-409, -32.601
+-408, -32.507
+-407, -32.413
+-406, -32.319
+-405, -32.225
+-404, -32.132
+-403, -32.038
+-402, -31.944
+-401, -31.851
+-400, -31.757
+-399, -31.664
+-398, -31.571
+-397, -31.478
+-396, -31.385
+-395, -31.292
+-394, -31.199
+-393, -31.106
+-392, -31.014
+-391, -30.921
+-390, -30.828
+-389, -30.736
+-388, -30.644
+-387, -30.552
+-386, -30.459
+-385, -30.367
+-384, -30.275
+-383, -30.183
+-382, -30.092
+-381, -30
+-380, -29.908
+-379, -29.817
+-378, -29.725
+-377, -29.634
+-376, -29.543
+-375, -29.452
+-374, -29.361
+-373, -29.27
+-372, -29.179
+-371, -29.088
+-370, -28.997
+-369, -28.906
+-368, -28.816
+-367, -28.725
+-366, -28.635
+-365, -28.545
+-364, -28.454
+-363, -28.364
+-362, -28.274
+-361, -28.184
+-360, -28.094
+-359, -28.004
+-358, -27.915
+-357, -27.825
+-356, -27.735
+-355, -27.646
+-354, -27.557
+-353, -27.467
+-352, -27.378
+-351, -27.289
+-350, -27.2
+-349, -27.111
+-348, -27.022
+-347, -26.933
+-346, -26.844
+-345, -26.756
+-344, -26.667
+-343, -26.579
+-342, -26.49
+-341, -26.402
+-340, -26.314
+-339, -26.225
+-338, -26.137
+-337, -26.049
+-336, -25.961
+-335, -25.873
+-334, -25.786
+-333, -25.698
+-332, -25.61
+-331, -25.523
+-330, -25.435
+-329, -25.348
+-328, -25.261
+-327, -25.173
+-326, -25.086
+-325, -24.999
+-324, -24.912
+-323, -24.825
+-322, -24.739
+-321, -24.652
+-320, -24.565
+-319, -24.478
+-318, -24.392
+-317, -24.306
+-316, -24.219
+-315, -24.133
+-314, -24.047
+-313, -23.96
+-312, -23.874
+-311, -23.788
+-310, -23.703
+-309, -23.617
+-308, -23.531
+-307, -23.445
+-306, -23.36
+-305, -23.274
+-304, -23.189
+-303, -23.103
+-302, -23.018
+-301, -22.933
+-300, -22.848
+-299, -22.762
+-298, -22.677
+-297, -22.592
+-296, -22.508
+-295, -22.423
+-294, -22.338
+-293, -22.253
+-292, -22.169
+-291, -22.084
+-290, -22
+-289, -21.916
+-288, -21.831
+-287, -21.747
+-286, -21.663
+-285, -21.579
+-284, -21.495
+-283, -21.411
+-282, -21.327
+-281, -21.243
+-280, -21.16
+-279, -21.076
+-278, -20.992
+-277, -20.909
+-276, -20.825
+-275, -20.742
+-274, -20.659
+-273, -20.576
+-272, -20.492
+-271, -20.409
+-270, -20.326
+-269, -20.243
+-268, -20.16
+-267, -20.078
+-266, -19.995
+-265, -19.912
+-264, -19.83
+-263, -19.747
+-262, -19.665
+-261, -19.582
+-260, -19.5
+-259, -19.418
+-258, -19.335
+-257, -19.253
+-256, -19.171
+-255, -19.089
+-254, -19.007
+-253, -18.925
+-252, -18.844
+-251, -18.762
+-250, -18.68
+-249, -18.599
+-248, -18.517
+-247, -18.436
+-246, -18.354
+-245, -18.273
+-244, -18.192
+-243, -18.11
+-242, -18.029
+-241, -17.948
+-240, -17.867
+-239, -17.786
+-238, -17.705
+-237, -17.625
+-236, -17.544
+-235, -17.463
+-234, -17.382
+-233, -17.302
+-232, -17.221
+-231, -17.141
+-230, -17.061
+-229, -16.98
+-228, -16.9
+-227, -16.82
+-226, -16.74
+-225, -16.66
+-224, -16.58
+-223, -16.5
+-222, -16.42
+-221, -16.34
+-220, -16.26
+-219, -16.18
+-218, -16.101
+-217, -16.021
+-216, -15.942
+-215, -15.862
+-214, -15.783
+-213, -15.703
+-212, -15.624
+-211, -15.545
+-210, -15.466
+-209, -15.387
+-208, -15.308
+-207, -15.229
+-206, -15.15
+-205, -15.071
+-204, -14.992
+-203, -14.913
+-202, -14.835
+-201, -14.756
+-200, -14.677
+-199, -14.599
+-198, -14.52
+-197, -14.442
+-196, -14.364
+-195, -14.285
+-194, -14.207
+-193, -14.129
+-192, -14.051
+-191, -13.973
+-190, -13.895
+-189, -13.817
+-188, -13.739
+-187, -13.661
+-186, -13.583
+-185, -13.505
+-184, -13.428
+-183, -13.35
+-182, -13.273
+-181, -13.195
+-180, -13.118
+-179, -13.04
+-178, -12.963
+-177, -12.885
+-176, -12.808
+-175, -12.731
+-174, -12.654
+-173, -12.577
+-172, -12.5
+-171, -12.423
+-170, -12.346
+-169, -12.269
+-168, -12.192
+-167, -12.115
+-166, -12.039
+-165, -11.962
+-164, -11.885
+-163, -11.809
+-162, -11.732
+-161, -11.656
+-160, -11.579
+-159, -11.503
+-158, -11.427
+-157, -11.35
+-156, -11.274
+-155, -11.198
+-154, -11.122
+-153, -11.046
+-152, -10.97
+-151, -10.894
+-150, -10.818
+-149, -10.742
+-148, -10.666
+-147, -10.591
+-146, -10.515
+-145, -10.439
+-144, -10.364
+-143, -10.288
+-142, -10.213
+-141, -10.137
+-140, -10.062
+-139, -9.9863
+-138, -9.911
+-137, -9.8357
+-136, -9.7605
+-135, -9.6853
+-134, -9.6101
+-133, -9.535
+-132, -9.46
+-131, -9.385
+-130, -9.31
+-129, -9.2351
+-128, -9.1603
+-127, -9.0854
+-126, -9.0107
+-125, -8.9359
+-124, -8.8613
+-123, -8.7866
+-122, -8.712
+-121, -8.6375
+-120, -8.563
+-119, -8.4885
+-118, -8.4141
+-117, -8.3397
+-116, -8.2654
+-115, -8.1911
+-114, -8.1169
+-113, -8.0427
+-112, -7.9685
+-111, -7.8944
+-110, -7.8203
+-109, -7.7463
+-108, -7.6723
+-107, -7.5984
+-106, -7.5245
+-105, -7.4506
+-104, -7.3768
+-103, -7.3031
+-102, -7.2293
+-101, -7.1556
+-100, -7.082
+-99, -7.0084
+-98, -6.9348
+-97, -6.8613
+-96, -6.7878
+-95, -6.7143
+-94, -6.6409
+-93, -6.5676
+-92, -6.4943
+-91, -6.421
+-90, -6.3477
+-89, -6.2745
+-88, -6.2013
+-87, -6.1282
+-86, -6.0551
+-85, -5.9821
+-84, -5.9091
+-83, -5.8361
+-82, -5.7632
+-81, -5.6903
+-80, -5.6174
+-79, -5.5446
+-78, -5.4718
+-77, -5.399
+-76, -5.3263
+-75, -5.2537
+-74, -5.181
+-73, -5.1084
+-72, -5.0359
+-71, -4.9633
+-70, -4.8908
+-69, -4.8184
+-68, -4.746
+-67, -4.6736
+-66, -4.6012
+-65, -4.5289
+-64, -4.4567
+-63, -4.3844
+-62, -4.3122
+-61, -4.24
+-60, -4.1679
+-59, -4.0958
+-58, -4.0237
+-57, -3.9517
+-56, -3.8797
+-55, -3.8077
+-54, -3.7358
+-53, -3.6639
+-52, -3.592
+-51, -3.5202
+-50, -3.4484
+-49, -3.3766
+-48, -3.3049
+-47, -3.2332
+-46, -3.1615
+-45, -3.0899
+-44, -3.0183
+-43, -2.9467
+-42, -2.8751
+-41, -2.8036
+-40, -2.7322
+-39, -2.6607
+-38, -2.5893
+-37, -2.5179
+-36, -2.4465
+-35, -2.3752
+-34, -2.3039
+-33, -2.2327
+-32, -2.1614
+-31, -2.0902
+-30, -2.019
+-29, -1.9479
+-28, -1.8768
+-27, -1.8057
+-26, -1.7346
+-25, -1.6636
+-24, -1.5926
+-23, -1.5216
+-22, -1.4507
+-21, -1.3798
+-20, -1.3089
+-19, -1.238
+-18, -1.1672
+-17, -1.0964
+-16, -1.0256
+-15, -0.95483
+-14, -0.88411
+-13, -0.81341
+-12, -0.74274
+-11, -0.67209
+-10, -0.60147
+-9, -0.53088
+-8, -0.46031
+-7, -0.38977
+-6, -0.31926
+-5, -0.24877
+-4, -0.17831
+-3, -0.10787
+-2, -0.037453
+-1, 0.032936
+0, 0.1033
+1, 0.17364
+2, 0.24396
+3, 0.31425
+4, 0.38451
+5, 0.45476
+6, 0.52498
+7, 0.59517
+8, 0.66535
+9, 0.73549
+10, 0.80562
+11, 0.87572
+12, 0.94581
+13, 1.0159
+14, 1.0859
+15, 1.1559
+16, 1.2259
+17, 1.2959
+18, 1.3658
+19, 1.4358
+20, 1.5057
+21, 1.5755
+22, 1.6454
+23, 1.7152
+24, 1.7851
+25, 1.8549
+26, 1.9246
+27, 1.9944
+28, 2.0641
+29, 2.1339
+30, 2.2036
+31, 2.2732
+32, 2.3429
+33, 2.4126
+34, 2.4822
+35, 2.5518
+36, 2.6214
+37, 2.6909
+38, 2.7605
+39, 2.83
+40, 2.8995
+41, 2.969
+42, 3.0385
+43, 3.1079
+44, 3.1774
+45, 3.2468
+46, 3.3162
+47, 3.3856
+48, 3.455
+49, 3.5243
+50, 3.5937
+51, 3.663
+52, 3.7323
+53, 3.8016
+54, 3.8709
+55, 3.9401
+56, 4.0094
+57, 4.0786
+58, 4.1478
+59, 4.217
+60, 4.2862
+61, 4.3554
+62, 4.4245
+63, 4.4937
+64, 4.5628
+65, 4.6319
+66, 4.701
+67, 4.7701
+68, 4.8392
+69, 4.9082
+70, 4.9773
+71, 5.0463
+72, 5.1153
+73, 5.1843
+74, 5.2533
+75, 5.3223
+76, 5.3913
+77, 5.4603
+78, 5.5292
+79, 5.5981
+80, 5.6671
+81, 5.736
+82, 5.8049
+83, 5.8738
+84, 5.9426
+85, 6.0115
+86, 6.0804
+87, 6.1492
+88, 6.218
+89, 6.2869
+90, 6.3557
+91, 6.4245
+92, 6.4933
+93, 6.5621
+94, 6.6309
+95, 6.6996
+96, 6.7684
+97, 6.8372
+98, 6.9059
+99, 6.9746
+100, 7.0434
+101, 7.1121
+102, 7.1808
+103, 7.2495
+104, 7.3182
+105, 7.3869
+106, 7.4556
+107, 7.5242
+108, 7.5929
+109, 7.6616
+110, 7.7302
+111, 7.7989
+112, 7.8675
+113, 7.9362
+114, 8.0048
+115, 8.0734
+116, 8.142
+117, 8.2106
+118, 8.2793
+119, 8.3479
+120, 8.4165
+121, 8.485
+122, 8.5536
+123, 8.6222
+124, 8.6908
+125, 8.7594
+126, 8.828
+127, 8.8965
+128, 8.9651
+129, 9.0336
+130, 9.1022
+131, 9.1708
+132, 9.2393
+133, 9.3079
+134, 9.3764
+135, 9.445
+136, 9.5135
+137, 9.582
+138, 9.6506
+139, 9.7191
+140, 9.7876
+141, 9.8562
+142, 9.9247
+143, 9.9932
+144, 10.062
+145, 10.13
+146, 10.199
+147, 10.267
+148, 10.336
+149, 10.404
+150, 10.473
+151, 10.541
+152, 10.61
+153, 10.679
+154, 10.747
+155, 10.816
+156, 10.884
+157, 10.953
+158, 11.021
+159, 11.09
+160, 11.158
+161, 11.227
+162, 11.295
+163, 11.364
+164, 11.432
+165, 11.501
+166, 11.57
+167, 11.638
+168, 11.707
+169, 11.775
+170, 11.844
+171, 11.912
+172, 11.981
+173, 12.049
+174, 12.118
+175, 12.187
+176, 12.255
+177, 12.324
+178, 12.392
+179, 12.461
+180, 12.53
+181, 12.598
+182, 12.667
+183, 12.735
+184, 12.804
+185, 12.873
+186, 12.941
+187, 13.01
+188, 13.079
+189, 13.147
+190, 13.216
+191, 13.285
+192, 13.353
+193, 13.422
+194, 13.491
+195, 13.559
+196, 13.628
+197, 13.697
+198, 13.766
+199, 13.834
+200, 13.903
+201, 13.972
+202, 14.041
+203, 14.109
+204, 14.178
+205, 14.247
+206, 14.316
+207, 14.384
+208, 14.453
+209, 14.522
+210, 14.591
+211, 14.66
+212, 14.729
+213, 14.797
+214, 14.866
+215, 14.935
+216, 15.004
+217, 15.073
+218, 15.142
+219, 15.211
+220, 15.28
+221, 15.349
+222, 15.418
+223, 15.487
+224, 15.556
+225, 15.625
+226, 15.694
+227, 15.763
+228, 15.832
+229, 15.901
+230, 15.97
+231, 16.039
+232, 16.108
+233, 16.177
+234, 16.246
+235, 16.315
+236, 16.385
+237, 16.454
+238, 16.523
+239, 16.592
+240, 16.661
+241, 16.731
+242, 16.8
+243, 16.869
+244, 16.938
+245, 17.008
+246, 17.077
+247, 17.146
+248, 17.216
+249, 17.285
+250, 17.354
+251, 17.424
+252, 17.493
+253, 17.562
+254, 17.632
+255, 17.701
+256, 17.771
+257, 17.84
+258, 17.91
+259, 17.979
+260, 18.049
+261, 18.118
+262, 18.188
+263, 18.258
+264, 18.327
+265, 18.397
+266, 18.466
+267, 18.536
+268, 18.606
+269, 18.676
+270, 18.745
+271, 18.815
+272, 18.885
+273, 18.955
+274, 19.024
+275, 19.094
+276, 19.164
+277, 19.234
+278, 19.304
+279, 19.374
+280, 19.444
+281, 19.514
+282, 19.584
+283, 19.654
+284, 19.724
+285, 19.794
+286, 19.864
+287, 19.934
+288, 20.004
+289, 20.074
+290, 20.144
+291, 20.214
+292, 20.285
+293, 20.355
+294, 20.425
+295, 20.495
+296, 20.566
+297, 20.636
+298, 20.706
+299, 20.777
+300, 20.847
+301, 20.918
+302, 20.988
+303, 21.059
+304, 21.129
+305, 21.2
+306, 21.27
+307, 21.341
+308, 21.411
+309, 21.482
+310, 21.553
+311, 21.623
+312, 21.694
+313, 21.765
+314, 21.835
+315, 21.906
+316, 21.977
+317, 22.048
+318, 22.119
+319, 22.19
+320, 22.261
+321, 22.332
+322, 22.403
+323, 22.474
+324, 22.545
+325, 22.616
+326, 22.687
+327, 22.758
+328, 22.829
+329, 22.9
+330, 22.971
+331, 23.043
+332, 23.114
+333, 23.185
+334, 23.257
+335, 23.328
+336, 23.399
+337, 23.471
+338, 23.542
+339, 23.614
+340, 23.685
+341, 23.757
+342, 23.829
+343, 23.9
+344, 23.972
+345, 24.043
+346, 24.115
+347, 24.187
+348, 24.259
+349, 24.331
+350, 24.402
+351, 24.474
+352, 24.546
+353, 24.618
+354, 24.69
+355, 24.762
+356, 24.834
+357, 24.906
+358, 24.978
+359, 25.051
+360, 25.123
+361, 25.195
+362, 25.267
+363, 25.34
+364, 25.412
+365, 25.484
+366, 25.557
+367, 25.629
+368, 25.701
+369, 25.774
+370, 25.847
+371, 25.919
+372, 25.992
+373, 26.064
+374, 26.137
+375, 26.21
+376, 26.283
+377, 26.355
+378, 26.428
+379, 26.501
+380, 26.574
+381, 26.647
+382, 26.72
+383, 26.793
+384, 26.866
+385, 26.939
+386, 27.012
+387, 27.085
+388, 27.159
+389, 27.232
+390, 27.305
+391, 27.379
+392, 27.452
+393, 27.525
+394, 27.599
+395, 27.672
+396, 27.746
+397, 27.82
+398, 27.893
+399, 27.967
+400, 28.041
+401, 28.114
+402, 28.188
+403, 28.262
+404, 28.336
+405, 28.41
+406, 28.484
+407, 28.558
+408, 28.632
+409, 28.706
+410, 28.78
+411, 28.854
+412, 28.928
+413, 29.003
+414, 29.077
+415, 29.151
+416, 29.226
+417, 29.3
+418, 29.375
+419, 29.449
+420, 29.524
+421, 29.598
+422, 29.673
+423, 29.748
+424, 29.822
+425, 29.897
+426, 29.972
+427, 30.047
+428, 30.122
+429, 30.197
+430, 30.272
+431, 30.347
+432, 30.422
+433, 30.497
+434, 30.572
+435, 30.648
+436, 30.723
+437, 30.798
+438, 30.874
+439, 30.949
+440, 31.025
+441, 31.1
+442, 31.176
+443, 31.251
+444, 31.327
+445, 31.403
+446, 31.479
+447, 31.554
+448, 31.63
+449, 31.706
+450, 31.782
+451, 31.858
+452, 31.934
+453, 32.01
+454, 32.087
+455, 32.163
+ENDTABLE
+
+
+LOG_ENTRY Used Dataset: Steering System: Kinematics for One Wheel; { HMC_OS_EV } OSEV_SteeringRight_php #7
+#Library : Steering System: Kinematics for One Wheel
+#DataSet : OSEV_SteeringRight_php #7
+#Category: HMC_OS_EV
+#FileID  : StrKin_b5876153-f2a9-40d6-85d0-962a7ef70e86
+#Product : CarSim 2018.0
+#VehCode Steering Kinematics
+
+END
+/F Roads\BuilderSegment\RoadSeg_299f5dd8-31b0-44f2-9251-eaaf215df33c.par`Path: Segment Builder`Straight East`Straight
+PARSFILE
+#FullDataName Path: Segment Builder`Straight East`Straight
+#RingCtrl0 1
+DEFINE_PATHS 1
+IPATH = NPATH
+PATH_ID IPATH
+#CheckBox0 0    
+OPT_PATH_START 0
+#CheckBox1 0    
+OPT_PATH_LOOP 0
+
+SPATH_START 0
+PATH_ID_DM = PATH_ID
+set_description path_id Straight East
+
+NSEGMENTS 1
+*TABLEROWS 1
+
+! Table Columns:
+!   NOTE: Label columns are not written to parsfile.
+!
+! 0: (Ring) Specify the type of segment. Circular arcs can be specified using radius or curvature (inverse radius). The table option provides a link to a dataset from the X-Y Coordinates for Segment library. The clothoid option will automatically generate an X-Y table with a specified length that maintains continuity with adjacent segments (the preceding and following rows in the table).
+! 1: (BlueLink) Link to a dataset from the X-Y Coordinates for Segment library.
+! 2: (Text) Length of straight segment in meters.
+! 3: (Label) Specify the length of a straight segment with meters.
+! 4: (Text) Segment radius: use a positive radius for a left turn, negative for a right turn.
+! 5: (Label) Specify radius with meters. Use a positive number for a left turn, negative number for a right turn.
+! 6: (Text) Length of segment arc, specified with arc length (m) or central angle (deg).
+! 7: (Ring) Specify arc size with central angle (deg) or arc length (m).
+! 8: (Text) Segment curvature (inverse of radius, 1//m): use a positive curvature for a left turn, negative for a right turn
+! 9: (Label) Specify segment curvature with 1//meter (inverse of radius). Use a positive number for a left turn, negative for a right turn.
+! 10: (Text) Length of segment arc, specified with arc length (m) or central angle (deg).
+! 11: (Ring) Specify arc size with central angle (deg) or arc length (m).
+! 12: (Text) Length of clothoid segment in meters. This will automatically generate an X-Y table that has this overall length and maintains continuity with the adjacent segments (the preceding and following rows in the table).
+! 13: (Label) Specify the length of a clothoid segment with meters.
+#MIXTABLE0
+NUMROWS 1
+straight, , 100, 100, 360, deg, 0.01, 90, deg, 400
+ENDTABLE
+
+! Segment 1, straight
+IPATHSEG 1
+SEGMENT_TYPE 0
+SEGMENT_LENGTH 100
+
+Title Straight East <Straight>
+
+#EMBEDDED_NOTES
+#This straight line east matches the S-L coordinates to global X-Y coordinates: S = X, L = Y.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Path: Segment Builder; { Straight } Straight East
+#Library : Path: Segment Builder
+#DataSet : Straight East
+#Category: Straight
+#FileID  : RoadSeg_299f5dd8-31b0-44f2-9251-eaaf215df33c
+#Product : CarSim 2018.0
+#VehCode Path Segment Builder
+
+END
+/F Roads\Friction\RdMu_25e73395-9471-44b9-9c60-27bd9cc24921.par`Road: Friction Map, S-L Grid`Constant: 0.85`Constant
+PARSFILE
+#FullDataName Road: Friction Map, S-L Grid`Constant: 0.85`Constant
+#CheckBox0 0    
+
+#RingCtrl0 CONSTANT
+#RingCtrl1 CONSTANT
+#RingCtrl2 MULTIPLY
+MU_ROAD_COMBINE MULTIPLY
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+MU_ROAD_CONSTANT 0.85
+MU_ROAD_L_CONSTANT 1
+*SCALAR 0.85
+*SCALAR2 1
+
+
+LOG_ENTRY Used Dataset: Road: Friction Map, S-L Grid; { Constant } Constant: 0.85
+#Library : Road: Friction Map, S-L Grid
+#DataSet : Constant: 0.85
+#Category: Constant
+#FileID  : RdMu_25e73395-9471-44b9-9c60-27bd9cc24921
+#Product : CarSim 2018.0
+#VehCode Mu via S-L Grid
+
+END
+/F Roads\Shapes\RdShape_4058acf0-6e14-4af6-a5b0-660d3c6188e7.par`Road: Animator Surface Shapes`1 km Square`Roads
+PARSFILE
+#FullDataName Road: Animator Surface Shapes`1 km Square`Roads
+NLANES 1
+#MiscYellow0
+# 1 1 1, Road (No Lines), 0.35, 10, 100, -500, m, 500, m, 100, , -500, 500, , , 0, Road
+#ENDMYellow
+
+#CheckBox0 0    
+MIRROR 0
+
+COLOR(1) 1 1 1
+MATERIAL(1) Road (No Lines)
+SPECULAR(1) 0.35
+SCALE(1) 10
+LTILES(1) 100
+LIN(1) -500
+LINUNITS(1) m
+LOUT(1) 500
+LOUTUNITS(1) m
+LDIV(1) 100
+SSTART(1) -500
+SSTOP(1) 500
+DZ(1) 0
+AUTODETAIL(1) Road
+MTL_FILE Animator\Road_Materials\road.mtl
+
+
+LOG_ENTRY Used Dataset: Road: Animator Surface Shapes; { Roads } 1 km Square
+#Library : Road: Animator Surface Shapes
+#DataSet : 1 km Square
+#Category: Roads
+#FileID  : RdShape_4058acf0-6e14-4af6-a5b0-660d3c6188e7
+#Product : CarSim 2018.0
+#VehCode Road Shapes
+
+END
+/F Animator\Groups\Group_4ccae742-4649-427a-8871-7b3629a730a2.par`Animator: Group`Partly Cloudy Sky`Skies
+PARSFILE
+#FullDataName Animator: Group`Partly Cloudy Sky`Skies
+PARSFILE Animator\Frames\Frame_8761c9b6-c784-4d2d-b8bc-72683578e773.par
+#BlueLink0 Animator: Reference Frame`Skybox (Vehicle Reference)` Environment` , Miscellaneous`Frame_8761c9b6-c784-4d2d-b8bc-72683578e773
+
+PARSFILE Animator\STL\Shape_6d5f4980-0cdc-4aa2-841c-f127e1b02f97.par
+#BlueLink1 Animator: Shape File Link`Partly Cloudy Sky` Skies` , Miscellaneous`Shape_6d5f4980-0cdc-4aa2-841c-f127e1b02f97
+
+PARSFILE Animator\STL\Shape_8747e07e-81f8-4899-bd41-ca6921d43beb.par
+#BlueLink2 Animator: Shape File Link`Complex Land Bowl for Light Grass` Terrain` , Miscellaneous`Shape_8747e07e-81f8-4899-bd41-ca6921d43beb
+
+
+#CheckBox0 0    
+
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink20 Animator: Camera Setup`Shape Preview (Side)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+
+LOG_ENTRY Used Dataset: Animator: Group; { Skies } Partly Cloudy Sky
+#Library : Animator: Group
+#DataSet : Partly Cloudy Sky
+#Category: Skies
+#FileID  : Group_4ccae742-4649-427a-8871-7b3629a730a2
+#Product : CarSim 2018.0
+#VehCode Animator Group
+
+END
+/F Animator\Cameras\Camera_36b2ee7b-54ec-4c39-9781-51b289ab39c0.par`Animator: Camera Setup`Rear View , Road Ref. (Frt. Facing)`Road Reference
+PARSFILE
+#FullDataName Animator: Camera Setup`Rear View , Road Ref. (Frt. Facing)`Road Reference
+#RingCtrl1 0
+
+#CheckBox1 1    
+#CheckBox2 0    
+#CheckBox3 0    
+
+SET_CAMERA_Reference_Frame Tracking: Road Camera Rear Point w// Yaw
+PARSFILE Animator\Frames\Frame_0d19114f-a5d3-40a0-b63b-e67f85442aa7.par
+#BlueLink0 Animator: Reference Frame`Camera Rear Point w// Yaw` Tracking: Road` , Reference frame for outside camera`Frame_0d19114f-a5d3-40a0-b63b-e67f85442aa7
+
+SET_LOOKPOINT_Reference_Frame Tracking: Road Camera Rear Point w// Yaw
+SET_LOOKPOINT_X 5
+SET_LOOKPOINT_Y 0
+SET_LOOKPOINT_Z 1
+SET_AZIMUTH 180
+SET_ELEVATION 5
+SET_DISTANCE 49
+SET_CAMERAMAN_NAME External camera
+*SET_LOOKPOINT_X 5
+*SET_LOOKPOINT_Y 0
+*SET_LOOKPOINT_Z 1
+*SET_AZIMUTH 180
+*SET_ELEVATION 5
+*SET_DISTANCE 49
+FOG_SCALE 0.0
+SET_FIELD_OF_VIEW 30
+SUN_POSITION 500 500 1000
+
+LOG_ENTRY Used Dataset: Animator: Camera Setup; { Road Reference } Rear View , Road Ref. (Frt. Facing)
+#Library : Animator: Camera Setup
+#DataSet : Rear View , Road Ref. (Frt. Facing)
+#Category: Road Reference
+#FileID  : Camera_36b2ee7b-54ec-4c39-9781-51b289ab39c0
+#Product : CarSim 2018.0
+#VehCode Camera
+
+END
+/F Animator\Arrows\Arrows_4e3feb5a-68cd-4d99-b6af-c725ceea66fe.par`Animator: Wheel Arrows and Other Indicators`2A - Fx Tire Force Arrows`Tire Force Arrows (2 Axles)
+PARSFILE
+#FullDataName Animator: Wheel Arrows and Other Indicators`2A - Fx Tire Force Arrows`Tire Force Arrows (2 Axles)
+#CheckBox0 0    
+#CheckBox1 0    
+#CheckBox4 0    
+
+#RingCtrl0 2
+#RingCtrl1 T
+#RingCtrl2 B
+#RingCtrl3 2
+*DYN_X Fx_<<o>>
+*REF_X 2000
+*OFFSET_Z 0
+*ID_AXLE 1
+
+#BlueLink0 Animator: Shape Assembly`Fx 3D Arrow (Tail Origin)` Arrows` , Animator Shape(s)`ShpGrp_cf808709-c59b-465f-8387-b806662801cc
+
+ADD_REFERENCE_FRAME wheel L1 indicator: 2A - Fx Tire Force Arrows
+PARSFILE Animator\STL_Groups\ShpGrp_cf808709-c59b-465f-8387-b806662801cc.par
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME Xctc_L1
+WRT_Xctc_L1
+ANI_Xctc_L1
+SET_Y_NAME Yctc_L1
+WRT_Yctc_L1
+ANI_Yctc_L1
+SET_Z_NAME Zgnd_L1
+WRT_Zgnd_L1
+ANI_Zgnd_L1
+SET_PITCH_NAME PitchGL1
+WRT_PitchGL1
+ANI_PitchGL1
+SET_ROLL_NAME RollGL1
+WRT_RollGL1
+ANI_RollGL1
+SET_YAW_NAME Yaw_L1
+WRT_Yaw_L1
+ANI_Yaw_L1
+SET_FRAME_SCALE_X_NAME Fx_L1
+WRT_Fx_L1
+ANI_Fx_L1
+X_REF_LENGTH 2000
+X_LENGTH 1
+Y_LENGTH 1
+Z_LENGTH 1
+SET_OFFSET_VAR_Z 0
+
+ADD_REFERENCE_FRAME wheel L2 indicator: 2A - Fx Tire Force Arrows
+PARSFILE Animator\STL_Groups\ShpGrp_cf808709-c59b-465f-8387-b806662801cc.par
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME Xctc_L2
+WRT_Xctc_L2
+ANI_Xctc_L2
+SET_Y_NAME Yctc_L2
+WRT_Yctc_L2
+ANI_Yctc_L2
+SET_Z_NAME Zgnd_L2
+WRT_Zgnd_L2
+ANI_Zgnd_L2
+SET_PITCH_NAME PitchGL2
+WRT_PitchGL2
+ANI_PitchGL2
+SET_ROLL_NAME RollGL2
+WRT_RollGL2
+ANI_RollGL2
+SET_YAW_NAME Yaw_L2
+WRT_Yaw_L2
+ANI_Yaw_L2
+SET_FRAME_SCALE_X_NAME Fx_L2
+WRT_Fx_L2
+ANI_Fx_L2
+X_REF_LENGTH 2000
+X_LENGTH 1
+Y_LENGTH 1
+Z_LENGTH 1
+SET_OFFSET_VAR_Z 0
+
+ADD_REFERENCE_FRAME wheel R1 indicator: 2A - Fx Tire Force Arrows
+PARSFILE Animator\STL_Groups\ShpGrp_cf808709-c59b-465f-8387-b806662801cc.par
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME Xctc_R1
+WRT_Xctc_R1
+ANI_Xctc_R1
+SET_Y_NAME Yctc_R1
+WRT_Yctc_R1
+ANI_Yctc_R1
+SET_Z_NAME Zgnd_R1
+WRT_Zgnd_R1
+ANI_Zgnd_R1
+SET_PITCH_NAME PitchGR1
+WRT_PitchGR1
+ANI_PitchGR1
+SET_ROLL_NAME RollGR1
+WRT_RollGR1
+ANI_RollGR1
+SET_YAW_NAME Yaw_R1
+WRT_Yaw_R1
+ANI_Yaw_R1
+SET_FRAME_SCALE_X_NAME Fx_R1
+WRT_Fx_R1
+ANI_Fx_R1
+X_REF_LENGTH 2000
+X_LENGTH 1
+Y_LENGTH 1
+Z_LENGTH 1
+SET_OFFSET_VAR_Z 0
+
+ADD_REFERENCE_FRAME wheel R2 indicator: 2A - Fx Tire Force Arrows
+PARSFILE Animator\STL_Groups\ShpGrp_cf808709-c59b-465f-8387-b806662801cc.par
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME Xctc_R2
+WRT_Xctc_R2
+ANI_Xctc_R2
+SET_Y_NAME Yctc_R2
+WRT_Yctc_R2
+ANI_Yctc_R2
+SET_Z_NAME Zgnd_R2
+WRT_Zgnd_R2
+ANI_Zgnd_R2
+SET_PITCH_NAME PitchGR2
+WRT_PitchGR2
+ANI_PitchGR2
+SET_ROLL_NAME RollGR2
+WRT_RollGR2
+ANI_RollGR2
+SET_YAW_NAME Yaw_R2
+WRT_Yaw_R2
+ANI_Yaw_R2
+SET_FRAME_SCALE_X_NAME Fx_R2
+WRT_Fx_R2
+ANI_Fx_R2
+X_REF_LENGTH 2000
+X_LENGTH 1
+Y_LENGTH 1
+Z_LENGTH 1
+SET_OFFSET_VAR_Z 0
+
+
+LOG_ENTRY Used Dataset: Animator: Wheel Arrows and Other Indicators; { Tire Force Arrows (2 Axles) } 2A - Fx Tire Force Arrows
+#Library : Animator: Wheel Arrows and Other Indicators
+#DataSet : 2A - Fx Tire Force Arrows
+#Category: Tire Force Arrows (2 Axles)
+#FileID  : Arrows_4e3feb5a-68cd-4d99-b6af-c725ceea66fe
+#Product : CarSim 2018.0
+#VehCode Wheel Indicators
+
+END
+/F Animator\Arrows\Arrows_94aef88b-f22e-4c93-b17a-72a15e42b3fb.par`Animator: Wheel Arrows and Other Indicators`2A - Fy Tire Force Arrows`Tire Force Arrows (2 Axles)
+PARSFILE
+#FullDataName Animator: Wheel Arrows and Other Indicators`2A - Fy Tire Force Arrows`Tire Force Arrows (2 Axles)
+#CheckBox0 0    
+#CheckBox1 0    
+#CheckBox4 0    
+
+#RingCtrl0 2
+#RingCtrl1 T
+#RingCtrl2 B
+#RingCtrl3 0
+*DYN_Y Fy_<<o>>
+*REF_Y 2000
+*OFFSET_Z 0
+*ID_AXLE 1
+
+#BlueLink0 Animator: Shape Assembly`Fy 3D Arrow (Tail Origin)` Arrows` , Animator Shape(s)`ShpGrp_ed36cd73-a85d-42c2-8449-662eef921dfc
+
+ADD_REFERENCE_FRAME wheel L1 indicator: 2A - Fy Tire Force Arrows
+PARSFILE Animator\STL_Groups\ShpGrp_ed36cd73-a85d-42c2-8449-662eef921dfc.par
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME Xctc_L1
+WRT_Xctc_L1
+ANI_Xctc_L1
+SET_Y_NAME Yctc_L1
+WRT_Yctc_L1
+ANI_Yctc_L1
+SET_Z_NAME Zgnd_L1
+WRT_Zgnd_L1
+ANI_Zgnd_L1
+SET_PITCH_NAME PitchGL1
+WRT_PitchGL1
+ANI_PitchGL1
+SET_ROLL_NAME RollGL1
+WRT_RollGL1
+ANI_RollGL1
+SET_YAW_NAME Yaw_L1
+WRT_Yaw_L1
+ANI_Yaw_L1
+SET_FRAME_SCALE_Y_NAME Fy_L1
+WRT_Fy_L1
+ANI_Fy_L1
+Y_REF_LENGTH 2000
+X_LENGTH 1
+Y_LENGTH 1
+Z_LENGTH 1
+SET_OFFSET_VAR_Z 0
+
+ADD_REFERENCE_FRAME wheel L2 indicator: 2A - Fy Tire Force Arrows
+PARSFILE Animator\STL_Groups\ShpGrp_ed36cd73-a85d-42c2-8449-662eef921dfc.par
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME Xctc_L2
+WRT_Xctc_L2
+ANI_Xctc_L2
+SET_Y_NAME Yctc_L2
+WRT_Yctc_L2
+ANI_Yctc_L2
+SET_Z_NAME Zgnd_L2
+WRT_Zgnd_L2
+ANI_Zgnd_L2
+SET_PITCH_NAME PitchGL2
+WRT_PitchGL2
+ANI_PitchGL2
+SET_ROLL_NAME RollGL2
+WRT_RollGL2
+ANI_RollGL2
+SET_YAW_NAME Yaw_L2
+WRT_Yaw_L2
+ANI_Yaw_L2
+SET_FRAME_SCALE_Y_NAME Fy_L2
+WRT_Fy_L2
+ANI_Fy_L2
+Y_REF_LENGTH 2000
+X_LENGTH 1
+Y_LENGTH 1
+Z_LENGTH 1
+SET_OFFSET_VAR_Z 0
+
+ADD_REFERENCE_FRAME wheel R1 indicator: 2A - Fy Tire Force Arrows
+PARSFILE Animator\STL_Groups\ShpGrp_ed36cd73-a85d-42c2-8449-662eef921dfc.par
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME Xctc_R1
+WRT_Xctc_R1
+ANI_Xctc_R1
+SET_Y_NAME Yctc_R1
+WRT_Yctc_R1
+ANI_Yctc_R1
+SET_Z_NAME Zgnd_R1
+WRT_Zgnd_R1
+ANI_Zgnd_R1
+SET_PITCH_NAME PitchGR1
+WRT_PitchGR1
+ANI_PitchGR1
+SET_ROLL_NAME RollGR1
+WRT_RollGR1
+ANI_RollGR1
+SET_YAW_NAME Yaw_R1
+WRT_Yaw_R1
+ANI_Yaw_R1
+SET_FRAME_SCALE_Y_NAME Fy_R1
+WRT_Fy_R1
+ANI_Fy_R1
+Y_REF_LENGTH 2000
+X_LENGTH 1
+Y_LENGTH 1
+Z_LENGTH 1
+SET_OFFSET_VAR_Z 0
+
+ADD_REFERENCE_FRAME wheel R2 indicator: 2A - Fy Tire Force Arrows
+PARSFILE Animator\STL_Groups\ShpGrp_ed36cd73-a85d-42c2-8449-662eef921dfc.par
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME Xctc_R2
+WRT_Xctc_R2
+ANI_Xctc_R2
+SET_Y_NAME Yctc_R2
+WRT_Yctc_R2
+ANI_Yctc_R2
+SET_Z_NAME Zgnd_R2
+WRT_Zgnd_R2
+ANI_Zgnd_R2
+SET_PITCH_NAME PitchGR2
+WRT_PitchGR2
+ANI_PitchGR2
+SET_ROLL_NAME RollGR2
+WRT_RollGR2
+ANI_RollGR2
+SET_YAW_NAME Yaw_R2
+WRT_Yaw_R2
+ANI_Yaw_R2
+SET_FRAME_SCALE_Y_NAME Fy_R2
+WRT_Fy_R2
+ANI_Fy_R2
+Y_REF_LENGTH 2000
+X_LENGTH 1
+Y_LENGTH 1
+Z_LENGTH 1
+SET_OFFSET_VAR_Z 0
+
+
+LOG_ENTRY Used Dataset: Animator: Wheel Arrows and Other Indicators; { Tire Force Arrows (2 Axles) } 2A - Fy Tire Force Arrows
+#Library : Animator: Wheel Arrows and Other Indicators
+#DataSet : 2A - Fy Tire Force Arrows
+#Category: Tire Force Arrows (2 Axles)
+#FileID  : Arrows_94aef88b-f22e-4c93-b17a-72a15e42b3fb
+#Product : CarSim 2018.0
+#VehCode Wheel Indicators
+
+END
+/F Animator\Arrows\Arrows_f2c29d4b-df79-4c67-b153-729d3f552770.par`Animator: Wheel Arrows and Other Indicators`2A - Fz Tire Force Arrows`Tire Force Arrows (2 Axles)
+PARSFILE
+#FullDataName Animator: Wheel Arrows and Other Indicators`2A - Fz Tire Force Arrows`Tire Force Arrows (2 Axles)
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox4 0    
+
+#RingCtrl0 2
+#RingCtrl1 T
+#RingCtrl2 B
+#RingCtrl3 0
+*DYN_Z Fz_<<o>>
+*REF_Z 2000
+*OFFSET_Z 0
+*ID_AXLE 1
+
+#BlueLink0 Animator: Shape Assembly`Fz 3D, Offset (Tail Origin)` Arrows` , Animator Shape(s)`ShpGrp_1965fc8a-4449-4636-8bc7-e83e860e392f
+
+ADD_REFERENCE_FRAME wheel L1 indicator: 2A - Fz Tire Force Arrows
+PARSFILE Animator\STL_Groups\ShpGrp_1965fc8a-4449-4636-8bc7-e83e860e392f.par
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME Xctc_L1
+WRT_Xctc_L1
+ANI_Xctc_L1
+SET_Y_NAME Yctc_L1
+WRT_Yctc_L1
+ANI_Yctc_L1
+SET_Z_NAME Zgnd_L1
+WRT_Zgnd_L1
+ANI_Zgnd_L1
+SET_PITCH_NAME PitchGL1
+WRT_PitchGL1
+ANI_PitchGL1
+SET_ROLL_NAME RollGL1
+WRT_RollGL1
+ANI_RollGL1
+SET_YAW_NAME Yaw_L1
+WRT_Yaw_L1
+ANI_Yaw_L1
+SET_FRAME_SCALE_Z_NAME Fz_L1
+WRT_Fz_L1
+ANI_Fz_L1
+Z_REF_LENGTH 2000
+X_LENGTH 1
+Y_LENGTH 1
+Z_LENGTH 1
+SET_OFFSET_VAR_Z 0
+
+ADD_REFERENCE_FRAME wheel L2 indicator: 2A - Fz Tire Force Arrows
+PARSFILE Animator\STL_Groups\ShpGrp_1965fc8a-4449-4636-8bc7-e83e860e392f.par
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME Xctc_L2
+WRT_Xctc_L2
+ANI_Xctc_L2
+SET_Y_NAME Yctc_L2
+WRT_Yctc_L2
+ANI_Yctc_L2
+SET_Z_NAME Zgnd_L2
+WRT_Zgnd_L2
+ANI_Zgnd_L2
+SET_PITCH_NAME PitchGL2
+WRT_PitchGL2
+ANI_PitchGL2
+SET_ROLL_NAME RollGL2
+WRT_RollGL2
+ANI_RollGL2
+SET_YAW_NAME Yaw_L2
+WRT_Yaw_L2
+ANI_Yaw_L2
+SET_FRAME_SCALE_Z_NAME Fz_L2
+WRT_Fz_L2
+ANI_Fz_L2
+Z_REF_LENGTH 2000
+X_LENGTH 1
+Y_LENGTH 1
+Z_LENGTH 1
+SET_OFFSET_VAR_Z 0
+
+ADD_REFERENCE_FRAME wheel R1 indicator: 2A - Fz Tire Force Arrows
+PARSFILE Animator\STL_Groups\ShpGrp_1965fc8a-4449-4636-8bc7-e83e860e392f.par
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME Xctc_R1
+WRT_Xctc_R1
+ANI_Xctc_R1
+SET_Y_NAME Yctc_R1
+WRT_Yctc_R1
+ANI_Yctc_R1
+SET_Z_NAME Zgnd_R1
+WRT_Zgnd_R1
+ANI_Zgnd_R1
+SET_PITCH_NAME PitchGR1
+WRT_PitchGR1
+ANI_PitchGR1
+SET_ROLL_NAME RollGR1
+WRT_RollGR1
+ANI_RollGR1
+SET_YAW_NAME Yaw_R1
+WRT_Yaw_R1
+ANI_Yaw_R1
+SET_OFFSET_VAR_YAW 180
+SET_SCALE_VAR_ROLL -1
+SET_SCALE_VAR_PITCH -1
+SET_FRAME_SCALE_Z_NAME Fz_R1
+WRT_Fz_R1
+ANI_Fz_R1
+Z_REF_LENGTH 2000
+X_LENGTH 1
+Y_LENGTH 1
+Z_LENGTH 1
+SET_OFFSET_VAR_Z 0
+
+ADD_REFERENCE_FRAME wheel R2 indicator: 2A - Fz Tire Force Arrows
+PARSFILE Animator\STL_Groups\ShpGrp_1965fc8a-4449-4636-8bc7-e83e860e392f.par
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME Xctc_R2
+WRT_Xctc_R2
+ANI_Xctc_R2
+SET_Y_NAME Yctc_R2
+WRT_Yctc_R2
+ANI_Yctc_R2
+SET_Z_NAME Zgnd_R2
+WRT_Zgnd_R2
+ANI_Zgnd_R2
+SET_PITCH_NAME PitchGR2
+WRT_PitchGR2
+ANI_PitchGR2
+SET_ROLL_NAME RollGR2
+WRT_RollGR2
+ANI_RollGR2
+SET_YAW_NAME Yaw_R2
+WRT_Yaw_R2
+ANI_Yaw_R2
+SET_OFFSET_VAR_YAW 180
+SET_SCALE_VAR_ROLL -1
+SET_SCALE_VAR_PITCH -1
+SET_FRAME_SCALE_Z_NAME Fz_R2
+WRT_Fz_R2
+ANI_Fz_R2
+Z_REF_LENGTH 2000
+X_LENGTH 1
+Y_LENGTH 1
+Z_LENGTH 1
+SET_OFFSET_VAR_Z 0
+
+
+LOG_ENTRY Used Dataset: Animator: Wheel Arrows and Other Indicators; { Tire Force Arrows (2 Axles) } 2A - Fz Tire Force Arrows
+#Library : Animator: Wheel Arrows and Other Indicators
+#DataSet : 2A - Fz Tire Force Arrows
+#Category: Tire Force Arrows (2 Axles)
+#FileID  : Arrows_f2c29d4b-df79-4c67-b153-729d3f552770
+#Product : CarSim 2018.0
+#VehCode Wheel Indicators
+
+END
+/F Plot\Format\PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d.par`Plot: Format`Lines without Symbols`
+PARSFILE
+#FullDataName Plot: Format`Lines without Symbols`
+#CheckBox0 0    
+#CheckBox1 0    
+
+LEGENDPERCENT 60
+TITLEFONTSIZE 10
+#RingCtrl10 -1
+TITLELOCATION -1
+#RingCtrl0 Axes
+AXES Axes
+#RingCtrl1 Frame
+FRAME Frame
+#RingCtrl2 CourseGrid
+GRID CourseGrid
+#RingCtrl3 
+#RingCtrl4 RigidBodyName
+LEGENDDATA_1 RigidBodyName
+#RingCtrl5 AutoLocation
+JUNK AutoLocation
+#RingCtrl6 Regular
+TITLEFONTSTYLE Regular
+TITLEFONTNAME Arial
+LEGENDFONTNAME Arial
+LEGENDFONTSIZE 10
+LEGENDFONTSTYLE Regular
+LABELFONTNAME Arial
+LABELFONTSIZE 10
+LABELFONTSTYLE Regular
+TICLABELFONTNAME Arial
+TICLABELFONTSIZE 10
+TICLABELFONTSTYLE Regular
+SYMBOLS 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+LINESTYL 1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1
+COLORS 8,2,3,7,4,0,6,14,8,9,10,11,12,13,14,6,1,2,0,4
+
+LOG_ENTRY Used Dataset: Plot: Format; Lines without Symbols
+#Library : Plot: Format
+#DataSet : Lines without Symbols
+#Category: 
+#FileID  : PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d
+#Product : CarSim 2018.0
+#VehCode Plot Format
+
+END
+/F Plot\Format\PlotFmt_01028e0f-04b1-4222-bdf3-7848a11f4ae5.par`Plot: Format`Default`KH Handling
+PARSFILE
+#FullDataName Plot: Format`Default`KH Handling
+#CheckBox0 0    
+#CheckBox1 0    
+
+LEGENDPERCENT 60
+TITLEFONTSIZE 10
+#RingCtrl10 -1
+TITLELOCATION -1
+#RingCtrl0 Axes
+AXES Axes
+#RingCtrl1 Frame
+FRAME Frame
+#RingCtrl2 CourseGrid
+GRID CourseGrid
+#RingCtrl3 
+#RingCtrl4 RigidBodyName
+LEGENDDATA_1 RigidBodyName
+#RingCtrl5 AutoLocation
+JUNK AutoLocation
+#RingCtrl6 Regular
+TITLEFONTSTYLE Regular
+TITLEFONTNAME Arial
+LEGENDFONTNAME Arial
+LEGENDFONTSIZE 10
+LEGENDFONTSTYLE Regular
+LABELFONTNAME Arial
+LABELFONTSIZE 10
+LABELFONTSTYLE Regular
+TICLABELFONTNAME Arial
+TICLABELFONTSIZE 10
+TICLABELFONTSTYLE Regular
+SYMBOLS 10,1,2,3,4,5,6,7,8,9,10,4,1,2,3,4,5,6,7,8
+LINESTYL 1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1
+COLORS 8,2,3,7,4,0,6,14,8,9,10,11,12,13,14,6,1,2,0,4
+
+LOG_ENTRY Used Dataset: Plot: Format; Default
+#Library : Plot: Format
+#DataSet : Default
+#Category: 
+#FileID  : PlotFmt_01028e0f-04b1-4222-bdf3-7848a11f4ae5
+#Product : CarSim 2017.1
+#VehCode Plot Format
+
+END
+/F Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par`Plot: Format`Default Plot Settings`
+PARSFILE
+#FullDataName Plot: Format`Default Plot Settings`
+#CheckBox0 0    
+#CheckBox1 0    
+
+LEGENDPERCENT 60
+TITLEFONTSIZE 10
+#RingCtrl10 -1
+TITLELOCATION -1
+#RingCtrl0 Axes
+AXES Axes
+#RingCtrl1 Frame
+FRAME Frame
+#RingCtrl2 CourseGrid
+GRID CourseGrid
+#RingCtrl3 
+#RingCtrl4 RigidBodyName
+LEGENDDATA_1 RigidBodyName
+#RingCtrl5 
+#RingCtrl6 Regular
+TITLEFONTSTYLE Regular
+TITLEFONTNAME Arial
+LEGENDFONTNAME Arial
+LEGENDFONTSIZE 10
+LEGENDFONTSTYLE Regular
+LABELFONTNAME Arial
+LABELFONTSIZE 10
+LABELFONTSTYLE Regular
+TICLABELFONTNAME Arial
+TICLABELFONTSIZE 10
+TICLABELFONTSTYLE Regular
+SYMBOLS 10,1,2,3,4,5,6,7,8,9,10,4,1,2,3,4,5,6,7,8
+LINESTYL 1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1
+COLORS 8,2,3,7,4,0,6,14,8,9,10,11,12,13,14,6,1,2,0,4
+
+LOG_ENTRY Used Dataset: Plot: Format; Default Plot Settings
+#Library : Plot: Format
+#DataSet : Default Plot Settings
+#Category: 
+#FileID  : PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862
+#Product : CarSim 2018.0
+#VehCode Plot Format
+
+END
+/F Animator\STL\Shape_9e9cf3ff-6a77-4076-a9f0-1b70114e603e.par`Animator: Shape File Link`Sports Car Tire`Tires
+PARSFILE
+#FullDataName Animator: Shape File Link`Sports Car Tire`Tires
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Common_Vehicle_Assets\Tires\195_45R16\tire.obj
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 0.3
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 0.3 0.3 0.3
+vsv_enable_shadows_recursive
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_52079630-c01a-43a9-bc0c-30080f01066f.par
+#BlueLink2 Animator: Camera Setup`Shape Preview (Top)` Shape Preview` , Video Camera`Camera_52079630-c01a-43a9-bc0c-30080f01066f
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_9e9cf3ff-6a77-4076-a9f0-1b70114e603e.png
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Tires } Sports Car Tire
+#Library : Animator: Shape File Link
+#DataSet : Sports Car Tire
+#Category: Tires
+#FileID  : Shape_9e9cf3ff-6a77-4076-a9f0-1b70114e603e
+#Product : CarSim 2018.0
+#VehCode Shape File
+
+END
+/F Animator\STL\Shape_e8969a6e-9ef6-43c7-9f40-228c21b5b4a1.par`Animator: Shape File Link`Sports Car Wheel`Tires
+PARSFILE
+#FullDataName Animator: Shape File Link`Sports Car Wheel`Tires
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Common_Vehicle_Assets\Tires\195_45R16\wheel.obj
+#ENDMYellow
+
+SET_COLOR .62 .62 .62
+*SPECULAR 0.5
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 0.5 0.5 0.5
+vsv_enable_shadows_recursive
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_52079630-c01a-43a9-bc0c-30080f01066f.par
+#BlueLink2 Animator: Camera Setup`Shape Preview (Top)` Shape Preview` , Video Camera`Camera_52079630-c01a-43a9-bc0c-30080f01066f
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_e8969a6e-9ef6-43c7-9f40-228c21b5b4a1.png
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Tires } Sports Car Wheel
+#Library : Animator: Shape File Link
+#DataSet : Sports Car Wheel
+#Category: Tires
+#FileID  : Shape_e8969a6e-9ef6-43c7-9f40-228c21b5b4a1
+#Product : CarSim 2018.0
+#VehCode Shape File
+
+END
+/F Animator\STL\Shape_8ffa6ffc-1b17-4180-964d-d52d768c1b70.par`Animator: Shape File Link`Sports Car Stripe`Tires
+PARSFILE
+#FullDataName Animator: Shape File Link`Sports Car Stripe`Tires
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Common_Vehicle_Assets\Tires\195_45R16\stripe.obj
+#ENDMYellow
+
+SET_COLOR white
+SET_OFFSET_X 0
+SET_OFFSET_Y 0.01
+SET_OFFSET_Z 0.01
+*SPECULAR 0
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 0    
+
+SET_SPECULAR 0 0 0
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_52079630-c01a-43a9-bc0c-30080f01066f.par
+#BlueLink2 Animator: Camera Setup`Shape Preview (Top)` Shape Preview` , Video Camera`Camera_52079630-c01a-43a9-bc0c-30080f01066f
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_8ffa6ffc-1b17-4180-964d-d52d768c1b70.png
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Tires } Sports Car Stripe
+#Library : Animator: Shape File Link
+#DataSet : Sports Car Stripe
+#Category: Tires
+#FileID  : Shape_8ffa6ffc-1b17-4180-964d-d52d768c1b70
+#Product : CarSim 2018.0
+#VehCode Shape File
+
+END
+/F Animator\Frames\Frame_02b47476-96e6-474b-919e-07d03b43f1ec.par`Animator: Reference Frame`Yaw for Shape Preview`Shape Preview: Generic
+PARSFILE
+#FullDataName Animator: Reference Frame`Yaw for Shape Preview`Shape Preview: Generic
+ADD_REFERENCE_FRAME Shape Preview: Generic Yaw for Shape Preview
+#RingCtrl0 yaw_pitch_roll
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME Yaw
+
+WRT_Yaw
+ANI_Yaw
+
+LOG_ENTRY Used Dataset: Animator: Reference Frame; { Shape Preview: Generic } Yaw for Shape Preview
+#Library : Animator: Reference Frame
+#DataSet : Yaw for Shape Preview
+#Category: Shape Preview: Generic
+#FileID  : Frame_02b47476-96e6-474b-919e-07d03b43f1ec
+#Product : CarSim 2018.0
+#VehCode Reference Frame
+
+END
+/F Animator\Frames\Frame_8761c9b6-c784-4d2d-b8bc-72683578e773.par`Animator: Reference Frame`Skybox (Vehicle Reference)`Environment
+PARSFILE
+#FullDataName Animator: Reference Frame`Skybox (Vehicle Reference)`Environment
+ADD_REFERENCE_FRAME Environment Skybox (Vehicle Reference)
+#RingCtrl0 yaw_pitch_roll
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME Xo
+SET_Y_NAME Yo
+SET_Z_NAME Zo
+
+WRT_Xo
+ANI_Xo
+WRT_Yo
+ANI_Yo
+WRT_Zo
+ANI_Zo
+
+LOG_ENTRY Used Dataset: Animator: Reference Frame; { Environment } Skybox (Vehicle Reference)
+#Library : Animator: Reference Frame
+#DataSet : Skybox (Vehicle Reference)
+#Category: Environment
+#FileID  : Frame_8761c9b6-c784-4d2d-b8bc-72683578e773
+#Product : CarSim 2018.0
+#VehCode Reference Frame
+
+END
+/F Animator\STL\Shape_6d5f4980-0cdc-4aa2-841c-f127e1b02f97.par`Animator: Shape File Link`Partly Cloudy Sky`Skies
+PARSFILE
+#FullDataName Animator: Shape File Link`Partly Cloudy Sky`Skies
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Environment\Sky_Boxes\Partly_Cloudy_Sky\Sky_Partly_Cloudy.obj
+#ENDMYellow
+
+SET_COLOR 1 1 1
+SET_SCALE_X 15
+SET_SCALE_Y 15
+SET_SCALE_Z 5
+SET_OFFSET_X 0
+SET_OFFSET_Y 0
+SET_OFFSET_Z 0
+#CheckBox0 1    
+set_lighting off
+#CheckBox1 1    
+set_fogging off
+#CheckBox3 0    
+#CheckBox4 0    
+
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink2 Animator: Camera Setup`Shape Preview (Side)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_6d5f4980-0cdc-4aa2-841c-f127e1b02f97.png
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Skies } Partly Cloudy Sky
+#Library : Animator: Shape File Link
+#DataSet : Partly Cloudy Sky
+#Category: Skies
+#FileID  : Shape_6d5f4980-0cdc-4aa2-841c-f127e1b02f97
+#Product : CarSim 2018.0
+#VehCode Shape File
+
+END
+/F Animator\STL\Shape_8747e07e-81f8-4899-bd41-ca6921d43beb.par`Animator: Shape File Link`Complex Land Bowl for Light Grass`Terrain
+PARSFILE
+#FullDataName Animator: Shape File Link`Complex Land Bowl for Light Grass`Terrain
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Environment\Land_Bowls\Light_Grass\Land_Bowl_Light_Grass.obj
+#ENDMYellow
+
+SET_COLOR .8 .8 .8
+SET_SCALE_X 15
+SET_SCALE_Y 15
+SET_SCALE_Z 1
+#CheckBox0 1    
+set_lighting off
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 0    
+
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_52079630-c01a-43a9-bc0c-30080f01066f.par
+#BlueLink2 Animator: Camera Setup`Shape Preview (Top)` Shape Preview` , Video Camera`Camera_52079630-c01a-43a9-bc0c-30080f01066f
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_8747e07e-81f8-4899-bd41-ca6921d43beb.png
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Terrain } Complex Land Bowl for Light Grass
+#Library : Animator: Shape File Link
+#DataSet : Complex Land Bowl for Light Grass
+#Category: Terrain
+#FileID  : Shape_8747e07e-81f8-4899-bd41-ca6921d43beb
+#Product : CarSim 2018.0
+#VehCode Shape File
+
+END
+/F Animator\Frames\Frame_0d19114f-a5d3-40a0-b63b-e67f85442aa7.par`Animator: Reference Frame`Camera Rear Point w/ Yaw`Tracking: Road
+PARSFILE
+#FullDataName Animator: Reference Frame`Camera Rear Point w// Yaw`Tracking: Road
+ADD_REFERENCE_FRAME Tracking: Road Camera Rear Point w// Yaw
+#RingCtrl0 yaw_pitch_roll
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME X_camR
+SET_Y_NAME Y_camR
+SET_Z_NAME Z_camR
+SET_YAW_NAME Yaw_CamR
+
+#MiscYellow0
+INSTALL_CAMERA_OUTPUTS 1
+#ENDMYellow
+
+WRT_X_camR
+ANI_X_camR
+WRT_Y_camR
+ANI_Y_camR
+WRT_Z_camR
+ANI_Z_camR
+WRT_Yaw_CamR
+ANI_Yaw_CamR
+
+LOG_ENTRY Used Dataset: Animator: Reference Frame; { Tracking: Road } Camera Rear Point w// Yaw
+#Library : Animator: Reference Frame
+#DataSet : Camera Rear Point w// Yaw
+#Category: Tracking: Road
+#FileID  : Frame_0d19114f-a5d3-40a0-b63b-e67f85442aa7
+#Product : CarSim 2018.0
+#VehCode Reference Frame
+
+END
+/F Animator\STL_Groups\ShpGrp_cf808709-c59b-465f-8387-b806662801cc.par`Animator: Shape Assembly`Fx 3D Arrow (Tail Origin)`Arrows
+PARSFILE
+#FullDataName Animator: Shape Assembly`Fx 3D Arrow (Tail Origin)`Arrows
+*COLOR 1 1 0
+*OFFSET_X 0.5
+*OFFSET_Y 0
+*OFFSET_Z 0.02
+#CheckBox0 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 1    
+#CheckBox5 0    
+
+#RingCtrl1 2
+#RingCtrl2 2
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL_Groups\ShpGrp_cf808709-c59b-465f-8387-b806662801cc.png
+PARSFILE Animator\STL\Shape_121d1f5b-e0e1-4397-b1a3-9459bdc4d022.par
+#BlueLink0 Animator: Shape File Link`3D Arrow for X (Tail Origin) - OSG` Arrows` , Shape File`Shape_121d1f5b-e0e1-4397-b1a3-9459bdc4d022
+
+set_offset_x 0.5
+set_offset_y 0
+set_offset_z 0.02
+PARSFILE Animator\STL\Shape_e00c79c1-cf34-4cc8-8a2a-46cc17d8a00a.par
+#BlueLink1 Animator: Shape File Link`Flat Arrow for X (Tail Origin, Side View)` Arrows` , Shape File`Shape_e00c79c1-cf34-4cc8-8a2a-46cc17d8a00a
+
+set_offset_x 0.5
+set_offset_y 0
+set_offset_z 0.02
+PARSFILE Animator\STL\Shape_f420bcc5-0b6e-48a8-95cd-f923b18d56fe.par
+#BlueLink2 Animator: Shape File Link`Flat Arrow for X (Tail Origin, Top View)` Arrows` , Shape File`Shape_f420bcc5-0b6e-48a8-95cd-f923b18d56fe
+
+set_offset_x 0.5
+set_offset_y 0
+set_offset_z 0.02
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink17 Animator: Camera Setup`Shape Preview (Side)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Arrows } Fx 3D Arrow (Tail Origin)
+#Library : Animator: Shape Assembly
+#DataSet : Fx 3D Arrow (Tail Origin)
+#Category: Arrows
+#FileID  : ShpGrp_cf808709-c59b-465f-8387-b806662801cc
+#Product : CarSim 2018.0
+#VehCode Shape Assembly
+
+END
+/F Animator\STL_Groups\ShpGrp_ed36cd73-a85d-42c2-8449-662eef921dfc.par`Animator: Shape Assembly`Fy 3D Arrow (Tail Origin)`Arrows
+PARSFILE
+#FullDataName Animator: Shape Assembly`Fy 3D Arrow (Tail Origin)`Arrows
+*COLOR 1 1 0
+*OFFSET_X 0
+*OFFSET_Y 0.5
+*OFFSET_Z 0.02
+#CheckBox0 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 1    
+#CheckBox5 0    
+
+#RingCtrl1 2
+#RingCtrl2 2
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL_Groups\ShpGrp_ed36cd73-a85d-42c2-8449-662eef921dfc.png
+PARSFILE Animator\STL\Shape_adff5bc7-5cc6-40c6-8119-03dd91486a9c.par
+#BlueLink0 Animator: Shape File Link`3D Arrow for Y (Tail Origin) - OSG` Arrows` , Shape File`Shape_adff5bc7-5cc6-40c6-8119-03dd91486a9c
+
+set_offset_x 0
+set_offset_y 0.5
+set_offset_z 0.02
+PARSFILE Animator\STL\Shape_608027c7-a123-4bfe-b3bd-307975c7684b.par
+#BlueLink1 Animator: Shape File Link`Flat Arrow for Y (Tail Origin, Front View)` Arrows` , Shape File`Shape_608027c7-a123-4bfe-b3bd-307975c7684b
+
+set_offset_x 0
+set_offset_y 0.5
+set_offset_z 0.02
+PARSFILE Animator\STL\Shape_5809a616-1039-46c8-9167-0bb7e9735084.par
+#BlueLink2 Animator: Shape File Link`Flat Arrow for Y (Tail Origin, Top View)` Arrows` , Shape File`Shape_5809a616-1039-46c8-9167-0bb7e9735084
+
+set_offset_x 0
+set_offset_y 0.5
+set_offset_z 0.02
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink17 Animator: Camera Setup`Shape Preview (Side)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Arrows } Fy 3D Arrow (Tail Origin)
+#Library : Animator: Shape Assembly
+#DataSet : Fy 3D Arrow (Tail Origin)
+#Category: Arrows
+#FileID  : ShpGrp_ed36cd73-a85d-42c2-8449-662eef921dfc
+#Product : CarSim 2018.0
+#VehCode Shape Assembly
+
+END
+/F Animator\STL_Groups\ShpGrp_1965fc8a-4449-4636-8bc7-e83e860e392f.par`Animator: Shape Assembly`Fz 3D, Offset (Tail Origin)`Arrows
+PARSFILE
+#FullDataName Animator: Shape Assembly`Fz 3D, Offset (Tail Origin)`Arrows
+*COLOR 1 1 0
+*OFFSET_X 0
+*OFFSET_Y 0.5
+*OFFSET_Z 0
+#CheckBox0 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 1    
+#CheckBox5 0    
+
+#RingCtrl1 2
+#RingCtrl2 2
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL_Groups\ShpGrp_1965fc8a-4449-4636-8bc7-e83e860e392f.png
+PARSFILE Animator\STL\Shape_252e3627-824b-46c7-8ec4-f437c8cdcf34.par
+#BlueLink0 Animator: Shape File Link`3D Arrow for Z (Tail Origin) - OSG` Arrows` , Shape File`Shape_252e3627-824b-46c7-8ec4-f437c8cdcf34
+
+set_offset_x 0
+set_offset_y 0.5
+set_offset_z 0
+PARSFILE Animator\STL\Shape_594c986b-5329-4baa-8564-723fc91a0441.par
+#BlueLink1 Animator: Shape File Link`Flat Arrow for Z (Tail Origin, Front View)` Arrows` , Shape File`Shape_594c986b-5329-4baa-8564-723fc91a0441
+
+set_offset_x 0
+set_offset_y 0.5
+set_offset_z 0
+PARSFILE Animator\STL\Shape_856fb306-c3cb-47a7-be79-a3fee3033c14.par
+#BlueLink2 Animator: Shape File Link`Flat Arrow for Z (Tail Origin, Side View)` Arrows` , Shape File`Shape_856fb306-c3cb-47a7-be79-a3fee3033c14
+
+set_offset_x 0
+set_offset_y 0.5
+set_offset_z 0
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink17 Animator: Camera Setup`Shape Preview (Side)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Arrows } Fz 3D, Offset (Tail Origin)
+#Library : Animator: Shape Assembly
+#DataSet : Fz 3D, Offset (Tail Origin)
+#Category: Arrows
+#FileID  : ShpGrp_1965fc8a-4449-4636-8bc7-e83e860e392f
+#Product : CarSim 2018.0
+#VehCode Shape Assembly
+
+END
+/F Animator\Cameras\Camera_52079630-c01a-43a9-bc0c-30080f01066f.par`Animator: Camera Setup`Shape Preview (Top)`Shape Preview
+PARSFILE
+#FullDataName Animator: Camera Setup`Shape Preview (Top)`Shape Preview
+#RingCtrl1 0
+
+#CheckBox1 1    
+#CheckBox2 0    
+#CheckBox3 0    
+
+SET_CAMERA_Reference_Frame Shape Preview: Generic Fixed
+PARSFILE Animator\Frames\Frame_8d039c3c-753d-406b-9c28-9406943a988c.par
+#BlueLink0 Animator: Reference Frame`Fixed` Shape Preview: Generic` , Reference frame for outside camera`Frame_8d039c3c-753d-406b-9c28-9406943a988c
+
+SET_LOOKPOINT_Reference_Frame Shape Preview: Generic Fixed
+SET_LOOKPOINT_X -1.2
+SET_LOOKPOINT_Y 0
+SET_LOOKPOINT_Z 0
+SET_AZIMUTH 180
+SET_ELEVATION 90
+SET_DISTANCE 35
+SET_CAMERAMAN_NAME External camera
+*SET_LOOKPOINT_X -1.2
+*SET_LOOKPOINT_Y 0
+*SET_LOOKPOINT_Z 0
+*SET_AZIMUTH 180
+*SET_ELEVATION 90
+*SET_DISTANCE 35
+FOG_SCALE 0
+SET_FIELD_OF_VIEW 21.1
+SUN_POSITION 10 10 100
+
+LOG_ENTRY Used Dataset: Animator: Camera Setup; { Shape Preview } Shape Preview (Top)
+#Library : Animator: Camera Setup
+#DataSet : Shape Preview (Top)
+#Category: Shape Preview
+#FileID  : Camera_52079630-c01a-43a9-bc0c-30080f01066f
+#Product : CarSim 2018.0
+#VehCode Camera
+
+END
+/F Animator\STL\Shape_121d1f5b-e0e1-4397-b1a3-9459bdc4d022.par`Animator: Shape File Link`3D Arrow for X (Tail Origin) - OSG`Arrows
+PARSFILE
+#FullDataName Animator: Shape File Link`3D Arrow for X (Tail Origin) - OSG`Arrows
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\3D_Arrow_Pyramid\arrow_3D.OSG
+#ENDMYellow
+
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.15
+SET_ANGLE_Z -90
+SET_ANGLE_Y 0
+SET_ANGLE_X -90
+X_REF_LENGTH 2000
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 1    
+USE_RUN_COLOR
+#CheckBox4 0    
+
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink2 Animator: Camera Setup`Shape Preview (Side)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_121d1f5b-e0e1-4397-b1a3-9459bdc4d022.png
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Arrows } 3D Arrow for X (Tail Origin) - OSG
+#Library : Animator: Shape File Link
+#DataSet : 3D Arrow for X (Tail Origin) - OSG
+#Category: Arrows
+#FileID  : Shape_121d1f5b-e0e1-4397-b1a3-9459bdc4d022
+#Product : CarSim 2018.0
+#VehCode Shape File
+
+END
+/F Animator\STL\Shape_e00c79c1-cf34-4cc8-8a2a-46cc17d8a00a.par`Animator: Shape File Link`Flat Arrow for X (Tail Origin, Side View)`Arrows
+PARSFILE
+#FullDataName Animator: Shape File Link`Flat Arrow for X (Tail Origin, Side View)`Arrows
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+#ENDMYellow
+
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z -90
+SET_ANGLE_Y 0
+SET_ANGLE_X -90
+X_REF_LENGTH 2000
+#CheckBox0 1    
+set_lighting off
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 1    
+USE_RUN_COLOR
+#CheckBox4 0    
+
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink2 Animator: Camera Setup`Shape Preview (Side)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_e00c79c1-cf34-4cc8-8a2a-46cc17d8a00a.png
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Arrows } Flat Arrow for X (Tail Origin, Side View)
+#Library : Animator: Shape File Link
+#DataSet : Flat Arrow for X (Tail Origin, Side View)
+#Category: Arrows
+#FileID  : Shape_e00c79c1-cf34-4cc8-8a2a-46cc17d8a00a
+#Product : CarSim 2018.0
+#VehCode Shape File
+
+END
+/F Animator\STL\Shape_f420bcc5-0b6e-48a8-95cd-f923b18d56fe.par`Animator: Shape File Link`Flat Arrow for X (Tail Origin, Top View)`Arrows
+PARSFILE
+#FullDataName Animator: Shape File Link`Flat Arrow for X (Tail Origin, Top View)`Arrows
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+#ENDMYellow
+
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z -90
+SET_ANGLE_Y 0
+SET_ANGLE_X 0
+X_REF_LENGTH 2000
+#CheckBox0 1    
+set_lighting off
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 1    
+USE_RUN_COLOR
+#CheckBox4 0    
+
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink2 Animator: Camera Setup`Shape Preview (Side)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_f420bcc5-0b6e-48a8-95cd-f923b18d56fe.png
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Arrows } Flat Arrow for X (Tail Origin, Top View)
+#Library : Animator: Shape File Link
+#DataSet : Flat Arrow for X (Tail Origin, Top View)
+#Category: Arrows
+#FileID  : Shape_f420bcc5-0b6e-48a8-95cd-f923b18d56fe
+#Product : CarSim 2018.0
+#VehCode Shape File
+
+END
+/F Animator\STL\Shape_adff5bc7-5cc6-40c6-8119-03dd91486a9c.par`Animator: Shape File Link`3D Arrow for Y (Tail Origin) - OSG`Arrows
+PARSFILE
+#FullDataName Animator: Shape File Link`3D Arrow for Y (Tail Origin) - OSG`Arrows
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\3D_Arrow_Pyramid\arrow_3D.OSG
+#ENDMYellow
+
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.15
+SET_ANGLE_Z 0
+SET_ANGLE_Y 90
+SET_ANGLE_X 0
+Y_REF_LENGTH 2000
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 1    
+USE_RUN_COLOR
+#CheckBox4 0    
+
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink2 Animator: Camera Setup`Shape Preview (Side)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_adff5bc7-5cc6-40c6-8119-03dd91486a9c.png
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Arrows } 3D Arrow for Y (Tail Origin) - OSG
+#Library : Animator: Shape File Link
+#DataSet : 3D Arrow for Y (Tail Origin) - OSG
+#Category: Arrows
+#FileID  : Shape_adff5bc7-5cc6-40c6-8119-03dd91486a9c
+#Product : CarSim 2018.0
+#VehCode Shape File
+
+END
+/F Animator\STL\Shape_608027c7-a123-4bfe-b3bd-307975c7684b.par`Animator: Shape File Link`Flat Arrow for Y (Tail Origin, Front View)`Arrows
+PARSFILE
+#FullDataName Animator: Shape File Link`Flat Arrow for Y (Tail Origin, Front View)`Arrows
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+#ENDMYellow
+
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z 0
+SET_ANGLE_Y 90
+SET_ANGLE_X 0
+Y_REF_LENGTH 2000
+#CheckBox0 1    
+set_lighting off
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 1    
+USE_RUN_COLOR
+#CheckBox4 0    
+
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink2 Animator: Camera Setup`Shape Preview (Side)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_608027c7-a123-4bfe-b3bd-307975c7684b.png
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Arrows } Flat Arrow for Y (Tail Origin, Front View)
+#Library : Animator: Shape File Link
+#DataSet : Flat Arrow for Y (Tail Origin, Front View)
+#Category: Arrows
+#FileID  : Shape_608027c7-a123-4bfe-b3bd-307975c7684b
+#Product : CarSim 2018.0
+#VehCode Shape File
+
+END
+/F Animator\STL\Shape_5809a616-1039-46c8-9167-0bb7e9735084.par`Animator: Shape File Link`Flat Arrow for Y (Tail Origin, Top View)`Arrows
+PARSFILE
+#FullDataName Animator: Shape File Link`Flat Arrow for Y (Tail Origin, Top View)`Arrows
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+#ENDMYellow
+
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z 0
+SET_ANGLE_Y 0
+SET_ANGLE_X 0
+Y_REF_LENGTH 2000
+#CheckBox0 1    
+set_lighting off
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 1    
+USE_RUN_COLOR
+#CheckBox4 0    
+
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink2 Animator: Camera Setup`Shape Preview (Side)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_5809a616-1039-46c8-9167-0bb7e9735084.png
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Arrows } Flat Arrow for Y (Tail Origin, Top View)
+#Library : Animator: Shape File Link
+#DataSet : Flat Arrow for Y (Tail Origin, Top View)
+#Category: Arrows
+#FileID  : Shape_5809a616-1039-46c8-9167-0bb7e9735084
+#Product : CarSim 2018.0
+#VehCode Shape File
+
+END
+/F Animator\STL\Shape_252e3627-824b-46c7-8ec4-f437c8cdcf34.par`Animator: Shape File Link`3D Arrow for Z (Tail Origin) - OSG`Arrows
+PARSFILE
+#FullDataName Animator: Shape File Link`3D Arrow for Z (Tail Origin) - OSG`Arrows
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\3D_Arrow_Pyramid\arrow_3D.OSG
+#ENDMYellow
+
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.15
+SET_ANGLE_Z 0
+SET_ANGLE_Y 0
+SET_ANGLE_X 90
+SET_OFFSET_Z 0.5
+Z_REF_LENGTH 2000
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 1    
+USE_RUN_COLOR
+#CheckBox4 0    
+
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink2 Animator: Camera Setup`Shape Preview (Side)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_252e3627-824b-46c7-8ec4-f437c8cdcf34.png
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Arrows } 3D Arrow for Z (Tail Origin) - OSG
+#Library : Animator: Shape File Link
+#DataSet : 3D Arrow for Z (Tail Origin) - OSG
+#Category: Arrows
+#FileID  : Shape_252e3627-824b-46c7-8ec4-f437c8cdcf34
+#Product : CarSim 2018.0
+#VehCode Shape File
+
+END
+/F Animator\STL\Shape_594c986b-5329-4baa-8564-723fc91a0441.par`Animator: Shape File Link`Flat Arrow for Z (Tail Origin, Front View)`Arrows
+PARSFILE
+#FullDataName Animator: Shape File Link`Flat Arrow for Z (Tail Origin, Front View)`Arrows
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+#ENDMYellow
+
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z 0
+SET_ANGLE_Y 90
+SET_ANGLE_X 90
+SET_OFFSET_Z 0.5
+Z_REF_LENGTH 2000
+#CheckBox0 1    
+set_lighting off
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 1    
+USE_RUN_COLOR
+#CheckBox4 0    
+
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink2 Animator: Camera Setup`Shape Preview (Side)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_594c986b-5329-4baa-8564-723fc91a0441.png
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Arrows } Flat Arrow for Z (Tail Origin, Front View)
+#Library : Animator: Shape File Link
+#DataSet : Flat Arrow for Z (Tail Origin, Front View)
+#Category: Arrows
+#FileID  : Shape_594c986b-5329-4baa-8564-723fc91a0441
+#Product : CarSim 2018.0
+#VehCode Shape File
+
+END
+/F Animator\STL\Shape_856fb306-c3cb-47a7-be79-a3fee3033c14.par`Animator: Shape File Link`Flat Arrow for Z (Tail Origin, Side View)`Arrows
+PARSFILE
+#FullDataName Animator: Shape File Link`Flat Arrow for Z (Tail Origin, Side View)`Arrows
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+#ENDMYellow
+
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z 0
+SET_ANGLE_Y 0
+SET_ANGLE_X 90
+SET_OFFSET_Z 0.5
+Z_REF_LENGTH 2000
+#CheckBox0 1    
+set_lighting off
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 1    
+USE_RUN_COLOR
+#CheckBox4 0    
+
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink2 Animator: Camera Setup`Shape Preview (Side)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_856fb306-c3cb-47a7-be79-a3fee3033c14.png
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Arrows } Flat Arrow for Z (Tail Origin, Side View)
+#Library : Animator: Shape File Link
+#DataSet : Flat Arrow for Z (Tail Origin, Side View)
+#Category: Arrows
+#FileID  : Shape_856fb306-c3cb-47a7-be79-a3fee3033c14
+#Product : CarSim 2018.0
+#VehCode Shape File
+
+END
+/F Animator\Frames\Frame_8d039c3c-753d-406b-9c28-9406943a988c.par`Animator: Reference Frame`Fixed`Shape Preview: Generic
+PARSFILE
+#FullDataName Animator: Reference Frame`Fixed`Shape Preview: Generic
+ADD_REFERENCE_FRAME Shape Preview: Generic Fixed
+#RingCtrl0 yaw_pitch_roll
+SET_EULER_ANGLES yaw_pitch_roll
+
+
+LOG_ENTRY Used Dataset: Animator: Reference Frame; { Shape Preview: Generic } Fixed
+#Library : Animator: Reference Frame
+#DataSet : Fixed
+#Category: Shape Preview: Generic
+#FileID  : Frame_8d039c3c-753d-406b-9c28-9406943a988c
+#Product : CarSim 2018.0
+#VehCode Reference Frame
+
+END
