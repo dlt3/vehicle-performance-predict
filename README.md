@@ -6,7 +6,6 @@ Comparative analysis of performance of handling control model and AI-based predi
 - Matlab을 활용한 14자유도의 핸들링 제어 모델을 만들어 AI 기반의 예측모델과 성능 비교 분석을 진행
 
 ## Vehicle Parameters
-
 1) vehicle sprung mass(kg) 
 2) Distance of sprung mass C.G. from front axle(m) 
 3) Distance of sprung mass C.G from rear axle(m): 3) - 2)
@@ -40,22 +39,40 @@ Comparative analysis of performance of handling control model and AI-based predi
 31) Gravitional acceleration (ms^-2)
 
 ## Vehicle Model
-a hatch 2017
-a hatch osg
-b hatch 2017
-b hatch osg
-b sport car
-c hatch
-d minivan
-d sedan
-d suv v9
-e sedan
-e suv
-european van
-large european van
-exotic car, mid engine mt
-exoti racecar, mid-eng.: MT w/Var. gains
-f sedan
-pikcup, compact
-pickup, full size  10 개
-utility truck
+-. a hatch 2017
+-. a hatch osg
+-. b hatch 2017
+-. b hatch osg
+-. b sport car
+-. c hatch
+-. d minivan
+-. d sedan
+-. d suv v9
+-. e sedan
+-. e suv
+-. european van
+-. large european van
+-. exotic car, mid engine mt
+-. exoti racecar, mid-eng.: MT w/Var. gains
+-. f sedan
+-. pikcup, compact
+-. pickup, full size  10 개
+-. utility truck
+
+## Dataset Detail
+
+- vehicle parameter data
+![image](https://github.com/user-attachments/assets/a910f86f-9248-451f-8c6d-0416b35b11f5)
+
+- Matlab Simulink model(14 degree model)
+![image](https://github.com/user-attachments/assets/afeb50d7-1ded-4213-b1ae-55b33dae7cc3)
+![image](https://github.com/user-attachments/assets/42fadc30-6b8e-4deb-9352-3628ff38271f)
+
+
+
+
+
+- 
+
+
+
